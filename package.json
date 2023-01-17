@@ -1,0 +1,26 @@
+{
+    "name": "describo.github.io",
+    "version": "0.0.1",
+    "type": "module",
+    "author": {
+        "name": "Marco La Rosa",
+        "email": "m@lr.id.au"
+    },
+    "homepage": "https://github.com/describo/describo.github.io",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/describo/describo.github.io.git"
+    },
+    "scripts": {
+        "develop": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "vue": "^3.2.45"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^4.0.0",
+        "vite": "^4.0.0"
+    }
+}
