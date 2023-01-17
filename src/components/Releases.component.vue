@@ -3,7 +3,7 @@
         <div class="flex flex-col">
             <div class="md:text-3xl text-center">
                 Download the latest release for your platform and start describing your data.
-                <div class="text-lg">
+                <div class="text-sm">
                     Describo Desktop is an application designed for your desktop so it won't work on
                     your phone or tablet.
                 </div>
@@ -11,17 +11,17 @@
             <div class="mt-10 flex flex-row justify-around">
                 <div class="hover:text-orange-600 cursor-pointer">
                     <a :href="data.download.windows">
-                        <i class="fa-brands fa-windows fa-10x"></i>
+                        <i class="fa-brands fa-windows fa-8x"></i>
                     </a>
                 </div>
                 <div class="hover:text-orange-600 cursor-pointer">
                     <a :href="data.download.mac" download>
-                        <i class="fa-brands fa-apple fa-10x"></i>
+                        <i class="fa-brands fa-apple fa-8x"></i>
                     </a>
                 </div>
                 <div class="hover:text-orange-600 cursor-pointer">
                     <a :href="data.download.linux">
-                        <i class="fa-brands fa-linux fa-10x"></i>
+                        <i class="fa-brands fa-linux fa-8x"></i>
                     </a>
                 </div>
             </div>
