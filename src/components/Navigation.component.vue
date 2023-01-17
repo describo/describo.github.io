@@ -1,10 +1,10 @@
 <template>
-    <div class="flex flex-row space-x-8 border-b-2 p-8 text-2xl">
-        <div class="flex-grow"></div>
+    <div class="flex flex-row justify-around md:space-x-8 p-4 text-xs md:text-xl">
+        <div class="flex-grow hidden md:inline"></div>
         <div>
             <a href="https://github.com/describo" target="_blank" class="hover:text-orange-600">
                 <i class="fa-brands fa-github"></i>
-                Describo Organisation
+                Organisation
             </a>
         </div>
         <div>

@@ -1,22 +1,30 @@
 <template>
     <div class="flex flex-col">
-        <div class="text-xl px-10 text-center">
+        <div class="md:text-xl md:px-10 text-center">
             Describo Desktop is an application to describe your data. It creates Research Object
             Crate metadata.
         </div>
-        <el-carousel :interval="6000" type="card" height="500px" class="my-10">
+        <el-carousel :interval="6000" trigger="click" height="500px" class="hidden md:inline my-10">
             <el-carousel-item v-for="(item, idx) of data.carousel" :key="idx">
                 <el-card>
                     <div class="flex flex-col items-center">
                         <div>
-                            <el-image :src="item.image" style="height: 400px" />
+                            <el-image :src="item.image" style="height: 350px" />
                         </div>
-                        <div class="">{{ item.text }}</div>
+                        <div class="text-center">{{ item.text }}</div>
                     </div>
                 </el-card>
             </el-carousel-item>
         </el-carousel>
-        <ReleasesComponent />
+        <div class="visible md:hidden flex flex-col space-y-2">
+            <div v-for="(item, idx) of data.carousel" :key="idx">
+                <div>
+                    <el-image :src="item.image" />
+                </div>
+                <div class="text-center">{{ item.text }}</div>
+            </div>
+        </div>
+        <ReleasesComponent class="hidden md:inline" />
     </div>
 </template>
 
