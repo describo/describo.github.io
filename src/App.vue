@@ -1,29 +1,20 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <div class="flex flex-col text-gray-800 bg-stone-300">
+        <NavigationComponent />
+        <div class="flex flex-col items-center">
+            <DescriboHeaderComponent class="my-20" />
+            <div class="text-3xl p-10 text-center">
+                Describo is an ecosystem of tools, software components and services <br />to create
+                and manage Research Object Crates.
+            </div>
+
+            <DescriboDesktopComponent class="my-10" />
+        </div>
+    </div>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
+<script setup>
+import NavigationComponent from "./components/Navigation.component.vue";
+import DescriboHeaderComponent from "./components/DescriboHeader.component.vue";
+import DescriboDesktopComponent from "./components/DescriboDesktop.component.vue";
+</script>
