@@ -1,0 +1,60 @@
+<template>
+    <div class="flex flex-col space-y-10">
+        <div class="md:text-xl md:px-10 flex flex-row justify-around">
+            <div>
+                Learn more about data packs @
+                <a
+                    href="https://describo.github.io/data-packs/"
+                    target="_blank"
+                    class="hover:text-orange-600"
+                >
+                    https://describo.github.io/data-packs/
+                </a>
+            </div>
+        </div>
+        <div class="md:text-xl md:px-10 text-center flex flex-row justify-around items-center">
+            <div>
+                Data packs are canned JSON-LD configuration that Describo can look up and inject in
+                to the crate. Do you have canned JSON-LD information of a generic nature that might
+                be reusable by others? Issue a pull request to the repo to share your pack. Just
+                read the instructions for inclusion.
+            </div>
+        </div>
+        <div
+            class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
+        >
+            <div class="inline md:hidden">A datapack about countries.</div>
+            <div>
+                <el-image :src="Pack1" style="height: 350px" />
+            </div>
+            <div class="hidden md:w-1/2 md:inline">A datapack about countries.</div>
+        </div>
+        <div
+            class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
+        >
+            <div class="inline md:w-1/2">A data pack containing Austlang Language information.</div>
+            <div>
+                <el-image :src="Pack2" style="height: 350px" />
+            </div>
+        </div>
+        <div
+            class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
+        >
+            <div class="inline md:hidden">
+                A datapack containing Glottolog Language information.
+            </div>
+            <div>
+                <el-image :src="Pack3" style="height: 350px" />
+            </div>
+            <div class="hidden md:w-1/2 md:inline">
+                A datapack containing Glottolog Language information.
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup>
+import Pack1 from "../assets/describo-datapack-1.png";
+import Pack2 from "../assets/describo-datapack-2.png";
+import Pack3 from "../assets/describo-datapack-3.png";
+</script>
