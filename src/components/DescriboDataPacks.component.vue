@@ -21,7 +21,7 @@
             </div>
         </div>
         <div
-            class="md:text-xl md:px-10 text-center flex flex-col space-y-4 lg:flex-row lg:space-y-0 justify-around items-center"
+            class="md:text-xl md:px-10 text-center flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 justify-around items-center"
         >
             <div class="flex flex-col">
                 <div>A datapack about countries.</div>
