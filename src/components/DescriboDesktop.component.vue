@@ -14,7 +14,7 @@
                 <el-card>
                     <div class="flex flex-col items-center">
                         <div>
-                            <el-image :src="item.image" style="height: 350px" />
+                            <img :src="item.image" style="height: 350px" />
                         </div>
                         <div class="text-center">{{ item.text }}</div>
                     </div>
@@ -24,7 +24,7 @@
         <div class="visible md:hidden flex flex-col space-y-2">
             <div v-for="(item, idx) of data.carousel" :key="idx">
                 <div>
-                    <el-image :src="item.image" />
+                    <el-image :src="item.image" fit="contain" />
                 </div>
                 <div class="text-center">{{ item.text }}</div>
             </div>

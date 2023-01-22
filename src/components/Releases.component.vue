@@ -10,18 +10,18 @@
             </div>
             <div class="mt-10 flex flex-row justify-around">
                 <div class="hover:text-orange-600 cursor-pointer text-center">
-                    <a :href="data.download.windows">
+                    <a :href="data.download.windows" download class="hover:text-orange-600">
                         <i class="fa-brands fa-windows fa-8x"></i>
                     </a>
                 </div>
                 <div class="hover:text-orange-600 cursor-pointer text-center">
-                    <a :href="data.download.mac" download>
+                    <a :href="data.download.mac" download class="hover:text-orange-600">
                         <i class="fa-brands fa-apple fa-8x"></i>
                         <div>(Apple M processors only)</div>
                     </a>
                 </div>
                 <div class="hover:text-orange-600 cursor-pointer text-center">
-                    <a :href="data.download.linux">
+                    <a :href="data.download.linux" download class="hover:text-orange-600">
                         <i class="fa-brands fa-linux fa-8x"></i>
                     </a>
                 </div>
@@ -33,7 +33,7 @@
                 <a
                     href="https://github.com/describo/desktop/releases"
                     target="_blank"
-                    class="text-orange-600"
+                    class="hover:text-orange-600"
                     >https://github.com/describo/desktop/releases</a
                 >
             </div>

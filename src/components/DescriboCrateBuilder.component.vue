@@ -15,15 +15,15 @@
         <div
             class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
         >
-            <div class="md:w-1/2">
+            <div class="md:w-2/3">
                 Are you developing an application and want to embed the Describo crate building
                 component? This is a self contained, VueJS 3 component that you can embed into your
                 app. Load the RO crate file and optionally a profile, pass it to the component and
                 let the component manage the rest for you. When the data changes it will be emitted
                 back to your app for saving or handling as you wish.
             </div>
-            <div>
-                <el-image :src="Crate1" style="height: 350px" />
+            <div class="md:w-1/3">
+                <el-image :src="Crate1" style="height: 400px" fit="contain" />
             </div>
         </div>
         <div
@@ -33,10 +33,10 @@
                 There's also a read only mode where you can use the component to just display an RO
                 crate but disable all editing. Here's the crate rendered without a profile.
             </div>
-            <div>
-                <el-image :src="Crate2" style="height: 350px" />
+            <div class="md:w-1/3">
+                <el-image :src="Crate2" style="height: 400px" fit="contain" />
             </div>
-            <div class="hidden md:w-1/2 md:inline">
+            <div class="hidden md:w-2/3 md:inline p-4">
                 There's also a read only mode where you can use the component to just display an RO
                 crate but disable all editing. Here's the crate rendered without a profile.
             </div>
@@ -44,9 +44,9 @@
         <div
             class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
         >
-            <div class="md:w-1/2">And here it is with a profile.</div>
-            <div>
-                <el-image :src="Crate3" style="height: 350px" />
+            <div class="md:w-1/3">And here it is with a profile.</div>
+            <div class="md:w-1/3">
+                <el-image :src="Crate3" style="height: 400px" fit="contain" />
             </div>
         </div>
     </div>

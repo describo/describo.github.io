@@ -21,33 +21,25 @@
             </div>
         </div>
         <div
-            class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
+            class="md:text-xl md:px-10 text-center flex flex-col space-y-4 lg:flex-row lg:space-y-0 justify-around items-center"
         >
-            <div class="inline md:hidden">A datapack about countries.</div>
-            <div>
-                <el-image :src="Pack1" style="height: 350px" />
+            <div class="flex flex-col">
+                <div>A datapack about countries.</div>
+                <div>
+                    <el-image :src="Pack1" style="height: 350px" fit="contain" />
+                </div>
             </div>
-            <div class="hidden md:w-1/2 md:inline">A datapack about countries.</div>
-        </div>
-        <div
-            class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
-        >
-            <div class="inline md:w-1/2">A data pack containing Austlang Language information.</div>
-            <div>
-                <el-image :src="Pack2" style="height: 350px" />
+            <div class="flex flex-col">
+                <div class="">A data pack containing Austlang Language information.</div>
+                <div>
+                    <el-image :src="Pack2" style="height: 350px" fit="contain" />
+                </div>
             </div>
-        </div>
-        <div
-            class="md:text-xl md:px-10 text-center flex flex-col md:flex-row justify-around items-center"
-        >
-            <div class="inline md:hidden">
-                A datapack containing Glottolog Language information.
-            </div>
-            <div>
-                <el-image :src="Pack3" style="height: 350px" />
-            </div>
-            <div class="hidden md:w-1/2 md:inline">
-                A datapack containing Glottolog Language information.
+            <div class="flex flex-col">
+                <div>A datapack containing Glottolog Language information.</div>
+                <div>
+                    <el-image :src="Pack3" style="height: 350px" fit="contain" />
+                </div>
             </div>
         </div>
     </div>

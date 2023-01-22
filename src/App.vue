@@ -16,7 +16,7 @@
                         <template #label>
                             <div
                                 class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-700': data.activeTab === 'desktop' }"
+                                :class="{ 'text-blue-800': data.activeTab === 'desktop' }"
                             >
                                 Desktop
                             </div>
@@ -27,7 +27,7 @@
                         <template #label>
                             <div
                                 class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-700': data.activeTab === 'component' }"
+                                :class="{ 'text-blue-800': data.activeTab === 'component' }"
                             >
                                 Component
                             </div>
@@ -38,18 +38,18 @@
                         <template #label>
                             <div
                                 class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-700': data.activeTab === 'profile' }"
+                                :class="{ 'text-blue-800': data.activeTab === 'profile' }"
                             >
                                 Profile
                             </div>
                         </template>
-                        <DescriboProfileComponent class="md:my-10" />
+                        <DescriboProfileComponent class="md:m-10" />
                     </el-tab-pane>
                     <el-tab-pane label="Data Packs" name="datapacks">
                         <template #label>
                             <div
                                 class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-700': data.activeTab === 'datapacks' }"
+                                :class="{ 'text-blue-800': data.activeTab === 'datapacks' }"
                             >
                                 Data Packs
                             </div>
