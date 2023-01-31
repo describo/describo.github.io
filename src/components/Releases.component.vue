@@ -14,11 +14,27 @@
                         <i class="fa-brands fa-windows fa-8x"></i>
                     </a>
                 </div>
-                <div class="hover:text-orange-600 cursor-pointer text-center">
-                    <a :href="data.download.mac" download class="hover:text-orange-600">
-                        <i class="fa-brands fa-apple fa-8x"></i>
-                        <div>(Apple M processors only)</div>
-                    </a>
+                <div class="flex flex-row space-x-6">
+                    <div class="hover:text-orange-600 cursor-pointer text-center">
+                        <a
+                            :href="data.download.macArm"
+                            download
+                            class="flex flex-row hover:text-orange-600 items-center"
+                        >
+                            <i class="fa-brands fa-apple fa-8x"></i>
+                            <img :src="AppleMLogo" class="h-20 translate-y-3 translate-x-1" />
+                        </a>
+                    </div>
+                    <div class="hover:text-orange-600 cursor-pointer text-center">
+                        <a
+                            :href="data.download.macIntel"
+                            download
+                            class="flex flex-row hover:text-orange-600 items-center"
+                        >
+                            <i class="fa-brands fa-apple fa-8x"></i>
+                            <img :src="IntelLogo" class="h-12 translate-y-1" />
+                        </a>
+                    </div>
                 </div>
                 <div class="hover:text-orange-600 cursor-pointer text-center">
                     <a :href="data.download.linux" download class="hover:text-orange-600">
@@ -43,13 +59,16 @@
 
 <script setup>
 import { reactive, onMounted } from "vue";
+import AppleMLogo from "../assets/apple-m.jpeg";
+import IntelLogo from "../assets/intel.png";
 const data = reactive({
     release: undefined,
     latestReleaseURL: "https://api.github.com/repos/describo/desktop/releases/latest",
     baseUrl: `https://github.com/describo/desktop/releases/download/`,
     download: {
         windows: undefined,
-        mac: undefined,
+        macArm: undefined,
+        macIntel: undefined,
         linux: undefined,
     },
 });
@@ -60,14 +79,18 @@ onMounted(async () => {
             return;
         }
         data.release = await response.json();
-        data.download = {
-            windows: data.release?.assets.filter((asset) => asset.name.match(/win32-x64.*.zip/))[0]
-                .browser_download_url,
-            mac: data.release?.assets.filter((asset) => asset.name.match(/arm64.dmg/))[0]
-                .browser_download_url,
-            linux: data.release?.assets.filter((asset) => asset.name.match(/linux-x64.*.zip/))[0]
-                .browser_download_url,
-        };
+        data.download.windows = data.release?.assets.filter((asset) =>
+            asset.name.match(/win32-x64.*zip/)
+        )[0].browser_download_url;
+        data.download.macArm = data.release?.assets.filter((asset) =>
+            asset.name.match(/arm64.dmg/)
+        )[0].browser_download_url;
+        data.download.linux = data.release?.assets.filter((asset) =>
+            asset.name.match(/linux-x64.*zip/)
+        )[0].browser_download_url;
+        data.download.macIntel = data.release?.assets.filter((asset) =>
+            asset.name.match(/x64.dmg/)
+        )[0]?.browser_download_url;
     } catch (error) {
         data.release = undefined;
     }
