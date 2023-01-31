@@ -47,7 +47,7 @@
             <div>
                 Check out available releases @
                 <a
-                    href="https://github.com/describo/desktop/releases"
+                    href="https://github.com/describo/desktop/releases/latest"
                     target="_blank"
                     class="hover:text-orange-600"
                     >https://github.com/describo/desktop/releases</a
