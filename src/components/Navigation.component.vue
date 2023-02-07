@@ -9,7 +9,7 @@
         </div>
         <div>
             <a
-                href="https://github.com/describo/describo.github.io/discussions"
+                href="https://github.com/orgs/describo/discussions"
                 target="_blank"
                 class="hover:text-orange-600"
             >
@@ -19,7 +19,7 @@
         </div>
         <div>
             <a
-                href="https://github.com/describo/describo.github.io/discussions/categories/announcements"
+                href="https://github.com/orgs/describo/discussions/categories/announcements"
                 target="_blank"
                 class="hover:text-orange-600"
             >
