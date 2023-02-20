@@ -50,7 +50,7 @@
                     <p>
                         React developers, our friends in Hungary at
                         <a href="https://www.sztaki.hu/en/science/departments/dsd" target="_blank"
-                            >STZAKI - Department of Distributed Systems</a
+                            >SZTAKI - Department of Distributed Systems</a
                         >
                         extended the component to produce a web component that they then wrapped
                         into a nice, self contained, react component. Get it from:
