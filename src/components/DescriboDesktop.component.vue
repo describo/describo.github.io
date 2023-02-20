@@ -21,6 +21,15 @@
                 </el-card>
             </el-carousel-item>
         </el-carousel>
+        <div class="my-6 text-center text-2xl">
+            Report <i class="fa-solid fa-bug"></i> or ask
+            <i class="fa-regular fa-circle-question"></i> on the issue tracker:
+
+            <br />
+            <a href="https://github.com/describo/desktop/issues" target="_blank"
+                >https://github.com/describo/desktop/issues</a
+            >
+        </div>
         <div class="visible md:hidden flex flex-col space-y-2">
             <div v-for="(item, idx) of data.carousel" :key="idx">
                 <div>

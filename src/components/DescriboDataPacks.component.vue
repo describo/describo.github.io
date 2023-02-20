@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-10">
-        <div class="md:text-xl md:px-10 flex flex-row justify-around">
+        <div class="md:text-xl md:px-10 flex flex-col items-center">
             <div>
                 Learn more about data packs @
                 <a
@@ -10,6 +10,15 @@
                 >
                     https://describo.github.io/data-packs/
                 </a>
+            </div>
+            <div class="my-6 text-center text-2xl">
+                Report <i class="fa-solid fa-bug"></i> or ask
+                <i class="fa-regular fa-circle-question"></i> on the issue tracker:
+
+                <br />
+                <a href="https://github.com/describo/data-packs/issues" target="_blank"
+                    >https://github.com/describo/data-packs/issues</a
+                >
             </div>
         </div>
         <div class="md:text-xl md:px-10 text-center flex flex-row justify-around items-center">
