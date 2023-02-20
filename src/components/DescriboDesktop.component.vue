@@ -21,7 +21,7 @@
                 </el-card>
             </el-carousel-item>
         </el-carousel>
-        <div class="my-6 text-center text-2xl">
+        <div class="my-6 text-center md:text-xl">
             Report <i class="fa-solid fa-bug"></i> or ask
             <i class="fa-regular fa-circle-question"></i> on the issue tracker:
 
