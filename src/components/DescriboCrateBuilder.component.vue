@@ -1,8 +1,9 @@
 <template>
-    <div class="flex flex-col space-y-10">
+    <div class="flex flex-col space-y-2">
         <div class="md:text-xl md:px-10 flex flex-col items-center">
-            <div>
+            <div class="text-center">
                 Get the component from
+                <br />
                 <a
                     href="https://github.com/describo/crate-builder-component "
                     target="_blank"
@@ -11,7 +12,7 @@
                     https://github.com/describo/crate-builder-component
                 </a>
             </div>
-            <div class="my-6 text-center md:text-xl">
+            <div class="mt-6 text-center md:text-xl">
                 Report <i class="fa-solid fa-bug"></i> or ask
                 <i class="fa-regular fa-circle-question"></i> on the issue tracker:
 
@@ -44,7 +45,7 @@
         >
             <div class="flex flex-col items-center md:flex-row">
                 <div class="w-64 md:w-96">
-                    <el-image :src="reactLogo" class="h-20" />
+                    <el-image :src="reactLogo" class="h-20" fit="contain" />
                 </div>
                 <div>
                     <p>

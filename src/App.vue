@@ -77,3 +77,11 @@ const data = reactive({
     activeTab: "desktop",
 });
 </script>
+
+<style>
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+</style>

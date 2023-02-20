@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-10">
+    <div class="flex flex-col space-y-2">
         <div class="md:text-xl md:px-10 flex flex-col items-center">
             <div>
                 Learn more about profiles @
@@ -11,7 +11,7 @@
                     https://github.com/describo/profiles
                 </a>
             </div>
-            <div class="my-6 text-center md:text-xl">
+            <div class="mt-6 text-center md:text-xl">
                 Report <i class="fa-solid fa-bug"></i> or ask
                 <i class="fa-regular fa-circle-question"></i> on the issue tracker:
 
