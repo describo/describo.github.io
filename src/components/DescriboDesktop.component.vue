@@ -43,6 +43,7 @@ import Desktop1 from "../assets/describo-desktop-1.png";
 import Desktop2 from "../assets/describo-desktop-2.png";
 import Desktop3 from "../assets/describo-desktop-3.png";
 import Desktop4 from "../assets/describo-desktop-4.png";
+import Desktop5 from "../assets/describo-desktop-5.png";
 import ReleasesComponent from "./Releases.component.vue";
 
 const data = reactive({
@@ -57,10 +58,14 @@ const data = reactive({
         },
         {
             image: Desktop3,
-            text: "Select a profile. Describo's User Interface is driven by configuration and is adaptable by applying a profile.",
+            text: "Advanced UI controls to show Geo data and inspect links to entities.",
         },
         {
             image: Desktop4,
+            text: "Select a profile. Describo's User Interface is driven by configuration and is adaptable by applying a profile.",
+        },
+        {
+            image: Desktop5,
             text: "With the Research Object Crate Profile applied we get a tabbed interface with distinct properties showing.",
         },
     ],
