@@ -70,13 +70,14 @@ import DescriboDesktopComponent from "./DescriboDesktop.component.vue";
 import DescriboCrateBuilderComponent from "./DescriboCrateBuilder.component.vue";
 import DescriboProfileComponent from "./DescriboProfile.component.vue";
 import DescriboDataPacksComponent from "./DescriboDataPacks.component.vue";
-import { reactive, watch, onBeforeMount } from "vue";
+import { reactive, watch, onBeforeMount, onMounted, onBeforeUnmount } from "vue";
 import { useRoute, useRouter } from "vue-router";
 const $route = useRoute();
 const $router = useRouter();
 
 const data = reactive({
     activeTab: "desktop",
+    watcher: undefined,
 });
 
 onBeforeMount(() => {
@@ -85,6 +86,19 @@ onBeforeMount(() => {
     } else {
         data.activeTab = $route.name;
     }
+});
+
+onMounted(() => {
+    data.watcher = watch(
+        () => $route.path,
+        () => {
+            data.activeTab = $route.name;
+        }
+    );
+});
+
+onBeforeUnmount(() => {
+    watcher();
 });
 
 function updateRoute() {
