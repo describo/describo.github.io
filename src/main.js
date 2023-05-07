@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-free/js/all";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoReplaceSvg = "nest";
 import ShellComponent from "./components/Shell.component.vue";
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 
 import ElementPlus from "element-plus";
 import { createApp } from "vue";
@@ -25,7 +25,7 @@ const routes = [
 ];
 
 const router = createRouter({
-    history: createWebHistory("/"),
+    history: createWebHashHistory("/"),
     routes,
 });
 
