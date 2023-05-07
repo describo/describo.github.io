@@ -1,10 +1,5 @@
 <template>
     <div class="flex flex-col static">
-        <div
-            class="md:absolute bg-red-200 rounded-lg md:z-10 md:w-40 md:text-2xl md:mt-2 md:ml-2 p-4 text-center md:-rotate-45"
-        >
-            alpha
-        </div>
         <div class="md:text-xl md:px-40 lg:px-48 text-center">
             Describo Desktop is an application to describe your data. It creates Research Object
             Crate metadata.
