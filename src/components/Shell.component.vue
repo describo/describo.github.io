@@ -12,6 +12,22 @@
 
             <div class="px-4 mt-10">
                 <el-tabs v-model="data.activeTab" stretch @tab-change="updateRoute">
+                    <el-tab-pane label="Web" name="web">
+                        <template #label>
+                            <div
+                                class="md:text-4xl text-gray-800"
+                                :class="{ 'text-blue-800': data.activeTab === 'web' }"
+                            >
+                                Web
+                            </div>
+                        </template>
+                        <div class="py-4 text-xl">
+                            If you you just want to get started describing your data then use the
+                            online version. Currently, it only works in Google Chrome because the
+                            other browsers haven't yet implemented support for the functions it
+                            needs but it's coming!
+                        </div>
+                    </el-tab-pane>
                     <el-tab-pane label="Desktop" name="desktop">
                         <template #label>
                             <div
@@ -76,13 +92,13 @@ const $route = useRoute();
 const $router = useRouter();
 
 const data = reactive({
-    activeTab: "desktop",
+    activeTab: "web",
     watcher: undefined,
 });
 
 onBeforeMount(() => {
     if ($route.path === "/") {
-        $router.push("/desktop");
+        $router.push("/web");
     } else {
         data.activeTab = $route.name;
     }
@@ -98,7 +114,7 @@ onMounted(() => {
 });
 
 onBeforeUnmount(() => {
-    watcher();
+    data.watcher();
 });
 
 function updateRoute() {

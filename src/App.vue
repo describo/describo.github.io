@@ -1,15 +1,7 @@
 <template>
-    <div class="container mx-auto">
+    <div class="">
         <router-view />
     </div>
 </template>
 
 <script setup></script>
-
-<style>
-@media (min-width: 1536px) {
-    .container {
-        max-width: 1024px;
-    }
-}
-</style>
