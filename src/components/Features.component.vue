@@ -145,7 +145,7 @@
                     <div>
                         <i class="fa-solid fa-star text-yellow-400 fa-4x"></i>
                     </div>
-                    <div>(It's ok if you want to start the other repo's too!)</div>
+                    <div>(It's ok if you want to star the other repo's too!)</div>
                 </div>
             </template>
         </InfoPanelComponent>
