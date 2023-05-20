@@ -1,80 +1,46 @@
 <template>
-    <div class="container mx-auto">
-        <div class="flex flex-col text-gray-800">
-            <NavigationComponent />
-            <div class="flex flex-col items-center">
-                <DescriboHeaderComponent class="my-4 md:my-10" />
-                <div class="md:text-2xl md:px-10 text-center">
-                    Describo is an ecosystem of tools, software components and services to create
-                    and manage Research Object Crates.
-                </div>
+    <div class="flex flex-col text-gray-800">
+        <NavigationComponent />
+        <div class="flex flex-col items-center space-y-10">
+            <DescriboHeaderComponent class="my-4 md:my-10" />
+            <div class="md:text-2xl md:px-10 text-center">
+                Describo is an ecosystem of tools, software components and services <br />to create
+                and manage
+                <a href="https://www.researchobject.org/ro-crate/specification.html" target="_blank"
+                    >Research Object Crates</a
+                >.
             </div>
 
-            <div class="px-4 mt-10">
-                <el-tabs v-model="data.activeTab" stretch @tab-change="updateRoute">
-                    <el-tab-pane label="Web" name="web">
-                        <template #label>
-                            <div
-                                class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-800': data.activeTab === 'web' }"
-                            >
-                                Web
-                            </div>
-                        </template>
-                        <div class="py-4 text-xl">
-                            If you you just want to get started describing your data then use the
-                            online version. Currently, it only works in Google Chrome because the
-                            other browsers haven't yet implemented support for the functions it
-                            needs but it's coming!
-                        </div>
-                    </el-tab-pane>
-                    <el-tab-pane label="Desktop" name="desktop">
-                        <template #label>
-                            <div
-                                class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-800': data.activeTab === 'desktop' }"
-                            >
-                                Desktop
-                            </div>
-                        </template>
-                        <DescriboDesktopComponent class="md:my-10" />
-                    </el-tab-pane>
-                    <el-tab-pane label="Component" name="component">
-                        <template #label>
-                            <div
-                                class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-800': data.activeTab === 'component' }"
-                            >
-                                Component
-                            </div>
-                        </template>
-                        <DescriboCrateBuilderComponent class="md:my-10" />
-                    </el-tab-pane>
-                    <el-tab-pane label="Profile" name="profile">
-                        <template #label>
-                            <div
-                                class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-800': data.activeTab === 'profile' }"
-                            >
-                                Profile
-                            </div>
-                        </template>
-                        <DescriboProfileComponent class="md:m-10" />
-                    </el-tab-pane>
-                    <el-tab-pane label="Data Packs" name="datapacks">
-                        <template #label>
-                            <div
-                                class="md:text-4xl text-gray-800"
-                                :class="{ 'text-blue-800': data.activeTab === 'datapacks' }"
-                            >
-                                Data Packs
-                            </div>
-                        </template>
-                        <DescriboDataPacksComponent class="md:my-10" />
-                    </el-tab-pane>
-                </el-tabs>
+            <div class="flex flex-row space-x-4 flex-grow justify-between text-xl my-10">
+                <div class="flex flex-col space-y-2 w-1/2 text-center">
+                    <div>
+                        <i class="fa-solid fa-user fa-4x text-blue-600"></i>
+                    </div>
+                    <div>Are you a user wanting to describe your data?</div>
+                    <div>
+                        Try
+                        <router-link to="/web" class="hover:text-orange-600"
+                            >the web version</router-link
+                        >
+                        or the
+                        <router-link to="/desktop" class="hover:text-orange-600"
+                            >desktop application.</router-link
+                        >
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-2 w-1/2 text-center">
+                    <div>
+                        <i class="fa-solid fa-code fa-4x text-orange-500"></i>
+                    </div>
+                    <div>Are you a developer and want to embed the describo engine your app?</div>
+                    <div>
+                        <router-link to="/component" class="hover:text-orange-600"
+                            >Find out more.
+                        </router-link>
+                    </div>
+                </div>
             </div>
-            <div class="h-20"></div>
+            <FeaturesComponent />
         </div>
     </div>
 </template>
@@ -82,50 +48,5 @@
 <script setup>
 import NavigationComponent from "./Navigation.component.vue";
 import DescriboHeaderComponent from "./DescriboHeader.component.vue";
-import DescriboDesktopComponent from "./DescriboDesktop.component.vue";
-import DescriboCrateBuilderComponent from "./DescriboCrateBuilder.component.vue";
-import DescriboProfileComponent from "./DescriboProfile.component.vue";
-import DescriboDataPacksComponent from "./DescriboDataPacks.component.vue";
-import { reactive, watch, onBeforeMount, onMounted, onBeforeUnmount } from "vue";
-import { useRoute, useRouter } from "vue-router";
-const $route = useRoute();
-const $router = useRouter();
-
-const data = reactive({
-    activeTab: "web",
-    watcher: undefined,
-});
-
-onBeforeMount(() => {
-    if ($route.path === "/") {
-        $router.push("/web");
-    } else {
-        data.activeTab = $route.name;
-    }
-});
-
-onMounted(() => {
-    data.watcher = watch(
-        () => $route.path,
-        () => {
-            data.activeTab = $route.name;
-        }
-    );
-});
-
-onBeforeUnmount(() => {
-    data.watcher();
-});
-
-function updateRoute() {
-    $router.push(`/${data.activeTab}`);
-}
+import FeaturesComponent from "./Features.component.vue";
 </script>
-
-<style>
-@media (min-width: 1536px) {
-    .container {
-        max-width: 1024px;
-    }
-}
-</style>

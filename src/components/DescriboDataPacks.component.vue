@@ -1,61 +1,58 @@
 <template>
-    <div class="flex flex-col space-y-10">
-        <div class="md:text-xl md:px-10 flex flex-col items-center">
-            <div>
-                Learn more about data packs @
-                <a
-                    href="https://describo.github.io/data-packs/"
-                    target="_blank"
-                    class="hover:text-orange-600"
+    <div class="flex flex-col space-y-20">
+        <NavigationComponent />
+        <InfoPanelComponent>
+            <template #title>Data Packs</template>
+            <template #text>
+                <div class="flex flex-col space-y-4">
+                    <div>
+                        Data packs contain JSON-LD configuration that Describo can look up and
+                        inject in to the crate.
+                    </div>
+                    <div>
+                        Do you have JSON-LD information of a generic nature that might be reusable
+                        by others? Issue a pull request to the repo to share your pack. Just read
+                        the instructions for inclusion.
+                    </div>
+                </div>
+            </template>
+            <template #content>
+                <RepositoryLinksComponent
+                    repositoryText="Learn more about data packs"
+                    repositoryLink="https://github.com/describo/data-packs"
+                    issueTrackerLink="https://github.com/describo/data-packs/issues"
                 >
-                    https://describo.github.io/data-packs/
-                </a>
-            </div>
-            <div class="mt-6 text-center md:text-xl">
-                Report <i class="fa-solid fa-bug"></i> or ask
-                <i class="fa-regular fa-circle-question"></i> on the issue tracker:
+                </RepositoryLinksComponent>
+            </template>
+        </InfoPanelComponent>
 
-                <br />
-                <a href="https://github.com/describo/data-packs/issues" target="_blank"
-                    >https://github.com/describo/data-packs/issues</a
-                >
-            </div>
-        </div>
-        <div class="md:text-xl md:px-10 text-center flex flex-row justify-around items-center">
-            <div>
-                Data packs are canned JSON-LD configuration that Describo can look up and inject in
-                to the crate. Do you have canned JSON-LD information of a generic nature that might
-                be reusable by others? Issue a pull request to the repo to share your pack. Just
-                read the instructions for inclusion.
-            </div>
-        </div>
-        <div
-            class="md:text-xl md:px-10 text-center flex flex-col space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4 justify-around items-center"
-        >
-            <div class="flex flex-col">
-                <div>A datapack about countries.</div>
-                <div>
-                    <el-image :src="Pack1" style="height: 350px" fit="contain" />
+        <InfoPanelComponent>
+            <template #title>Country Data</template>
+            <template #content>
+                <div class="flex flex-row space-x-2">
+                    <el-image :src="pack1" style="height: 400px" fit="contain" />
                 </div>
-            </div>
-            <div class="flex flex-col">
-                <div class="">A data pack containing Austlang Language information.</div>
-                <div>
-                    <el-image :src="Pack2" style="height: 350px" fit="contain" />
+            </template>
+        </InfoPanelComponent>
+
+        <InfoPanelComponent>
+            <template #title>Language Data</template>
+            <template #text>Language datasets from Austlang and Glottolog</template>
+            <template #content>
+                <div class="flex flex-row space-x-2">
+                    <el-image :src="pack2" style="height: 400px" fit="contain" />
+                    <el-image :src="pack3" style="height: 400px" fit="contain" />
                 </div>
-            </div>
-            <div class="flex flex-col">
-                <div>A datapack containing Glottolog Language information.</div>
-                <div>
-                    <el-image :src="Pack3" style="height: 350px" fit="contain" />
-                </div>
-            </div>
-        </div>
+            </template>
+        </InfoPanelComponent>
     </div>
 </template>
 
 <script setup>
-import Pack1 from "../assets/describo-datapack-1.png";
-import Pack2 from "../assets/describo-datapack-2.png";
-import Pack3 from "../assets/describo-datapack-3.png";
+import InfoPanelComponent from "./InfoPanel.component.vue";
+import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
+import NavigationComponent from "./Navigation.component.vue";
+import pack1 from "../assets/pack-1.png";
+import pack2 from "../assets/pack-2.png";
+import pack3 from "../assets/pack-3.png";
 </script>
