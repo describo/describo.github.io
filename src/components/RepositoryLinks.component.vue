@@ -20,11 +20,9 @@ import LinkComponent from "./Link.component.vue";
 const props = defineProps({
     repositoryText: {
         type: String,
-        required: true,
     },
     repositoryLink: {
         type: String,
-        required: true,
     },
     issueTrackerLink: {
         type: String,

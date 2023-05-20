@@ -83,14 +83,15 @@ onMounted(async () => {
         )[0].browser_download_url;
         data.download.macArm = data.release?.assets.filter((asset) =>
             asset.name.match(/arm64.dmg/)
-        )[0].browser_download_url;
+        )?.[0]?.browser_download_url;
         data.download.linux = data.release?.assets.filter((asset) =>
             asset.name.match(/linux-x64.*zip/)
-        )[0].browser_download_url;
+        )?.[0]?.browser_download_url;
         data.download.macIntel = data.release?.assets.filter((asset) =>
             asset.name.match(/x64.dmg/)
-        )[0]?.browser_download_url;
+        )?.[0]?.browser_download_url;
     } catch (error) {
+        console.log(error);
         data.release = undefined;
     }
 });
