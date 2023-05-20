@@ -15,6 +15,19 @@
         </InfoPanelComponent>
 
         <InfoPanelComponent>
+            <template #title>Documentation</template>
+            <template #text>
+                <div>
+                    Detailed documentation on how to create your own profile can be found in the
+                    repository.
+                </div>
+            </template>
+            <template #content>
+                <link-component link="https://github.com/describo/profiles#profile-documentation" />
+            </template>
+        </InfoPanelComponent>
+
+        <InfoPanelComponent>
             <template #title>View profile examples</template>
             <template #text>
                 <div>
@@ -23,12 +36,9 @@
                 </div>
             </template>
             <template #content>
-                <a
-                    href="https://github.com/describo/profiles/tree/master/domain-profiles"
-                    target="_blank"
-                >
-                    https://github.com/describo/profiles/tree/master/domain-profiles
-                </a>
+                <link-component
+                    link="https://github.com/describo/profiles/tree/master/domain-profiles"
+                />
             </template>
         </InfoPanelComponent>
         <InfoPanelComponent :image="profile2">

@@ -32,7 +32,9 @@
                     <div>
                         <i class="fa-solid fa-code fa-4x text-orange-500"></i>
                     </div>
-                    <div>Are you a developer and want to embed the describo engine your app?</div>
+                    <div>
+                        Are you a developer and want to embed the describo engine in your app?
+                    </div>
                     <div>
                         <router-link to="/component" class="hover:text-orange-600"
                             >Find out more.
