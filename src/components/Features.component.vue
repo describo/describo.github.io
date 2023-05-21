@@ -1,13 +1,13 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <div class="text-5xl text-center">describo features</div>
-        <InfoPanelComponent :image="describo1">
-            <template #title>Flexible and Adaptable</template>
+        <InfoPanelComponent>
+            <template #title>Flexible, Adaptable and Fast</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
                     <div>
                         Describo adapts to the shape of your data. Provided it's an RO crate
-                        Describo will work with it.
+                        Describo will work with it. And it's fast! Describo can work with crates
+                        containing ten's of thousand's of entities.
                     </div>
                     <div>
                         By default, Describo allows you describe a folder of content using all of
@@ -26,24 +26,15 @@
                     </div>
                 </div>
             </template>
-            <template #content> </template>
-        </InfoPanelComponent>
-
-        <InfoPanelComponent>
-            <template #title>Scalable and Fast</template>
-            <template #text>
-                <div class="flex flex-col space-y-4">
-                    <div>Describo can handle crates with ten's of thousands of entities.</div>
-                </div>
-            </template>
             <template #content>
                 <video controls autoplay loop>
-                    <source :src="describo10" type="video/mp4" /></video
-            ></template>
+                    <source :src="describo10" type="video/mp4" />
+                </video>
+            </template>
         </InfoPanelComponent>
 
         <InfoPanelComponent>
-            <template #title>Controls for all your data types</template>
+            <template #title>Controls for all of your data types</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
                     <div>
@@ -69,18 +60,33 @@
         </InfoPanelComponent>
 
         <InfoPanelComponent>
-            <template #title>Add properties, view reverse links</template>
+            <template #title>Add properties for the entity you are working on</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
-                    <div>Add properties and use them to describe your data.</div>
+                    <div>
+                        Describo looks up schema.org and your profile to show you what you can
+                        describe.
+                    </div>
+                </div>
+            </template>
+            <template #content>
+                <div class="flex flex-col space-y-2">
+                    <el-image :src="describo4" style="height: 400px" fit="contain" />
+                </div>
+            </template>
+        </InfoPanelComponent>
+
+        <InfoPanelComponent>
+            <template #title>View reverse links</template>
+            <template #text>
+                <div class="flex flex-col space-y-4">
                     <div>
                         See what your entities link to. Describo is a browser for your network data.
                     </div>
                 </div>
             </template>
             <template #content>
-                <div class="flex flex-row space-x-2">
-                    <el-image :src="describo4" style="height: 400px" fit="contain" />
+                <div class="flex flex-col space-y-2">
                     <el-image :src="describo3" style="height: 400px" fit="contain" />
                 </div>
             </template>
