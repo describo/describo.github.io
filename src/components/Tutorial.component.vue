@@ -165,10 +165,10 @@
                 <div class="flex flex-col space-y-4">
                     <div>
                         Well done, you created an RO-Crate by describing your data in a standard,
-                        conformant way!
+                        spec compliant way!
                     </div>
                     <div class="text-center">
-                        <i class="fa-solid fa-star text-yellow-500 fa-4x"></i>
+                        <i class="fa-solid fa-champagne-glasses text-yellow-500 fa-4x"></i>
                     </div>
                 </div>
             </template>
