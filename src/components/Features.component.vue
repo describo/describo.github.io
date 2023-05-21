@@ -10,7 +10,7 @@
                         containing ten's of thousand's of entities.
                     </div>
                     <div>
-                        By default, Describo allows you describe a folder of content using all of
+                        By default, Describo allows you to describe a folder of content using all of
                         Schema.org.
                     </div>
                     <div>
@@ -42,11 +42,11 @@
                         users can put in. Describo takes care of this by showing controls for the
                         type of data expected.
                     </div>
-                    <div>Autocomplete lets you look up datasources outside of this crate.</div>
                     <div>
                         Need a link to an entity? Get the enitity link control. Need a geography?
                         Get the geo selector that allows you to define an area or select a point.
                     </div>
+                    <div>Autocomplete lets you look up datasources outside of this crate.</div>
                 </div>
             </template>
             <template #content>
