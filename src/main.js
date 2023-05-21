@@ -9,6 +9,7 @@ import DesktopComponent from "./components/DescriboDesktop.component.vue";
 import CrateBuilderComponent from "./components/DescriboCrateBuilder.component.vue";
 import ProfileComponent from "./components/DescriboProfile.component.vue";
 import DataPackComponent from "./components/DescriboDataPacks.component.vue";
+import TutorialComponent from "./components/Tutorial.component.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import ElementPlus from "element-plus";
@@ -26,6 +27,7 @@ const routes = [
     { name: "component", path: "/component", component: CrateBuilderComponent },
     { name: "profile", path: "/profile", component: ProfileComponent },
     { name: "datapacks", path: "/datapacks", component: DataPackComponent },
+    { name: "tutorial", path: "/tutorial", component: TutorialComponent },
 ];
 
 const router = createRouter({

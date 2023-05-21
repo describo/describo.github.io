@@ -11,8 +11,10 @@
                 >.
             </div>
 
-            <div class="flex flex-row space-x-4 flex-grow justify-between text-xl my-10">
-                <div class="flex flex-col space-y-2 w-1/2 text-center">
+            <div
+                class="flex flex-col lg:flex-row space-x-4 flex-grow justify-between text-xl my-10"
+            >
+                <div class="flex flex-col space-y-2 w-full lg:w-1/2 text-center">
                     <div>
                         <i class="fa-solid fa-user fa-4x text-blue-600"></i>
                     </div>
@@ -27,8 +29,14 @@
                             >desktop application.</router-link
                         >
                     </div>
+                    <div class="p-8">
+                        Need help getting started?
+                        <router-link to="/tutorial" class="hover:text-orange-600 text-2xl">
+                            <span class="">See the tutorial.</span>
+                        </router-link>
+                    </div>
                 </div>
-                <div class="flex flex-col space-y-2 w-1/2 text-center">
+                <div class="flex flex-col space-y-2 w-full lg:w-1/2 text-center">
                     <div>
                         <i class="fa-solid fa-code fa-4x text-orange-500"></i>
                     </div>
