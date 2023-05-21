@@ -68,6 +68,12 @@
                         />
                         &nbsp;<i class="fa-solid fa-arrow-up-right-from-square"></i>
                     </div>
+                    <div></div>
+                    <div class="flex flex-row space-x-2">
+                        <div class="">(Remember, it only works in Google Chrome for now.</div>
+                        <el-image :src="chrome" style="height: 30px" fit="contain" />
+                        )
+                    </div>
                     <div>In the application, select a folder to describe.</div>
                 </div>
             </template>
@@ -170,6 +176,7 @@
 import NavigationComponent from "./Navigation.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import LinkComponent from "./Link.component.vue";
+import chrome from "../assets/chrome.png";
 import tutorial1 from "../assets/tutorial-1.png";
 import tutorial2 from "../assets/tutorial-2.png";
 import tutorial3 from "../assets/tutorial-3.png";
