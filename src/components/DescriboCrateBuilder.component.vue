@@ -31,7 +31,6 @@
             <template #title>React Developers</template>
             <template #text>
                 <div class="flex flex-row space-x-2">
-                    <div><el-image :src="reactLogo" fit="contain" style="width: 80px" /></div>
                     <div>
                         Our friends in Hungary at<br />
                         <link-component
@@ -45,7 +44,12 @@
                 </div>
             </template>
             <template #content>
-                <link-component link="https://github.com/describo/crate-builder-component-react" />
+                <div class="flex flex-col space-y-2 items-center">
+                    <div><el-image :src="reactLogo" fit="contain" style="height: 120px" /></div>
+                    <link-component
+                        link="https://github.com/describo/crate-builder-component-react"
+                    />
+                </div>
             </template>
         </InfoPanelComponent>
 
