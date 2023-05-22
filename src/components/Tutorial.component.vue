@@ -117,6 +117,25 @@
                         view that contains the absolute bare minimum required to describe your data
                         as an RO-Crate.
                     </div>
+                    <div>Useful information:</div>
+                    <div>
+                        <link-component
+                            text="Root data entity"
+                            link="https://www.researchobject.org/ro-crate/1.1/root-data-entity.html"
+                        />
+                    </div>
+                    <div>
+                        <link-component
+                            text="Contextual entities"
+                            link="https://www.researchobject.org/ro-crate/1.1/contextual-entities.html"
+                        />
+                    </div>
+                    <div>
+                        <link-component
+                            text="Data entities"
+                            link="https://www.researchobject.org/ro-crate/1.1/data-entities.html"
+                        />
+                    </div>
                 </div>
             </template>
             <template #content> </template>

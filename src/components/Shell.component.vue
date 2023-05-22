@@ -32,7 +32,7 @@
                     <div class="p-8">
                         Need help getting started?
                         <router-link to="/tutorial" class="hover:text-orange-600 text-2xl">
-                            <span class="">See the tutorial.</span>
+                            <span class="">Try the 5 minute tutorial.</span>
                         </router-link>
                     </div>
                 </div>
