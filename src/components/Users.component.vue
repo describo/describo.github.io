@@ -3,7 +3,15 @@
         <NavigationComponent />
 
         <InfoPanelComponent>
-            <template #title>Nyingarn Workspace</template>
+            <template #title>
+                <div class="flex flex-row space-x-4">
+                    <div class="">Nyingarn Workspace</div>
+                    <div class="flex flex-row space-x-2">
+                        <el-image :src="auFlag" style="height: 40px" fit="contain" />
+                        <el-image :src="aboriginalFlag" style="height: 40px" fit="contain" />
+                    </div>
+                </div>
+            </template>
             <template #text>
                 <div class="flex flex-col space-y-4">
                     <div>
@@ -49,7 +57,14 @@
         </InfoPanelComponent>
 
         <InfoPanelComponent>
-            <template #title>AROMA - the ARP RO-Crate Manager</template>
+            <template #title>
+                <div class="flex flex-row space-x-2">
+                    <div class="">AROMA - the ARP RO-Crate Manager</div>
+                    <div>
+                        <el-image :src="huFlag" style="height: 40px" fit="contain" />
+                    </div>
+                </div>
+            </template>
             <template #text>
                 <div class="flex flex-col space-y-4">
                     <div>
@@ -101,6 +116,9 @@
 import NavigationComponent from "./Navigation.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import LinkComponent from "./Link.component.vue";
+import aboriginalFlag from "../assets/flag-aboriginal.png";
+import auFlag from "../assets/flag-au.png";
+import huFlag from "../assets/flag-hu.png";
 import aroma1 from "../assets/users-aroma-standalone.png";
 import aroma2 from "../assets/users-aroma-in-dataverse.png";
 import nyingarn1 from "../assets/users-nyingarn.png";
