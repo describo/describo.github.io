@@ -1,5 +1,7 @@
 <template>
     <div class="flex flex-col space-y-20">
+        <div class="text-2xl">Features</div>
+
         <InfoPanelComponent>
             <template #title>Flexible, Adaptable and Fast</template>
             <template #text>

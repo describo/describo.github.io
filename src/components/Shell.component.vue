@@ -50,7 +50,16 @@
                     </div>
                 </div>
             </div>
-            <FeaturesComponent />
+
+            <div class="flex flex-col md:flex-row items-center text-4xl">
+                <div>
+                    <i class="fa-solid fa-users-rectangle"></i>
+                    &nbsp;
+                </div>
+                <RouterLink to="/describo-users"> See who's using describo. </RouterLink>
+            </div>
+
+            <FeaturesComponent class="border-t border-gray-600 pt-10" />
         </div>
     </div>
 </template>
@@ -59,4 +68,5 @@
 import NavigationComponent from "./Navigation.component.vue";
 import DescriboHeaderComponent from "./DescriboHeader.component.vue";
 import FeaturesComponent from "./Features.component.vue";
+import InfoPanelComponent from "./InfoPanel.component.vue";
 </script>

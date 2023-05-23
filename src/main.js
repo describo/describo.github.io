@@ -10,6 +10,7 @@ import CrateBuilderComponent from "./components/DescriboCrateBuilder.component.v
 import ProfileComponent from "./components/DescriboProfile.component.vue";
 import DataPackComponent from "./components/DescriboDataPacks.component.vue";
 import TutorialComponent from "./components/Tutorial.component.vue";
+import UsersComponent from "./components/Users.component.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import ElementPlus from "element-plus";
@@ -22,6 +23,7 @@ const routes = [
         name: "root",
         component: ShellComponent,
     },
+    { name: "users", path: "/describo-users", component: UsersComponent },
     { name: "web", path: "/web", component: WebComponent },
     { name: "desktop", path: "/desktop", component: DesktopComponent },
     { name: "component", path: "/component", component: CrateBuilderComponent },
