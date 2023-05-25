@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col md:flex-row items-center text-4xl">
+            <div class="flex flex-row items-center text-xl md:text-4xl">
                 <div>
                     <i class="fa-solid fa-users-rectangle"></i>
                     &nbsp;
