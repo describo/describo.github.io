@@ -2,7 +2,7 @@
     <div class="flex flex-col space-y-20">
         <NavigationComponent />
 
-        <InfoPanelComponent :image="desktop1">
+        <InfoPanelComponent :image="describo">
             <template #title>Describo Desktop</template>
             <template #text>
                 <div>
@@ -45,7 +45,7 @@
 import NavigationComponent from "./Navigation.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
-import desktop1 from "../assets/describo-1.png";
+import describo from "../assets/describo-ui.png";
 import desktop2 from "../assets/desktop-1.png";
 import ReleasesComponent from "./Releases.component.vue";
 </script>

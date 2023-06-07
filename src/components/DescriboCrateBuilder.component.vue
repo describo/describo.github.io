@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col space-y-20">
         <NavigationComponent />
-        <InfoPanelComponent :image="describo1">
+        <InfoPanelComponent :image="describo">
             <template #title>Embed the describo engine in your application</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -71,6 +71,6 @@ import NavigationComponent from "./Navigation.component.vue";
 import LinkComponent from "./Link.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 
-import describo1 from "../assets/describo-1.png";
+import describo from "../assets/describo-ui.png";
 import reactLogo from "../assets/react-logo.png";
 </script>

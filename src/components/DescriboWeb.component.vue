@@ -2,7 +2,7 @@
     <div class="flex flex-col space-y-20">
         <NavigationComponent />
 
-        <InfoPanelComponent :image="describo1">
+        <InfoPanelComponent :image="describo">
             <template #title>Get started quickly</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -47,6 +47,6 @@ import InfoPanelComponent from "./InfoPanel.component.vue";
 import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
 import LinkComponent from "./Link.component.vue";
 import NavigationComponent from "./Navigation.component.vue";
-import describo1 from "../assets/describo-1.png";
+import describo from "../assets/describo-web.png";
 import image2 from "../assets/chrome.png";
 </script>
