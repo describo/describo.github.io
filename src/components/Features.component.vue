@@ -153,14 +153,16 @@
             <template #text>
                 <div class="flex flex-col space-y-4">
                     <div>
-                        Yellow boxes navigate to the linked entity and with a profile you can tell
+                        Blue boxes navigate to the linked entity and with a profile you can tell
                         Describo to resolve the paths from the linked entity as well. This is
                         especially useful for complex entities like relationships and actions that
                         link other entities together into a narrative.
                     </div>
                     <div>
-                        In this example we can see the source and target of the linked
-                        relationships.
+                        In this example we can see the source and target of the linked relationships
+                        as well as the object, participant and agent of the CreateAction. The
+                        properties to resolve and the entities for which they resolve is all
+                        configurable in the profile so you can adapt it to the shape of your data.
                     </div>
                 </div>
             </template>
