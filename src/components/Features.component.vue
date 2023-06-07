@@ -96,7 +96,7 @@
             <template #text>
                 <div class="flex flex-col space-y-4">
                     <div>
-                        Describo supports theming with the full support of
+                        The Describo component supports theming with the full support of
                         <a href="https://tailwindcss.com/" target="_blank">TailwindCSS</a>. We
                         understand that you might not like the colour choices we made so we're
                         adding support for you to override them. If you find you want to restyle
@@ -110,7 +110,10 @@
                             >https://github.com/describo/crate-builder-component#themes</a
                         >
                     </div>
-                    <div>And we won't judge you. Colour it how you want. Even pink and yellow!</div>
+                    <div>
+                        And we won't judge you. Colour it how you want. Even purple and yellow if
+                        that's your thing!
+                    </div>
                 </div>
             </template>
         </InfoPanelComponent>
