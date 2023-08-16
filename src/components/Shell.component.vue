@@ -6,9 +6,16 @@
             <div class="md:text-2xl md:px-10 text-center">
                 Describo is an ecosystem of tools, software components and services <br />to create
                 and manage
-                <a href="https://www.researchobject.org/ro-crate/specification.html" target="_blank"
-                    >Research Object Crates</a
+                <a
+                    href="https://www.researchobject.org/ro-crate/specification.html"
+                    target="_blank"
+                >
+                    Research Object Crates </a
                 >.
+            </div>
+
+            <div class="md:text-xl">
+                <router-link to="/history"> Where did Describo come from? </router-link>
             </div>
 
             <div
@@ -68,5 +75,4 @@
 import NavigationComponent from "./Navigation.component.vue";
 import DescriboHeaderComponent from "./DescriboHeader.component.vue";
 import FeaturesComponent from "./Features.component.vue";
-import InfoPanelComponent from "./InfoPanel.component.vue";
 </script>
