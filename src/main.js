@@ -11,7 +11,7 @@ import ProfileComponent from "./components/DescriboProfile.component.vue";
 import DataPackComponent from "./components/DescriboDataPacks.component.vue";
 import TutorialComponent from "./components/Tutorial.component.vue";
 import UsersComponent from "./components/Users.component.vue";
-import HistoryComponent from "./components/History.component.vue";
+import AboutComponent from "./components/About.component.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 
 import ElementPlus from "element-plus";
@@ -31,7 +31,7 @@ const routes = [
     { name: "profile", path: "/profile", component: ProfileComponent },
     { name: "datapacks", path: "/datapacks", component: DataPackComponent },
     { name: "tutorial", path: "/tutorial", component: TutorialComponent },
-    { name: "history", path: "/history", component: HistoryComponent },
+    { name: "about", path: "/about", component: AboutComponent },
 ];
 
 const router = createRouter({

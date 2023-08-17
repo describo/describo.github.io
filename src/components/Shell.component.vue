@@ -14,10 +14,6 @@
                 >.
             </div>
 
-            <div class="md:text-xl">
-                <router-link to="/history"> Where did Describo come from? </router-link>
-            </div>
-
             <div
                 class="flex flex-col lg:flex-row space-x-4 flex-grow justify-between text-xl my-10"
             >

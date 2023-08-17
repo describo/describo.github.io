@@ -2,7 +2,6 @@
     <div class="flex flex-col space-y-10">
         <NavigationComponent />
 
-        <div class="text-xl">Describo History</div>
         <InfoPanelComponent>
             <template #text> January - May 2020: UTS </template>
             <template #content>
