@@ -1,17 +1,17 @@
 <template>
-    <div class="md:text-lg flex flex-col lg:flex-row justify-around items-center">
-        <div class="w-full lg:w-2/5 p-2">
+    <div
+        class="md:text-lg flex flex-col lg:flex-row justify-around items-center lg:border-b lg:border-gray-600"
+    >
+        <div class="w-full lg:w-2/5">
             <div class="text-gray-800 text-2xl mb-10">
                 <slot name="title"></slot>
             </div>
 
-            <div class="text-gray-600 lg:text-lg">
+            <div class="text-gray-600 lg:text-2xl">
                 <slot name="text"></slot>
             </div>
         </div>
-        <div
-            class="w-full lg:w-3/5 flex flex-row justify-around lg:border-l lg:border-gray-600 p-6"
-        >
+        <div class="w-full lg:w-3/5 flex flex-row justify-around p-6">
             <el-image
                 :src="props.image"
                 :style="imageStyles"

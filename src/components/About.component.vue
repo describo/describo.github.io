@@ -3,43 +3,53 @@
         <NavigationComponent />
 
         <InfoPanelComponent>
-            <template #text> January - May 2020: UTS </template>
+            <template #text>
+                <div>January - May 2020: UTS</div>
+                <div class="my-10">
+                    Funded by:&nbsp;
+                    <a href="https://www.uts.edu.au/" target="_blank"><img :src="utsLogo" /></a>
+                </div>
+            </template>
             <template #content>
                 <div class="flex flex-col space-y-4">
                     <div>
                         Peter Sefton (Technical Lead) engaged Marco La Rosa (Full stack developer
-                        and designer) to build the first proof of concept Describo application.
-                        Peter, a co-editor of the RO Crate specification, envisaged a tool that
-                        would enable users to create valid, spec compliant RO Crates. Initial
-                        consultation with his team at UTS and other collaborators led to the
-                        creation of the Describo Desktop application as per his design.
+                        and Software Architect) to build the first proof of concept Describo
+                        application. Peter, a co-editor of the RO Crate specification, envisaged a
+                        tool that would enable users to create valid, spec compliant RO Crates.
+                        Initial consultation with his team at UTS and other collaborators led to the
+                        creation of the Describo Desktop application.
                     </div>
                     <div>
-                        In that design, Peter stated that Describo Desktop must support users
-                        describing entities using all of schema.org. As a development on top of
-                        that, Marco developed the concept of profiles to drive the user interface.
-                        With both of these capabilities Describo Desktop gave users the full power
-                        of schema.org whilst also being extensible to custom domains and data
-                        models.
+                        In that design, Describo Desktop was required to enable users to describe
+                        entities using all of schema.org. As a development on top of that, Marco
+                        developed the concept of profiles to drive the user interface. With both of
+                        these capabilities Describo Desktop gave users the full power of schema.org
+                        whilst also being extensible to custom domains and data models.
                     </div>
                 </div>
             </template>
         </InfoPanelComponent>
 
         <InfoPanelComponent>
-            <template #text> October 2020 - December 2020: UTS </template>
+            <template #text>
+                <div>October 2020 - December 2020: UTS</div>
+                <div class="my-10">
+                    Funded by:&nbsp;
+                    <a href="https://www.uts.edu.au/" target="_blank"><img :src="utsLogo" /></a>
+                </div>
+            </template>
             <template #content>
                 <div class="flex flex-col space-y-4">
                     <div>
-                        Whilst very well received and proof positive of the validity of the concept,
-                        the Describo Desktop application Peter designed had limitations. In a second
-                        engagement Peter re-engaged Marco and developed a specification for the
-                        Describo Online application. This was a web based version with an internal
-                        database to manage entities and the ability to talk to various backend
-                        storage systems via rclone. Peter's vision was to have a singular
-                        application that could be deployed as a standalone tool or embed into
-                        external applications as the metadata editor. The first integration was to
-                        be at UTS.
+                        Whilst very well received and proof of the validity of the concept, the
+                        Describo Desktop application had limitations. In a second engagement Peter
+                        re-engaged Marco and developed a specification for the Describo Online
+                        application. This was a web based version with an internal database to
+                        manage entities and the ability to talk to various backend storage systems
+                        via rclone. Peter's vision was to have a singular application that could be
+                        deployed as a standalone tool or embed into external applications as the
+                        metadata editor. The first integration was to be at UTS.
                     </div>
                     <div>
                         In the first iteration Describo Online used Microsoft OneDrive as a backend
@@ -53,7 +63,30 @@
         </InfoPanelComponent>
 
         <InfoPanelComponent>
-            <template #text> January 2021 - December 2021: EOSC and the Nyingarn Project </template>
+            <template #text>
+                <div>
+                    January 2021 - December 2021: CS3MESH4EOSC, University of Muenster, and the
+                    Nyingarn Project
+                </div>
+                <div class="my-10 flex flex-col space-y-2">
+                    <div>Funded by:&nbsp;</div>
+                    <div>
+                        <a href="https://cs3mesh4eosc.eu/" target="_blank">
+                            <img :src="cs3meshLogo" class="h-16 bg-slate-800" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.uni-muenster.de/en/" target="_blank">
+                            <img :src="muensterLogo" class="h-24 bg-slate-800" />
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://nyingarn.net" target="_blank">
+                            <img :src="nyingarnLogo" class="h-32" />
+                        </a>
+                    </div>
+                </div>
+            </template>
             <template #content>
                 <div class="flex flex-col space-y-4">
                     <div>
@@ -79,7 +112,17 @@
         </InfoPanelComponent>
 
         <InfoPanelComponent>
-            <template #text> January 2022: LDACA and Describo Online</template>
+            <template #text>
+                <div>January 2022: LDACA</div>
+                <div class="my-10 flex flex-col space-y-4">
+                    <div>Funded by:&nbsp;</div>
+                    <div>
+                        <a href="https://ldaca.edu.au/" target="_blank">
+                            <img :src="ldacaLogo" class="h-28 bg-white" />
+                        </a>
+                    </div>
+                </div>
+            </template>
             <template #content>
                 <div class="flex flex-col space-y-4">
                     <div>
@@ -100,7 +143,17 @@
         </InfoPanelComponent>
 
         <InfoPanelComponent>
-            <template #text> June to December 2022: The Nyingarn Project and Sztaki </template>
+            <template #text>
+                <div>June to December 2022: The Nyingarn Project and Sztaki</div>
+                <div class="my-10 flex flex-col space-y-4">
+                    <div>Funded by:&nbsp;</div>
+                    <div>
+                        <a href="https://nyingarn.net" target="_blank">
+                            <img :src="nyingarnLogo" class="h-32" />
+                        </a>
+                    </div>
+                </div>
+            </template>
             <template #content>
                 <div class="flex flex-col space-y-4">
                     <div>
@@ -108,8 +161,7 @@
                         (Sciebo RDS and the Nyingarn Workspace) were evident. The Sciebo team were
                         managing their own fork so that they could customise it to suit their
                         environment and Marco was finding it difficult to synchronise the Describo
-                        internal state with the Nyingarn internal state. And Marco was the developer
-                        of both!
+                        internal state with the Nyingarn internal state.
                     </div>
                     <div>
                         Given these issues, and with support from the Nyingarn Project, Marco
@@ -162,15 +214,14 @@
                         definitions created by others.
                     </div>
                     <div>
-                        After many years of gainful employment in the Academic sector Marco has been
-                        contributing to the Describo environment as an open source developer when
-                        time permits. This includes maintaining the crate component (with help from
-                        our Hungarian friends at Sztaki), the desktop and web versions, profiles,
-                        data packs and this website. Marco is the current Technical Lead of the
-                        Describo Project.
+                        Marco has continued contributing to the Describo environment as an open
+                        source developer when time permits. This includes maintaining the crate
+                        component (with help from our Hungarian friends at Sztaki), the desktop and
+                        web versions, profiles, data packs and this website. Marco is the current
+                        Technical Lead of the Describo Project.
                     </div>
                     <div>
-                        Peter envisions a tool that looks and feels the same as Describo but is
+                        Peter envisions a tool that copies most of the Describo innovations but is
                         architected differently and has decided to pursue that vision elsewhere
                         using funding from the Language Data Commons Project of Australia. Peter is
                         no longer associated with the Describo project or any of its components.
@@ -184,4 +235,9 @@
 <script setup>
 import NavigationComponent from "./Navigation.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
+import utsLogo from "../assets/logos/uts-logo.png";
+import cs3meshLogo from "../assets/logos/cs3mesh-logo.png";
+import muensterLogo from "../assets/logos/muenster-logo.png";
+import nyingarnLogo from "../assets/logos/nyingarn-logo.png";
+import ldacaLogo from "../assets/logos/ldaca-logo.png";
 </script>

@@ -11,7 +11,7 @@
                 class="flex flex-col md:flex-row justify-between space-y-1 space-x-0 md:space-x-8 md:space-y-0 md:pt-4"
             >
                 <div>
-                    <router-link to="/about"> About </router-link>
+                    <router-link to="/learn"> Docs</router-link>
                 </div>
                 <div>
                     <a
