@@ -134,10 +134,6 @@
                         developed a wrapper to run the Online version on a users' own computer via
                         docker containers.
                     </div>
-                    <div>
-                        This was the last time there was direct funding of any of the Describo
-                        components.
-                    </div>
                 </div>
             </template>
         </InfoPanelComponent>
@@ -221,10 +217,11 @@
                         Technical Lead of the Describo Project.
                     </div>
                     <div>
-                        Peter envisions a tool that copies most of the Describo innovations but is
-                        architected differently and has decided to pursue that vision elsewhere
-                        using funding from the Language Data Commons Project of Australia. Peter is
-                        no longer associated with the Describo project or any of its components.
+                        Peter envisioned a tool that copies most of the Describo innovations but is
+                        architected differently and so decided to pursue that vision elsewhere using
+                        funding from the Language Data Commons Project of Australia. Peter has not
+                        been associated with the Describo project or any of its components since
+                        early 2023.
                     </div>
                 </div>
             </template>
