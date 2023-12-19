@@ -74,6 +74,20 @@
             </div>
 
             <!-- <FeaturesComponent class="border-t border-gray-600 pt-10" /> -->
+            <InfoPanelComponent image="/describo-star-us.png">
+                <template #title>Like it?</template>
+                <template #text>
+                    <div class="flex flex-col space-y-4 text-center">
+                        <div>
+                            If you like this work please consider giving us a
+                            <i class="fa-solid fa-star text-yellow-400 fa-2x"></i>
+                            on github @
+                            <link-component link="https://github.com/describo/describo.github.io" />
+                            (It's ok if you want to star the other repo's too!)
+                        </div>
+                    </div>
+                </template>
+            </InfoPanelComponent>
         </div>
     </div>
 </template>
@@ -81,6 +95,7 @@
 <script setup>
 import NavigationComponent from "./Navigation.component.vue";
 import DescriboHeaderComponent from "./DescriboHeader.component.vue";
+import InfoPanelComponent from "./InfoPanel.component.vue";
 import Stack from "./Stack.vue";
 import FeaturesComponent from "./Features.component.vue";
 

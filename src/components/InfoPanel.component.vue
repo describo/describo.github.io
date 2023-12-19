@@ -1,6 +1,6 @@
 <template>
     <div
-        class="md:text-lg flex flex-col lg:flex-row justify-around items-center lg:border-b lg:border-gray-600"
+        class="md:text-xl flex flex-col lg:flex-row justify-around items-center lg:border-b lg:border-gray-600"
     >
         <div class="w-full lg:w-2/5">
             <div class="text-gray-800 text-2xl mb-10">
@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="w-full lg:w-3/5 flex flex-row justify-around p-6">
-            <el-image
+            <img
                 :src="props.image"
                 :style="imageStyles"
                 fit="contain"

@@ -200,22 +200,6 @@
                 </div>
             </template>
         </InfoPanelComponent>
-
-        <InfoPanelComponent :image="starUs">
-            <template #title>Like it?</template>
-            <template #text>
-                <div class="flex flex-col space-y-4 text-center">
-                    <div>
-                        If you like this work please consider giving us a star on github @
-                        <link-component link="https://github.com/describo/describo.github.io" />
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-star text-yellow-400 fa-4x"></i>
-                    </div>
-                    <div>(It's ok if you want to star the other repo's too!)</div>
-                </div>
-            </template>
-        </InfoPanelComponent>
     </div>
 </template>
 
@@ -233,7 +217,7 @@ import describoOverviewVideo from "../assets/describo-overview-video.mp4";
 import describoI18En from "../assets/describo-i18-en.png";
 import describoI18Hu from "../assets/describo-i18-hu.png";
 import describoThemes from "../assets/describo-themes.png";
-import starUs from "../assets/describo-star-us.png";
+// import starUs from "../assets/describo-star-us.png";
 import auFlag from "../assets/flag-au.png";
 import huFlag from "../assets/flag-hu.png";
 </script>
