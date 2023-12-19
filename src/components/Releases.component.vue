@@ -1,12 +1,5 @@
 <template>
     <div class="flex flex-col">
-        <!-- <div class="md:text-3xl text-center">
-                Download the latest release for your platform and start describing your data.
-                <div class="text-sm">
-                    Describo Desktop is an application designed for your desktop so it won't work on
-                    your phone or tablet.
-                </div>
-            </div> -->
         <div class="flex flex-row justify-around">
             <div class="hover:text-orange-600 cursor-pointer text-center">
                 <a :href="data.download.windows" download class="hover:text-orange-600">
@@ -45,10 +38,10 @@
             <div>
                 Check out available releases @
                 <a
-                    href="https://github.com/describo/desktop/releases/latest"
+                    href="https://github.com/describo/desktop-releases/releases/latest"
                     target="_blank"
                     class="hover:text-orange-600 text-xl"
-                    >https://github.com/describo/desktop/releases</a
+                    >https://github.com/describo/desktop-releases/releases/latest</a
                 >
             </div>
         </div>
@@ -56,14 +49,13 @@
 </template>
 
 <script setup>
-import LinkComponent from "./Link.component.vue";
 import { reactive, onMounted } from "vue";
 import AppleMLogo from "../assets/apple-m.jpeg";
 import IntelLogo from "../assets/intel.png";
 const data = reactive({
     release: undefined,
-    latestReleaseURL: "https://api.github.com/repos/describo/desktop/releases/latest",
-    baseUrl: `https://github.com/describo/desktop/releases/download/`,
+    latestReleaseURL: "https://api.github.com/repos/describo/desktop-releases/releases/latest",
+    baseUrl: `https://github.com/describo/desktop-releases/download/`,
     download: {
         windows: undefined,
         macArm: undefined,

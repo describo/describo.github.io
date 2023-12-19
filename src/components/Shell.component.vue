@@ -34,7 +34,7 @@
                     <div>
                         <i class="fa-solid fa-user fa-4x text-blue-600"></i>
                     </div>
-                    <div>Are you a user wanting to describe your data?</div>
+                    <div>Are you a user looking to get started?</div>
                     <div>
                         Try the
                         <router-link to="/web" class="hover:text-orange-600">
@@ -73,7 +73,6 @@
                 </div>
             </div>
 
-            <!-- <FeaturesComponent class="border-t border-gray-600 pt-10" /> -->
             <InfoPanelComponent image="/describo-star-us.png">
                 <template #title>Like it?</template>
                 <template #text>
@@ -98,7 +97,6 @@ import DescriboHeaderComponent from "./DescriboHeader.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import Stack from "./Stack.vue";
 import LinkComponent from "./Link.component.vue";
-import FeaturesComponent from "./Features.component.vue";
 
 const cards = [
     {
