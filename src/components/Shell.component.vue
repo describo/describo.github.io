@@ -97,6 +97,7 @@ import NavigationComponent from "./Navigation.component.vue";
 import DescriboHeaderComponent from "./DescriboHeader.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import Stack from "./Stack.vue";
+import LinkComponent from "./Link.component.vue";
 import FeaturesComponent from "./Features.component.vue";
 
 const cards = [
