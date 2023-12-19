@@ -14,7 +14,7 @@
                         class="flex flex-row hover:text-orange-600 items-center"
                     >
                         <i class="fa-brands fa-apple fa-4x"></i>
-                        <img :src="AppleMLogo" class="h-12 translate-y-3 translate-x-1" />
+                        <img src="/logos/apple-m.jpeg" class="h-12 translate-y-3 translate-x-1" />
                     </a>
                 </div>
                 <div class="hover:text-orange-600 cursor-pointer text-center">
@@ -24,7 +24,7 @@
                         class="flex flex-row hover:text-orange-600 items-center"
                     >
                         <i class="fa-brands fa-apple fa-4x"></i>
-                        <img :src="IntelLogo" class="h-8 translate-y-1" />
+                        <img src="/logos/intel.png" class="h-8 translate-y-1" />
                     </a>
                 </div>
             </div>
@@ -50,8 +50,6 @@
 
 <script setup>
 import { reactive, onMounted } from "vue";
-import AppleMLogo from "../assets/apple-m.jpeg";
-import IntelLogo from "../assets/intel.png";
 const data = reactive({
     release: undefined,
     latestReleaseURL: "https://api.github.com/repos/describo/desktop-releases/releases/latest",

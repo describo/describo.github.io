@@ -26,25 +26,7 @@
             </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent>
-            <template #title>Country Data</template>
-            <template #content>
-                <div class="flex flex-row space-x-2">
-                    <el-image :src="pack1" style="height: 400px" fit="contain" />
-                </div>
-            </template>
-        </InfoPanelComponent>
-
-        <InfoPanelComponent>
-            <template #title>Language Data</template>
-            <template #text>Language datasets from Austlang and Glottolog</template>
-            <template #content>
-                <div class="flex flex-row space-x-2">
-                    <el-image :src="pack2" style="height: 400px" fit="contain" />
-                    <el-image :src="pack3" style="height: 400px" fit="contain" />
-                </div>
-            </template>
-        </InfoPanelComponent>
+        <Stack :cards="cards" class="p-4 bg-slate-100 rounded-lg"></Stack>
     </div>
 </template>
 
@@ -52,7 +34,11 @@
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
 import NavigationComponent from "./Navigation.component.vue";
-import pack1 from "../assets/pack-1.png";
-import pack2 from "../assets/pack-2.png";
-import pack3 from "../assets/pack-3.png";
+import Stack from "./Stack.vue";
+
+const cards = [
+    { text: "Country data pack", image: "/pack1.png" },
+    { text: "Austlang language data pack", image: "/pack2.png" },
+    { text: "Glottolog language data pack", image: "/pack3.png" },
+];
 </script>

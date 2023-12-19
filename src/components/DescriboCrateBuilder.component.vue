@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col space-y-20">
         <NavigationComponent />
-        <InfoPanelComponent :image="describo">
+        <InfoPanelComponent image="/describo-ui.png">
             <template #title>Embed the describo engine in your application</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -15,15 +15,13 @@
                         component manage the rest for you. When the data changes it will be emitted
                         back to your app for saving or handling as you wish.
                     </div>
+                    <div>
+                        Get the component from:
+                        <link-component
+                            link="https://github.com/describo/crate-builder-component"
+                        />
+                    </div>
                 </div>
-            </template>
-        </InfoPanelComponent>
-
-        <InfoPanelComponent>
-            <template #title>Get the Component</template>
-            <template #text>The component is available from:</template>
-            <template #content>
-                <link-component link="https://github.com/describo/crate-builder-component" />
             </template>
         </InfoPanelComponent>
 
@@ -45,7 +43,14 @@
             </template>
             <template #content>
                 <div class="flex flex-col space-y-2 items-center">
-                    <div><el-image :src="reactLogo" fit="contain" style="height: 120px" /></div>
+                    <div>
+                        <el-image
+                            src="/react-logo.png
+                        "
+                            fit="contain"
+                            style="height: 120px"
+                        />
+                    </div>
                     <link-component
                         link="https://github.com/describo/crate-builder-component-react"
                     />
@@ -70,7 +75,4 @@ import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
 import NavigationComponent from "./Navigation.component.vue";
 import LinkComponent from "./Link.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
-
-import describo from "../assets/describo-ui.png";
-import reactLogo from "../assets/react-logo.png";
 </script>

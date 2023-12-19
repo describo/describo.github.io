@@ -7,13 +7,13 @@
                 <div class="flex flex-row space-x-4">
                     <div class="">Nyingarn Workspace</div>
                     <div class="flex flex-row space-x-2">
-                        <el-image :src="auFlag" style="height: 40px" fit="contain" />
-                        <el-image :src="aboriginalFlag" style="height: 40px" fit="contain" />
+                        <el-image src="/flag-au.png" style="height: 40px" fit="contain" />
+                        <el-image src="/flag-hu.png" style="height: 40px" fit="contain" />
                     </div>
                 </div>
             </template>
             <template #text>
-                <div class="flex flex-col space-y-4">
+                <div class="flex flex-col space-y-4 items-center">
                     <div>
                         <LinkComponent text="Nyingarn" link="https://nyingarn.net" /> makes
                         manuscript sources for Australian Languages available as searchable and
@@ -22,26 +22,19 @@
 
                     <div>
                         The Nyingarn Workspace enables users to upload images and create TEI files
-                        for search and re-use.
-                    </div>
-
-                    <div>
-                        With appropriate permissions, language manuscripts can be accessed, reviewed
-                        and enhanced.
+                        for search and re-use. With appropriate permissions, language manuscripts
+                        can be accessed, reviewed and enhanced.
                     </div>
                     <div>
                         Nyingarn is a living platform where documents can be continually added, each
                         with appropriate permissions from the relevant language authority.
                     </div>
                     <div>
-                        The Describo Crate Builder component is embedded as the metadata editor and
-                        the initial development was sponsored by the Nyingarn Project.
-                        <i class="fa-solid fa-champagne-glasses text-yellow-500 fa-2x"></i>
+                        The Describo Crate Builder component is embedded into the workspace as the
+                        metadata editor and the repository as the metadata viewer. Nyingarn
+                        sponsored the initial development of the embeddable component.
+                        <i class="fa-solid fa-champagne-glasses text-yellow-500"></i>
                     </div>
-                </div>
-            </template>
-            <template #content>
-                <div class="flex flex-col space-y-10 text-center">
                     <div>
                         <el-image
                             src="https://nyingarn.net/wp-content/uploads/2023/04/Nyingarn_Vertical_Peppermint_RGB-768x768.png"
@@ -49,8 +42,17 @@
                             fit="contain"
                         />
                     </div>
+                </div>
+            </template>
+            <template #content>
+                <div class="flex flex-col space-y-10 text-center">
                     <div>
-                        <el-image :src="nyingarn1" style="height: 300px" fit="contain" />
+                        <el-image src="/nyingarn1.png" fit="contain" />
+                        <div>Describo embedded into the workspace as the metadata editor.</div>
+                    </div>
+                    <div>
+                        <el-image src="/nyingarn2.png" fit="contain" />
+                        <div>Describo embedded into the repository as the metadata viewer.</div>
                     </div>
                 </div>
             </template>
@@ -61,7 +63,7 @@
                 <div class="flex flex-row space-x-2">
                     <div class="">AROMA - the ARP RO-Crate Manager</div>
                     <div>
-                        <el-image :src="huFlag" style="height: 40px" fit="contain" />
+                        <el-image src="/flag-hu.png" style="height: 40px" fit="contain" />
                     </div>
                 </div>
             </template>
@@ -99,11 +101,11 @@
             <template #content>
                 <div class="flex flex-col space-y-10 text-center">
                     <div>
-                        <el-image :src="aroma1" style="height: 300px" fit="contain" />
+                        <el-image src="/users-aroma-standalone.png" fit="contain" />
                         <div>Aroma as a standalone application</div>
                     </div>
                     <div>
-                        <el-image :src="aroma2" style="height: 300px" fit="contain" />
+                        <el-image src="/users-aroma-in-dataverse.png" fit="contain" />
                         <div>Aroma inside Dataverse</div>
                     </div>
                 </div>
@@ -116,10 +118,4 @@
 import NavigationComponent from "./Navigation.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import LinkComponent from "./Link.component.vue";
-import aboriginalFlag from "../assets/flag-aboriginal.png";
-import auFlag from "../assets/flag-au.png";
-import huFlag from "../assets/flag-hu.png";
-import aroma1 from "../assets/users-aroma-standalone.png";
-import aroma2 from "../assets/users-aroma-in-dataverse.png";
-import nyingarn1 from "../assets/users-nyingarn.png";
 </script>

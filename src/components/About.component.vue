@@ -7,7 +7,9 @@
                 <div>January - May 2020: UTS</div>
                 <div class="my-10">
                     Funded by:&nbsp;
-                    <a href="https://www.uts.edu.au/" target="_blank"><img :src="utsLogo" /></a>
+                    <a href="https://www.uts.edu.au/" target="_blank"
+                        ><img src="/logos/uts-logo.png"
+                    /></a>
                 </div>
             </template>
             <template #content>
@@ -36,7 +38,9 @@
                 <div>October 2020 - December 2020: UTS</div>
                 <div class="my-10">
                     Funded by:&nbsp;
-                    <a href="https://www.uts.edu.au/" target="_blank"><img :src="utsLogo" /></a>
+                    <a href="https://www.uts.edu.au/" target="_blank"
+                        ><img src="/logos/uts-logo.png"
+                    /></a>
                 </div>
             </template>
             <template #content>
@@ -72,17 +76,17 @@
                     <div>Funded by:&nbsp;</div>
                     <div>
                         <a href="https://cs3mesh4eosc.eu/" target="_blank">
-                            <img :src="cs3meshLogo" class="h-16 bg-slate-800" />
+                            <img src="/logos/cs3mesh-logo.png" class="h-16 bg-slate-800" />
                         </a>
                     </div>
                     <div>
                         <a href="https://www.uni-muenster.de/en/" target="_blank">
-                            <img :src="muensterLogo" class="h-24 bg-slate-800" />
+                            <img src="/logos/muenster-logo.png" class="h-24 bg-slate-800" />
                         </a>
                     </div>
                     <div>
                         <a href="https://nyingarn.net" target="_blank">
-                            <img :src="nyingarnLogo" class="h-32" />
+                            <img src="/logos/nyingarn-logo.png" class="h-32" />
                         </a>
                     </div>
                 </div>
@@ -118,7 +122,7 @@
                     <div>Funded by:&nbsp;</div>
                     <div>
                         <a href="https://ldaca.edu.au/" target="_blank">
-                            <img :src="ldacaLogo" class="h-28 bg-white" />
+                            <img src="/logos/ldaca-logo.png" class="h-28 bg-white" />
                         </a>
                     </div>
                 </div>
@@ -145,7 +149,7 @@
                     <div>Funded by:&nbsp;</div>
                     <div>
                         <a href="https://nyingarn.net" target="_blank">
-                            <img :src="nyingarnLogo" class="h-32" />
+                            <img src="/logos/nyingarn-logo.png" class="h-32" />
                         </a>
                     </div>
                 </div>
@@ -232,9 +236,4 @@
 <script setup>
 import NavigationComponent from "./Navigation.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
-import utsLogo from "../assets/logos/uts-logo.png";
-import cs3meshLogo from "../assets/logos/cs3mesh-logo.png";
-import muensterLogo from "../assets/logos/muenster-logo.png";
-import nyingarnLogo from "../assets/logos/nyingarn-logo.png";
-import ldacaLogo from "../assets/logos/ldaca-logo.png";
 </script>

@@ -30,10 +30,10 @@
             <template #content>
                 <div class="flex flex-row space-x-10">
                     <div class="w-1/2">
-                        <img src="/chrome.png" class="h-40" />
+                        <img src="/logos/chrome.png" class="h-40" />
                     </div>
                     <div class="w-1/2">
-                        <img src="/edge.png" class="h-40" />
+                        <img src="/logos/edge.png" class="h-40" />
                     </div>
                 </div>
             </template>

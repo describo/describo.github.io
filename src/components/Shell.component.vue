@@ -142,7 +142,7 @@ const cards = [
     },
     {
         text: `Describo is configurable. It supports English and Hungarian (for now) and there are controls for various aspects of its operation.`,
-        image: "desktop9.png",
+        image: ["desktop9.png", "describo-i18-en.png", "describo-i18-hu.png"],
     },
     {
         text: `There are controls to view the entities in the crate and jump directly to any entity wherever it is.`,
@@ -150,5 +150,11 @@ const cards = [
     },
     { text: `There is also a control to directly edit the context.`, image: "desktop11.png" },
     { text: `And one to preview the JSON linked data.`, image: "desktop12.png" },
+    { text: `Describo is themable.`, image: "desktop13.png" },
+    { text: `Describo can display crates in readonly mode.`, image: "desktop14.png" },
+    {
+        text: `Describo can display complex entities like actions and relationships that link other entities together.`,
+        image: "desktop15.png",
+    },
 ];
 </script>

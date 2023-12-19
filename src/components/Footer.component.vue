@@ -3,7 +3,7 @@
         <div class="flex flex-col w-96">
             <div>
                 <router-link to="/">
-                    <img :src="logo" class="h-16 md:h-32" />
+                    <img src="/logos/describo-logo.png" class="h-16 md:h-32" />
                 </router-link>
             </div>
         </div>
@@ -22,6 +22,4 @@
     </div>
 </template>
 
-<script setup>
-import logo from "../assets/describo-logo10-trans.png";
-</script>
+<script setup></script>

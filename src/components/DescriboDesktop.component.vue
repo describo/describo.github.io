@@ -13,7 +13,7 @@
             </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent :image="desktop2">
+        <InfoPanelComponent image="desktop-updates.png">
             <template #title>Automatic Updates</template>
             <template #text>
                 <div>
@@ -89,8 +89,6 @@
 import NavigationComponent from "./Navigation.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
-import describo from "../assets/describo-ui.png";
-import desktop2 from "../assets/desktop-1.png";
 import ReleasesComponent from "./Releases.component.vue";
 import Stack from "./Stack.vue";
 
