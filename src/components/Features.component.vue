@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="flex flex-col space-y-20">
         <div class="text-2xl">Features</div>
 
@@ -220,4 +220,4 @@ import describoThemes from "../assets/describo-themes.png";
 // import starUs from "../assets/describo-star-us.png";
 import auFlag from "../assets/flag-au.png";
 import huFlag from "../assets/flag-hu.png";
-</script>
+</script> -->

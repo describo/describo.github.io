@@ -1,7 +1,5 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <NavigationComponent />
-
         <InfoPanelComponent>
             <template #title>
                 <div class="flex flex-row space-x-4">
@@ -115,7 +113,6 @@
 </template>
 
 <script setup>
-import NavigationComponent from "./Navigation.component.vue";
-import InfoPanelComponent from "./InfoPanel.component.vue";
-import LinkComponent from "./Link.component.vue";
+import InfoPanelComponent from "../InfoPanel.component.vue";
+import LinkComponent from "../Link.component.vue";
 </script>

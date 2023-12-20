@@ -1,6 +1,5 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <NavigationComponent />
         <InfoPanelComponent>
             <template #title>Data Packs</template>
             <template #text>
@@ -31,10 +30,9 @@
 </template>
 
 <script setup>
-import InfoPanelComponent from "./InfoPanel.component.vue";
-import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
-import NavigationComponent from "./Navigation.component.vue";
-import Stack from "./Stack.vue";
+import InfoPanelComponent from "../InfoPanel.component.vue";
+import RepositoryLinksComponent from "../RepositoryLinks.component.vue";
+import Stack from "../Stack.vue";
 
 const cards = [
     { text: "Country data pack", image: "/pack1.png" },

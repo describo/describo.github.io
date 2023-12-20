@@ -1,7 +1,5 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <NavigationComponent />
-
         <InfoPanelComponent image="/web1.png">
             <template #title>Describo Web</template>
             <template #text>
@@ -50,8 +48,7 @@
 </template>
 
 <script setup>
-import InfoPanelComponent from "./InfoPanel.component.vue";
-import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
-import LinkComponent from "./Link.component.vue";
-import NavigationComponent from "./Navigation.component.vue";
+import InfoPanelComponent from "../InfoPanel.component.vue";
+import RepositoryLinksComponent from "../RepositoryLinks.component.vue";
+import LinkComponent from "../Link.component.vue";
 </script>

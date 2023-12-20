@@ -1,7 +1,5 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <NavigationComponent />
-
         <InfoPanelComponent image="/desktop3.png">
             <template #title>Describo Desktop</template>
             <template #text>
@@ -86,11 +84,10 @@
 </template>
 
 <script setup>
-import NavigationComponent from "./Navigation.component.vue";
-import InfoPanelComponent from "./InfoPanel.component.vue";
-import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
-import ReleasesComponent from "./Releases.component.vue";
-import Stack from "./Stack.vue";
+import InfoPanelComponent from "../InfoPanel.component.vue";
+import RepositoryLinksComponent from "../RepositoryLinks.component.vue";
+import ReleasesComponent from "../Releases.component.vue";
+import Stack from "../Stack.vue";
 
 const cards = [
     { text: '1. Click "More info"\'', image: "/windows-sig1.png" },

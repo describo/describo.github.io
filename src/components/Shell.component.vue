@@ -1,6 +1,5 @@
 <template>
     <div class="flex flex-col text-gray-800">
-        <NavigationComponent />
         <div class="flex flex-col items-center space-y-10">
             <DescriboHeaderComponent class="md:my-6" />
             <div
@@ -92,7 +91,6 @@
 </template>
 
 <script setup>
-import NavigationComponent from "./Navigation.component.vue";
 import DescriboHeaderComponent from "./DescriboHeader.component.vue";
 import InfoPanelComponent from "./InfoPanel.component.vue";
 import Stack from "./Stack.vue";

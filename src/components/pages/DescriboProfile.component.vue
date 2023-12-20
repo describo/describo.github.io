@@ -1,15 +1,14 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <NavigationComponent />
-
-        <Stack :cards="cards" class="p-4 bg-slate-100 rounded-lg"></Stack>
-
         <InfoPanelComponent>
-            <template #title>Documentation</template>
+            <template #title>Profiles</template>
             <template #text>
-                <div>
-                    Detailed documentation on how to create your own profile can be found in the
-                    repository.
+                <div class="flex flex-col space-y-2">
+                    <div>Profiles are how you tell Describo what it can do.</div>
+                    <div>
+                        Detailed documentation on how to create your own profile can be found in the
+                        repository.
+                    </div>
                 </div>
             </template>
             <template #content>
@@ -17,6 +16,7 @@
             </template>
         </InfoPanelComponent>
 
+        <Stack :cards="cards" class="p-4 bg-slate-100 rounded-lg"></Stack>
         <InfoPanelComponent>
             <template #title>View profile examples</template>
             <template #text>
@@ -57,15 +57,14 @@
 </template>
 
 <script setup>
-import InfoPanelComponent from "./InfoPanel.component.vue";
-import RepositoryLinksComponent from "./RepositoryLinks.component.vue";
-import LinkComponent from "./Link.component.vue";
-import NavigationComponent from "./Navigation.component.vue";
-import Stack from "./Stack.vue";
+import InfoPanelComponent from "../InfoPanel.component.vue";
+import RepositoryLinksComponent from "../RepositoryLinks.component.vue";
+import LinkComponent from "../Link.component.vue";
+import Stack from "../Stack.vue";
 
 const cards = [
     {
-        text: `Profiles are how you tell Describo what it can do. In a profile
+        text: `In a profile
         you can define the layout to use for a crate (default or grouped);
         the entities that can be defined by the user and which properties are
         allowed for those entities; whether entities inherit from Schema.org

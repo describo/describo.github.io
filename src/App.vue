@@ -1,11 +1,13 @@
 <template>
     <div class="container mx-auto mb-20 p-4 md:p-0">
+        <NavigationComponent />
         <router-view />
         <FooterComponent />
     </div>
 </template>
 
 <script setup>
+import NavigationComponent from "./components/Navigation.component.vue";
 import FooterComponent from "./components/Footer.component.vue";
 </script>
 

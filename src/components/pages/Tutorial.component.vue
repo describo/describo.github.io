@@ -1,7 +1,6 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <NavigationComponent />
-        <InfoPanelComponent :image="tutorial1">
+        <InfoPanelComponent image="/tutorial1.png">
             <template #title
                 >Beginner Tutorial: Research Object Crates (RO-Crate) and Describo</template
             >
@@ -61,7 +60,7 @@
             </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent :image="tutorial2">
+        <InfoPanelComponent image="/tutorial2.png">
             <template #title>Start the Describo web application</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -84,7 +83,7 @@
             <template #content> </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent :image="tutorial3">
+        <InfoPanelComponent image="/tutorial3.png">
             <template #title>Apply the RO-Crate profile</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -98,7 +97,7 @@
             <template #content> </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent :image="tutorial4">
+        <InfoPanelComponent image="/tutorial4.png">
             <template #title>Profile Selector</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -108,7 +107,7 @@
             <template #content> </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent :image="tutorial5">
+        <InfoPanelComponent image="/tutorial5.png">
             <template #title>Describe your data</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -141,7 +140,7 @@
             <template #content> </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent :image="tutorial6">
+        <InfoPanelComponent image="/tutorial6.png">
             <template #title>Go further: describe more</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -162,7 +161,7 @@
             <template #content> </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent :image="tutorial8">
+        <InfoPanelComponent image="/tutorial8.png">
             <template #title>Where did that property go?</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
@@ -197,15 +196,6 @@
 </template>
 
 <script setup>
-import NavigationComponent from "./Navigation.component.vue";
-import InfoPanelComponent from "./InfoPanel.component.vue";
-import LinkComponent from "./Link.component.vue";
-import tutorial1 from "../assets/tutorial-1.png";
-import tutorial2 from "../assets/tutorial-2.png";
-import tutorial3 from "../assets/tutorial-3.png";
-import tutorial4 from "../assets/tutorial-4.png";
-import tutorial5 from "../assets/tutorial-5.png";
-import tutorial6 from "../assets/tutorial-6.png";
-import tutorial7 from "../assets/tutorial-7.png";
-import tutorial8 from "../assets/tutorial-8.png";
+import InfoPanelComponent from "../InfoPanel.component.vue";
+import LinkComponent from "../Link.component.vue";
 </script>

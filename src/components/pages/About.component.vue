@@ -1,7 +1,5 @@
 <template>
     <div class="flex flex-col space-y-10">
-        <NavigationComponent />
-
         <InfoPanelComponent>
             <template #text>
                 <div>January - May 2020: UTS</div>
@@ -234,6 +232,5 @@
 </template>
 
 <script setup>
-import NavigationComponent from "./Navigation.component.vue";
-import InfoPanelComponent from "./InfoPanel.component.vue";
+import InfoPanelComponent from "../InfoPanel.component.vue";
 </script>

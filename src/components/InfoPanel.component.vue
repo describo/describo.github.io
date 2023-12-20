@@ -1,6 +1,6 @@
 <template>
     <div
-        class="md:text-xl flex flex-col lg:flex-row justify-around items-center lg:border-b lg:border-gray-600"
+        class="md:text-xl flex flex-col lg:flex-row justify-around items-center border-t border-slate-600 mt-2 pt-2"
     >
         <div class="w-full lg:w-2/5">
             <div class="text-gray-800 text-2xl mb-10">
