@@ -1,4 +1,4 @@
-import{o as t,c as a,_ as i}from"./index-64f9148e.js";const d={__name:"Description",setup(n){const e=[{text:`When you select a folder, if there's a file 'ro-crate-metadata.json' the content will be loaded
+import{o as t,c as a,_ as i}from"./index-d76b1462.js";const d={__name:"Description",setup(n){const e=[{text:`When you select a folder, if there's a file 'ro-crate-metadata.json' the content will be loaded
         into the application. If there isn't, a skeleton crate file will be created and loaded. The root dataset
         will then be shown. The view is divided into three sections: top left is the file manager and underneath it is where
         file previews will be shown; the main view on the right is the metadata editor.`,image:"/documentation/desktop/desktop1.png"},{text:`In the navigation bar the current folder is shown along with controls to apply
