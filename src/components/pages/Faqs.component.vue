@@ -23,6 +23,37 @@
         </InfoPanel>
 
         <InfoPanel>
+            <template #title>
+                Why is the desktop application more functional than the web version?
+            </template>
+            <template #text>
+                <div>
+                    Browser environments are locked down extremely tightly as they are a common
+                    attack vector for computers. Because of this, there are many capabilities that
+                    are impossible to implement in environments like that.
+                </div>
+                <div>
+                    Typically, a web application is the 'client' part of a client/ server
+                    application. This is known as a SAAS (Software as a Service) application. Whilst
+                    a SAAS application can do all of the things Desktop can do, it requires the
+                    operation of central services (virtual machines and cloud resources) that are
+                    out of reach of an unfunded project like Describo. Further, SAAS applications
+                    depend upon user management and managing people's data which is difficult to do
+                    securely, and well. The Describo web tool is the client part of a SAAS
+                    application without the server part so it has to abide by the restrictions of
+                    the browser.
+                </div>
+                <div>
+                    By contrast, Describo desktop is like a client/server application bundled
+                    together. User and user data management is handled by the person's own computer;
+                    that is, they work in their own home directory with their own data. This enables
+                    the development of capabilities that couldn't operate in a standalone browser
+                    environment without the complexity of managing users and their data on a server.
+                </div>
+            </template>
+        </InfoPanel>
+
+        <InfoPanel>
             <template #title>How do other tools compare to Describo?</template>
             <template #text>
                 <div>

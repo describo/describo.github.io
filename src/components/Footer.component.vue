@@ -16,7 +16,7 @@
         </div>
         <div class="flex flex-col">
             <div><router-link to="/about"> About Describo</router-link></div>
-            <div><router-link to="/faqs"> FAQs</router-link></div>
+            <!-- <div><router-link to="/faqs"> FAQs</router-link></div> -->
             <div><router-link to="/documentation"> Documentation and Tutorials</router-link></div>
         </div>
     </div>

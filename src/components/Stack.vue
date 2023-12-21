@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-2" v-cloak>
+    <div class="flex flex-col space-y-2 text-slate-800" v-cloak>
         <div class="flex flex-row items-center text-sm xl:text-lg flex-grow">
             <div
                 class="hidden md:flex cursor-pointer text-4xl py-48 px-2"

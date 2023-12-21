@@ -39,6 +39,10 @@ const pages = [
                 title: "5 minute RO Crate and Describo Tutorial",
                 component: defineAsyncComponent(() => import("./Tutorial.component.vue")),
             },
+            {
+                title: "Frequently Asked Questions",
+                component: defineAsyncComponent(() => import("./Faqs.component.vue")),
+            },
         ],
     },
     {

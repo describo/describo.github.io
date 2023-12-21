@@ -9,11 +9,11 @@
                 'w-full': !slots.content,
             }"
         >
-            <div class="text-gray-800 text-xl mb-10">
+            <div class="text-slate-900 text-xl mb-10">
                 <slot name="title"></slot>
             </div>
 
-            <div class="text-gray-600 lg:text-lg flex flex-col space-y-4">
+            <div class="text-slate-800 lg:text-lg flex flex-col space-y-4">
                 <slot name="text"></slot>
             </div>
         </div>
