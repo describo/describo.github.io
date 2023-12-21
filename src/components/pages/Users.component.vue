@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <InfoPanelComponent>
+        <InfoPanelComponent :border="false">
             <template #title>
                 <div class="flex flex-row space-x-4">
                     <div class="">Nyingarn Workspace</div>
