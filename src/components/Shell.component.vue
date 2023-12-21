@@ -1,11 +1,11 @@
 <template>
     <div class="flex flex-col text-gray-800">
         <div class="flex flex-col items-center space-y-10">
-            <DescriboHeaderComponent class="md:my-6" />
+            <DescriboHeaderComponent class="my-2 xl:my-6" />
             <div
                 class="flex flex-col space-y-2 items-center w-full md:flex-row md:space-x-4 md:place-content-between"
             >
-                <div class="md:w-2/3 md:text-2xl">
+                <div class="md:w-2/3 text-lg xl:text-2xl">
                     Describo is an ecosystem of tools, software components and services to create
                     and manage
                     <a
@@ -15,7 +15,7 @@
                         Research Object Crates </a
                     >.
                 </div>
-                <div class="flex flex-row items-center text-xl md:text-2xl">
+                <div class="flex flex-row items-center text-lg xl:text-2xl">
                     <div>
                         <i class="fa-solid fa-users-rectangle"></i>
                         &nbsp;
@@ -123,7 +123,7 @@ const cards = [
         image: "desktop5.png",
     },
     {
-        text: `Navigating to the entity we can then start managing its data. Shown is the Geoemtry component which enables creating
+        text: `Navigating to the entity we can then start managing its data. Shown is the Geometry component which enables creating
         a custom geometry for the Geo property.`,
         image: "desktop6.png",
     },

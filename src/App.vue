@@ -1,7 +1,7 @@
 <template>
     <div class="container mx-auto mb-20 p-4 md:p-0">
         <NavigationComponent />
-        <router-view />
+        <router-view class="my-4" />
         <FooterComponent />
     </div>
 </template>

@@ -12,7 +12,7 @@ import DataPackComponent from "./components/pages/DescriboDataPacks.component.vu
 import TutorialComponent from "./components/pages/Tutorial.component.vue";
 import UsersComponent from "./components/pages/Users.component.vue";
 import AboutComponent from "./components/pages/About.component.vue";
-import LearnComponent from "./components/pages/Documentation.component.vue";
+import DocumentationComponent from "./components/pages/Documentation.component.vue";
 import FaqsComponent from "./components/pages/Faqs.component.vue";
 import { createRouter, createWebHashHistory } from "vue-router";
 
@@ -34,7 +34,17 @@ const routes = [
     { name: "datapacks", path: "/datapacks", component: DataPackComponent },
     { name: "tutorial", path: "/tutorial", component: TutorialComponent },
     { name: "about", path: "/about", component: AboutComponent },
-    { name: "learn", path: "/learn", component: LearnComponent },
+    {
+        name: "documentation",
+        path: "/documentation",
+        component: DocumentationComponent,
+        children: [
+            {
+                path: ":path(.*)",
+                component: DocumentationComponent,
+            },
+        ],
+    },
     { name: "faqs", path: "/faqs", component: FaqsComponent },
 ];
 

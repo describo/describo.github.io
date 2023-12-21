@@ -1,12 +1,16 @@
 <template>
-    <div class="flex flex-col space-y-2">
-        <div class="flex flex-row items-center md:text-lg lg:text-xl flex-grow">
-            <div class="hidden md:flex cursor-pointer text-4xl py-48 px-2" @click="previousCard()">
+    <div class="flex flex-col space-y-2" v-cloak>
+        <div class="flex flex-row items-center text-sm xl:text-lg flex-grow">
+            <div
+                class="hidden md:flex cursor-pointer text-4xl py-48 px-2"
+                @click="previousCard()"
+                v-if="cards.length > 1"
+            >
                 <i class="fa-solid fa-chevron-left"></i>
             </div>
             <div v-auto-animate="{ duration: 300 }">
                 <card :key="ref(idx)" v-for="(card, idx) of cards" :class="{ hidden: idx !== n }">
-                    <template #text>{{ card.text }}</template>
+                    <template #text><div v-html="card.text"></div></template>
                     <template #image>
                         <div class="flex flex-col space-y-2">
                             <img
@@ -24,14 +28,22 @@
                     </template>
                 </card>
             </div>
-            <div class="hidden md:flex cursor-pointer text-4xl py-48 px-2" @click="nextCard()">
+            <div
+                class="hidden md:flex cursor-pointer text-4xl py-48 px-2"
+                @click="nextCard()"
+                v-if="cards.length > 1"
+            >
                 <i class="fa-solid fa-chevron-right"></i>
             </div>
         </div>
-        <div class="flex flex-row md:hidden place-content-between">
+        <div class="hidden md:flex flex-row place-content-end">
+            {{ n + 1 }} / {{ cards.length }}
+        </div>
+        <div class="flex flex-row md:hidden place-content-between" v-if="cards.length > 1">
             <div class="cursor-pointer px-2" @click="previousCard()">
                 <i class="fa-solid fa-chevron-left"></i>
             </div>
+            <div>{{ n + 1 }} / {{ cards.length }}</div>
             <div class="cursor-pointer px-2" @click="nextCard()">
                 <i class="fa-solid fa-chevron-right"></i>
             </div>

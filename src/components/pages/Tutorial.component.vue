@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <InfoPanelComponent image="/tutorial1.png">
+        <InfoPanelComponent image="/tutorial1.png" :border="false">
             <template #title
                 >Beginner Tutorial: Research Object Crates (RO-Crate) and Describo</template
             >
@@ -148,7 +148,7 @@
                         Click the add button in the toolbar and inject properties into the data.
                     </div>
                     <div>
-                        <el-image :src="tutorial7" style="height: 50px" fit="contain" />
+                        <el-image src="/tutorial7.png" style="height: 50px" fit="contain" />
                     </div>
                     <div>
                         The properties you can inject come from schema.org and the describo profile

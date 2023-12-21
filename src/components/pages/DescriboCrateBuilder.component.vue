@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <InfoPanelComponent image="/describo-ui.png">
+        <InfoPanelComponent image="/describo-ui.png" :border="false">
             <template #title>Embed the describo engine in your application</template>
             <template #text>
                 <div class="flex flex-col space-y-4">

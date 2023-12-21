@@ -1,17 +1,17 @@
 <template>
-    <div class="sticky top-0 z-50">
+    <div class="sticky top-0 z-50 border-b border-slate-400">
         <div
-            class="flex flex-row justify-between md:space-x-8 p-2 text-base md:text-xl bg-slate-200"
+            class="flex flex-row justify-between md:space-x-8 p-2 text-base xl:text-xl bg-slate-200"
         >
             <router-link to="/">
-                <img src="/logos/describo-logo.png" class="h-10 md:h-20" />
+                <img src="/logos/describo-logo.png" class="h-16 xl:h-20" />
             </router-link>
             <div class="flex-grow md:inline"></div>
             <div
                 class="flex flex-col md:flex-row justify-between space-y-1 space-x-0 md:space-x-8 md:space-y-0 md:pt-4"
             >
                 <div>
-                    <router-link to="/learn"> Documentation</router-link>
+                    <router-link to="/documentation"> Documentation</router-link>
                 </div>
                 <div>
                     <a

@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <InfoPanelComponent>
+        <InfoPanelComponent :border="false">
             <template #title>Profiles</template>
             <template #text>
                 <div class="flex flex-col space-y-2">

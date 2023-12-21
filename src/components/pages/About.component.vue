@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-10">
-        <InfoPanelComponent>
+        <InfoPanelComponent :border="false">
             <template #text>
                 <div>January - May 2020: UTS</div>
                 <div class="my-10">

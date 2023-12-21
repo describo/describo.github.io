@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <InfoPanelComponent image="/desktop3.png">
+        <InfoPanelComponent image="/desktop3.png" :border="false">
             <template #title>Describo Desktop</template>
             <template #text>
                 <div>
@@ -24,7 +24,7 @@
             <template #title>Available for all major platforms for FREE</template>
             <template #text>
                 <div
-                    class="flex flex-row space-x-4 place-content-center bg-yellow-200 p-4 text-xl text-slate-800 rounded-lg my-4"
+                    class="flex flex-row space-x-4 items-center bg-yellow-200 p-4 text-xl text-slate-800 rounded-lg my-4"
                 >
                     <div><i class="text-red-600 fa-solid fa-circle-info fa-3x"></i></div>
                     <div>

@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col space-y-20">
-        <InfoPanelComponent image="/web1.png">
+        <InfoPanelComponent image="/web1.png" :border="false">
             <template #title>Describo Web</template>
             <template #text>
                 <div class="flex flex-col space-y-4">
