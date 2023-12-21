@@ -50,7 +50,6 @@ const props = defineProps({
         type: String,
     },
 });
-console.log(props.image);
 
 let imageStyles = computed(() => ({ height: `${props.imageHeight}` }));
 </script>
