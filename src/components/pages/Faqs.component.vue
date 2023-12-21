@@ -88,7 +88,7 @@
                     The authors claim that their profiles are no longer compatible with Describo but
                     that is incorrect and misleading. There are elements of their profiles that
                     Describo would ignore but for the most part, the profiles are still compatible
-                    even though Describo Profiles are more powerful as the they copy the same basic
+                    even though Describo Profiles are more powerful as they copy the same basic
                     structure.
                 </div>
                 <div>

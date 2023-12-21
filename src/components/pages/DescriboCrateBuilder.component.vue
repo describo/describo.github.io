@@ -43,10 +43,10 @@
             <template #content>
                 <div class="flex flex-col space-y-2 items-center">
                     <div>
-                        <el-image
-                            src="/react-logo.png
+                        <img
+                            src="/logos/react-logo.png
                         "
-                            fit="contain"
+                            class="object-contain"
                             style="height: 120px"
                         />
                     </div>

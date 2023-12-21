@@ -1,6 +1,6 @@
 <template>
     <div
-        class="md:text-xl flex flex-col lg:flex-row justify-around items-center mt-2 p-4"
+        class="md:text-xl flex flex-col lg:flex-row justify-around items-center p-4"
         :class="{ 'border-t border-slate-400': props.border }"
     >
         <div
@@ -22,14 +22,12 @@
             :class="{
                 'w-full lg:w-3/5': slots.content,
             }"
-            v-if="slots.content"
         >
             <img
+                v-if="props.image"
                 :src="props.image"
                 :style="imageStyles"
-                fit="contain"
-                v-if="props.image"
-                class="m-4"
+                class="object-contain m-4"
             />
             <slot name="content"></slot>
         </div>
@@ -52,7 +50,7 @@ const props = defineProps({
         type: String,
     },
 });
-console.log(props.border);
+console.log(props.image);
 
 let imageStyles = computed(() => ({ height: `${props.imageHeight}` }));
 </script>
