@@ -10,7 +10,7 @@
                     <router-link to="/about">about page.</router-link>
                 </div>
                 <div
-                    class="flex flex-row space-x-4 items-center bg-yellow-200 p-4 text-xl text-slate-800 rounded-lg my-4"
+                    class="flex flex-row space-x-4 items-center bg-yellow-200 p-4 text-slate-800 rounded-lg my-4"
                 >
                     <div><i class="text-red-600 fa-solid fa-circle-info fa-2x"></i></div>
                     <div>
@@ -110,8 +110,8 @@
                 </div>
                 <div>
                     Describo profiles have a resolve property where the profile author can define
-                    how to resolutions for complex linking entities like actions. Where an action
-                    defines and object, agent and a participant, the profile author can choose to
+                    how to resolve for complex linking entities like actions. Where an action
+                    defines an object, agent and a participant, the profile author can choose to
                     make the linked entities visible in the UI. RO-Crate editor profiles do not have
                     this capability.
                 </div>

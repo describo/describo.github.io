@@ -17,7 +17,6 @@
             </div>
         </div>
         <div class="w-full md:w-3/4 p-2 flex flex-col">
-            <!-- <div class="text-lg">{{ pages[p].title }}</div> -->
             <component :is="pages[g].children[p].component"></component>
         </div>
     </div>

@@ -13,12 +13,12 @@
                 <slot name="title"></slot>
             </div>
 
-            <div class="text-slate-800 lg:text-lg flex flex-col space-y-4">
+            <div class="text-base text-slate-800 flex flex-col space-y-4">
                 <slot name="text"></slot>
             </div>
         </div>
         <div
-            class="flex flex-row justify-around p-6"
+            class="text-base flex flex-row justify-around p-6"
             :class="{
                 'w-full lg:w-3/5': slots.content,
             }"

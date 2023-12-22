@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row my-10 text-lg border-t border-slate-400">
+    <div class="flex flex-row my-10 border-t border-slate-400">
         <div class="flex flex-col w-96">
             <div>
                 <router-link to="/">
