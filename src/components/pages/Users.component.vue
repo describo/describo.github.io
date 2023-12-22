@@ -6,7 +6,7 @@
                     <div class="">Nyingarn Workspace</div>
                     <div class="flex flex-row space-x-2">
                         <el-image src="/flag-au.png" style="height: 40px" fit="contain" />
-                        <el-image src="/flag-hu.png" style="height: 40px" fit="contain" />
+                        <el-image src="/flag-aboriginal.png" style="height: 40px" fit="contain" />
                     </div>
                 </div>
             </template>

@@ -7,7 +7,7 @@
             >
                 <div class="md:w-2/3 text-lg xl:text-2xl">
                     Describo is an ecosystem of tools, software components and services to create
-                    and manage
+                    and manage <em>linked open data</em> in the form of
                     <a
                         href="https://www.researchobject.org/ro-crate/specification.html"
                         target="_blank"
@@ -90,8 +90,7 @@
             <InfoPanelComponent>
                 <template #text>
                     <div class="text-center">
-                        If you use any of the Describo components or tools please consider citing
-                        it.
+                        If you use any of the Describo components or tools please cite it.
                     </div>
                     <div class="p-8 bg-slate-100 text-slate-800 rounded-lg">
                         Marco La Rosa and contributors. 2023 - present. Describo.
