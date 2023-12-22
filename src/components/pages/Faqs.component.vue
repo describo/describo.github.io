@@ -10,12 +10,12 @@
                     <router-link to="/about">about page.</router-link>
                 </div>
                 <div
-                    class="flex flex-row space-x-4 items-center bg-yellow-200 p-4 text-slate-800 rounded-lg my-4"
+                    class="flex flex-row space-x-4 items-center bg-slate-100 p-4 text-slate-800 rounded-lg my-4"
                 >
                     <div><i class="text-red-600 fa-solid fa-circle-info fa-2x"></i></div>
                     <div>
                         Describo is currently unfunded. It you like it and find it useful, please
-                        reach out to discuss how you can support further development.
+                        reach out to discuss how you can support its development.
                         <a href="mailto:m@lr.id.au" target="_blank">Email Marco La Rosa.</a>
                     </div>
                 </div>

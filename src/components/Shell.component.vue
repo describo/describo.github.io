@@ -86,6 +86,19 @@
                     </div>
                 </template>
             </InfoPanelComponent>
+
+            <InfoPanelComponent>
+                <template #text>
+                    <div class="text-center">
+                        If you use any of the Describo components or tools please consider citing
+                        it.
+                    </div>
+                    <div class="p-8 bg-slate-100 text-slate-800 rounded-lg">
+                        Marco La Rosa and contributors. 2023 - present. Describo.
+                        https://describo.github.io
+                    </div>
+                </template>
+            </InfoPanelComponent>
         </div>
     </div>
 </template>
