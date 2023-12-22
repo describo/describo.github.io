@@ -2,8 +2,8 @@
     <div class="flex flex-col space-y-20">
         <InfoPanelComponent :border="false">
             <template #title>
-                <div class="flex flex-row space-x-4">
-                    <div class="">Nyingarn Workspace</div>
+                <div class="flex flex-row place-content-between">
+                    <div>Nyingarn Workspace</div>
                     <div class="flex flex-row space-x-2">
                         <el-image src="/flag-au.png" style="height: 40px" fit="contain" />
                         <el-image src="/flag-aboriginal.png" style="height: 40px" fit="contain" />
@@ -58,7 +58,7 @@
 
         <InfoPanelComponent>
             <template #title>
-                <div class="flex flex-row space-x-2">
+                <div class="flex flex-row place-content-between">
                     <div class="">AROMA - the ARP RO-Crate Manager</div>
                     <div>
                         <el-image src="/flag-hu.png" style="height: 40px" fit="contain" />
