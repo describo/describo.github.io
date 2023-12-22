@@ -110,10 +110,10 @@
                 </div>
                 <div>
                     Describo profiles have a resolve property where the profile author can define
-                    how to resolve for complex linking entities like actions. Where an action
-                    defines an object, agent and a participant, the profile author can choose to
-                    make the linked entities visible in the UI. RO-Crate editor profiles do not have
-                    this capability.
+                    how to resolve complex linking entities like actions. Where an action defines an
+                    object, agent and a participant, the profile author can choose to make the
+                    linked entities visible in the UI. RO-Crate editor profiles do not have this
+                    capability.
                 </div>
                 <div>
                     The authors claim that their profiles are no longer compatible with Describo but
