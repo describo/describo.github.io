@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-20">
+    <div class="flex flex-col space-y-10">
         <InfoPanelComponent image="/desktop3.png" :border="false">
             <template #title>Describo Desktop</template>
             <template #text>

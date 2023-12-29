@@ -69,7 +69,7 @@ onMounted(async () => {
         }
         data.release = await response.json();
         data.download.windows = data.release?.assets.filter((asset) =>
-            asset.name.match(/win32-x64.*zip/)
+            asset.name.match(/.*Setup.exe/)
         )[0].browser_download_url;
         data.download.macArm = data.release?.assets.filter((asset) =>
             asset.name.match(/arm64.dmg/)

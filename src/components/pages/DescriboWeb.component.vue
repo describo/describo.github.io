@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col space-y-20">
+    <div class="flex flex-col space-y-10">
         <InfoPanelComponent image="/web1.png" :border="false">
             <template #title>Describo Web</template>
             <template #text>
@@ -28,10 +28,10 @@
             <template #content>
                 <div class="flex flex-row space-x-10">
                     <div class="w-1/2">
-                        <img src="/logos/chrome.png" class="h-40" />
+                        <img src="/logos/chrome.png" class="h-20" />
                     </div>
                     <div class="w-1/2">
-                        <img src="/logos/edge.png" class="h-40" />
+                        <img src="/logos/edge.png" class="h-20" />
                     </div>
                 </div>
             </template>

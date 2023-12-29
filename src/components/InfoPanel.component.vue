@@ -1,6 +1,6 @@
 <template>
     <div
-        class="md:text-xl flex flex-col lg:flex-row justify-around items-center p-4"
+        class="md:text-xl flex flex-col lg:flex-row lg:space-x-2 justify-around items-center"
         :class="{ 'border-t border-slate-400': props.border }"
     >
         <div
@@ -9,7 +9,7 @@
                 'w-full': !slots.content,
             }"
         >
-            <div class="text-slate-900 text-xl mb-10">
+            <div class="text-slate-900 text-xl mb-6">
                 <slot name="title"></slot>
             </div>
 
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div
-            class="text-base flex flex-row justify-around p-6"
+            class="text-base flex flex-row justify-around my-2"
             :class="{
                 'w-full lg:w-3/5': slots.content,
             }"
@@ -27,7 +27,7 @@
                 v-if="props.image"
                 :src="props.image"
                 :style="imageStyles"
-                class="object-contain m-4"
+                class="object-contain"
             />
             <slot name="content"></slot>
         </div>

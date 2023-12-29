@@ -29,26 +29,27 @@
             <div
                 class="flex flex-col space-y-4 lg:flex-row lg:space-x-2 lg:text-xl lg:place-content-center bg-slate-100 p-4 rounded"
             >
-                <div class="flex flex-col space-y-4 w-full lg:w-1/2 text-center">
+                <div class="flex flex-col space-y-4 w-full lg:w-1/2 text-center font-light">
                     <div>
                         <i class="fa-solid fa-user fa-4x text-blue-600"></i>
                     </div>
                     <div>Are you a user looking to get started?</div>
+                    <div class="text-2xl">
+                        Install the
+                        <router-link to="/desktop" class="hover:text-orange-600">
+                            desktop application
+                        </router-link>
+                        to get a full featured environment for creating and managing your research
+                        data including being able to describe files, manage data packs and much,
+                        much more (coming soon).
+                    </div>
                     <div>
-                        Try the
+                        Alternately, try the
                         <router-link to="/web" class="hover:text-orange-600">
                             web version
                         </router-link>
                         to get started quickly. It's not as full featured as the desktop application
                         but it's good for viewing RO Crates and performing basic metadata work.
-                    </div>
-                    <div>
-                        Alternately, install the
-                        <router-link to="/desktop" class="hover:text-orange-600">
-                            desktop application
-                        </router-link>
-                        to get a full featured environment for creating and managing your research
-                        data including being able to describe files and much more coming soon.
                     </div>
                     <div class="p-8">
                         Need help getting started?
@@ -110,8 +111,12 @@ import LinkComponent from "./Link.component.vue";
 
 const cards = [
     {
-        text: "The dashboard. Select a folder of content to describe or load a previously used folder.",
+        text: "The dashboard. Select a folder of content to describe; load a previously used folder or manage data pack data.",
         image: "/desktop1.png",
+    },
+    {
+        text: "Context aware help.",
+        image: "/desktop1a.png",
     },
     {
         text: `When the RO Crate file is loaded the root dataset is shown on the right along with a file browser on the left.
