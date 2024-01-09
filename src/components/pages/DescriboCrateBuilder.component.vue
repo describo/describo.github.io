@@ -20,6 +20,17 @@
                             link="https://github.com/describo/crate-builder-component"
                         />
                     </div>
+                    <div>
+                        <div>
+                            Read the documentation:
+                            <a
+                                href="https://describo.github.io/documentation/component/getting-started.html"
+                                target="_blank"
+                            >
+                                https://describo.github.io/documentation/guide/getting-started.html
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </template>
         </InfoPanelComponent>

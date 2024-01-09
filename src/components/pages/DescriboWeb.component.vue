@@ -6,32 +6,23 @@
                 <div class="flex flex-col space-y-4">
                     <div>
                         Access it at
-                        <link-component link="https://describo.github.io/web" />
+                        <link-component link="https://describo.github.io/web" />. Use this version
+                        to get started quickly with the describo environment. But for a more full
+                        featured environment take a lookat
+                        <router-link to="/desktop">Describo desktop</router-link>.
                     </div>
-                    <div>Use this version to get started with the describo environment.</div>
-                    <div>
-                        There are limitations compared to the desktop version but you can still do a
-                        lot.
-                    </div>
-                </div>
-            </template>
-        </InfoPanelComponent>
 
-        <InfoPanelComponent image-height="200px">
-            <template #title> Only available in Google Chrome and Microsoft Edge. </template>
-            <template #text>
-                <div>
-                    Unfortunately, one of the capabilities it requires is not available in other
-                    browsers.
-                </div>
-            </template>
-            <template #content>
-                <div class="flex flex-row space-x-10">
-                    <div class="w-1/2">
-                        <img src="/logos/chrome.png" class="h-20" />
+                    <div>
+                        Only available in Google Chrome and Microsoft Edge (unfortunately one of the
+                        capabilities it requires is not available in other browsers).
                     </div>
-                    <div class="w-1/2">
-                        <img src="/logos/edge.png" class="h-20" />
+                    <div class="flex flex-row justify-center space-x-10">
+                        <div>
+                            <img src="/logos/chrome.png" class="h-20" />
+                        </div>
+                        <div>
+                            <img src="/logos/edge.png" class="h-20" />
+                        </div>
                     </div>
                 </div>
             </template>

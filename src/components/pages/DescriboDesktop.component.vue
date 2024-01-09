@@ -3,19 +3,16 @@
         <InfoPanelComponent image="/desktop3.png" :border="false">
             <template #title>Describo Desktop</template>
             <template #text>
-                <div>
-                    An application that you can use anywhere, anytime - even when you don't have any
-                    network - to describe your data. It remember's what you were working on and
-                    starts up next time right where you left off.
-                </div>
-            </template>
-        </InfoPanelComponent>
+                <div>An application that you can use to describe your data; anywhere, anytime.</div>
 
-        <InfoPanelComponent image="desktop-updates.png">
-            <template #title>Automatic Updates</template>
-            <template #text>
                 <div>
-                    On startup, desktop checks for updates. If there is one, you'll be notified.
+                    Read the documentation:
+                    <a
+                        href="https://describo.github.io/documentation/guide/tour.html"
+                        target="_blank"
+                    >
+                        https://describo.github.io/documentation/guide/tour.html
+                    </a>
                 </div>
             </template>
         </InfoPanelComponent>
@@ -33,41 +30,19 @@
                         <a href="mailto:m@lr.id.au" target="_blank">Email Marco La Rosa.</a>
                     </div>
                 </div>
-            </template>
-            <template #content>
-                <ReleasesComponent class="hidden md:inline" />
-            </template>
-        </InfoPanelComponent>
 
-        <InfoPanelComponent>
-            <template #title>Windows users</template>
-            <template #text>
-                <div class="flex flex-col space-y-4">
-                    <div>
-                        Windows will report a warning when you try to run Describo as the
-                        application is unsigned. Unfortunately, it's very expensive to get a signing
-                        certificate and out of reach of the project.
-                    </div>
-                    <div>
-                        Note that you can still run the application. Follow the prompts on the
-                        right.
-                    </div>
-                    <div>
-                        You can confirm that the package is legitimate by downloading the package
-                        for your platform from
-                        <a
-                            href="https://github.com/describo/desktop-releases/releases/latest"
-                            target="_blank"
-                            class="hover:text-orange-600 text-xl"
-                            >https://github.com/describo/desktop-releases/releases/latest</a
-                        >
-                        and comparing the SHA256 hash of the package with the hash written into the
-                        file 'sha256-checksums.txt'.
-                    </div>
+                <div>
+                    Read the installation guides:
+                    <a
+                        href="https://describo.github.io/documentation/guide/installation.html"
+                        target="_blank"
+                    >
+                        https://describo.github.io/documentation/guide/installation.html
+                    </a>
                 </div>
             </template>
             <template #content>
-                <Stack :cards="cards" class="p-4 bg-slate-100 rounded-lg"></Stack>
+                <ReleasesComponent class="hidden md:inline" />
             </template>
         </InfoPanelComponent>
 
@@ -87,13 +62,4 @@
 import InfoPanelComponent from "../InfoPanel.component.vue";
 import RepositoryLinksComponent from "../RepositoryLinks.component.vue";
 import ReleasesComponent from "../Releases.component.vue";
-import Stack from "../Stack.vue";
-
-const cards = [
-    { text: '1. Click "More info"\'', image: "/windows-sig1.png" },
-    { text: '2. Select "Run anyway"', image: "/windows-sig2.png" },
-    { text: '3. Select "Extract all"', image: "/windows-sig3.png" },
-    { text: '4. Choose where to extract the and then press "Extract"', image: "/windows-sig4.png" },
-    { text: "5. Navigate to the folder where you extracted the package and run Describo." },
-];
 </script>
