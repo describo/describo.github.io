@@ -23,25 +23,22 @@
                 <div>
                     You can find examples in the repository to either use in your description
                     activities or as a base to develop your own profiles.
+                    <link-component
+                        link="https://github.com/describo/profiles/tree/master/domain-profiles"
+                    />
                 </div>
-            </template>
-            <template #content>
-                <link-component
-                    link="https://github.com/describo/profiles/tree/master/domain-profiles"
-                />
+                <div>
+                    Read the documentation:
+                    <a
+                        href="https://describo.github.io/documentation/profiles/get-started.html"
+                        target="_blank"
+                    >
+                        https://describo.github.io/documentation/profiles/get-started.html
+                    </a>
+                </div>
             </template>
         </InfoPanelComponent>
 
-        <InfoPanelComponent image="/profile3.png">
-            <template #title>Profiles can be validated</template>
-            <template #text>
-                <div>
-                    Use the online validator @
-                    <link-component link="https://describo.github.io/profiles/" />
-                    to check your profile.
-                </div>
-            </template>
-        </InfoPanelComponent>
         <InfoPanelComponent>
             <template #title>Questions, Issues, Bugs?</template>
             <template #content>

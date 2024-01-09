@@ -21,15 +21,13 @@
                         />
                     </div>
                     <div>
-                        <div>
-                            Read the documentation:
-                            <a
-                                href="https://describo.github.io/documentation/component/getting-started.html"
-                                target="_blank"
-                            >
-                                https://describo.github.io/documentation/guide/getting-started.html
-                            </a>
-                        </div>
+                        Read the documentation:
+                        <a
+                            href="https://describo.github.io/documentation/component/get-started.html"
+                            target="_blank"
+                        >
+                            https://describo.github.io/documentation/guide/get-started.html
+                        </a>
                     </div>
                 </div>
             </template>
