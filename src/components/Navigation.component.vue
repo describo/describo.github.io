@@ -11,7 +11,9 @@
                 class="flex flex-col md:flex-row justify-between space-y-1 space-x-0 md:space-x-8 md:space-y-0 md:pt-4"
             >
                 <div>
-                    <router-link to="/documentation"> Documentation</router-link>
+                    <a href="https://describo.github.io/documentation" target="_blank">
+                        Documentation
+                    </a>
                 </div>
                 <div>
                     <a
@@ -20,10 +22,10 @@
                         class="hover:text-orange-600"
                     >
                         <i class="fa-brands fa-github"></i>
-                        <div class="inline">&nbsp;Organisation</div>
+                        <!-- <div class="inline">&nbsp;Organisation</div> -->
                     </a>
                 </div>
-                <div class="hidden lg:inline">
+                <!-- <div class="hidden lg:inline">
                     <a
                         href="https://github.com/orgs/describo/discussions"
                         target="_blank"
@@ -32,7 +34,7 @@
                         <i class="fa-solid fa-comment-dots"></i>
                         <div class="inline">&nbsp;Discussions</div>
                     </a>
-                </div>
+                </div> -->
                 <div class="hidden lg:inline">
                     <a
                         href="https://github.com/orgs/describo/discussions/categories/announcements"
@@ -40,7 +42,7 @@
                         class="hover:text-orange-600"
                     >
                         <i class="fa-solid fa-bullhorn"></i>
-                        <div class="inline">&nbsp;Announcements</div>
+                        <!-- <div class="inline">&nbsp;Announcements</div> -->
                     </a>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 <template>
     <div class="flex flex-col text-gray-800">
         <div class="flex flex-col items-center space-y-10">
-            <DescriboHeaderComponent class="my-2 xl:my-6" />
+            <!-- <DescriboHeaderComponent class="my-2 xl:my-6" /> -->
             <div
-                class="flex flex-col space-y-2 items-center w-full md:flex-row md:space-x-4 md:place-content-between"
+                class="my-2 flex flex-col space-y-2 items-center w-full md:flex-row md:space-x-4 md:place-content-between"
             >
                 <div class="md:w-2/3 text-lg xl:text-2xl">
                     Describo is an ecosystem of tools, software components and services to create

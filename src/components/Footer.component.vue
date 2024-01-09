@@ -14,10 +14,15 @@
                 <div><router-link to="/datapacks"> Data Packs</router-link></div>
             </div>
             <div class="flex flex-col md:w-60">
-                <div><router-link to="/about"> About Describo</router-link></div>
-                <!-- <div><router-link to="/faqs"> FAQs</router-link></div> -->
                 <div>
-                    <router-link to="/documentation"> Documentation and Tutorials</router-link>
+                    <a href="https://describo.github.io/documentation/about.html" target="_blank">
+                        About Describo</a
+                    >
+                </div>
+                <div>
+                    <a href="https://describo.github.io/documentation" target="_blank">
+                        Documentation
+                    </a>
                 </div>
             </div>
         </div>
