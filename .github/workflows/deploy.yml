@@ -19,14 +19,14 @@ jobs:
 
             # Pick your own package manager and build script
             - run: npm install
-            - run: npm run build
+            - run: npm run generate
               env:
                   NITRO_PRESET: github_pages
 
             - name: Upload artifact
               uses: actions/upload-pages-artifact@v1
               with:
-                  path: ./docs
+                  path: ./.output/public
 
     # Deployment job
     deploy:
