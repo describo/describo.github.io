@@ -5,13 +5,13 @@
                 <div class="flex flex-row place-content-between">
                     <div>Nyingarn Workspace</div>
                     <div class="flex flex-row space-x-2">
-                        <el-image src="/flag-au.png" style="height: 40px" fit="contain" />
-                        <el-image src="/flag-aboriginal.png" style="height: 40px" fit="contain" />
+                        <img src="/flag-au.png" style="height: 40px" fit="contain" />
+                        <img src="/flag-aboriginal.png" style="height: 40px" fit="contain" />
                     </div>
                 </div>
             </template>
             <template #text>
-                <div class="flex flex-col space-y-4 items-center">
+                <div class="flex flex-col space-y-4 items-start">
                     <div>
                         <LinkComponent text="Nyingarn" link="https://nyingarn.net" /> makes
                         manuscript sources for Australian Languages available as searchable and
@@ -34,7 +34,7 @@
                         <i class="fa-solid fa-champagne-glasses text-yellow-500"></i>
                     </div>
                     <div>
-                        <el-image
+                        <img
                             src="https://nyingarn.net/wp-content/uploads/2023/04/Nyingarn_Vertical_Peppermint_RGB-768x768.png"
                             style="height: 200px"
                             fit="contain"
@@ -43,16 +43,7 @@
                 </div>
             </template>
             <template #content>
-                <div class="flex flex-col space-y-10 text-center">
-                    <div>
-                        <el-image src="/nyingarn1.png" fit="contain" />
-                        <div>Describo embedded into the workspace as the metadata editor.</div>
-                    </div>
-                    <div>
-                        <el-image src="/nyingarn2.png" fit="contain" />
-                        <div>Describo embedded into the repository as the metadata viewer.</div>
-                    </div>
-                </div>
+                <Stack :cards="stacks[0]" class="p-6 bg-slate-100 rounded-lg"></Stack>
             </template>
         </InfoPanelComponent>
 
@@ -61,7 +52,7 @@
                 <div class="flex flex-row place-content-between">
                     <div class="">AROMA - the ARP RO-Crate Manager</div>
                     <div>
-                        <el-image src="/flag-hu.png" style="height: 40px" fit="contain" />
+                        <img src="/flag-hu.png" style="height: 40px" fit="contain" />
                     </div>
                 </div>
             </template>
@@ -97,16 +88,7 @@
                 </div>
             </template>
             <template #content>
-                <div class="flex flex-col space-y-10 text-center">
-                    <div>
-                        <el-image src="/users-aroma-standalone.png" fit="contain" />
-                        <div>Aroma as a standalone application</div>
-                    </div>
-                    <div>
-                        <el-image src="/users-aroma-in-dataverse.png" fit="contain" />
-                        <div>Aroma inside Dataverse</div>
-                    </div>
-                </div>
+                <Stack :cards="stacks[1]" class="p-10 bg-slate-100 rounded-lg"></Stack>
             </template>
         </InfoPanelComponent>
     </div>
@@ -115,4 +97,28 @@
 <script setup>
 import InfoPanelComponent from "../components/InfoPanel.component.vue";
 import LinkComponent from "../components/Link.component.vue";
+import Stack from "../components/Stack.vue";
+
+const stacks = [
+    [
+        {
+            text: "Describo embedded into the workspace as the metadata editor.",
+            image: "/nyingarn1.png",
+        },
+        {
+            text: "Describo embedded into the repository as the metadata viewer.",
+            image: "/nyingarn2.png",
+        },
+    ],
+    [
+        {
+            text: "Aroma as a standalone application.",
+            image: "/users-aroma-standalone.png",
+        },
+        {
+            text: "Aroma inside Dataverse.",
+            image: "/users-aroma-in-dataverse.png",
+        },
+    ],
+];
 </script>
