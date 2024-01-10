@@ -19,7 +19,7 @@
                 <RepositoryLinksComponent
                     repositoryText="Learn more about data packs"
                     repositoryLink="https://github.com/describo/data-packs"
-                    issueTrackerLink="https://github.com/describo/data-packs/issues"
+                    issueTrackerLink="https://github.com/describo/describo.github.io/issues/new/chooses"
                 >
                 </RepositoryLinksComponent>
             </template>
