@@ -56,7 +56,7 @@
             <template #title>Questions, Issues, Bugs?</template>
             <template #content>
                 <RepositoryLinksComponent
-                    issueTrackerLink="https://github.com/describo/describo.github.io/issues"
+                    issueTrackerLink="https://github.com/describo/describo.github.io/issues/new/choose"
                 >
                 </RepositoryLinksComponent>
             </template>
