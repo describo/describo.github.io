@@ -9,6 +9,7 @@ assignees: ""
 ## Specify which product this bug report relates to
 
 -   [ ] Describo Desktop ([https://describo.github.io/desktop](https://describo.github.io/desktop))
+
 -   [ ] Describo Web ([https://describo.github.io/online](https://describo.github.io/web))
 
 -   [ ] Describo Data Packs
