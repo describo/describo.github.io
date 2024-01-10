@@ -14,7 +14,10 @@
     "scripts": {
         "develop": "vite",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "docs:dev": "vitepress dev vitepress",
+        "docs:build": "vitepress build vitepress",
+        "docs:preview": "vitepress preview vitepress"
     },
     "dependencies": {
         "@formkit/auto-animate": "^0.8.1",
