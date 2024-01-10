@@ -8,7 +8,7 @@
         <div class="flex flex-col md:flex-row place-content-evenly">
             <div class="flex flex-col md:w-48">
                 <div><router-link to="/desktop"> Desktop</router-link></div>
-                <div><router-link to="/web"> Web</router-link></div>
+                <div><router-link to="/online"> Web</router-link></div>
                 <div><router-link to="/component"> Component</router-link></div>
                 <div><router-link to="/profiles"> Profiles</router-link></div>
                 <div><router-link to="/datapacks"> Data Packs</router-link></div>

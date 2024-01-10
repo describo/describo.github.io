@@ -8,7 +8,7 @@
                         Access it at
                         <link-component link="https://describo.github.io/web" />. Use this version
                         to get started quickly with the describo environment. But for a more full
-                        featured environment take a lookat
+                        featured environment take a look at
                         <router-link to="/desktop">Describo desktop</router-link>.
                     </div>
 

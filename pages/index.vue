@@ -48,7 +48,7 @@
                     </div>
                     <div>
                         Alternately, try the
-                        <router-link to="/web" class="hover:text-orange-600">
+                        <router-link to="/online" class="hover:text-orange-600">
                             web version
                         </router-link>
                         to get started quickly. It's not as full featured as the desktop application
