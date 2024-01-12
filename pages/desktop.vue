@@ -31,7 +31,7 @@
                         />
                     </div>
                     <div>
-                        Describo is currently unfunded. It you like it and find it useful, please
+                        Describo is currently unfunded. If you like it and find it useful, please
                         reach out to discuss how you can support its development.
                         <a href="mailto:m@lr.id.au" target="_blank">Email Marco La Rosa.</a>
                     </div>
