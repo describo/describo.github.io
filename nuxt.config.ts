@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     pages: true,
     devtools: { enabled: false },
-    modules: ["@nuxtjs/tailwindcss"],
+    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/seo"],
     css: ["@fortawesome/fontawesome-svg-core/styles.css", "@/assets/styles.css"],
     build: {
         transpile: [
@@ -18,6 +18,36 @@ export default defineNuxtConfig({
             bodyAttrs: {
                 class: "bg-slate-200",
             },
+            meta: [
+                {
+                    name: "description",
+                    content: "Describo: JSON-LD tools, software and services to manage RO-Crates.",
+                },
+                {
+                    name: "author",
+                    content: "Dr Marco La Rosa (https://marcolarosa.github.io/)",
+                },
+                {
+                    name: "keywords",
+                    content:
+                        "Describo, Research-Object Crate, RO-Crate, VueJS, JSON Linked Data, jsonld, json-ld, Linked Data",
+                },
+            ],
         },
+    },
+    vite: {
+        build: {
+            outDir: "docs",
+        },
+    },
+    site: {
+        url: "https://describo.github.io",
+        name: "Describo: JSON-LD tools, software and services to manage RO-Crates.",
+        description:
+            "Describo is an ecosystem of tools, software components and services to create and manage linked open data in the form of Research Object Crates.",
+        defaultLocale: "en", // not needed if you have @nuxtjs/i18n installed
+    },
+    schemaOrg: {
+        enabled: true,
     },
 });
