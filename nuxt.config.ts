@@ -32,6 +32,10 @@ export default defineNuxtConfig({
                     content:
                         "Describo, Research Object, Research-Object Crate, RO-Crate, rocrate, metadata, jsonld, editor, VueJS component, RO-Crate editor, JSON Linked Data, jsonld, json-ld, Linked Data",
                 },
+                {
+                    name: "google-site-verification",
+                    content: "icbbBfDR_SV3H2TUsnfzMhcfeAISzEh59CQZJdqsgsc",
+                },
             ],
         },
     },
