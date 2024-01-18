@@ -19,7 +19,7 @@
                         <font-awesome-icon icon="fa-solid fa-users-rectangle" />
                         &nbsp;
                     </div>
-                    <RouterLink to="/describo-users"> See who's using describo. </RouterLink>
+                    <RouterLink to="/describo-users/"> See who's using describo. </RouterLink>
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
                     <div>Are you a user looking to get started?</div>
                     <div class="text-2xl">
                         Install the
-                        <router-link to="/desktop" class="hover:text-orange-600">
+                        <router-link to="/desktop/" class="hover:text-orange-600">
                             desktop application
                         </router-link>
                         to get a full featured environment for creating and managing your research
@@ -48,7 +48,7 @@
                     </div>
                     <div>
                         Alternately, try the
-                        <router-link to="/online" class="hover:text-orange-600">
+                        <router-link to="/online/" class="hover:text-orange-600">
                             web version
                         </router-link>
                         to get started quickly. It's not as full featured as the desktop application
@@ -76,7 +76,7 @@
                         Are you a developer and want to embed the describo engine in your app?
                     </div>
                     <div>
-                        <router-link to="/component" class="hover:text-orange-600"
+                        <router-link to="/component/" class="hover:text-orange-600"
                             >Find out more.
                         </router-link>
                     </div>

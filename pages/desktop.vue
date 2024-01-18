@@ -5,7 +5,7 @@
             <template #text>
                 <div>An application that you can use to describe your data; anywhere, anytime.</div>
 
-                <div>
+                <div class="text-xl">
                     Read the documentation:
                     <a
                         href="https://describo.github.io/documentation/guide/tour.html"
@@ -30,25 +30,28 @@
                             class="text-red-600"
                         />
                     </div>
-                    <div>
-                        Describo is currently unfunded. If you like it and find it useful, please
-                        reach out to discuss how you can support its development.
-                        <a href="mailto:m@lr.id.au" target="_blank">Email Marco La Rosa.</a>
+                    <div class="text-xl">
+                        Describo is free to use. But if you like it and find it useful, please
+                        consider supporting it:
+                        <a href="https://describo.github.io/documentation/support.html">
+                            https://describo.github.io/documentation/support.html
+                        </a>
                     </div>
-                </div>
-
-                <div>
-                    Read the installation guides:
-                    <a
-                        href="https://describo.github.io/documentation/guide/installation.html"
-                        target="_blank"
-                    >
-                        https://describo.github.io/documentation/guide/installation.html
-                    </a>
                 </div>
             </template>
             <template #content>
-                <ReleasesComponent class="hidden md:inline" />
+                <div class="flex flex-col space-y-4">
+                    <ReleasesComponent class="hidden md:inline" />
+                    <div class="text-xl hidden md:inline">
+                        Read the installation guide:
+                        <a
+                            href="https://describo.github.io/documentation/guide/installation.html"
+                            target="_blank"
+                        >
+                            https://describo.github.io/documentation/guide/installation.html
+                        </a>
+                    </div>
+                </div>
             </template>
         </InfoPanelComponent>
 
