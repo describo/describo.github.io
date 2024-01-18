@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     pages: true,
     devtools: { enabled: false },
-    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/seo"],
+    modules: ["@nuxtjs/tailwindcss"],
     css: ["@fortawesome/fontawesome-svg-core/styles.css", "@/assets/styles.css"],
     build: {
         transpile: [
