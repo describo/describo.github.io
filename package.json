@@ -19,8 +19,9 @@
         "postinstall": "nuxt prepare"
     },
     "devDependencies": {
-        "nuxt": "^3.9.0",
-        "vue": "^3.4.6",
+        "@nuxtjs/seo": "^2.0.0-rc.5",
+        "nuxt": "^3.9.3",
+        "vue": "^3.4.15",
         "vue-router": "^4.2.5"
     },
     "dependencies": {
@@ -31,7 +32,6 @@
         "@fortawesome/free-regular-svg-icons": "^6.5.1",
         "@fortawesome/free-solid-svg-icons": "^6.5.1",
         "@fortawesome/vue-fontawesome": "^3.0.5",
-        "@nuxtjs/seo": "^2.0.0-rc.4",
         "@nuxtjs/tailwindcss": "^6.10.4",
         "add": "^2.0.6",
         "lodash-es": "^4.17.21"

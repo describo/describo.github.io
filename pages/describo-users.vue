@@ -2,7 +2,7 @@
     <div class="flex flex-col space-y-20">
         <InfoPanelComponent :border="false">
             <template #title>
-                <div class="flex flex-row place-content-between">
+                <div class="flex flex-row place-content-between py-2">
                     <div>Nyingarn Workspace</div>
                     <div class="flex flex-row space-x-2">
                         <img src="/flag-au.png" style="height: 40px" fit="contain" />
@@ -49,7 +49,7 @@
 
         <InfoPanelComponent>
             <template #title>
-                <div class="flex flex-row place-content-between">
+                <div class="flex flex-row place-content-between py-2">
                     <div class="">AROMA - the ARP RO-Crate Manager</div>
                     <div>
                         <img src="/flag-hu.png" style="height: 40px" fit="contain" />

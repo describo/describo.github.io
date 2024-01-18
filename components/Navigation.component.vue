@@ -9,7 +9,7 @@
                 class="flex flex-col md:flex-row justify-between space-y-1 space-x-0 md:space-x-8 md:space-y-0 md:pt-4"
             >
                 <div>
-                    <a href="https://describo.github.io/documentation" target="_blank">
+                    <a href="https://describo.github.io/documentation/" target="_blank">
                         Documentation
                     </a>
                 </div>
