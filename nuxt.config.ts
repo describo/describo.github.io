@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     devtools: { enabled: false },
     modules: ["@nuxtjs/tailwindcss"],
     css: ["@fortawesome/fontawesome-svg-core/styles.css", "@/assets/styles.css"],
+    ssr: true,
     build: {
         transpile: [
             "@fortawesome/vue-fontawesome",
@@ -20,8 +21,13 @@ export default defineNuxtConfig({
             },
             meta: [
                 {
-                    name: "description",
+                    name: "title",
                     content: "Describo: JSON-LD tools, software and services to manage RO-Crates.",
+                },
+                {
+                    name: "description",
+                    content:
+                        "Describo is an ecosystem of tools, software components and services to create and manage linked open data in the form of Research Object Crates.",
                 },
                 {
                     name: "author",
@@ -43,15 +49,5 @@ export default defineNuxtConfig({
         build: {
             outDir: "docs",
         },
-    },
-    site: {
-        url: "https://describo.github.io",
-        name: "Describo: JSON-LD tools, software and services to manage RO-Crates.",
-        description:
-            "Describo is an ecosystem of tools, software components and services to create and manage linked open data in the form of Research Object Crates.",
-        defaultLocale: "en", // not needed if you have @nuxtjs/i18n installed
-    },
-    schemaOrg: {
-        enabled: true,
     },
 });
