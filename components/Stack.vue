@@ -12,7 +12,7 @@
                 <card :key="ref(idx)" v-for="(card, idx) of cards" :class="{ hidden: idx !== n }">
                     <template #text><div v-html="card.text"></div></template>
                     <template #image>
-                        <div class="flex flex-col space-y-2">
+                        <div class="flex flex-col space-y-2 main">
                             <img
                                 v-if="!isArray(card.image)"
                                 :src="card.image"
@@ -77,7 +77,7 @@ function previousCard() {
 }
 
 const initZoom = () => {
-    mediumZoom("img", { background: "var(--vp-c-bg)" });
+    mediumZoom(".main img", { background: "var(--vp-c-bg)" });
 };
 onMounted(() => {
     initZoom();
