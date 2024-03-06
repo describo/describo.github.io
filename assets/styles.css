@@ -1,3 +1,17 @@
 a {
     color: rgb(30 64 175)
 }
+
+.medium-zoom-overlay {
+    z-index: 1000;
+}
+
+.medium-zoom-image {
+    @apply m-2 p-1 border border-slate-400 rounded-sm;
+    z-index: 1001;
+}
+
+.medium-zoom-image--opened{
+    @apply border-none shadow-md;
+    z-index: 1001;
+}

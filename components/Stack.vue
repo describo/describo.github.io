@@ -27,7 +27,11 @@
                         </div>
                     </template>
                 </card>
+                <div class="text-sm text-slate-800 text-center">
+                    Tip: Click the image to zoom in and get a better look!
+                </div>
             </div>
+
             <div
                 class="hidden md:flex cursor-pointer text-4xl py-48 px-2"
                 @click="nextCard()"
@@ -57,6 +61,8 @@ import { vAutoAnimate } from "@formkit/auto-animate";
 import Card from "./Card.vue";
 import { ref } from "vue";
 import isArray from "lodash-es/isArray.js";
+import { onMounted, watch } from "vue";
+import mediumZoom from "medium-zoom";
 
 const props = defineProps({
     cards: { type: Array },
@@ -69,4 +75,15 @@ function nextCard() {
 function previousCard() {
     n.value = n.value === 0 ? props.cards.length - 1 : (n.value -= 1);
 }
+
+const initZoom = () => {
+    mediumZoom("img", { background: "var(--vp-c-bg)" });
+};
+onMounted(() => {
+    initZoom();
+});
+watch(
+    () => n.value,
+    () => nextTick(() => initZoom())
+);
 </script>
