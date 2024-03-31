@@ -64,11 +64,11 @@ export default defineConfig({
                 content: "Dr Marco La Rosa (https://marcolarosa.github.io/)",
             },
         ],
-        ["script", { async: "", src: "https://www.googletagmanager.com/gtag/js?id=GTM-5K2HPGW9 " }],
+        ["script", { async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-GC2FXLTHYR" }],
         [
             "script",
             {},
-            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'GTM-5K2HPGW9 ');",
+            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-GC2FXLTHYR');",
         ],
         [
             "script",
