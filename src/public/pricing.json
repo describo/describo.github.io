@@ -1,0 +1,12 @@
+{
+    // General Credits - $5 USD
+    "general": {
+        "priceId": "pri_01htbs2ws69sfb2ffsc6ja1mwc",
+        "quantity": 1
+    },
+    // Assistant Credits - $5 USD
+    "assistant": {
+        "priceId": "pri_01htbs3gmgbxkf29ek1v211rjt",
+        "quantity": 1
+    }
+}
