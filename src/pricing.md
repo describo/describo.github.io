@@ -62,3 +62,5 @@ layout: home
     guide and can vary based on what you choose to do with your data.
     </div>
 </div>
+
+<FooterComponent class="mt-6"/>
