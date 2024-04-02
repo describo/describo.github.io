@@ -10,14 +10,21 @@
 
 /* min-width: 1440px same as original min-width: 960px */
 @media (min-width: 1440px) {
+    .VPNavBar.has-sidebar .container  {
+        background-color: white !important;
+    }
+    .VPNavBar.has-sidebar .title {
+        background-color: var(--vp-sidebar-bg-color) !important;
+    }
     .VPSidebar {
+        z-index: 1000;
         padding-left: 32px !important;
         width: var(--vp-sidebar-width) !important;
     }
-
     .VPContent.has-sidebar {
         padding-left: var(--vp-sidebar-width) !important;
         padding-right: 0 !important;
+
     }
     .container {
        max-width: 1400px !important
