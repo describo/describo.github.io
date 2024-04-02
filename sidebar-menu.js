@@ -1,12 +1,12 @@
 export const sidebar = [
-    {
-        text: "About",
-        link: "/about",
-    },
-    {
-        text: "Frequently Asked Questions",
-        link: "/faqs",
-    },
+    // {
+    //     text: "About",
+    //     link: "/about",
+    // },
+    // {
+    //     text: "Frequently Asked Questions",
+    //     link: "/faqs",
+    // },
     // { text: "Product Tour", link: "/tour" },
     { text: "Beginner Tutorial", link: "/docs/guide/five-minute-tutorial" },
     { text: "Team", link: "/team" },

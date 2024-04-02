@@ -14,7 +14,7 @@
                 <LinkComponent link="/datapacks" text="Data Packs" target="" />
             </div>
             <div class="flex flex-col md:w-60">
-                <LinkComponent link="/about" text="About" target="" />
+                <!-- <LinkComponent link="/about" text="About" target="" /> -->
                 <LinkComponent link="/terms-and-conditions" text="Terms & Conditions" target="" />
                 <LinkComponent link="/privacy-policy" text="Privacy Policy" target="" />
             </div>

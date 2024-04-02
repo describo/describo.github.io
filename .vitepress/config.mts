@@ -108,7 +108,7 @@ export default defineConfig({
         nav: [
             {
                 text: "Docs",
-                link: "/about",
+                link: "/docs/guide/five-minute-tutorial",
             },
             {
                 text: "Product Tour",

@@ -22,7 +22,7 @@ import "./override-styles.css"; // <-- override the styling in this file.
 ## override-styles.css
 
 You can get the override-styles.css file from:
-[https://github.com/describo/crate-builder-component/blob/revise-internals/src/app/override-styles.css](https://github.com/describo/crate-builder-component/blob/revise-internals/src/app/override-styles.css).
+[https://github.com/describo/crate-builder-component/blob/master/src/app/override-styles.css](https://github.com/describo/crate-builder-component/blob/master/src/app/override-styles.css).
 
 All of the available css prop's are shown following:
 

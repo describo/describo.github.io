@@ -81,7 +81,7 @@ same as that package but in a very different way.
 
 :::
 
-See the API documentation
+<!-- See the API documentation
 ([https://describo.github.io/crate-builder-component](https://describo.github.io/crate-builder-component))
 for what you can do and whether it fits your needs.
 
@@ -92,4 +92,4 @@ As at January 2024, Crate Manager is significantly smalller than the ro-crate-js
 | CrateManager | 798           | 69  |
 | ro-crate-js^ | 1164          | 100 |
 
-^The ro crate schema was removed from the defaults file for this count.
+^The ro crate schema was removed from the defaults file for this count. -->
