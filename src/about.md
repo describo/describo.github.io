@@ -6,11 +6,10 @@ title: About Describo
 
 ## January - May 2020
 
-Peter Sefton (Technical Lead) engaged Marco La Rosa (Full stack developer and Software Architect) to
-build the first proof of concept Describo application. Peter, a co-editor of the RO Crate
-specification, envisaged a tool that would enable users to create valid, spec compliant RO Crates.
-Initial consultation with his team at UTS and other collaborators led to the creation of the
-Describo Desktop application.
+Peter Sefton (Technical Lead) engaged Marco La Rosa (Full stack developer) to build the first proof
+of concept Describo application. Peter, a co-editor of the RO Crate specification, envisaged a tool
+that would enable users to create valid, spec compliant RO Crates. Initial consultation with his
+team at UTS and other collaborators led to the creation of the Describo Desktop application.
 
 In that design, Describo Desktop was required to enable users to describe entities using all of
 schema.org. As a development on top of that, Marco developed the concept of profiles to drive the
@@ -21,17 +20,16 @@ Funded by: [![](/images/logos/uts-logo.png)](https://uts.edu.au)
 
 ## October 2020 - December 2020
 
-Whilst very well received and proof of the validity of the concept, Peter wanted an online
-application. In a second engagement Peter re-engaged Marco and developed a specification for the
-Describo Online application. This was a web based version with an internal database to manage
-entities and the ability to talk to various backend storage systems via rclone. Peter's vision was
-to have a singular application that could be deployed as a standalone tool or embed into external
-applications as the metadata editor. The first integration was to be at UTS.
+In a second engagement Peter designed a specification for an online application. This was a web
+based version with an internal database to manage entities and the ability to talk to various
+backend storage systems via rclone. Peter's vision was to have a singular application that could be
+deployed as a standalone tool or embed into external applications as the metadata editor. The first
+integration was to be at UTS.
 
 In the first iteration Describo Online used Microsoft OneDrive as a backend storage system (via
-rclone) as this was the preferred data storage system at UTS. In a short development cycle Marco
-ported the Describo Desktop code to an online environment (Single Page VueJS Application and NodeJS
-API) and further developed and improved the profile capability of the tool.
+rclone) as this was the preferred data storage system at UTS. In this development cycle Marco ported
+the Describo Desktop code to an online environment (Single Page VueJS Application and NodeJS API)
+and further developed and improved the profile capability of the tool.
 
 Funded by: [![](/images/logos/uts-logo.png)](https://uts.edu.au)
 
@@ -85,16 +83,24 @@ By this time, difficulties using the Online version in external applications (Sc
 Nyingarn Workspace) were evident. The Sciebo team were managing their own fork so that they could
 customise it to suit their environment and Marco was finding it difficult to synchronise the
 Describo internal state with the Nyingarn internal state. Furthermore, different backends supported
-different capabitiies. For example, OneDrive for business supported short lived file url's that
-could be used to display file previews but OneDrive personal did not (and neither did Owncloud).
+different capabitiies.
 
-Given these issues, and with support from the Nyingarn Project, Marco conceptualised and developed
-the crate builder component as an RO-Crate plugin that developers could use in their own
-applications. In short, the RO Crate engine internal to Describo Online was extracted into a
-standalone VueJS component others could use in their applications and customise without needing to
-fork the whole environment or run what had become an overly complex environment. As a tool trying to
-be all things to all groups (via the design requirement to talk to various storage backends)
-Describo online was already showing signs of significant technical debt.
+<!-- For example, OneDrive for business supported short lived file url's that
+could be used to display file previews but OneDrive personal did not (and neither did Owncloud). -->
+
+<!-- Given these issues, and with support from the Nyingarn Project, Marco developed the crate builder
+component as an RO-Crate plugin that developers could use in their own applications. That is, the RO
+Crate engine internal to Describo Online was extracted into a standalone VueJS component others
+could use in their applications and customise without needing to fork the whole environment or run
+what had become an overly complex environment. -->
+
+Given these issues, and with support from the Nyingarn Project, Marco extracted the RO Crate engine
+internal to Describo Online into a standalone VueJS component that could be embedded in applications
+and customised as required.
+
+<!-- As a tool trying to be all things to all groups (via
+the design requirement to talk to various storage backends) Describo online was already showing
+signs of significant technical debt. -->
 
 During the year, Marco was contacted by the people at Sztaki in Hungary to talk about how they
 wished to develop an RO Crate capability in Dataverse using Describo Online. The standalone
@@ -108,30 +114,34 @@ Funded by:
 
 ## 2023
 
-After extracting the RO Crate engine into a standalone component, Marco was able to revive the
-Describo Desktop application as well as create a web based application for users who needed basic
+Extraction of the RO Crate engine into a standalone component allowed the revival of the Describo
+Desktop application as well as the creation of a web based application for users who needed basic
 RO-Crate editing capability. The component enabled the development of different tools for different
 users, all with a consistent user experience. And developers using the component weren't required to
 deal with the technical debt inherent in the design of Describo Online.
 
-This was also a key turning point in the direction of Describo in that it allowed users to decide
+<!-- This was also a key turning point in the direction of Describo in that it allowed users to decide
 how their environments should work without needing to accept compromises or decisions made by the
 Describo technical leadership. Marco designed all aspects of the component to be totally
-configurable so developers could decide how it looked and worked in their applications.
+configurable so developers could decide how it looked and worked in their applications. -->
 
 Around the same time, Marco registered the describo organisation in Github to pull together all of
-the related Describo developments including profiles and data packs. Marco also setup the profiles
+the related Describo developments including profiles and data packs.
+
+<!-- Marco also setup the profiles
 repository as a hosting point for domain specific profiles that the Desktop and Web tools could
 dynamically pull profiles from so users could get started quickly with definitions created by
-others.
+others. -->
 
-Displeased with these developments Peter declined the invitation to join the GitHub organisation.
-Shortly after, Peter took the considerable funding of the Language Data Commons and directed it to
+Displeased with these developments Peter declined the invitation to join the GitHub organisation and
+decided to pursue his vision with elsewhere.
+
+<!-- Shortly after, Peter took the considerable funding of the Language Data Commons and directed it to
 an alternative product that copies many of the Describo innnovations; including most recently, an
-embeddable component.
+embeddable component. -->
 
-Meanwhile, Marco has continued building the Describo environment as an open source developer when
+<!-- Meanwhile, Marco has continued building the Describo environment as an open source developer when
 time permits. This includes maintaining the crate component (with help from our Hungarian friends at
-Sztaki), the desktop and web versions, profiles, data packs the website and this documentation.
+Sztaki), the desktop and web versions, profiles, data packs the website and this documentation. -->
 
 `Peter has not been associated with the Describo project or any of its components since early 2023`.

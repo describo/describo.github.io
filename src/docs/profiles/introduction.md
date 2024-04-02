@@ -13,6 +13,16 @@ By default, Describo makes available all of Schema.org. Often times we don't wan
 this to our users so profiles are a way for a community to tell Describo exactly what users are
 allowed to describe.
 
+Features of a profile:
+
+-   [Primitives](/docs/profiles/types) to specify the type data required: Text, TextArea, Boolean,
+    Date, DateTime, Time, Number, Geo, URL, Select, SelectURL, SelectObject
+    -   Constraints to further limit the data input. Available on Text, TextArea and Number types
+-   [Layouts](/docs/profiles/layouts) to specify property grouping and which properties to display.
+-   [Resolve](/docs/profiles/resolve) to specify how complex relational entities like Actioins
+    should display.
+-   [Localisation](/docs/profile/localisation) to translate entity classes in the User Interface.
+
 <InfoPanelComponent>
     <template #text>
         <StackComponent :cards="cards">

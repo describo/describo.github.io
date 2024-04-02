@@ -9,7 +9,7 @@ aside: false
 
 ## How is this work funded?
 
-Describo is currently an unfunded project.
+<!-- Describo is an unfunded project. -->
 
 Various elements of the describo ecosystem have been developed via project funding from various
 sources. You can read about the history and who has provided funding for this work on the
@@ -50,22 +50,24 @@ server.
 ## How do other tools compare to Describo?
 
 Peter Sefton, the original lead of the Describo project, has created an alternative tool using
-funding from the Language Data Commons of Australia. Whilst it does the same thing as Describo, the
-internal implementation is quite different.
+funding from the Language Data Commons of Australia. Like Describo it also produces RO-Crate
+metadata but the implementation is quite different and the tool is not as flexible as Describo.
 
-Unfortunately, their README is misleading about the differences between it and Describo and over
+<!-- Whilst it does the same thing as Describo, the internal implementation is quite different. -->
+
+<!-- Unfortunately, their README is misleading about the differences between it and Describo and over
 time, they have copied many of the Describo innovations including most recently, making an
-embeddable component available .
+embeddable component available. -->
 
-To address his comment of a "general purpose tool": Describo is a general purpose tool. As browser
+<!-- To address his comment of a "general purpose tool": Describo is a general purpose tool. As browser
 environments are extremely limited in what they can do, the web version of Describo is only targeted
 at simple usage where one wants to browse an RO-Crate and possibly make a few metadata edits.
 Describo desktop is like a a client / server application all in one and that enables the
-capabilities coming soon!
+capabilities coming soon! -->
 
 ## How do RO-Crate Editor Profiles compare to Describo Profiles?
 
-In short, they are a limited version of Describo Profiles.
+<!-- In short, they are a limited version of Describo Profiles. -->
 
 One of the key innovations of Describo was the development of profiles to drive the user interface.
 When Marco invented this capability, he designed it so that a profile author could selectively
@@ -80,6 +82,8 @@ overwhelm the user in the interface. Further, with inherit, any properties defin
 are made visible in the UI (including any that overlap the schema.org definitions) with the others
 always available. This allows the profile author complete control over what is shown and how.
 
+RO-Crate Editor profiles do not operate this way and as such, are not as flexible.
+
 Another difference is how the layouts are defined. In Describo Profiles, the profile author can
 define their own layouts per entity. Further, the profile author has complete control over how the
 properties are grouped and what those groups are called. This is not possible with RO-Crate editor
@@ -90,19 +94,18 @@ linking entities like actions. Where an action defines an object, agent and a pa
 profile author can choose to make the linked entities visible in the UI. RO-Crate editor profiles do
 not have this capability.
 
-::: warning NOTE
+<!-- ::: warning NOTE
 
 On one of their sites they claim that RO-Crate Editor files are definitely not compatible with
 Describo. This is untrue and following is an explanation of why.
 
-:::
+::: -->
 
-The authors claim that their profiles are no longer compatible with Describo but that is untrue and
-purposefully misleading. There are elements of their profiles that Describo would ignore but for the
-most part, the profiles are still compatible as they copy the same basic structure. Further, they
-could easily be mapped to the Describo Profiles format if the project lead were interested in
-maintaining tool compatibility and mitigating the complexity confronting the user base.
+It is claimed that RO-Crate Editor profiles are no longer compatible with Describo but that is
+incorrect and misleading. There are elements of those profiles that Describo would ignore but for
+the most part, the profiles copy the same basic structure of Describo profiles. Further, they could
+easily be mapped to the Describo profiles format.
 
-Unfortunately, the maintainers chose to not engage with Describo Profiles and when asked why,
-refused to communicate.
+Unfortunately, the maintainers of RO-Crate Editor profiles chose to not engage with Describo
+profiles and when asked why, refused to communicate.
 [https://github.com/Language-Research-Technology/ro-crate-editor-profiles/issues/3](https://github.com/Language-Research-Technology/ro-crate-editor-profiles/issues/3)

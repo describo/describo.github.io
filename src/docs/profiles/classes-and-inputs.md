@@ -119,10 +119,10 @@ inputs of the relevant type.
 ## ANY Class
 
 When defining what a property can link to, you can select from a given set of types like Text or
-Number (see the types documentation linked above). Anything else will be treated as an entity. For
-example, specifying `type: ['Text', 'Person', 'Organisation']` allows the user to attach some
-textual content or link an entity of type Person or Organisation. However, what if the user should
-be able to attach an entity of any type?
+Number (see the [types](/docs/profiles/types) documentation). Anything else will be treated as an
+entity. For example, specifying `type: ['Text', 'Person', 'Organisation']` allows the user to attach
+some textual content or link an entity of type Person or Organisation. However, what if the user
+should be able to attach an entity of any type?
 
 The `ANY` class is a special indicator to Describo to give the user the ability to attach an entity
 of any type at that point. This is required for things like actions and relationships (see
