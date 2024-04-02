@@ -27,3 +27,4 @@ logs
 .vitepress/dist
 
 docs
+!src/docs
