@@ -1,6 +1,6 @@
 ---
 title: Working with an RO-Crate
-outline: deep
+aside: false
 ---
 
 # Working with an RO-Crate
@@ -17,7 +17,7 @@ is the metadata editor and on the right is the file preview.
 In the navigation bar the current folder is shown along with controls to apply a profile, save the
 current the work and access the settings.
 
-![](/images/workspace-describe/desktop2.png)
+![](/images/tutorial-working-with-a-crate/desktop2.png)
 
 ## Main editor window
 
@@ -25,14 +25,14 @@ The main editor window has a controls bar along the top. On it there are control
 through the entities in the crate; add properties to the current entity; edit the context; preview
 the crate data; browse the entities in the crate; and view the linkages to the current entity.
 
-<ImageComponent src="/images/workspace-describe/desktop3.png" />
+<ImageComponent src="/images/tutorial-working-with-a-crate/desktop3.png" />
 
 ### Navigating to an entity
 
 The main editor window which displays the properties defined for this entity. Selecting an entity
 (e.g. select the File entity shown) navigates to that entity.
 
-<ImageComponent src="/images/workspace-describe/desktop4.png" />
+<ImageComponent src="/images/tutorial-working-with-a-crate/desktop4.png" />
 
 ### Adding properties to an entity
 

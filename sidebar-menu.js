@@ -41,6 +41,10 @@ export const sidebar = [
                         text: "Content Transcription and Entity Markup",
                         link: "/docs/guide/tutorials/transcribing-content",
                     },
+                    {
+                        text: "Using the assistant when transcribing",
+                        link: "/docs/guide/tutorials/transcribing-content-assistant",
+                    },
                 ],
             },
         ],

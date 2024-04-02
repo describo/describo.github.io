@@ -54,6 +54,21 @@ const cards = [
         text: `When using the transcription tools the data is written into the RO-Crate. And the markup is created as data attributes in the HTML.`,
         image:  [ "/images/tour/desktop9.png",  "/images/tour/transcribe11.png" ]
     },
+     {
+        text: `Describo interfaces with a conversational AI assistant to help you interrogate and understand your content. In this image
+                the assistant has first summarised the text then, acting as an anthropologist, it has described the main topics.
+                Finally, as a social scientist, the assistant explains the narrative with respect to any cultural symbolism. In each response,
+                detailed examples are provided from the text to support the commentary.`,
+        image:   "/images/tutorial-transcribing-content-assistant/assistant1.png"
+    },
+     {
+        text: `Any description or defined term that you create is then associated to the file in the metadata.`,
+        image:   "/images/tutorial-transcribing-content-assistant/assistant3.png"
+    },
+      {
+        text: `And defined terms can be looked up and attached to other content that you are working on.`,
+        image:   "/images/tutorial-transcribing-content-assistant/assistant4.png"
+    },
     {
         text: `Describo is totally configurable via profiles. Profiles are JSON files that describe how the interface looks and  what a user can do.
         Profiles can be loaded from your computer or from the Describo Profiles Repository. Profiles are cached locally for reuse.`,

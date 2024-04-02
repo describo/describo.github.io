@@ -1,5 +1,6 @@
 ---
 title: What is JSON-LD and RO-Crate?
+aside: false
 ---
 
 # Explainer: JSON-LD and RO-Crate

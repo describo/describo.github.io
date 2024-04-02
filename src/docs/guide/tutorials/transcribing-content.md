@@ -1,5 +1,6 @@
 ---
 title: Content Transcription and Entity Markup
+aside: false
 ---
 
 # Content Transcription and Entity Markup
@@ -18,12 +19,12 @@ When you navigate to the transcription tab you will see a 3 pane layout. In the 
 file browser showing only images in your folder. For now, Describo can only work with image formats;
 specifically files with the extension 'tif', 'tiff', 'jpg', 'jpeg', 'webp' or 'png'.
 
-<ImageComponent src="/images/workspace-transcribe/transcribe1.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe1.png"></ImageComponent>
 
 Get started by selecting an image file. The file will be loaded into the middle panel and the third
 panel will become a text editor.
 
-<ImageComponent src="/images/workspace-transcribe/transcribe2.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe2.png"></ImageComponent>
 
 At this point you can immediately start transcribing the content of the image into the editor window
 in the right hand panel.
@@ -53,8 +54,8 @@ fractions of a cent, having a go won't cost much.
 In the following two images, the control `Extract text using OCR` is pressed and after a few
 moments, the text is written into the transcription editor.
 
-<ImageComponent src="/images/workspace-transcribe/transcribe3.png"></ImageComponent>
-<ImageComponent src="/images/workspace-transcribe/transcribe4.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe3.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe4.png"></ImageComponent>
 
 Immediately we notice a few things. The entities are marked up in the text. Dates are purple whilst
 People are green. The background for each entity is red meaning that the entitiy needs to be
@@ -64,7 +65,7 @@ Highlighting an entity in the text and then pressing `Markup Entity` in the cont
 mark up that entity in the RO-Crate. In the following example we are saying that that entity in the
 text is a Person with name `Goolgoolia`.
 
-<ImageComponent src="/images/workspace-transcribe/transcribe5.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe5.png"></ImageComponent>
 
 After pressing `Create and Link Entity` the background has changed to indicate that the entity has
 been confirmed by you. Entities can be unmarked by highlighting them and selectin `Unmark Entity`.
@@ -97,10 +98,10 @@ left. The original image is `Bates35-005.jpg` and alongside it is `Bates35-005.t
 and `Bates35-005.transcription.html`. The file named textract OCR contains the textract data and the
 html file is the marked up transcription.
 
-<ImageComponent src="/images/workspace-transcribe/transcribe10.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe10.png"></ImageComponent>
 
 If we look at the content of the html file we see that the entity data is marked up as HTML data
 attributes. In the following example, the first entity has the class `unconfirmed` whilst the second
 does not meaning that the second has been confirmed.
 
-<ImageComponent src="/images/workspace-transcribe/transcribe11.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe11.png"></ImageComponent>
