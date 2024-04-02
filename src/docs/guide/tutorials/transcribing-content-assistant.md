@@ -3,6 +3,17 @@ title: Using the assistant
 aside: false
 ---
 
+::: warning info
+
+#### Artificial intelligence and conversational AI models are frontier technologies that are still improving in accuracy, reliability and safety.
+
+Outputs may not always be accurate and may contain material inaccuracies even if they appear
+accurate because of their level of detail or specificity. You should not rely on any Outputs without
+independently confirming their accuracy. The Services and any Outputs may not reflect correct,
+current, or complete information.
+
+:::
+
 # Using the assistant
 
 As you are transcribing your content, you are also marking up entities that are found in that
