@@ -21,7 +21,7 @@ Features of a profile:
 -   [Layouts](/docs/profiles/layouts) to specify property grouping and which properties to display.
 -   [Resolve](/docs/profiles/resolve) to specify how complex relational entities like Actioins
     should display.
--   [Localisation](/docs/profile/localisation) to translate entity classes in the User Interface.
+-   [Localisation](/docs/profiles/localisation) to translate entity classes in the User Interface.
 
 <InfoPanelComponent>
     <template #text>
