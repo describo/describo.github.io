@@ -15,7 +15,7 @@
                             Credits to use the assistant to interrogate the data<sup>*</sup>
                             <ul class="list-disc">
                                 <li>1,000,000 input tokens</li>
-                                <li>120,000 output tokens</li>
+                                <li>100,000 output tokens</li>
                             </ul>
                         </li>
                     </ul>
@@ -33,7 +33,7 @@
                             Credits to use the assistant to interrogate the data<sup>*</sup>
                             <ul class="list-disc">
                                 <li>1,500,000 input tokens</li>
-                                <li>190,000 output tokens</li>
+                                <li>150,000 output tokens</li>
                             </ul>
                         </li>
                     </ul>
