@@ -34,8 +34,8 @@ layout: home
                 <LinkComponent link="/terms-and-conditions" target="">Terms and Conditions of use.</LinkComponent>
             </li>
             <li>
-                Our privacy policy tells you what data we collect, where we collect it and how it's used.
-                <LinkComponent link="/privacy-policy" target="">Privacy Policy.</LinkComponent>
+                Our <LinkComponent link="/privacy-policy" target="">Privacy Policy.</LinkComponent>
+                tells you what data we collect, where we collect it and how it's used.
             </li>
             <li>Credits can be purchased from within Describo Desktop after you've subscribed.</li>
         </ul>

@@ -88,7 +88,7 @@ layout: home
 
 <div class="flex flex-col mt-10 space-y-10">
   <InfoPanelComponent>
-    <template #title>An intuitive metadata editor.</template>
+    <template #title>An intuitive, intelligent and extensible metadata editor.</template>
     <template #text>
       <p>
         Describo enables you to describe your data. It creates metadata

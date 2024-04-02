@@ -35,19 +35,7 @@ layout: home
     analyze that data to improve their ability to detect and enforce Acceptable Use Policy
     violations, including training models for use by their trust and safety teams.
 
-2.  When using the assistant, provided that you meet the requirements of these terms and conditions,
-    the prompts that you provide (ie your queries) and the outputs received remain solely your
-    property. All right, title and interest to the prompts and the outputs is transferred from our
-    service provider directly to you. Further - you:
-
-    -   acknowledge that the outputs may not always be accurate even if they appear to be;
-    -   acknowledge that it is your responsibility to confirm the accuracy of the outputs from the
-        assistant;
-    -   acknowledge that the outputs may not reflect correct, current or complete information;
-    -   acknowledge that any outputs do not represent the views of the operators of the describo
-        cloud or its service providers.
-
-3.  To use the describo cloud capabilities (text extraction, named entity recognition and assistant)
+2.  To use the describo cloud capabilities (text extraction, named entity recognition and assistant)
     you:
 
     -   must subscribe to the service with a valid, work or personal email address that must be
@@ -62,7 +50,7 @@ layout: home
         service and accept all responsibility for any disciplinary action taken by us or our service
         providers in relation to your use of the services;
 
-4.  You guarantee that you will not use the services to:
+3.  You guarantee that you will not use the services to:
 
     -   engage in any form of illegal activity;
     -   handle any kind of child sexual exploitation or abuse content and acknowledge that we and /
@@ -82,6 +70,18 @@ layout: home
         -   automated determination of financing eligibility of individuals;
         -   automated determination of employment and housing decisions;
         -   any law enforcement application;
+
+4.  When using the assistant, provided that you meet the requirements of these terms and conditions,
+    the prompts that you provide (ie your queries) and the outputs received remain solely your
+    property. All right, title and interest to the prompts and the outputs is transferred from our
+    service provider directly to you. Further - you:
+
+    -   acknowledge that the outputs may not always be accurate even if they appear to be;
+    -   acknowledge that it is your responsibility to confirm the accuracy of the outputs from the
+        assistant;
+    -   acknowledge that the outputs may not reflect correct, current or complete information;
+    -   acknowledge that any outputs do not represent the views of the operators of the describo
+        cloud or its service providers.
 
 5.  THE SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
     NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
