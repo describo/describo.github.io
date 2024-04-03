@@ -3,6 +3,13 @@ title: Using the assistant
 aside: false
 ---
 
+::: tip Info
+
+To use the assistant capability you need to first
+[subscribe to describo.cloud.](/docs/guide/configuration/subscribe.html)
+
+:::
+
 ::: warning info
 
 #### Artificial intelligence and conversational AI models are frontier technologies that are still improving in accuracy, reliability and safety.

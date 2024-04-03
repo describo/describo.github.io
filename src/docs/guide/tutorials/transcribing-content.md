@@ -3,6 +3,13 @@ title: Content Transcription and Entity Markup
 aside: false
 ---
 
+::: tip Info
+
+To use the text extraction and entity recognition capabilities you need to first
+[subscribe to describo.cloud.](/docs/guide/configuration/subscribe.html)
+
+:::
+
 # Content Transcription and Entity Markup
 
 As a **#HASS** researcher you are likely collecting images of manuscripts and periodicals that you
