@@ -11,6 +11,8 @@ The component has a built in RO-Crate manager that knows how to work with and ma
 based on actions within the component. As this is now available to users of the component it's worth
 noting that it can be used in your application without using the component.
 
+[API documentation.](https://describo.github.io/crate-builder-component)
+
 ## Initialisation and usage
 
 ```JS
