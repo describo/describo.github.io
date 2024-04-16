@@ -1,7 +1,4 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn
-more.
+# The main describo website and documentation site
 
 ## Setup
 
@@ -14,7 +11,7 @@ npm install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+Start the development server on `http://localhost:5173` (but check console because it can change):
 
 ```bash
 # npm
