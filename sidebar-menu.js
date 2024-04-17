@@ -62,6 +62,7 @@ export const sidebar = [
             { text: "Profile Structure", link: "/docs/profiles/profile-structure" },
             { text: "Context", link: "/docs/profiles/contexts" },
             { text: "Layouts", link: "/docs/profiles/layouts" },
+            { text: "Associations", link: "/docs/profiles/associations" },
             { text: "Localisation", link: "/docs/profiles/localisation" },
             { text: "Resolve", link: "/docs/profiles/resolve" },
             { text: "Classes and Inputs", link: "/docs/profiles/classes-and-inputs" },
