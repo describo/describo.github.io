@@ -44,6 +44,7 @@ If you connect to the component via a reference, you will get access to an objec
 properties:
 
 -   cm: the internal CrateManager instance that the component uses to manipulate the data;
+-   pm: the internal ProfileManager instance; makes handling profiles/schema.org classes easy;
 -   refresh: a method to tell the current entity to refresh its display;
 -   setCurrentEntity({ id }): a method to set the enity to display;
 -   setTab(tabName): a method to display the selected tab.
