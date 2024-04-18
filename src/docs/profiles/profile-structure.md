@@ -2,6 +2,19 @@
 title: profile structure
 ---
 
+## Profile versions - READ THIS
+
+::: info
+
+If you are writing a profile for Describo Online
+[see the documentation with that repository](https://github.com/Arkisto-Platform/describo-online/wiki/Writing-a-domain-specific-profile).
+
+This repository describes profiles for the
+[Crate Builder Component](https://github.com/describo/crate-builder-component) which are an
+evolution of those.
+
+:::
+
 # Profile Structure
 
 The structure of a profile is as follows:
@@ -11,6 +24,7 @@ The structure of a profile is as follows:
     "metadata":  {},
     "context": {},
     "layouts": {},
+    "propertyAssociations": [],
     "localisation": {},
     "resolve": [],
     "classes": {},
@@ -42,7 +56,14 @@ See [All about contexts](./contexts.md) for more information.
 
 This section defines how to group properties and display them in tabs.
 
-See [Layouts for a detailed account of these sections.](./layouts.md)
+See [Layouts for how to define them and why you would want to.](./layouts.md)
+
+## Property Associations
+
+This sections defines inverse property relationships so that describo can automatically create them
+on data input.
+
+See [Property Associations for a detailed account of these sections.](./associations.md)
 
 ## Localisation
 

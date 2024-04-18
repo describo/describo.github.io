@@ -58,7 +58,6 @@ export const sidebar = [
         collapsed: true,
         items: [
             { text: "Introduction", link: "/docs/profiles/introduction" },
-            { text: "Get Started", link: "/docs/profiles/get-started" },
             { text: "Profile Structure", link: "/docs/profiles/profile-structure" },
             { text: "Context", link: "/docs/profiles/contexts" },
             { text: "Layouts", link: "/docs/profiles/layouts" },

@@ -24,6 +24,18 @@ Features of a profile:
     display.
 -   [Localisation](/docs/profiles/localisation) to translate entity classes in the User Interface.
 
+## Sharing your profile
+
+Example profiles from specific domains can be seen in the
+[domain profiles folder](https://github.com/describo/profiles/tree/master/domain-profiles). If you'd
+like to publish your own profile for others to work with or use please submit a pull request to this
+repository. You must:
+
+-   create a folder preferably named by your domain in the `domain-profiles` folder.
+-   name your profiles in there in some sensible way.
+
+Optionally, add a README to your folder - absolutely recommended but not an essential requirement.
+
 <InfoPanelComponent>
     <template #text>
         <StackComponent :cards="cards">

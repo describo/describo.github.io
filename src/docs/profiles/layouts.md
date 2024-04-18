@@ -7,8 +7,6 @@ aside: false
 
 # Layouts
 
-[[toc]]
-
 The `layouts` section defines how to group properties.
 
 The structure of the layouts section is as follows:
@@ -64,7 +62,7 @@ When describo loads an entity, it compares the entity `@type` as an array with t
 and, if there is any overlap, the layout will be applied. So, the first layout above would be
 applied to the following entities:
 
-```JSON
+```JS
 @type = ['Dataset']
 @type = ['Dataset', 'RepositoryCollection']
 @type = ['RepositoryCollection', 'Dataset']
@@ -74,12 +72,12 @@ applied to the following entities:
 If multiple layouts match (for example: `@type` = ['Dataset', 'Language']), then the first matching
 layout will be applied (in this case layout 1).
 
-## Assigning properties to layout groups
+## Assigning properties to layout groups within the property definition
 
 Adding properties to groups is done in the property definition. Consider a profile with the
 following definition of a Dataset:
 
-```JSON
+```JS
 classes: {
    Dataset: {
        inputs: [
@@ -98,3 +96,53 @@ classes: {
 
 In this example, both properties would be shown in the `about` tab and their order would be as
 defined in the profile; that is, A would be shown before B.
+
+## Assigning properties to layout groups within the layout itself
+
+You can also define a properties array on the layout itself and use that to put properties into
+groups and define the order.
+
+Consider the following profile snippet:
+
+```JS
+    "layouts": [
+        {
+            "appliesTo": ["Dataset"],
+            "about": { "label": "About", "description": "", "properties": [ "contributor", "http://schema.org/author" ], order: 0 },
+            "overflow": {
+                "label": "Other",
+                order: 4
+            }
+        },
+    ],
+    classes: {
+        CreativeWork: {
+            ...
+            inputs: [
+                { id: 'http://schema.org/contributor', ...}
+            ]
+        },
+        Dataset: {
+            ...
+            subClassOf: ['CreativeWork'],
+            inputs: [
+                { id: 'http://schema.org/author', ...}
+                { id: 'http://schema.org/participant',group: 'about', ... }
+            ]
+        }
+    }
+```
+
+In the example above the `about` layout has an extra property: `properties` which is an array of
+property names and / or ids. In addition, the Dataset class definition is a `subClassOf`
+CreativeWork; which is also defined in the profile.
+
+When Describo encounters a profile like this, it will handle Datasets as follows:
+
+-   It will load all `profile inputs` from the class (Dataset) and any parent classes (CreativeWork)
+-   It will then create the layout and assign the inputs to the defined group (in this case, it will
+    use the `properties` definition in the layout to group the inputs)
+-   Finally, it will order the inputs by the `properties` array.
+
+Note that the `participant` input on Dataset is not part of the properties array but it still ends
+up in the right group.

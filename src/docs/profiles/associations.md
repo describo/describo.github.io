@@ -53,7 +53,7 @@ We would them get:
 ]
 ```
 
-Now, when inspecting the `#B` entity, we clarly see that `#B` `is the author of` `#A`. Whilst we
+Now, when inspecting the `#B` entity, we clearly see that `#B` `is the author of` `#A`. Whilst we
 still have the reverse associations, semantically, we've defined a descriptive, forward looking
 association via the `isAuthorOf` property.
 
@@ -85,10 +85,10 @@ To support this, you can define the associations you want in the profile, viz:
 }
 ```
 
-In this example we are definition two associations:
+In this example we are define two associations:
 
-1. In the first we are saying that `keywords` has a reverse association with `isKeywordOf`.
-2. In the second we are saying that `hasMember` has a reverse association with `isMemberOf`
+1. In the first we are saying that `keywords` has an inverse association of `isKeywordOf`.
+2. In the second we are saying that `hasMember` has an inverse association of `isMemberOf`
 
 In both cases we also define the propertyId - this is important so that the context can be
 automatically updated as associations are added.
