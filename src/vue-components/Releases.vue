@@ -41,7 +41,7 @@
                 <div>Windows</div>
             </div>
             <div class="flex flex-col">
-                <LinkComponent :link="data.download.windows" target="">
+                <LinkComponent :link="data.download.wintel" target="">
                     <div>Download for Intel processors</div>
                 </LinkComponent>
                 <TipComponent class="text-center">
@@ -95,8 +95,11 @@ onBeforeMount(async () => {
             return;
         }
         data.release = await response.json();
-        data.download.windows = data.release?.assets.filter((asset) =>
-            asset.name.match(/.*Setup.exe/)
+        data.download.winarm = data.release?.assets.filter((asset) =>
+            asset.name.match(/.*arm64.*Setup.exe/)
+        )[0].browser_download_url;
+        data.download.wintel = data.release?.assets.filter((asset) =>
+            asset.name.match(/.*x64.*Setup.exe/)
         )[0].browser_download_url;
         data.download.macArm = data.release?.assets.filter((asset) =>
             asset.name.match(/arm64.dmg/)
