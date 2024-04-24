@@ -171,7 +171,7 @@ Returns:
 Will report an error if the user types in something that doesn't look like a URL. Accepted protocols
 are: 'http', 'https', 'ftp', 'ftps', 'arcp'.
 
-##
+## Select, SelectURL, SelectObject
 
 -   `Select`: A control where the user can select from a number of predefined options:
 
