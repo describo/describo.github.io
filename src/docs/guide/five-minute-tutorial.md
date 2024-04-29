@@ -109,4 +109,4 @@ the way that suits you best.
 
 Well done, you created an RO-Crate by describing your data in a standard, spec compliant way!
 
-<i class="fa-solid fa-champagne-glasses text-yellow-500 fa-4x"></i>
+<font-awesome-icon :icon="['fas', 'champagne-glasses']" class="text-6xl text-yellow-500"/>

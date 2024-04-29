@@ -6,8 +6,8 @@
         </div>
         <div class="mt-6 text-center md:text-xl">
             <div>
-                Report <i class="fa-solid fa-bug"></i> or ask
-                <i class="fa-regular fa-circle-question"></i> on the issue tracker:
+                Report <font-awesome-icon :icon="['fas', 'bug']" /> or ask
+                <font-awesome-icon :icon="['fas', 'circle-question']" /> on the issue tracker:
             </div>
             <link-component :link="props.issueTrackerLink" />
         </div>

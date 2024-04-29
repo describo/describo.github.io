@@ -6,7 +6,7 @@
                 @click="previousCard()"
                 v-if="cards.length > 1"
             >
-                <i class="fa-solid fa-chevron-left"></i>
+                <font-awesome-icon :icon="['fas', 'chevron-left']" />
             </div>
             <div v-auto-animate="{ duration: 300 }">
                 <card :class="{ hidden: idx !== n }" v-for="(card, idx) of cards" :key="ref(idx)">
@@ -36,7 +36,7 @@
                 @click="nextCard()"
                 v-if="cards.length > 1"
             >
-                <i class="fa-solid fa-chevron-right"></i>
+                <font-awesome-icon :icon="['fas', 'chevron-right']" />
             </div>
         </div>
         <div class="hidden md:flex flex-row place-content-end">
@@ -44,11 +44,11 @@
         </div>
         <div class="flex flex-row md:hidden place-content-between" v-if="cards.length > 1">
             <div class="cursor-pointer px-2" @click="previousCard()">
-                <i class="fa-solid fa-chevron-left"></i>
+                <font-awesome-icon :icon="['fas', 'chevron-left']" />
             </div>
             <div>{{ n + 1 }} / {{ cards.length }}</div>
             <div class="cursor-pointer px-2" @click="nextCard()">
-                <i class="fa-solid fa-chevron-right"></i>
+                <font-awesome-icon :icon="['fas', 'chevron-right']" />
             </div>
         </div>
     </div>

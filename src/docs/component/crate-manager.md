@@ -61,7 +61,7 @@ same as that package but in a very different way.
 
 <div class="flex flex-rows space-x-4 justify items-center">
     <div>
-    <i class="text-green-600 fa-solid fa-check fa-3x"></i>
+       <font-awesome-icon :icon="['fas', 'check']" class="text-3xl text-green-600" />
     </div>
     <div>
         CrateManager is licensed with the permissive MIT licence.
@@ -74,7 +74,7 @@ same as that package but in a very different way.
 
 <div class="flex flex-rows space-x-4 justify items-center">
     <div>
-    <i class="text-red-600 fa-solid fa-xmark fa-3x"></i>
+       <font-awesome-icon :icon="['fas', 'xmark']" class="text-3xl text-red-600" />
     </div>
     <div>
         ro-crate-js is licensed with the GPLv3 which may impact where you can use it.

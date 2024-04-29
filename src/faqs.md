@@ -15,18 +15,6 @@ Various elements of the describo ecosystem have been developed via project fundi
 sources. You can read about the history and who has provided funding for this work on the
 [about page](/about).
 
-<!-- <div class="flex flex-row space-x-4 justify-center bg-slate-100 p-4 text-slate-800 rounded-lg my-4 text-lg">
-    <div>
-        <i class="fa-solid fa-circle-info text-red-600 fa-2x"></i>
-    </div>
-    <div>
-        Describo is currently unfunded.
-    </div>
-</div>
-
-Please see the page [`Support this work`](/support) if you are able to provide funding to keep
-development going. -->
-
 ## Why is the desktop application more functional than the web version?
 
 Browser environments are locked down extremely tightly as they are a common attack vector for

@@ -34,10 +34,10 @@ aside: false
                     The Describo Crate Builder component is embedded into the workspace as the
                     metadata editor and the repository as the metadata viewer. Nyingarn
                     sponsored the initial development of the embeddable component.
-                    <i class="fa-solid fa-champagne-glasses text-yellow-500"></i>
+                    <font-awesome-icon :icon="['fas', 'champagne-glasses']" class="text-2xl text-yellow-500"/>
                 </div>
                 <img
-                    src="https://nyingarn.net/wp-content/uploads/2023/04/Nyingarn_Vertical_Peppermint_RGB-768x768.webp"
+                    src="https://nyingarn.net/wp-content/uploads/2023/04/Nyingarn_Vertical_Peppermint_RGB-768x768.png"
                     style="height: 100px"
                     fit="contain"
                 />

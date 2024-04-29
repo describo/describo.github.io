@@ -10,6 +10,13 @@ import {
     faStar,
     faDownload,
     faRoute,
+    faChevronLeft,
+    faChevronRight,
+    faChampagneGlasses,
+    faBug,
+    faCircleQuestion,
+    faCheck,
+    faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faWindows, faApple, faLinux } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -26,6 +33,13 @@ library.add(faRoute);
 library.add(faWindows);
 library.add(faLinux);
 library.add(faApple);
+library.add(faChevronLeft);
+library.add(faChevronRight);
+library.add(faChampagneGlasses);
+library.add(faBug);
+library.add(faCircleQuestion);
+library.add(faCheck);
+library.add(faXmark);
 
 import DefaultTheme from "vitepress/dist/client/theme-default/index.js";
 import MyLayout from "./MyLayout.vue";
