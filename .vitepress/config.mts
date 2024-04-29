@@ -14,13 +14,13 @@ export default defineConfig({
     description:
         "Describo is an ecosystem of tools, software components and services to create and manage linked open data in the form of Research Object Crates.",
     head: [
-        [
-            "link",
-            {
-                rel: "stylesheet",
-                href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css",
-            },
-        ],
+        // [
+        //     "link",
+        //     {
+        //         rel: "stylesheet",
+        //         href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css",
+        //     },
+        // ],
         [
             "link",
             {
@@ -64,7 +64,7 @@ export default defineConfig({
                 content: "Dr Marco La Rosa (https://marcolarosa.github.io/)",
             },
         ],
-        ["script", { async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-GC2FXLTHYR" }],
+        // ["script", { async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-GC2FXLTHYR" }],
         [
             "script",
             {},
@@ -104,7 +104,7 @@ export default defineConfig({
 
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
-        logo: "./images/logos/describo-logo-small.png",
+        logo: "./images/logos/describo-logo-small.webp",
         nav: [
             {
                 text: "Docs",
