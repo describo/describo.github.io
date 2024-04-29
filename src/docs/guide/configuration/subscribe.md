@@ -21,19 +21,19 @@ Ensure you have reviewed:
 On the dashboard, in the panel titled `Subscription / AI Credits`, get started by entering your
 email address:
 
-<ImageComponent src="/images/configuration/subscribe1.png" />
+<ImageComponent src="/images/configuration/subscribe1.webp" />
 
 You will be sent an email with a one time code that you must enter in the next section. This is to
 verify that your email address is real and valid:
 
-<ImageComponent src="/images/configuration/subscribe2.png" />
+<ImageComponent src="/images/configuration/subscribe2.webp" />
 
 Copy the code from your email into the text box and click 'Verify':
 
-<ImageComponent src="/images/configuration/subscribe3.png" />
+<ImageComponent src="/images/configuration/subscribe3.webp" />
 
 As we are currently in a private beta phase, if you want some credits to have a go please email
 <a href="mailto:support@describo.cloud">support@describo.cloud</a> and tell us a little bit about
 you and your use case. **Be sure to email from the address that you signed up with.**
 
-<ImageComponent src="/images/configuration/subscribe4.png" />
+<ImageComponent src="/images/configuration/subscribe4.webp" />

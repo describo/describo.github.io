@@ -22,10 +22,10 @@ aside: false
             </div>
             <div class="flex flex-row justify-center space-x-10">
                 <div>
-                    <img src="/images/logos/chrome.png" class="h-20" />
+                    <img src="/images/logos/chrome.webp" class="h-20" />
                 </div>
                 <div>
-                    <img src="/images/logos/edge.png" class="h-20" />
+                    <img src="/images/logos/edge.webp" class="h-20" />
                 </div>
             </div>
         </div>

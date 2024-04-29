@@ -5,7 +5,7 @@ aside: true
 
 # Configuring Describo
 
-<ImageComponent src="/images/tour/desktop12.png" />
+<ImageComponent src="/images/tour/desktop12.webp" />
 
 In the General Settings sections you can control the following:
 

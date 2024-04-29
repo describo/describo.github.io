@@ -9,8 +9,8 @@ aside: false
             <div class="flex flex-row place-content-between py-2">
                 <div>Nyingarn Workspace</div>
                 <div class="flex flex-row space-x-2">
-                    <img src="/images/users/flag-au.png" class="h-8" fit="contain" />
-                    <img src="/images/users/flag-aboriginal.png" class="h-8" fit="contain" />
+                    <img src="/images/users/flag-au.webp" class="h-8" fit="contain" />
+                    <img src="/images/users/flag-aboriginal.webp" class="h-8" fit="contain" />
                 </div>
             </div>
         </template>
@@ -37,7 +37,7 @@ aside: false
                     <i class="fa-solid fa-champagne-glasses text-yellow-500"></i>
                 </div>
                 <img
-                    src="https://nyingarn.net/wp-content/uploads/2023/04/Nyingarn_Vertical_Peppermint_RGB-768x768.png"
+                    src="https://nyingarn.net/wp-content/uploads/2023/04/Nyingarn_Vertical_Peppermint_RGB-768x768.webp"
                     style="height: 100px"
                     fit="contain"
                 />
@@ -52,7 +52,7 @@ aside: false
             <div class="flex flex-row place-content-between py-2">
                 <div class="">AROMA - the ARP RO-Crate Manager</div>
                 <div>
-                    <img src="/images/users/flag-hu.png" class="h-8"  fit="contain" />
+                    <img src="/images/users/flag-hu.webp" class="h-8"  fit="contain" />
                 </div>
             </div>
         </template>
@@ -99,21 +99,21 @@ const stacks = [
     [
         {
             text: "Describo embedded into the workspace as the metadata editor.",
-            image: "/images/users/nyingarn1.png",
+            image: "/images/users/nyingarn1.webp",
         },
         {
             text: "Describo embedded into the repository as the metadata viewer.",
-            image: "/images/users/nyingarn2.png",
+            image: "/images/users/nyingarn2.webp",
         },
     ],
     [
         {
             text: "Aroma as a standalone application.",
-            image: "/images/users/users-aroma-standalone.png",
+            image: "/images/users/users-aroma-standalone.webp",
         },
         {
             text: "Aroma inside Dataverse.",
-            image: "/images/users/users-aroma-in-dataverse.png",
+            image: "/images/users/users-aroma-in-dataverse.webp",
         },
     ],
 ];

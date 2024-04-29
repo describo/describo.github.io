@@ -4,13 +4,13 @@ aside: false
 ---
 
 <div class="flex flex-col space-y-10 my-10">
-    <InfoPanelComponent image="/images/tour/desktop1.png" :border="false">
+    <InfoPanelComponent image="/images/tour/desktop1.webp" :border="false">
         <template #text>
             <div class="text-lg text-center">
                 <p>
                     Available for all major platforms for FREE
                 </p>
-                <ImageComponent src='/images/tour/desktop1.png' class="my-4"></ImageComponent>
+                <ImageComponent src='/images/tour/desktop1.webp' class="my-4"></ImageComponent>
                 View all releases @ <br/>
                 <LinkComponent link="https://github.com/describo/desktop-releases/releases/latest" class="text-base">
                      https://github.com/describo/desktop-releases/releases/latest

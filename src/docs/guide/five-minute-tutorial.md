@@ -17,7 +17,7 @@ associated metadata".
 
 In this 5 minute tutorial, you will get started describing your data as RO-Crates!
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial1.png" />
+<ImageComponent src="/images/five-minute-tutorial/tutorial1.webp" />
 
 ## Audience: about you
 
@@ -51,7 +51,7 @@ usage, that's not needed.
 
 In the application, select a folder to describe.
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial2.png" />
+<ImageComponent src="/images/five-minute-tutorial/tutorial2.webp" />
 
 ## Apply the RO-Crate profile
 
@@ -59,13 +59,13 @@ The main description view. A default RO-Crate describo profile has been created 
 
 Apply the profile.
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial3.png" />
+<ImageComponent src="/images/five-minute-tutorial/tutorial3.webp" />
 
 ## Profile Selector
 
 The profile selector. Locate the RO-Crate profile and select it.
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial4.png" />
+<ImageComponent src="/images/five-minute-tutorial/tutorial4.webp" />
 
 ## Describe your data
 
@@ -78,7 +78,7 @@ absolute bare minimum required to describe your data as an RO-Crate.
 -   [Contextual entities](https://www.researchobject.org/ro-crate/1.1/contextual-entities.html)
 -   [Data entities](https://www.researchobject.org/ro-crate/1.1/data-entities.html)
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial5.png" />
+<ImageComponent src="/images/five-minute-tutorial/tutorial5.webp" />
 
 ## Go further: describe more
 
@@ -86,7 +86,7 @@ Click the add button in the toolbar and inject properties into the data.
 
 <div class="flex justify-center">
     <div class="border">
-        <img src="/images/five-minute-tutorial/tutorial7.png" class="w-32" />
+        <img src="/images/five-minute-tutorial/tutorial7.webp" class="w-32" />
     </div>
 </div>
 
@@ -94,7 +94,7 @@ The properties you can inject come from schema.org and the describo profile if o
 are defined on the type of data you are working with. In this case a Dataset. When you add the
 property Describo will tell you what type of data it expects.
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial6.png" />
+<ImageComponent src="/images/five-minute-tutorial/tutorial6.webp" />
 
 ## Where did that property go?
 
@@ -103,7 +103,7 @@ that you add will be visible in the '...' tab. Don't worry, just remove the prof
 list view with all of your properties, sorted alphabetically. Or go back to the tabbed view. Work
 the way that suits you best.
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial8.png" />
+<ImageComponent src="/images/five-minute-tutorial/tutorial8.webp" />
 
 ## And that's an RO-Crate!
 

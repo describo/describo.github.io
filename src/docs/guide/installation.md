@@ -47,44 +47,44 @@ on the Desktop. But it takes a few steps to get this to happen.
    trusting this download. If you hover over it, a button with an ellipsis (...) will show. Hover
    over that and you will get the following dropdown. Select `Keep`.
 
-<img src="/images/windows/windows-setup1.png" data-zoomable />
+<img src="/images/windows/windows-setup1.webp" data-zoomable />
 
 2. When the following dialog shows, select `Show more`.
 
-<img src="/images/windows/windows-setup2.png" data-zoomable />
+<img src="/images/windows/windows-setup2.webp" data-zoomable />
 
 3. The select `Keep anyway`.
 
-<img src="/images/windows/windows-setup3.png" data-zoomable />
+<img src="/images/windows/windows-setup3.webp" data-zoomable />
 
 4. Then in your downloads folder (or wherever the file saved to) you will see the Describo Setup
    file. Double click it to install the application.
 
-<img src="/images/windows/windows-setup4.png" data-zoomable />
+<img src="/images/windows/windows-setup4.webp" data-zoomable />
 
 ### Install from the ZIP file
 
 1. After you've downloaded the file to your computer, go to your `Downloads` folder and unzip the
    file. Do this by selecting it and then clicking the `Extract all` button.
 
-<img src="/images/windows/windows-extract1.png" data-zoomable />
+<img src="/images/windows/windows-extract1.webp" data-zoomable />
 
 2. You will then be prompted to extract it somewhere. Choose a folder and select `Extract`
 
-<img src="/images/windows/windows-extract2.png" data-zoomable />
+<img src="/images/windows/windows-extract2.webp" data-zoomable />
 
 3. When that's done, if "Show extracted files when complete" was selected, an explorer window will
    open and you can start the `Describo` application. (If not, find the folder you extracted the
    application to and then start it).
 
-<img src="/images/windows/windows-extract3.png" data-zoomable />
+<img src="/images/windows/windows-extract3.webp" data-zoomable />
 
 4. You may be confronted with a message saying "Windows protected your PC". If you are, select
    `More info` and then `Run anyway`. See images following.
 
 <div class="flex flex-row justify-around">
-   <div><img src="/images/windows/windows-sig1.png" class="h-96" data-zoomable /></div>
-   <div><img src="/images/windows/windows-sig2.png" class="h-96" data-zoomable /></div>
+   <div><img src="/images/windows/windows-sig1.webp" class="h-96" data-zoomable /></div>
+   <div><img src="/images/windows/windows-sig2.webp" class="h-96" data-zoomable /></div>
 </div>
 
 ## Linux

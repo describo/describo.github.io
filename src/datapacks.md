@@ -28,11 +28,11 @@ aside: true
 <FooterComponent class="mt-6"/>
 
 <script setup>
-const glob = import.meta.glob("./public/images/datapacks/*.png", { eager: true })
+const glob = import.meta.glob("./public/images/datapacks/*.webp", { eager: true })
 
 const cards = [
-    { text: "Country data pack", image: "/images/datapacks/pack1.png" },
-    { text: "Austlang language data pack", image: "/images/datapacks/pack2.png" },
-    { text: "Glottolog language data pack", image: "/images/datapacks/pack3.png" },
+    { text: "Country data pack", image: "/images/datapacks/pack1.webp" },
+    { text: "Austlang language data pack", image: "/images/datapacks/pack2.webp" },
+    { text: "Glottolog language data pack", image: "/images/datapacks/pack3.webp" },
 ];
 </script>

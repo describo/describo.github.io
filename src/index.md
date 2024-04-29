@@ -4,7 +4,7 @@ layout: home
 #     name: Describo
 #     tagline: Analyse and describe your data
 #     image:
-#         src: ./images/logos/describo-logo.png
+#         src: ./images/logos/describo-logo.webp
 #         alt: Describo
 #     actions:
 #         - theme: brand
@@ -19,7 +19,7 @@ layout: home
   <div class="w-full md:w-1/2">
     <div class="flex flex-col space-y-2">
         <div>
-          <img src="/images/logos/describo-logo.png" class="h-16 lg:h-32" />
+          <img src="/images/logos/describo-logo.webp" class="h-16 lg:h-32" />
         </div>
       <div class="text-xl lg:text-3xl text-slate-600">Analyse and describe your data</div>
     </div>
@@ -103,7 +103,7 @@ layout: home
       </p>
     </template>
     <template #content>
-      <ImageComponent src="/images/tour/desktop1.png" />
+      <ImageComponent src="/images/tour/desktop1.webp" />
     </template>
   </InfoPanelComponent>
   <InfoPanelComponent>
@@ -126,7 +126,7 @@ layout: home
         </p>
     </template>
     <template #content>
-      <ImageComponent src="/images/tour/desktop4.png" />
+      <ImageComponent src="/images/tour/desktop4.webp" />
     </template>
 
   </InfoPanelComponent>
@@ -150,7 +150,7 @@ layout: home
       </p>
     </template>
     <template #content>
-      <ImageComponent src="/images/tour/desktop8.png" />
+      <ImageComponent src="/images/tour/desktop8.webp" />
     </template>
   </InfoPanelComponent>
 
@@ -173,7 +173,7 @@ layout: home
       <!-- <video controls class="p-2 border border-slate-400">
          <source src="/images/tour/analysis.mp4" type="video/mp4">
       </video> -->
-           <ImageComponent src="/images/tutorial-transcribing-content-assistant/assistant1.png" />
+           <ImageComponent src="/images/tutorial-transcribing-content-assistant/assistant1.webp" />
     </template>
   </InfoPanelComponent>
 </div>

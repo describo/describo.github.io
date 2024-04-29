@@ -24,7 +24,7 @@ aside: false
             </div>
         </template>
         <template #content>
-            <ImageComponent src="/images/component/component1.png" />
+            <ImageComponent src="/images/component/component1.webp" />
         </template>
     </InfoPanelComponent>
     <InfoPanelComponent>
@@ -44,7 +44,7 @@ aside: false
             <div class="flex flex-col space-y-2 items-center">
                 <div>
                     <img
-                        src="/images/logos/react-logo.png"
+                        src="/images/logos/react-logo.webp"
                         class="object-contain"
                         style="height: 120px"
                     />
@@ -64,7 +64,7 @@ aside: false
             more information.</LinkComponent>
         </template>
         <template #content>
-            <ImageComponent src="/images/component/component2.png" />
+            <ImageComponent src="/images/component/component2.webp" />
         </template>
     </InfoPanelComponent>
     <InfoPanelComponent>
@@ -75,7 +75,7 @@ aside: false
             more information.</LinkComponent>
         </template>
         <template #content>
-            <ImageComponent src="/images/component/component3.png" />
+            <ImageComponent src="/images/component/component3.webp" />
         </template>
     </InfoPanelComponent>
 

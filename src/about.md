@@ -16,7 +16,7 @@ schema.org. As a development on top of that, Marco developed the concept of prof
 user interface. With both of these capabilities Describo Desktop gave users the full power of
 schema.org whilst also being extensible to custom domains and data models.
 
-Funded by: [![](/images/logos/uts-logo.png)](https://uts.edu.au)
+Funded by: [![](/images/logos/uts-logo.webp)](https://uts.edu.au)
 
 ## October 2020 - December 2020
 
@@ -31,7 +31,7 @@ rclone) as this was the preferred data storage system at UTS. In this developmen
 the Describo Desktop code to an online environment (Single Page VueJS Application and NodeJS API)
 and further developed and improved the profile capability of the tool.
 
-Funded by: [![](/images/logos/uts-logo.png)](https://uts.edu.au)
+Funded by: [![](/images/logos/uts-logo.webp)](https://uts.edu.au)
 
 ## January 2021 - December 2021
 
@@ -53,13 +53,13 @@ Funded by:
 
 <div class="flex flex-row flex-wrap justify-around">
     <a href="https://cs3mesh4eosc.eu" target="_blank" class="bg-black">
-        <img src="/images/logos/cs3mesh-logo.png" class="h-20"/>
+        <img src="/images/logos/cs3mesh-logo.webp" class="h-20"/>
     </a>
     <a href="https://www.uni-muenster.de/en/" target="_blank">
-        <img src="/images/logos/muenster-logo.png" class="h-32"/>
+        <img src="/images/logos/muenster-logo.webp" class="h-32"/>
     </a>
     <a href="https://nyingarn.net" target="_blank">
-        <img src="/images/logos/nyingarn-logo.png" class="h-32"/>
+        <img src="/images/logos/nyingarn-logo.webp" class="h-32"/>
     </a>
 </div>
 
@@ -74,7 +74,7 @@ run the Online version on a users' own computer via docker containers.
 Funded by:
 
 <a href="https://ldaca.edu.au" target="_blank">
-    <img src="/images/logos/ldaca-logo.png" class="h-32"/>
+    <img src="/images/logos/ldaca-logo.webp" class="h-32"/>
 </a>
 
 ## June to December 2022
@@ -109,7 +109,7 @@ component developed by Marco in Nyingarn went on to form the basis of their work
 Funded by:
 
 <a href="https://nyingarn.net" target="_blank">
-    <img src="/images/logos/nyingarn-logo.png" class="h-32"/>
+    <img src="/images/logos/nyingarn-logo.webp" class="h-32"/>
 </a>
 
 ## 2023
