@@ -31,7 +31,8 @@ const cards = [
     {
         text: `Describo makes all of Schema.org available to you. In the image we can see all of the properties defined by schema.org
         for an entity of type File; all the way back up the hierarchy to Thing. In addition, we can see what data types each property is expecting.
-        The 'about' property expects an entity of type 'Thing' and Describo will enforce that.`,
+        The 'about' property expects an entity of type 'ANY' so Describo will let you associate anything you've already
+        described.`,
         image: "/images/tour/desktop5.webp",
     },
     {
@@ -45,8 +46,9 @@ const cards = [
     },
     {
         text: `Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. You can mark
-        up entities and create rich datasets of entities mentioned in your data. see:
-        <a href="/docs/guide/tutorials/transcribing-content.html">/docs/guide/tutorials/transcribing-content.html</a>`,
+        up entities and create rich datasets of entities mentioned in your data.
+        <br/>
+        <a href="/docs/guide/tutorials/transcribing-content.html" target="_blank">See the tutorial for more information.</a>`,
         image:  "/images/tour/desktop8.webp",
     },
     {
@@ -55,26 +57,26 @@ const cards = [
     },
      {
         text: `Describo interfaces with a conversational AI assistant to help you interrogate and understand your content. In this image
-                the assistant has first summarised the text then, acting as an anthropologist, it has described the main topics.
-                Finally, as a social scientist, the assistant explains the narrative with respect to any cultural symbolism. In each response,
-                detailed examples are provided from the text to support the commentary.`,
+                the assistant has first summarised the text then, acting as an anthropologist, it has described the main topics. Finally, as a social scientist, the assistant explains the narrative with respect to any cultural symbolism. In each response, detailed examples are provided from the text to support the commentary.
+                <br/>
+                <a href="/docs/guide/tutorials/transcribing-content-assistant.html" target="_blank">See the tutorial for more information.</a>
+        `,
         image:   "/images/tutorial-transcribing-content-assistant/assistant1.webp"
     },
      {
         text: `Any description or defined term that you create is then associated to the file in the metadata.`,
-        image:   "/images/tutorial-transcribing-content-assistant/assistant3.webp"
+        image:   "/images/tutorial-transcribing-content-assistant/assistant2.webp"
     },
       {
         text: `And defined terms can be looked up and attached to other content that you are working on.`,
-        image:   "/images/tutorial-transcribing-content-assistant/assistant4.webp"
+        image:   "/images/tutorial-transcribing-content-assistant/assistant3.webp"
     },
     {
-        text: `Describo is totally configurable via profiles. Profiles are JSON files that describe how the interface looks and  what a user can do.
-        Profiles can be loaded from your computer or from the Describo Profiles Repository. Profiles are cached locally for reuse.`,
+        text: `Describo is totally configurable via profiles. Profiles are JSON objects that describe how the interface looks and what a user can do. Profiles can be loaded from your computer or from the Describo Profiles Repository. Profiles are cached locally for reuse.`,
         image: "/images/tour/desktop10.webp",
     },
     {
-        text: `When a profile is loaded, the view will adapt based on the instructions in that profile. In this example, the profile defines a tabbed layout for Dataset entities in addition to showing specific properties. This allows the profile author to define exactly how the UI should look for their users and guide them on what is required.`,
+        text: `When a profile is loaded, the view will adapt based on the instructions in that profile. In this example, the profile defines a tabbed layout for File entities in addition to showing specific properties. This allows the profile author to define exactly how the UI should look for their users and guide them on what is required.`,
         image: "/images/tour/desktop11.webp",
     },
     {
