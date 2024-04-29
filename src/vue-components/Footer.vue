@@ -2,7 +2,7 @@
     <div class="flex flex-col md:flex-row place-content-between border-t border-slate-400">
         <div class="flex flex-col items-center md:items-start w-96">
             <LinkComponent link="/" target="">
-                <img src="/images/logos/describo-logo.png" class="h-16 lg:h-24" />
+                <img src="/images/logos/describo-logo.webp" class="h-16 lg:h-24" />
             </LinkComponent>
         </div>
         <div class="flex flex-col md:flex-row place-content-evenly">
