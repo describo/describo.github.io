@@ -23,8 +23,9 @@ content in the RO-Crate as entities attached to the specific file.
 ## The transcription Tab
 
 When you navigate to the transcription tab you will see a 3 pane layout. In the first pane is the
-file browser showing only images in your folder. For now, Describo can only work with image formats;
-specifically files with the extension 'tif', 'tiff', 'jpg', 'jpeg', 'webp' or 'png'.
+file browser showing only images in your folder. As this section works with image files, only those
+files will be shown in the file browser. Supported file types are files with the extension 'jpg',
+'jpeg', 'webp' or 'png'.
 
 <ImageComponent src="/images/tutorial-transcribing-content/transcribe1.png"></ImageComponent>
 
@@ -58,8 +59,8 @@ fractions of a cent, having a go won't cost much.
 
 :::
 
-In the following two images, the control `Extract text using OCR` is pressed and after a few
-moments, the text is written into the transcription editor.
+In the following two images, the control `Extract text` is pressed and after a few moments, the text
+is written into the transcription editor.
 
 <ImageComponent src="/images/tutorial-transcribing-content/transcribe3.png"></ImageComponent>
 <ImageComponent src="/images/tutorial-transcribing-content/transcribe4.png"></ImageComponent>
@@ -70,15 +71,16 @@ confirmed by you.
 
 Highlighting an entity in the text and then pressing `Markup Entity` in the controls allows you to
 mark up that entity in the RO-Crate. In the following example we are saying that that entity in the
-text is a Person with name `Goolgoolia`.
+text is a Person with name `Wadhoorja`.
 
 <ImageComponent src="/images/tutorial-transcribing-content/transcribe5.png"></ImageComponent>
 
 After pressing `Create and Link Entity` the background has changed to indicate that the entity has
-been confirmed by you. Entities can be unmarked by highlighting them and selectin `Unmark Entity`.
+been confirmed by you. Entities can be unmarked by highlighting them and selecting `Unmark Entity`.
 
-You can also select text and associate it to an entity that has already been defined in the
-metadata.
+You can also select any other text and mark it up as an entity; either one already defined or a new
+one altogether. And when you have marked up the entities you are interested in, you can clear all
+the unconfirmed entities by pressing `(x) unconfirmed`.
 
 ::: tip
 
@@ -97,18 +99,19 @@ If you want to link an entity in the text to an entity that has already been def
 ## Content markup
 
 In this way, you can go through and markup all of the entities in the text. In the following example
-four entities have been marked up as People: Wadhoorja, Dhoodhoo yini, Ngallilea, Pompey.
+two entities have been marked up as People: Mallalea and Wadhoorja.
 
 And when we go back to the `Describe` tab we see that the entities are listed in the `mentions`
-property against the file. On this tab we can also see some extra files in the file manager on the
-left. The original image is `Bates35-005.jpg` and alongside it is `Bates35-005.textract-OCR.json`
-and `Bates35-005.transcription.html`. The file named textract OCR contains the textract data and the
-html file is the marked up transcription.
+property against the file. On this tab we can also see some extra files have been created and
+associated:
 
-<ImageComponent src="/images/tutorial-transcribing-content/transcribe10.png"></ImageComponent>
+-   `Has Ocr Data file` is a reference to the OCR raw data
+-   `Has Transcription` is a reference to the transcription marked up as a HTML file.
+
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe6.png"></ImageComponent>
 
 If we look at the content of the html file we see that the entity data is marked up as HTML data
 attributes. In the following example, the first entity has the class `unconfirmed` whilst the second
 does not meaning that the second has been confirmed.
 
-<ImageComponent src="/images/tutorial-transcribing-content/transcribe11.png"></ImageComponent>
+<ImageComponent src="/images/tutorial-transcribing-content/transcribe7.png"></ImageComponent>

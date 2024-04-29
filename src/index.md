@@ -165,13 +165,15 @@ layout: home
         interrogate your data using natural language. It's your very own research
         assistant.
       </p>
-      <p>
+      <!-- <p>
         Watch the video to see the assistant in action.
-      </p>
+      </p> -->
     </template>
     <template #content>
-      <video controls class="p-2 border border-slate-400">
-         <source src="/images/tour/analysis.mp4" type="video/mp4"></video>
+      <!-- <video controls class="p-2 border border-slate-400">
+         <source src="/images/tour/analysis.mp4" type="video/mp4">
+      </video> -->
+           <ImageComponent src="/images/tutorial-transcribing-content-assistant/assistant1.png" />
     </template>
   </InfoPanelComponent>
 </div>

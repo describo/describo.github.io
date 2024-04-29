@@ -9,8 +9,8 @@ aside: false
 const cards = [
     {
         text: `The dashboard. Select a folder of content to describe; load a previously used folder or manage data pack data.
-        Whether you are describing research data or creating a cultural collection, everything you do will be stored in this folder.
-        Nothing is locked up inside Describo.`,
+        Whether you are describing research data, creating a cultural collection or just discovering what your content
+        is about, everything you do will be stored in this folder. <br/><strong>Nothing is locked up inside Describo.</strong>`,
         image: "/images/tour/desktop1.png",
     },
     {
@@ -18,7 +18,7 @@ const cards = [
         image: "/images/tour/desktop2.png",
     },
     {
-        text: `When the RO Crate file is loaded the root dataset is shown in the middle pane along with a file browser on the left.
+        text: `When a folder is selected, the root dataset is shown in the middle pane along with a file browser on the left.
        In the navigation bar we can see which folder is loaded as well as controls to load a profile and access application settings.
         `,
         image: "/images/tour/desktop3.png",
@@ -35,8 +35,7 @@ const cards = [
         image: "/images/tour/desktop5.png",
     },
     {
-        text: `Entities can be created directly. 'Spatial Coverage' is expecting an entity of type Place and Describo provides controls
-        to create a new entity of that type. In this example, we are creating an entity of type Place with the name 'Some Location'.`,
+        text: `Entities can be created directly. 'Spatial Coverage' is expecting an entity of type Place and Describo provides controls to create a new entity of that type.`,
         image: "/images/tour/desktop6.png",
     },
     {
@@ -52,7 +51,7 @@ const cards = [
     },
     {
         text: `When using the transcription tools the data is written into the RO-Crate. And the markup is created as data attributes in the HTML.`,
-        image:  [ "/images/tour/desktop9.png",  "/images/tour/transcribe11.png" ]
+        image:  [ "/images/tour/desktop9.png",  "/images/tour/transcribe1.png" ]
     },
      {
         text: `Describo interfaces with a conversational AI assistant to help you interrogate and understand your content. In this image
@@ -75,9 +74,7 @@ const cards = [
         image: "/images/tour/desktop10.png",
     },
     {
-        text: `When a profile is loaded, the view will adapt based on the content of that profile. In this example, the profile defines
-        a tabbed layout for Dataset entities in addition to showing specific properties. This allows the profile author to define
-        exactly how the UI should look for their users and guide them on what is required.`,
+        text: `When a profile is loaded, the view will adapt based on the instructions in that profile. In this example, the profile defines a tabbed layout for Dataset entities in addition to showing specific properties. This allows the profile author to define exactly how the UI should look for their users and guide them on what is required.`,
         image: "/images/tour/desktop11.png",
     },
     {
