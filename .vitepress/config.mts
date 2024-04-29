@@ -64,7 +64,7 @@ export default defineConfig({
                 content: "Dr Marco La Rosa (https://marcolarosa.github.io/)",
             },
         ],
-        // ["script", { async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-GC2FXLTHYR" }],
+        ["script", { async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-GC2FXLTHYR" }],
         [
             "script",
             {},
