@@ -72,10 +72,10 @@ To support this, you can define the associations you want in the profile, viz:
         },
         {
             "property": "hasMember",
-            "propertyId": "https://schema.org/hasMember",
+            "propertyId": "http://pcdm.org/models#hasMember",
             "inverse": {
                 "property": "isMemberOf",
-                "propertyId": "https://schema.org/isMemberOf"
+                "propertyId": "http://pcdm.org/models#memberOf"
             }
         }
     ],
@@ -85,7 +85,7 @@ To support this, you can define the associations you want in the profile, viz:
 }
 ```
 
-In this example we are define two associations:
+In this example we define two associations:
 
 1. In the first we are saying that `keywords` has an inverse association of `isKeywordOf`.
 2. In the second we are saying that `hasMember` has an inverse association of `isMemberOf`
@@ -97,8 +97,8 @@ With this data structure, whenever either end of the association is created, the
 be created.
 
 So, defining a `keyword association on #A` will result in an `isKeywordOf association on #B`.
-Further, it works both ways. Defining `isKeywordOf on #A` results in `keywords on #B`. You don't
-need to redefine it the other way; describo will do that for you.
+Likewise, defining `isKeywordOf on #A` results in `keywords on #B`. You don't need to redefine it
+the other way; describo will do that for you.
 
-Finally, this is agnostic to the entity type. Whenever that property matches, the inverse will also
-be created.
+Finally, this is indifferent to the entity type. Whenever that property matches, the inverse will
+also be created.

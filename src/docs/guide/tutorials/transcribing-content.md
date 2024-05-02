@@ -24,8 +24,8 @@ content in the RO-Crate as entities attached to the specific file.
 
 When you navigate to the transcription tab you will see a 3 pane layout. In the first pane is the
 file browser showing only images in your folder. As this section works with image files, only those
-files will be shown in the file browser. Supported file types are files with the extension 'jpg',
-'jpeg', 'webp' or 'webp'.
+files will be shown in the file browser. Supported file types are files with the extension 'tif',
+'tiff', 'jpg', 'jpeg', 'png'.
 
 <ImageComponent src="/images/tutorial-transcribing-content/transcribe1.webp"></ImageComponent>
 
