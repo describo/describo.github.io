@@ -148,6 +148,11 @@ layout: home
         and mark / unmark them as required. Describo produces a HTML file with the marked up content
         and the entities are written into the metadata.
       </p>
+      <FeatureComponent link="/docs/guide/tutorials/transcribing-content.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+        <template #title>
+          Read the docs
+        </template>
+      </FeatureComponent>
     </template>
     <template #content>
       <ImageComponent src="/images/tour/desktop8.webp" />
@@ -165,6 +170,11 @@ layout: home
         interrogate your data using natural language. It's your very own research
         assistant.
       </p>
+      <FeatureComponent link="/docs/guide/tutorials/transcribing-content-assistant.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+        <template #title>
+          Read the docs
+        </template>
+      </FeatureComponent>
     </template>
     <template #content>
            <ImageComponent src="/images/tutorial-transcribing-content-assistant/assistant1.webp" />
@@ -179,6 +189,11 @@ layout: home
         might want to describe. Easily comprehend large swathes of data to find hidden insights
         you might no otherwise see.</p>
       <p>Watch the video to see how it works.</p>
+      <FeatureComponent link="/docs/guide/tutorials/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+        <template #title>
+          Read the docs
+        </template>
+      </FeatureComponent>
     </template>
     <template #content>
       <video controls >

@@ -20,6 +20,7 @@ import {
     faXmark,
     faCircleXmark,
     faCircleCheck,
+    faBook,
 } from "@fortawesome/free-solid-svg-icons";
 import { faWindows, faApple, faLinux } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -45,6 +46,7 @@ library.add(faCheck);
 library.add(faXmark);
 library.add(faCircleXmark);
 library.add(faCircleCheck);
+library.add(faBook);
 
 import DefaultTheme from "vitepress/dist/client/theme-default/index.js";
 import MyLayout from "./MyLayout.vue";
