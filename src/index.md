@@ -154,7 +154,7 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-  <InfoPanelComponent>
+ <InfoPanelComponent>
     <template #title>AI Assistant to interrogate your data.</template>
     <template #text>
       <p>
@@ -165,15 +165,24 @@ layout: home
         interrogate your data using natural language. It's your very own research
         assistant.
       </p>
-      <!-- <p>
-        Watch the video to see the assistant in action.
-      </p> -->
     </template>
     <template #content>
-      <!-- <video controls class="p-2 border border-slate-400">
-         <source src="/images/tour/analysis.mp4" type="video/mp4">
-      </video> -->
            <ImageComponent src="/images/tutorial-transcribing-content-assistant/assistant1.webp" />
+    </template>
+  </InfoPanelComponent>
+
+  <InfoPanelComponent>
+    <template #title>Assistant enabled e-Discovery.</template>
+    <template #text>
+      <p>
+        Interrogate sets of files / folders to extract the themes and narratives that you
+        might want to describe. Easily comprehend large swathes of data to find hidden insights
+        you might no otherwise see.</p>
+    </template>
+    <template #content>
+      <video controls >
+        <source src="/images/tutorial-discover/discover2.mp4" type="video/mp4" />
+      </video>
     </template>
   </InfoPanelComponent>
 </div>

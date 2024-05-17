@@ -31,7 +31,7 @@
                         </div>
                     </template>
                     <template #video v-if="card.video">
-                        <video controls autoplay>
+                        <video controls>
                             <source :src="card.video" type="video/mp4" />
                         </video>
                     </template>

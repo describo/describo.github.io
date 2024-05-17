@@ -33,6 +33,6 @@ assistant and see what you have.
 
 Watch the following video - it's worth much more than a thousand words!
 
- <video controls autoplay>
+<video controls>
     <source src="/images/tutorial-discover/discover2.mp4" type="video/mp4" />
 </video>
