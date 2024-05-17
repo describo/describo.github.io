@@ -186,8 +186,9 @@ layout: home
     <template #text>
       <p>
         Interrogate sets of files / folders to extract the themes and narratives that you
-        might want to describe. Easily comprehend large swathes of data to find hidden insights
-        you might no otherwise see.</p>
+        might want to describe. Easily comprehend large swathes of data to find the insights
+        hiding in plain view.
+      </p>
       <p>Watch the video to see how it works.</p>
       <FeatureComponent link="/docs/guide/tutorials/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
