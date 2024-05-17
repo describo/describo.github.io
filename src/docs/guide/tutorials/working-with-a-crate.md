@@ -59,4 +59,20 @@ tool.</a>
 
 <ImageComponent src="/images/tour/desktop4.webp" />
 
----
+## Saving entities for re-use
+
+Often times, you will carefully craft an entity definition that will be useful elsewhere. An obvious
+example is when you define yourself as the author of the crate. In that case, your entity definition
+will have your name and likely your ORCID as the identifier which you can save as a template and
+re-use in other crates that you work on.
+
+In the following image we can see what will be saved as a template. By setting depth to 1 linked
+entities will be resolved and included. Note that in both cases (depth 0 or 1) only properties will
+be included. Dangling references to other entities in this crate will not be included.
+
+<ImageComponent src="/images/tutorial-working-with-a-crate/template1.webp" />
+
+Then, when describing content, you will be presented with matching templates. Note the middle entry
+under the section title "Associate an entity from saved templates".
+
+<ImageComponent src="/images/tutorial-working-with-a-crate/template2.webp" />
