@@ -30,7 +30,7 @@ export const sidebar = [
                 ],
             },
             {
-                text: "Tutorials",
+                text: "User Guide",
                 collapsed: false,
                 items: [
                     {
@@ -48,6 +48,10 @@ export const sidebar = [
                     {
                         text: "Using the assistant when transcribing",
                         link: "/docs/guide/tutorials/transcribing-content-assistant",
+                    },
+                    {
+                        text: "Assistant enabled e-Discovery",
+                        link: "/docs/guide/tutorials/assistant-supported-discovery",
                     },
                 ],
             },
