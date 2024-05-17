@@ -31,8 +31,15 @@ assistant and see what you have.
 
 <ImageComponent src="/images/tutorial-discover/discover1.webp"></ImageComponent>
 
-Watch the following video - it's worth much more than a thousand words!
+Watch the following video where a group of html files containing marked up transcriptions are
+interrogated.
 
 <video controls>
     <source src="/images/tutorial-discover/discover2.mp4" type="video/mp4" />
+</video>
+
+In the following video a PDF file is interrogated for information.
+
+<video controls>
+    <source src="/images/tutorial-discover/discover3.mp4" type="video/mp4" />
 </video>
