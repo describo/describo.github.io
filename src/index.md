@@ -178,6 +178,7 @@ layout: home
         Interrogate sets of files / folders to extract the themes and narratives that you
         might want to describe. Easily comprehend large swathes of data to find hidden insights
         you might no otherwise see.</p>
+      <p>Watch the video to see how it works.</p>
     </template>
     <template #content>
       <video controls >
