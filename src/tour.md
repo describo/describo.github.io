@@ -71,6 +71,14 @@ const cards = [
         text: `And defined terms can be looked up and attached to other content that you are working on.`,
         image:   "/images/tutorial-transcribing-content-assistant/assistant3.webp"
     },
+     {
+        text: `The conversational AI assistant can be used for e-Discovery. Navigate to the discover tab, select the files you
+        wish to interrogate (text based formats supported: txt, html and pdf), start the assistant and go.`,
+        image: "/images/tutorial-discover/discover1.webp",
+     }, {
+        text: `Watch the assistant in action then  <a href="/docs/guide/tutorials/assistant-supported-discovery.html" target="_blank">See the tutorial for more information.</a>`,
+        video: "/images/tutorial-discover/discover2.mp4"
+    },
     {
         text: `Describo is totally configurable via profiles. Profiles are JSON objects that describe how the interface looks and what a user can do. Profiles can be loaded from your computer or from the Describo Profiles Repository. Profiles are cached locally for reuse.`,
         image: "/images/tour/desktop10.webp",
