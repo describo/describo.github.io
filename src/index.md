@@ -187,7 +187,8 @@ layout: home
       <p>
         Interrogate sets of files / folders to extract the themes and narratives that you
         might want to describe. Easily comprehend large swathes of data to find the insights
-        hiding in plain view.
+        hiding in plain view. Use the assistant to provide different perspectives on what
+        you find.
       </p>
       <p>Watch the video to see how it works.</p>
       <FeatureComponent link="/docs/guide/tutorials/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
