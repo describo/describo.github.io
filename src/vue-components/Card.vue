@@ -6,14 +6,13 @@
         <div v-if="slots.image" class="flex w-full place-content-center">
             <slot name="image"></slot>
         </div>
+        <div v-if="slots.video" class="flex w-full place-content-center">
+            <slot name="video"></slot>
+        </div>
     </div>
 </template>
 
 <script setup>
 import { useSlots } from "vue";
 const slots = useSlots();
-
-const props = defineProps({
-    image: { type: String },
-});
 </script>

@@ -10,8 +10,9 @@
             </div>
             <div v-auto-animate="{ duration: 300 }">
                 <card :class="{ hidden: idx !== n }" v-for="(card, idx) of cards" :key="ref(idx)">
+                    {{ card }}
                     <template #text><div v-html="card.text"></div></template>
-                    <template #image>
+                    <template #image v-if="card.image">
                         <div class="flex flex-col space-y-2">
                             <img
                                 v-if="!isArray(card.image)"
@@ -28,6 +29,11 @@
                                 data-zoomable
                             />
                         </div>
+                    </template>
+                    <template #video v-if="card.video">
+                        <video controls autoplay>
+                            <source :src="card.video" type="video/mp4" />
+                        </video>
                     </template>
                 </card>
             </div>
@@ -57,7 +63,7 @@
 <script setup>
 import { vAutoAnimate } from "@formkit/auto-animate";
 import Card from "./Card.vue";
-import { ref, computed, onMounted, watch, nextTick } from "vue";
+import { ref, onMounted, watch, nextTick } from "vue";
 import isArray from "lodash-es/isArray.js";
 import mediumZoom from "medium-zoom";
 
