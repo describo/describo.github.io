@@ -17,7 +17,7 @@ export const sidebar = [
             { text: "Installation", link: "/docs/guide/installation" },
             {
                 text: "Configuration",
-                collapsed: false,
+                collapsed: true,
                 items: [
                     {
                         text: "General Settings",
@@ -30,30 +30,24 @@ export const sidebar = [
                 ],
             },
             {
-                text: "User Guide",
-                collapsed: false,
-                items: [
-                    {
-                        text: "What is JSON-LD and RO-Crate?",
-                        link: "/docs/guide/tutorials/explainer-rocrate-and-jsonld",
-                    },
-                    {
-                        text: "Working with an RO-Crate",
-                        link: "/docs/guide/tutorials/working-with-a-crate",
-                    },
-                    {
-                        text: "Content Transcription and Entity Markup",
-                        link: "/docs/guide/tutorials/transcribing-content",
-                    },
-                    {
-                        text: "Using the assistant when transcribing",
-                        link: "/docs/guide/tutorials/transcribing-content-assistant",
-                    },
-                    {
-                        text: "Assistant enabled e-Discovery",
-                        link: "/docs/guide/tutorials/assistant-supported-discovery",
-                    },
-                ],
+                text: "What is JSON-LD and RO-Crate?",
+                link: "/docs/guide/tutorials/explainer-rocrate-and-jsonld",
+            },
+            {
+                text: "Working with an RO-Crate",
+                link: "/docs/guide/tutorials/working-with-a-crate",
+            },
+            {
+                text: "Content Transcription and Entity Markup",
+                link: "/docs/guide/tutorials/transcribing-content",
+            },
+            {
+                text: "Using the assistant when transcribing",
+                link: "/docs/guide/tutorials/transcribing-content-assistant",
+            },
+            {
+                text: "Assistant enabled e-Discovery",
+                link: "/docs/guide/tutorials/assistant-supported-discovery",
             },
         ],
     },
