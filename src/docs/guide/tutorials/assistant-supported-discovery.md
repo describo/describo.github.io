@@ -29,17 +29,53 @@ narratives that you might want to describe.
 After selecting the files and folders containing the content you wish to interrogate, start the
 assistant and see what you have.
 
+:::tip info
+
+You can interrogate:
+
+-   text files;
+-   HTML files;
+-   PDF files;
+-   Microsoft Word and Powerpoint files.
+
+:::
+
 <ImageComponent src="/images/tutorial-discover/discover1.webp"></ImageComponent>
 
-Watch the following video where a group of html files containing marked up transcriptions are
-interrogated.
+<InfoPanelComponent>
+    <template #title>Interrogating the RO-Crate paper</template>
+    <template #text>
+        Watch the video to see the RO-Crate paper being interrogated for information.
+    </template>
+    <template #content>
+        <video controls>
+            <source src="/images/tutorial-discover/ro-crate-paper.mp4" type="video/mp4" />
+        </video>
+    </template>
+</InfoPanelComponent>
 
-<video controls>
-    <source src="/images/tutorial-discover/discover2.mp4" type="video/mp4" />
-</video>
+<InfoPanelComponent>
+    <template #title>Interrogating the 2024 Australian Budget Papers</template>
+    <template #text>
+        In this video, the 2024 Australian Budget papers are queried. Notice that both Word (docx)
+    and PDF files form part of the set. Describo can pull data from PowerPoint documents too!
+    </template>
+    <template #content>
+        <video controls>
+            <source src="/images/tutorial-discover/budget-papers.mp4" type="video/mp4" />
+        </video>
+    </template>
+</InfoPanelComponent>
 
-In the following video a PDF file is interrogated for information.
-
-<video controls>
-    <source src="/images/tutorial-discover/discover3.mp4" type="video/mp4" />
-</video>
+<InfoPanelComponent>
+    <template #title>Saving the conversation</template>
+    <template #text>
+        And when you're done, save your conversation for later.
+    </template>
+    <template #content>
+        <object class="border border-solid border-gray-400 p-2 my-10"
+        data="/images/tutorial-discover/budget-papers-conversation.pdf"
+        width="100%"
+        height="800"> </object>
+    </template>
+</InfoPanelComponent>

@@ -106,30 +106,6 @@ layout: home
       <ImageComponent src="/images/tour/desktop1.webp" />
     </template>
   </InfoPanelComponent>
-  <InfoPanelComponent>
-    <template #title>Works with your data; is totally configurable.</template>
-    <template #text>
-      <p>
-        Describo knows how to handle different file types and it automatically calculates
-        file metadata for you. It can show you previews of your data files and the metadata
-        adapts based on what you are describing.
-      </p>
-      <p>
-          <LinkComponent link="/docs/profiles/introduction" target="">Describo is totally configurable via profiles.</LinkComponent>
-          If schema.org doesn't allow you to describe
-          what you want, you can create a domain specific profile that adapts the application
-          to your needs.
-        </p>
-        <p>
-          In this image, a cultural collection profile is loaded which defines specific properties
-          for files and a tabbed layout.
-        </p>
-    </template>
-    <template #content>
-      <ImageComponent src="/images/tour/desktop4.webp" />
-    </template>
-
-  </InfoPanelComponent>
 
  <InfoPanelComponent>
     <template #title>Text extraction and named entity recognition.</template>
@@ -190,7 +166,7 @@ layout: home
         hiding in plain view. Use the assistant to provide different perspectives on what
         you find.
       </p>
-      <p>Watch the video to see how it works.</p>
+      <p>Watch the video to see the assistant interrogate the RO-Crate paper!</p>
       <FeatureComponent link="/docs/guide/tutorials/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
@@ -199,8 +175,44 @@ layout: home
     </template>
     <template #content>
       <video controls >
-        <source src="/images/tutorial-discover/discover2.mp4" type="video/mp4" />
+        <source src="/images/tutorial-discover/ro-crate-paper.mp4" type="video/mp4" />
       </video>
+    </template>
+  </InfoPanelComponent>
+
+  <InfoPanelComponent>
+    <template #title>
+        And when you're done, save your conversation for later.
+    </template>
+    <template #content>
+        <object class="border border-solid border-gray-400 p-2 my-10"
+        data="/images/tutorial-discover/budget-papers-conversation.pdf"
+        width="100%"
+        height="800"> </object>
+    </template>
+</InfoPanelComponent>
+
+  <InfoPanelComponent>
+    <template #title>Works with your data; is totally configurable.</template>
+    <template #text>
+      <p>
+        Describo knows how to handle different file types and it automatically calculates
+        file metadata for you. It can show you previews of your data files and the metadata
+        adapts based on what you are describing.
+      </p>
+      <p>
+          <LinkComponent link="/docs/profiles/introduction" target="">Describo is totally configurable via profiles.</LinkComponent>
+          If schema.org doesn't allow you to describe
+          what you want, you can create a domain specific profile that adapts the application
+          to your needs.
+        </p>
+        <p>
+          In this image, a cultural collection profile is loaded which defines specific properties
+          for files and a tabbed layout.
+        </p>
+    </template>
+    <template #content>
+      <ImageComponent src="/images/tour/desktop4.webp" />
     </template>
   </InfoPanelComponent>
 </div>
