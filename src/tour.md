@@ -77,7 +77,7 @@ const cards = [
         image: "/images/tutorial-discover/discover1.webp",
      }, {
         text: `Watch the assistant in action then  <a href="/docs/guide/tutorials/assistant-supported-discovery.html" target="_blank">See the tutorial for more information.</a>`,
-        video: "/images/tutorial-discover/discover2.mp4"
+        video: "/images/tutorial-discover/ro-crate-paper.mp4"
     },
     {
         text: `Describo is totally configurable via profiles. Profiles are JSON objects that describe how the interface looks and what a user can do. Profiles can be loaded from your computer or from the Describo Profiles Repository. Profiles are cached locally for reuse.`,
