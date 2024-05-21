@@ -185,11 +185,15 @@ layout: home
         And when you're done, save your conversation for later.
     </template>
     <template #content>
-        <object class="border border-solid border-gray-400 p-2 my-10"
+        <!-- <object class="border border-solid border-gray-400 p-2 my-10"
         type="application/pdf"
         data="/images/tutorial-discover/budget-papers-conversation.pdf"
         width="100%"
-        height="800"> </object>
+        height="800"> </object> -->
+       <iframe class="pdf"
+                src="/images/tutorial-discover/budget-papers-conversation.pdf"
+           width="100%" height="500">
+        </iframe>
     </template>
 </InfoPanelComponent>
 
