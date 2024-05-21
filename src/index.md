@@ -186,6 +186,7 @@ layout: home
     </template>
     <template #content>
         <object class="border border-solid border-gray-400 p-2 my-10"
+        type="application/pdf"
         data="/images/tutorial-discover/budget-papers-conversation.pdf"
         width="100%"
         height="800"> </object>
