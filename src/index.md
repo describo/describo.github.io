@@ -190,9 +190,10 @@ layout: home
         data="/images/tutorial-discover/budget-papers-conversation.pdf"
         width="100%"
         height="800"> </object> -->
-       <iframe class="pdf"
-                src="/images/tutorial-discover/budget-papers-conversation.pdf"
-           width="100%" height="500">
+       <iframe
+          class="border border-solid border-gray-400 p-2"
+          src="/images/tutorial-discover/budget-papers-conversation.pdf"
+          width="100%" height="500">
         </iframe>
     </template>
 </InfoPanelComponent>
