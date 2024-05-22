@@ -111,7 +111,7 @@ layout: home
     <template #title>Text extraction and named entity recognition.</template>
     <template #text>
       <p>
-        You have images of manuscript pages that you want to transcribe and markup.
+        You have digitised images of textual content that you want to transcribe and markup.
         Describo shows you the image and provides a text editor for you to transcribe the
         page content.
       </p>
@@ -163,8 +163,8 @@ layout: home
       <p>
         Interrogate sets of files / folders to extract the themes and narratives that you
         might want to describe. Easily comprehend large swathes of data to find the insights
-        hiding in plain view. Use the assistant to provide different perspectives on what
-        you find.
+        hiding in the content. Use the assistant to provide different perspectives on what
+        you find in order to test hypotheses and ideas.
       </p>
       <p>Watch the video to see the assistant interrogate the RO-Crate paper!</p>
       <FeatureComponent link="/docs/guide/tutorials/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
@@ -185,11 +185,6 @@ layout: home
         And when you're done, save your conversation for later.
     </template>
     <template #content>
-        <!-- <object class="border border-solid border-gray-400 p-2 my-10"
-        type="application/pdf"
-        data="/images/tutorial-discover/budget-papers-conversation.pdf"
-        width="100%"
-        height="800"> </object> -->
        <iframe
           class="border border-solid border-gray-400 p-2"
           src="/images/tutorial-discover/budget-papers-conversation.pdf"
@@ -218,7 +213,7 @@ layout: home
         </p>
     </template>
     <template #content>
-      <ImageComponent src="/images/tour/desktop4.webp" />
+      <ImageComponent src="/images/tour/desktop11.webp" />
     </template>
   </InfoPanelComponent>
 </div>
