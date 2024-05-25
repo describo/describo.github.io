@@ -21,11 +21,21 @@ In it's most basic form, the component is plugged in as:
 <describo-crate-builder
     :crate="data.crate"
     :profile="data.profile"
-    />
+>
 </describo-crate-builder>
 ```
 
 Pass in the crate file and optionally a profile.
+
+::: tip If you need to mint a new crate
+
+```JS
+import { mintNewCrate } from "@describo/crate-builder-component/src/crate-builder/CrateManager/lib.js"
+
+let crate = mintNewCrate()
+```
+
+:::
 
 ## Full Usage
 
@@ -55,7 +65,7 @@ Pass in the crate file and optionally a profile.
     @navigation="handleNavigation"
     @save:crate="saveCrate"
     @save:entity:template="saveTemplate"
-    />
+>
 </describo-crate-builder>
 ```
 
