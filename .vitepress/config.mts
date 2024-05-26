@@ -14,34 +14,6 @@ export default defineConfig({
     description:
         "Describo is an ecosystem of tools, software components and services to create and manage linked open data in the form of Research Object Crates.",
     head: [
-        // [
-        //     "link",
-        //     {
-        //         rel: "stylesheet",
-        //         href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css",
-        //     },
-        // ],
-        // [
-        //     "link",
-        //     {
-        //         rel: "stylesheet",
-        //         href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css",
-        //     },
-        // ],
-        // [
-        //     "link",
-        //     {
-        //         rel: "stylesheet",
-        //         href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css",
-        //     },
-        // ],
-        // [
-        //     "link",
-        //     {
-        //         rel: "stylesheet",
-        //         href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css",
-        //     },
-        // ],
         [
             "meta",
             {
@@ -54,7 +26,7 @@ export default defineConfig({
             {
                 name: "keywords",
                 content:
-                    "Describo, Research Object, Research-Object Crate, RO-Crate, rocrate, metadata, jsonld, editor, VueJS component, RO-Crate editor, JSON Linked Data, jsonld, json-ld, Linked Data",
+                    "Describo, Research Object, Research-Object Crate, RO-Crate, rocrate, metadata, jsonld, editor, VueJS component, RO-Crate editor, JSON Linked Data, jsonld, json-ld, Linked Data, content transcription, AI, Generative AI, Conversational AI",
             },
         ],
         [
@@ -96,7 +68,11 @@ export default defineConfig({
                     "jsonld",
                     "editor",
                     "vue component",
-                    "RO-Crate editor"
+                    "RO-Crate editor",
+                    "content transcription",
+                    "AI",
+                    "Generative AI",
+                    "Conversational AI"
                 ]
             }`,
         ],
