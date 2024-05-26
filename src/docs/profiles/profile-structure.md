@@ -43,6 +43,8 @@ The metadata section is used to describe the profile. There are 4 properties you
 -   `warnMissingProperty`: true or false: Whether or not the UI should warn when data is found in an
     RO-crate but a definition for is not found in the profile.
 -   `keywords`: An array of keywords to enable lookups of this profile.
+-   `enableEntityTimestamps`: true or false: If enabled, creation and last modified timestamps will
+    be managed on each entity.
 
 ## Context
 

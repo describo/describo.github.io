@@ -11,41 +11,54 @@ layout: home
         The Describo VueJS / React components are <strong>FREE</strong> to use and licensed permissively with the opensource MIT license.
     </div>
     <div class="text-2xl">
-        Pricing: Describo Cloud
+        Describo Cloud
     </div>
-      <div class="p-6 flex flex-row space-x-4 place-content-center bg-blue-100 rounded-lg">
-        <div>
-            <font-awesome-icon :icon="['fas', 'circle-info']" size="3x" class="text-blue-600" />
-        </div>
-        <div>
-            The operators of Describo Cloud have no access to your payment information.
-            Payments are made via our payment provider
-            <LinkComponent link="https://paddle.com/about">Paddle</LinkComponent>. Visit Paddle's security
-            site for more information:
-            <LinkComponent link="https://security.paddle.com">https://security.paddle.com</LinkComponent>
-        </div>
+    <Terms/>
+    <div class="flex flex-row space-x-2">
+        <Product class="flex-grow">
+            <template #title>General Credits</template>
+            <template #price>$5 USD</template>
+            <template #content>
+                <ul class="pl-10 list-disc">
+                    <li>Text extraction credits for 50 pages</li>
+                    <li>Enough credits to perform entity recognition on 50 pages</li>
+                    <li>
+                        Credits to use the assistant to interrogate the data<sup>*</sup>
+                        <ul class="pl-4 list-disc">
+                            <li>2,000,000 input tokens</li>
+                            <li>16,000 output tokens</li>
+                        </ul>
+                    </li>
+                </ul>
+            </template>
+        </Product>
+        <Product class="flex-grow">
+            <template #title>Assistant Credits</template>
+            <template #price>$5 USD</template>
+            <template #content>
+                <ul class="pl-10 list-disc">
+                    <li>
+                        Credits to use the assistant to interrogate the data<sup>*</sup>
+                        <ul class="pl-4 list-disc">
+                            <li>4,000,000 input tokens</li>
+                            <li>40,000 output tokens</li>
+                        </ul>
+                    </li>
+                </ul>
+            </template>
+        </Product>
     </div>
-    <div>
-        Use of the text extraction, named entity recognition and assistant capabilities requires a subscription
-        to the describo cloud service and the purchase of credits.
-        <ul>
-            <li>
-                Subscription and purchase of credits indicates acceptance of the
-                <LinkComponent link="/terms-and-conditions" target="">Terms and Conditions of use.</LinkComponent>
-            </li>
-            <li>
-                Our <LinkComponent link="/privacy-policy" target="">Privacy Policy.</LinkComponent>
-                tells you what data we collect, where we collect it and how it's used.
-            </li>
-            <li>Credits can be purchased from within Describo Desktop after you've subscribed.</li>
-        </ul>
+    <div class="p-2">
+        <sup>*</sup>As a very approximate guide, 1,000,000 input tokens will let you interrogate
+        approximately 750k words. This is only a guide and can vary based on what you choose to
+        do with your data.
     </div>
 
-   <PricingTable />
 </div>
 
 <FooterComponent class="mt-6"/>
 
 <script setup>
-    import PricingTable from './PricingTable.vue'
+    import Terms from "./vue-components/Terms.vue";
+    import Product from './vue-components/Product.vue'
 </script>

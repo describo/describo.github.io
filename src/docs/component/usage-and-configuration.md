@@ -43,8 +43,8 @@ let crate = mintNewCrate()
 <describo-crate-builder
     :crate="data.crate"
     :profile="data.profile"
-    :lookup="lookup"
     :entityId="data.entityId"
+    :lookup="lookup"
     :enable-context-editor="true"
     :enable-crate-preview="true"
     :enable-browse-entities="true"
@@ -52,6 +52,7 @@ let crate = mintNewCrate()
     :enable-internal-routing="true"
     :enable-reverse-link-browser="true"
     :enable-url-markup="true"
+    :enable-entity-timestamps="true"
     :purge-unlinked-entities="true"
     :readonly="false"
     :web-component="false"
@@ -59,6 +60,7 @@ let crate = mintNewCrate()
     :reset-tab-on-entity-change="true"
     :reset-tab-on-profile-change="true"
     :show-controls="true"
+    :language="language"
     @ready="ready"
     @error="handleErrors"
     @warning="handleWarnings"
@@ -146,6 +148,9 @@ for an example. In fact, you probably want to start from there.
 -   `enable-url-markup`: true : false: `(default: true)`: When describo detects that a string is a
     URL, it will store an entity of type URL in the crate. If you would rather just have these as
     strings, set this to false (note that the URL primitive still outputs a URL entity)
+-   `enable-entity-timestamps`: true : false: `(default: false)`: enable / disable timestamping
+    entities on change. If enabled, the component will manage `hasCreationDate` and
+    `hasModificationDate` properties on the entities as the data is changed.
 -   `purge-unlinked-entities`: true : false: `(default: true)`: purge unlinked entities from the
     crate before emitting the crate for saving
 -   `readonly`: true | false: `(default: false)` : if set to true all of the controls to edit that

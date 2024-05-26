@@ -1,37 +1,7 @@
 <template>
     <div class="flex flex-col space-y-2">
         <!--legalese stuff  -->
-        <div
-            class="p-4 flex flex-row space-x-4 place-content-center bg-blue-100 rounded-lg text-lg"
-        >
-            <div class="flex flex-col place-content-center px-6">
-                <FontAwesomeIcon :icon="faCircleCheck" size="3x"></FontAwesomeIcon>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div>
-                    The operators of Describo Cloud have no access to your payment information.
-                    Payments are made via our payment provider
-                    <a href="https://paddle.com/about" target="_blank">Paddle</a>. Visit their
-                    security site for more information:
-                    <a href="https://security.paddle.com" target="_blank"
-                        >https://security.paddle.com
-                    </a>
-                </div>
-                <div class="text-base">
-                    Subscription and purchase of credits indicates acceptance of the
-                    <a href="https://describo.github.io/terms-and-conditions" target="_blank"
-                        >Terms and Conditions of use.
-                    </a>
-                </div>
-                <div class="text-base">
-                    Our
-                    <a href="https://describo.github.io/privacy-policy" target="_blank"
-                        >Privacy Policy</a
-                    >
-                    tells you what data we collect, where we collect it and how it's used.
-                </div>
-            </div>
-        </div>
+        <Terms />
 
         <!--Checkout failed notification  -->
         <div
@@ -76,53 +46,49 @@
         </div>
 
         <!-- pricing pills and purchase controls -->
-        <div
-            class="flex flex-row space-x-2 place-content-between p-5 bg-slate-200 rounded-lg flex-grow"
-        >
-            <div class="flex flex-col space-y-2">
-                <div>General Credits</div>
-                <div class="text-3xl">$5 USD</div>
-                <div class="text-xs">This price may change at any time.</div>
-                <ul class="pl-10 list-disc">
-                    <li>Text extraction credits for 50 pages</li>
-                    <li>Enough credits to perform entity recognition on 50 pages</li>
-                    <li>
-                        Credits to use the assistant to interrogate the data<sup>*</sup>
-                        <ul class="pl-4 list-disc">
-                            <li>1,000,000 input tokens</li>
-                            <li>100,000 output tokens</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <el-button type="primary" @click="purchaseGeneralCredits">
-                    Purchase General Credits
-                </el-button>
-            </div>
-        </div>
-        <div
-            class="flex flex-row space-x-2 place-content-between p-5 bg-slate-200 rounded-lg flex-grow"
-        >
-            <div class="flex flex-col space-y-2">
-                <div>Assistant Credits</div>
-                <div class="text-3xl">$5 USD</div>
-                <div class="text-xs">This price may change at any time.</div>
-                <ul class="pl-10 list-disc">
-                    <li>
-                        Credits to use the assistant to interrogate the data<sup>*</sup>
-                        <ul class="pl-4 list-disc">
-                            <li>1,500,000 input tokens</li>
-                            <li>150,000 output tokens</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <el-button type="primary" @click="purchaseAssistantCredits">
-                    Purchase Assistant Credits
-                </el-button>
-            </div>
+        <div class="flex flex-row space-x-2">
+            <Product>
+                <template #title>General Credits</template>
+                <template #price>$5 USD</template>
+                <template #content>
+                    <ul class="pl-10 list-disc">
+                        <li>Text extraction credits for 50 pages</li>
+                        <li>Enough credits to perform entity recognition on 50 pages</li>
+                        <li>
+                            Credits to use the assistant to interrogate the data<sup>*</sup>
+                            <ul class="pl-4 list-disc">
+                                <li>2,000,000 input tokens</li>
+                                <li>16,000 output tokens</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </template>
+                <template #controls>
+                    <el-button type="primary" @click="purchaseGeneralCredits">
+                        Purchase General Credits
+                    </el-button>
+                </template>
+            </Product>
+            <Product>
+                <template #title>Assistant Credits</template>
+                <template #price>$5 USD</template>
+                <template #content>
+                    <ul class="pl-10 list-disc">
+                        <li>
+                            Credits to use the assistant to interrogate the data<sup>*</sup>
+                            <ul class="pl-4 list-disc">
+                                <li>4,000,000 input tokens</li>
+                                <li>40,000 output tokens</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </template>
+                <template #controls>
+                    <el-button type="primary" @click="purchaseAssistantCredits">
+                        Purchase Assistant Credits
+                    </el-button>
+                </template>
+            </Product>
         </div>
     </div>
     <div class="p-4">
@@ -133,6 +99,8 @@
 </template>
 
 <script setup>
+import Terms from "./Terms.vue";
+import Product from "./Product.vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faCircleInfo, faCircleXmark, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { onMounted, ref } from "vue";
@@ -179,7 +147,6 @@ onMounted(async () => {
         if (!email || !environment) throw new Error();
         window.history.pushState({}, document.title, window.location.pathname);
     } catch (error) {
-        console.log("jere");
         window.location.href = "/";
         return;
     }

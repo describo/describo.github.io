@@ -27,6 +27,10 @@ export const sidebar = [
                         text: "Subscribe to describo.cloud",
                         link: "/docs/guide/configuration/subscribe",
                     },
+                    {
+                        text: "Cloud Services & Data Processing",
+                        link: "/docs/guide/configuration/data-processing",
+                    },
                 ],
             },
             {
@@ -48,6 +52,10 @@ export const sidebar = [
             {
                 text: "Assistant enabled e-Discovery",
                 link: "/docs/guide/tutorials/assistant-supported-discovery",
+            },
+            {
+                text: "Prompt engineering",
+                link: "/docs/guide/tutorials/prompt-engineering",
             },
         ],
     },
