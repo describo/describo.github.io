@@ -21,6 +21,13 @@ npm install --save element-plus \
     @fortawesome/fontawesome-svg-core
 ```
 
+::: tip
+
+Ensure you include the element-plus css in your code. This is shown further on in the section #Wire
+it up as a plugin
+
+:::
+
 ## Vite users
 
 Vite requires some extra configuration in order to use this component.
@@ -78,14 +85,11 @@ completely disabled (ie you want to do it yourself or maybe you're using the web
 ## Wire it up as a plugin
 
 Plug it into your Vue app. It will look something like the following - note that `you` configure
-tailwind, fontawesome and element-plus css your app:
+tailwind and element-plus css in your app:
 
 ```JS
 import "./tailwind.css";
 import "element-plus/dist/index.css";
-import "@fortawesome/fontawesome-free/js/all";
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoReplaceSvg = "nest";
 
 import { createApp } from "vue";
 import App from "./App.vue";
@@ -107,6 +111,14 @@ const app = createApp(App);
 app.use(router);
 app.use(DescriboCrateBuilder);
 app.mount("#app");
+```
+
+Tailwind.css:
+
+```CSS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
 ## Wire it up by direct import where you want to use it
