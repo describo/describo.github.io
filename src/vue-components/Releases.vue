@@ -42,7 +42,15 @@
             </div>
             <div class="flex flex-col">
                 <LinkComponent :link="data.download.wintel" target="">
-                    <div>Download for Intel processors</div>
+                    <div class="flex flex-row space-x-2 items-center">
+                        <div>
+                            <img src="/images/logos/intel.png" class="h-10" />
+                        </div>
+                        <div>Download for Intel processors</div>
+                    </div>
+                </LinkComponent>
+                <LinkComponent :link="data.download.winarm" target="">
+                    <div>Download for ARM processors</div>
                 </LinkComponent>
                 <TipComponent class="text-center">
                     Be sure to read the
@@ -62,7 +70,12 @@
             </div>
             <div class="flex flex-col">
                 <LinkComponent :link="data.download.linux" target="">
-                    <div>Download for Intel processors</div>
+                    <div class="flex flex-row space-x-2 items-center">
+                        <div>
+                            <img src="/images/logos/intel.png" class="h-10" />
+                        </div>
+                        <div>Download for Intel processors</div>
+                    </div>
                 </LinkComponent>
                 <TipComponent class="text-center">
                     Be sure to read the
