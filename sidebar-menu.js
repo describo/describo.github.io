@@ -14,6 +14,10 @@ export const sidebar = [
         text: "User Guide",
         collapsed: false,
         items: [
+            {
+                text: "Introduction",
+                link: "/docs/guide/introduction",
+            },
             { text: "Installation", link: "/docs/guide/installation" },
             {
                 text: "Configuration",
