@@ -1,6 +1,8 @@
 <template>
     <div class="flex flex-col space-y-10 p-10">
-        <div class="text-center text-2xl border-b py-12">Get Describo - Free Download</div>
+        <div class="text-center text-2xl border-b py-12">
+            Get Describo for {{ capitalize(data.activeTab) }} - free download.
+        </div>
 
         <div class="flex flex-row space-x-32 place-content-center">
             <div
@@ -126,6 +128,7 @@
 </template>
 
 <script setup>
+import { capitalize } from "vue";
 import { reactive, onBeforeMount } from "vue";
 const data = reactive({
     release: undefined,
