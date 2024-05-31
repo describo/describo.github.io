@@ -34,7 +34,7 @@ layout: home
         </FeatureComponent>
         <FeatureComponent link="/desktop" :icon="['fas', 'download']" class="m-1 grow lg:grow-0 bg-blue-200">
           <template #title>
-            Get Describo Free
+            Get Describo - free download
           </template>
         </FeatureComponent>
     </div>
