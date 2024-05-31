@@ -28,7 +28,7 @@ export const sidebar = [
                         link: "/docs/guide/configuration/general-settings",
                     },
                     {
-                        text: "Subscribe to describo.cloud",
+                        text: "Register with describo.cloud",
                         link: "/docs/guide/configuration/subscribe",
                     },
                     {

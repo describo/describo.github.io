@@ -1,9 +1,5 @@
 <template>
-    <a
-        :href="props.link"
-        :target="props.target"
-        :class="{ 'vp-external-link-icon': props.target === '_blank' }"
-    >
+    <a :href="props.link" :target="props.target">
         <slot></slot>
     </a>
 </template>
@@ -16,6 +12,9 @@ const props = defineProps({
     target: {
         type: String,
         default: "_blank",
+    },
+    styling: {
+        type: String,
     },
 });
 </script>

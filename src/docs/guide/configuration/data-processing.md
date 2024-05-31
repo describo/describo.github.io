@@ -4,7 +4,7 @@ title: Cloud Services & Data Processing
 
 # Cloud Services & Data processing
 
-If you subscribe to the describo.cloud, the capabilities you will use are provided using Amazon AWS.
+If you register with describo.cloud, the capabilities you will use are provided using Amazon AWS.
 Specifically, the services used are: AWS Textract, AWS Comprehend and AWS Bedrock.
 
 In order to support users across the globe, regional services have been provisioned. The AWS region

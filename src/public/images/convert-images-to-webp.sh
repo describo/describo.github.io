@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-files=$(ls **/*.png)
-
+files=$(ls **/*.png **/*.jpeg **/*.jpg)
 
 for file in $files ; do
    webpfile=$(echo $file | sed 's/\..*/.webp/')
