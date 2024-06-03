@@ -21,7 +21,7 @@ layout: home
         <div>
           <img src="/images/logos/describo-logo.webp" class="h-16 lg:h-32" />
         </div>
-      <div class="text-xl lg:text-3xl text-slate-600">Analyse and describe your data</div>
+        <div class="text-xl lg:text-3xl text-slate-600"><TagLine /></div>
     </div>
   </div>
   <div class="w-full md:w-1/2 flex flex-row items-center">
@@ -219,3 +219,7 @@ layout: home
 </div>
 
 <FooterComponent class="mt-6"/>
+
+<script setup>
+    import TagLine from "./vue-components/TagLine.vue";
+</script>
