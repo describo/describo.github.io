@@ -21,11 +21,11 @@ layout: home
         <div>
           <img src="/images/logos/describo-logo.webp" class="h-16 lg:h-32" />
         </div>
-        <div class="text-xl lg:text-3xl text-slate-600"><TagLine /></div>
+        <div class="text-xl lg:text-3xl text-slate-600"><TagLine class="text-center md:text-left md:pl-14 lg:pl-28" /></div>
     </div>
   </div>
   <div class="w-full md:w-1/2 flex flex-row items-center">
-    <div class="grow"></div>
+    <div class="md:flex-grow"></div>
     <div class="flex flex-col grow">
         <FeatureComponent link="/tour" :icon="['fas', 'route']" class="m-1 grow lg:grow-0 bg-blue-200">
             <template #title>
