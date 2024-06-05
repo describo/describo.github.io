@@ -20,22 +20,20 @@ export const sidebar = [
             },
             { text: "Installation", link: "/docs/guide/installation" },
             {
-                text: "Configuration",
-                collapsed: true,
-                items: [
-                    {
-                        text: "General Settings",
-                        link: "/docs/guide/configuration/general-settings",
-                    },
-                    {
-                        text: "Register with describo.cloud",
-                        link: "/docs/guide/configuration/subscribe",
-                    },
-                    {
-                        text: "Cloud Services & Data Processing",
-                        link: "/docs/guide/configuration/data-processing",
-                    },
-                ],
+                text: "General Settings",
+                link: "/docs/guide/configuration/general-settings",
+            },
+            {
+                text: "Register with describo.cloud",
+                link: "/docs/guide/configuration/subscribe",
+            },
+            {
+                text: "Purchase Credits",
+                link: "/docs/guide/configuration/purchase-credits",
+            },
+            {
+                text: "Cloud Services & Data Processing",
+                link: "/docs/guide/configuration/data-processing",
             },
             {
                 text: "What is JSON-LD and RO-Crate?",
@@ -58,7 +56,7 @@ export const sidebar = [
                 link: "/docs/guide/tutorials/assistant-supported-discovery",
             },
             {
-                text: "Prompt engineering",
+                text: "Tips for using the assistant",
                 link: "/docs/guide/tutorials/prompt-engineering",
             },
         ],

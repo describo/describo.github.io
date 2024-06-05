@@ -8,9 +8,9 @@ In order to use the text extraction, entity recognition and assistant capabiliti
 register with describo.cloud. This is an essential requirement as you must purchase credits to use
 the services.
 
-::: warning Info
+::: tip Info
 
-Be sure to read the next page -
+Be sure to read the page -
 [/docs/guide/configuration/data-processing](/docs/guide/configuration/data-processing) - to learn
 about the services used and where your data is processed.
 
