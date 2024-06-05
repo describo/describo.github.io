@@ -134,11 +134,13 @@ const pricing = {
 
 const checkoutCompleted = ref(false);
 const checkoutFailed = ref(false);
+let email;
 let items;
 let paddle;
+
 onMounted(async () => {
     const params = new URLSearchParams(window.location.search);
-    let email, environment;
+    let environment;
     try {
         email = params.get("email");
         environment = params.get("env");
@@ -161,11 +163,13 @@ onMounted(async () => {
                 ? "test_74040fb0d3ce12ca437b2192f97"
                 : "live_8d7de13dba1f34a8ff5f67c7254",
         environment: environment === "development" ? "sandbox" : "production",
+
         pwCustomer: {
             email,
         },
         checkout: {
             settings: {
+                allowLogout: false,
                 displayMode: "overlay",
                 theme: "light",
                 locale: "en",
@@ -191,12 +195,22 @@ onMounted(async () => {
 function purchaseGeneralCredits() {
     checkoutCompleted.value = false;
     checkoutFailed.value = false;
-    paddle.Checkout.open({ items: [items.general] });
+    paddle.Checkout.open({
+        items: [items.general],
+        customer: {
+            email,
+        },
+    });
 }
 
 function purchaseAssistantCredits() {
     checkoutCompleted.value = false;
     checkoutFailed.value = false;
-    paddle.Checkout.open({ items: [items.assistant] });
+    paddle.Checkout.open({
+        items: [items.assistant],
+        customer: {
+            email,
+        },
+    });
 }
 </script>
