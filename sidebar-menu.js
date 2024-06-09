@@ -21,43 +21,44 @@ export const sidebar = [
             { text: "Installation", link: "/docs/guide/installation" },
             {
                 text: "General Settings",
-                link: "/docs/guide/configuration/general-settings",
+                link: "/docs/guide/general-settings",
             },
             {
                 text: "Register with describo.cloud",
-                link: "/docs/guide/configuration/subscribe",
+                link: "/docs/guide/subscribe",
             },
             {
                 text: "Purchase Credits",
-                link: "/docs/guide/configuration/purchase-credits",
+                link: "/docs/guide/purchase-credits",
             },
             {
                 text: "Cloud Services & Data Processing",
-                link: "/docs/guide/configuration/data-processing",
+                link: "/docs/guide/data-processing",
             },
-            {
-                text: "What is JSON-LD and RO-Crate?",
-                link: "/docs/guide/tutorials/explainer-rocrate-and-jsonld",
-            },
+
             {
                 text: "Working with an RO-Crate",
-                link: "/docs/guide/tutorials/working-with-a-crate",
+                link: "/docs/guide/working-with-a-crate",
             },
             {
                 text: "Content Transcription and Entity Markup",
-                link: "/docs/guide/tutorials/transcribing-content",
+                link: "/docs/guide/transcribing-content",
             },
             {
                 text: "Using the assistant when transcribing",
-                link: "/docs/guide/tutorials/transcribing-content-assistant",
+                link: "/docs/guide/transcribing-content-assistant",
             },
             {
                 text: "Assistant enabled e-Discovery",
-                link: "/docs/guide/tutorials/assistant-supported-discovery",
+                link: "/docs/guide/assistant-supported-discovery",
             },
             {
                 text: "Tips for using the assistant",
-                link: "/docs/guide/tutorials/prompt-engineering",
+                link: "/docs/guide/prompt-engineering",
+            },
+            {
+                text: "Glossary",
+                link: "/docs/guide/glossary",
             },
         ],
     },

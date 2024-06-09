@@ -2,15 +2,19 @@
     <div class="flex flex-col space-y-2 text-slate-800 items-center" v-cloak>
         <div class="flex flex-row items-center text-sm xl:text-lg flex-grow">
             <div
-                class="hidden md:flex cursor-pointer text-4xl py-48 px-2"
+                class="hidden md:flex cursor-pointer text-4xl py-48 px-2 border-r border-slate-400 hover:text-blue-600"
                 @click="previousCard()"
                 v-if="cards.length > 1"
             >
                 <font-awesome-icon :icon="['fas', 'chevron-left']" />
             </div>
             <div v-auto-animate="{ duration: 300 }">
-                <card :class="{ hidden: idx !== n }" v-for="(card, idx) of cards" :key="ref(idx)">
-                    {{ card }}
+                <card
+                    :class="{ hidden: idx !== n }"
+                    v-for="(card, idx) of cards"
+                    :key="ref(idx)"
+                    class="p-4"
+                >
                     <template #text><div v-html="card.text"></div></template>
                     <template #image v-if="card.image">
                         <div class="flex flex-col space-y-2">
@@ -38,7 +42,7 @@
                 </card>
             </div>
             <div
-                class="hidden md:flex cursor-pointer text-4xl py-48 px-2"
+                class="hidden md:flex cursor-pointer text-4xl py-48 px-2 border-l border-slate-400 hover:text-blue-600"
                 @click="nextCard()"
                 v-if="cards.length > 1"
             >

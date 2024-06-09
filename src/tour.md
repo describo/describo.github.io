@@ -8,95 +8,119 @@ aside: false
 
 const cards = [
     {
-        text: `The dashboard. Select a folder of content to describe; load a previously used folder or manage data pack data.
-        Whether you are describing research data, creating a cultural collection or just discovering what your content
-        is about, everything you do will be stored in this folder. <br/><strong>Nothing is locked up inside Describo.</strong>`,
+        text: `<p>The dashboard. Start by selecting a mode and a folder of content to work with.</p>
+        <p>
+        Whether you are describing data, creating a cultural collection or just performing a discovery process,
+        everything you do will be stored in this folder.
+        </p>
+        <p class="text-center"><strong>Nothing is locked up inside Describo.</strong></p>
+        `,
         image: "/images/tour/desktop1.webp",
     },
     {
-        text: "Get started by pressing the help button to activate context sensitive help. The documentation link in the navigation bar links to context specific documentation.",
+        text: "<p>Wherever you are, pressing the 'Help' button in the navigation bar activates context sensitive help. The documentation link next to it opens context specific documentation in your browser.</p>",
         image: "/images/tour/desktop2.webp",
     },
     {
-        text: `When a folder is selected, the root dataset is shown in the middle pane along with a file browser on the left.
-       In the navigation bar we can see which folder is loaded as well as controls to load a profile and access application settings.
+        text: `<p>When a folder is selected, the main dataset is shown in the middle pane along with a file browser on the left.
+        In the navigation bar we can see the selected folder as well as the profile that was loaded for the mode you selected.
+        Also note the controls to set a licence, save the metadata, and access application settings.</p>
+
+        <p>At this point, you can immediately start describing your content. Try pressing <span class="text-sm bg-blue-500 text-white py-1 px-2 rounded">+ TextArea</span> next
+        to keywords. The buttons tell you the type of data expected. In this case, you can add free text.
+        Likewise, if you wanted to define an author you could press the <span class="text-sm bg-blue-500 text-white py-1 px-2 rounded">+ Person</span> button next to author and Describo will guide you in defining a person.
+        </p>
+        <p>Notice also the tabs down the left hand side. These guide you in the different types of data you can describe.</p>
+
         `,
         image: "/images/tour/desktop3.webp",
     },
     {
-        text: `Selecting a entity of type 'File' will calculate file metadata, create an entry for the file in the crate and display a preview of it
-        in the right hand panel.`,
+        text: `<p>Selecting a file in the file browser will add it to the metadata and navigate to it so that you can describe it in
+        detail if you want. It also calculates file metadata for you. This is useful so you can check that the file is ok
+        in the future (it hasn't changed in anyway).</p>
+        <p>Notice that if possible, a file preview will be shown in the right hand panel.</p>
+        `,
         image: "/images/tour/desktop4.webp",
     },
     {
-        text: `Describo makes all of Schema.org available to you. In the image we can see all of the properties defined by schema.org
+        text: `<p>Describo makes all of Schema.org available to you. In the image we can see all of the properties defined by schema.org
         for an entity of type File; all the way back up the hierarchy to Thing. In addition, we can see what data types each property is expecting.
         The 'about' property expects an entity of type 'ANY' so Describo will let you associate anything you've already
-        described.`,
+        described.</p>`,
         image: "/images/tour/desktop5.webp",
     },
     {
-        text: `Entities can be created directly. 'Spatial Coverage' is expecting an entity of type Place and Describo provides controls to create a new entity of that type.`,
+        text: `<p>Entities can be created directly. The 'Location' property is expecting an entity of type Place and Describo provides controls to create a new entity of that type.</p>`,
         image: "/images/tour/desktop6.webp",
     },
     {
-        text: `Navigating to the entity we can then start managing its data. Shown is the Geometry component which enables creating
-        a custom geometry for the Geo property.`,
+        text: `<p>Navigating to the entity we can then start managing its data. Shown is the Geometry component which enables creating
+        a custom geometry for the Geo property. In this case, we've defined a geographical area of Australia.</p>`,
         image:  "/images/tour/desktop7.webp",
     },
     {
-        text: `Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. You can mark
-        up entities and create rich datasets of entities mentioned in your data.
-        <br/>
-        <a href="/docs/guide/tutorials/transcribing-content.html" target="_blank">See the tutorial for more information.</a>`,
+        text: `<p>If you register with describo.cloud and purchase credits, Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. Even without the cloud service, you can mark
+        up entities and create rich datasets of entities mentioned in your data.</p>
+        <p>
+        <a href="/docs/guide/tutorials/transcribing-content.html" target="_blank">See the tutorial for more information.</a>
+        </p>`,
         image:  "/images/tour/desktop8.webp",
     },
     {
-        text: `When using the transcription tools the data is written into the RO-Crate. And the markup is created as data attributes in the HTML.`,
-        image:  [ "/images/tour/desktop9.webp",  "/images/tour/transcribe1.webp" ]
+        text: `<p>When using the transcription tools the data is written into the metadata file. In this image we see all of the
+        entities that were marked up in the text associated as 'Mentions' in this file. In addition, Describo created a HTML
+        transcription file with the markup created as data attributes in the HTML.</p>`,
+        image:  "/images/tour/desktop9.webp",
     },
-     {
-        text: `Describo interfaces with a conversational AI assistant to help you interrogate and understand your content. In this image
-                the assistant has first summarised the text then, acting as an anthropologist, it has described the main topics. Finally, as a social scientist, the assistant explains the narrative with respect to any cultural symbolism. In each response, detailed examples are provided from the text to support the commentary.
-                <br/>
-                <a href="/docs/guide/tutorials/transcribing-content-assistant.html" target="_blank">See the tutorial for more information.</a>
+    {
+        text: `<p>Describo interfaces with a conversational AI assistant to help you interrogate and understand your
+        content. In this image the assistant has first summarised the text then, acting as an anthropologist,
+        it has described the main topics. Finally, as a social scientist, the assistant explains the narrative
+        with respect to any cultural symbolism. In each response, detailed examples are provided from the text to support
+        the commentary.</p>
+        <p>In addition, we can directly update the metadata for the file with the information we uncover by
+        working with the assistant. </p>
+        <p>
+            <a href="/docs/guide/tutorials/transcribing-content-assistant.html" target="_blank">See the tutorial for more information.</a>
+        </p>
         `,
-        image:   "/images/tutorial-transcribing-content-assistant/assistant1.webp"
-    },
-     {
-        text: `Any description or defined term that you create is then associated to the file in the metadata.`,
-        image:   "/images/tutorial-transcribing-content-assistant/assistant2.webp"
-    },
-      {
-        text: `And defined terms can be looked up and attached to other content that you are working on.`,
-        image:   "/images/tutorial-transcribing-content-assistant/assistant3.webp"
-    },
-     {
-        text: `The conversational AI assistant can be used for e-Discovery. Navigate to the discover tab, select the files you
-        wish to interrogate (text based formats supported: txt, html and pdf), start the assistant and go.`,
-        image: "/images/tutorial-discover/discover1.webp",
-     }, {
-        text: `Watch the assistant in action then  <a href="/docs/guide/tutorials/assistant-supported-discovery.html" target="_blank">See the tutorial for more information.</a>`,
-        video: "/images/tutorial-discover/ro-crate-paper.mp4"
+        image:   "/images/tour/desktop10.webp"
     },
     {
-        text: `Describo is totally configurable via profiles. Profiles are JSON objects that describe how the interface looks and what a user can do. Profiles can be loaded from your computer or from the Describo Profiles Repository. Profiles are cached locally for reuse.`,
-        image: "/images/tour/desktop10.webp",
+        text: `<p>Here we see the descriptions and defined terms we created whilst working with the assistant.`,
+        image:   "/images/tour/desktop11.webp"
     },
     {
-        text: `When a profile is loaded, the view will adapt based on the instructions in that profile. In this example, the profile defines a tabbed layout for File entities in addition to showing specific properties. This allows the profile author to define exactly how the UI should look for their users and guide them on what is required.`,
-        image: "/images/tour/desktop11.webp",
+        text: `<p>And defined terms can be looked up and attached to other content that you are working on.</p>`,
+        image:   "/images/tour/desktop12.webp"
     },
     {
-        text: `Describo is totally configurable. It supports English and Hungarian (for now) and there are controls for various aspects of its operation.`,
-        image: ["/images/tour/desktop12.webp", "/images/tour/describo-i18-en.webp", "/images/tour/describo-i18-hu.webp"],
-    },
-    {
-        text: `There are controls to view the entities in the crate and jump directly to any entity.`,
+        text: `<p>The conversational AI assistant can be used for e-Discovery. Navigate to the discover tab, select the
+        files you wish to interrogate (supports: Microsoft Word and Powerpoint, PDF, txt and html), start the assistant and go.`,
         image: "/images/tour/desktop13.webp",
     },
-    { text: `There is a control to directly edit the context.`, image: "/images/tour/desktop14.webp" },
-    { text: `And one to preview the JSON linked data.`, image: "/images/tour/desktop15.webp" },
+    {
+        text: `<p>In this image we see the conversation on the right and direct updating of the metadata on the left.</p>`,
+        image: "/images/tour/desktop14.webp",
+    },
+    {
+        text: `<p>If we navigate back to the describe tab we see the metadata we created whilst using the assistant.</p>`,
+        image: "/images/tour/desktop15.webp",
+    },
+    {
+        text: `<p>Whatever your work, licensing and / or classifying it is critically important so Describo provides
+        easy to use tools to do this. In this image we see a dialog for applying a licence to your work.</p>`,
+        image: "/images/tour/desktop16.webp",
+    },
+    {
+        text: `<p>And here we see the licence applied.</p>`,
+        image: "/images/tour/desktop17.webp",
+    },
+     {
+        text: `<p>Finally, application settings can be changed as required.</p>`,
+        image: "/images/tour/desktop18.webp",
+    },
 
 ];
 </script>

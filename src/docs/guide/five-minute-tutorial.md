@@ -1,29 +1,128 @@
 ---
-title: "5 Minute beginner tutorial: Research Object Crates (RO-Crate) and Describo"
+title: "5 Minute beginner tutorial: Describo and Research Object Crates (RO-Crate)"
 aside: false
 ---
 
-# Beginner Tutorial: Research Object Crates (RO-Crate) and Describo
+# Beginner Tutorial: Describo and Research Object Crates (RO-Crate)
 
-Get know Describo and how it creates RO-Crates in 5 minutes!
+Hi :wave:,
 
-[[toc]]
+In this five minute tutorial you'll get to know Describo and how to use it to work with and describe
+your data.
+
+<p>
+    The best way to get to know the feature set of Describo is via the
+    <LinkComponent link="/tour.html" target="_blank">product tour</LinkComponent>.
+    This will walk you through all of the capabilities and how to use them. Once you
+    are done, <LinkComponent link="/desktop.html" target="_blank">download Describo</LinkComponent>
+    to your computer and read on.
+</p>
 
 ## Introduction
+
+Describo started life as a tool to describe data with metadata conforming to the RO-Crate
+specification. If you are reading this you probably know what that is; but just in case:
+
+::: tip info
 
 The RO-Crate specification describes "a method of aggregating and describing research data with
 associated metadata".
 [https://www.researchobject.org/ro-crate/1.1/introduction.html](https://www.researchobject.org/ro-crate/1.1/introduction.html)
 
-In this 5 minute tutorial, you will get started describing your data as RO-Crates!
+:::
 
-<ImageComponent src="/images/five-minute-tutorial/tutorial1.webp" />
+In simpler terms, a complementary definition could be:
+
+::: tip info
+
+A method of describing content with a metadata file in the same folder; think an index that lives
+with the content.
+
+:::
+
+In this 5 minute tutorial, you will get started describing your data as RO-Crates (which is
+applicable whether you are using it as a researcher or not!).
 
 ## Audience: about you
 
-You've heard about these nifty RO-Crate things and want to start describing your data in an open and
-spec conformant way. Maybe you can explain what JSON-LD is and maybe you've looked at the spec but
-your core interest here is that you want to describe your research data.
+You have data that you want to work with.
+
+You might want to describe it or just understand what's there. Maybe it's research data or maybe
+it's a folder on your company fileshare. You could be a researcher or you could be an analyst
+working with lengthy policy documents.
+
+Whoever you are and whatever your use case, Describo has modes of operation that can help you do
+your job quickly and efficiently.
+
+Specifically, Describo creates a file in your folder called `ro-crate-metadata.json` and that's
+where all of your efforts are stored. Think of this as like an index to the folder. It's up to you
+how detailed that index is. You can describe all of the people, places and organisations related the
+content or just create a simple description for reference in future. Either way, Describo will guide
+you in the creation, and management, of that index.
+
+When you select a mode, specific optimisations will be enabled in order to adjust Describo for
+different use cases. Regardless of which mode you select and how you use it, the outcome will be a
+standards compliant and interoperable description of your data.
+
+## Get Started working with your data
+
+<p>
+    If you've not yet installed Describo, do that now.
+    <LinkComponent link="/desktop.html" target="_blank">Get Describo - free download.</LinkComponent>
+</p>
+
+When you open the application you will see the dashboard.
+
+<ImageComponent src="/images/five-minute-tutorial/desktop1.webp" />
+
+To get an overview and orientate yourself press the
+<span class="text-sm bg-blue-500 text-white py-1 px-2 rounded">Help</span> button in the navigation
+bar.
+
+<ImageComponent src="/images/five-minute-tutorial/desktop2.webp" />
+
+Start by selecting a mode (go with `Data Description` for now) and a folder of content to work with.
+When you select the folder, you will be taken to the workspace. The `Describe` tab will be loaded.
+
+<ImageComponent src="/images/five-minute-tutorial/desktop3.webp" />
+
+On the left you will have a file browser showing you the content of your folder. In the middle will
+be the metadata editor. And on the right will be a file preview section. If you select a file in the
+file browser, it will be added to the index and a preview will be displayed.
+
+<ImageComponent src="/images/five-minute-tutorial/desktop4.webp" />
+
+You can now start editing the metadata (creating the index to your content).
+
+-   The buttons guide you in what you can do. Try pressing
+    <span class="text-sm bg-blue-500 text-white py-1 px-2 rounded">+ TextArea</span> next to
+    `Description`. A free text box will appear for you to type into. You can keep adding those by
+    pressing the button again and again in order to create highly detailed descriptions.
+-   Now try pressing <span class="text-sm bg-blue-500 text-white py-1 px-2 rounded">+ URL</span>
+    next to `Keywords`. Type in your name. You'll see feedback saying that a URL is expected. Delete
+    that and put `https://describo.github.io` instead. Press enter or click the
+    <span class="text-sm bg-green-500 text-white py-1 px-2 rounded"><FontAwesomeIcon :icon="faCheck" /></span>
+    button. You should see that an entity of type 'URL' has been created and associated as a
+    keyword.
+
+The buttons tell you what type of data is expected. If you add something and change your mind, you
+can delete / unlink it and do it again. Be sure to check out what youc an describe in the individual
+sections (tabs) as well.
+
+## Useful information
+
+For those so inclined, you might want to read the following documentation from the specification
+itself in order to get a better understanding of what Describo is helping you do.
+
+-   [Root data entity](https://www.researchobject.org/ro-crate/1.1/root-data-entity.html)
+-   [Contextual entities](https://www.researchobject.org/ro-crate/1.1/contextual-entities.html)
+-   [Data entities](https://www.researchobject.org/ro-crate/1.1/data-entities.html)
+
+## And that's an RO-Crate!
+
+Well done, you created an RO-Crate by describing your data in a standard, spec compliant way!
+
+<font-awesome-icon :icon="['fas', 'champagne-glasses']" class="text-6xl text-yellow-500"/>
 
 ### Useful links where you can learn more
 
@@ -32,81 +131,3 @@ your core interest here is that you want to describe your research data.
 -   [RO-Crate specification](https://www.researchobject.org/ro-crate/specification.html)
 -   [JSON-LD](https://json-ld.org/)
 -   [schema.org](https://schema.org/)
-
-## Start Describo Desktop or the Describo web application
-
-This tutorial can be completed with either Describo Desktop or Describo Web. For ease, Web is
-easiest to get started with:
-
-<LinkComponent link="https://describo.github.io/web">https://describo.github.io/web</LinkComponent>
-(Remember, it only works in Google Chrome and Microsoft Edge for now.)
-
-::: tip
-
-Describo web is good for getting started quickly and easily. You can inspect an RO-Crate and load
-profiles to work with the data. It does not have the capabilities of Describo Desktop but for basic
-usage, that's not needed.
-
-:::
-
-In the application, select a folder to describe.
-
-<ImageComponent src="/images/five-minute-tutorial/tutorial2.webp" />
-
-## Apply the RO-Crate profile
-
-The main description view. A default RO-Crate describo profile has been created for you.
-
-Apply the profile.
-
-<ImageComponent src="/images/five-minute-tutorial/tutorial3.webp" />
-
-## Profile Selector
-
-The profile selector. Locate the RO-Crate profile and select it.
-
-<ImageComponent src="/images/five-minute-tutorial/tutorial4.webp" />
-
-## Describe your data
-
-When the RO-Crate profile has been applied, you will be presented with a view that contains the
-absolute bare minimum required to describe your data as an RO-Crate.
-
-### Useful information
-
--   [Root data entity](https://www.researchobject.org/ro-crate/1.1/root-data-entity.html)
--   [Contextual entities](https://www.researchobject.org/ro-crate/1.1/contextual-entities.html)
--   [Data entities](https://www.researchobject.org/ro-crate/1.1/data-entities.html)
-
-<ImageComponent src="/images/five-minute-tutorial/tutorial5.webp" />
-
-## Go further: describe more
-
-Click the add button in the toolbar and inject properties into the data.
-
-<div class="flex justify-center">
-    <div class="border">
-        <img src="/images/five-minute-tutorial/tutorial7.webp" class="w-32" />
-    </div>
-</div>
-
-The properties you can inject come from schema.org and the describo profile if one is applied. They
-are defined on the type of data you are working with. In this case a Dataset. When you add the
-property Describo will tell you what type of data it expects.
-
-<ImageComponent src="/images/five-minute-tutorial/tutorial6.webp" />
-
-## Where did that property go?
-
-With a profile that defines a grouped interface, for example the RO-Crate profile, extra properties
-that you add will be visible in the '...' tab. Don't worry, just remove the profile and you get a
-list view with all of your properties, sorted alphabetically. Or go back to the tabbed view. Work
-the way that suits you best.
-
-<ImageComponent src="/images/five-minute-tutorial/tutorial8.webp" />
-
-## And that's an RO-Crate!
-
-Well done, you created an RO-Crate by describing your data in a standard, spec compliant way!
-
-<font-awesome-icon :icon="['fas', 'champagne-glasses']" class="text-6xl text-yellow-500"/>

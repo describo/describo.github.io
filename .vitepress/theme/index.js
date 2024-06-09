@@ -21,6 +21,7 @@ import {
     faCircleXmark,
     faCircleCheck,
     faBook,
+    faHome,
 } from "@fortawesome/free-solid-svg-icons";
 import { faWindows, faApple, faLinux } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -47,6 +48,7 @@ library.add(faXmark);
 library.add(faCircleXmark);
 library.add(faCircleCheck);
 library.add(faBook);
+library.add(faHome);
 
 import DefaultTheme from "vitepress/dist/client/theme-default/index.js";
 import MyLayout from "./MyLayout.vue";
@@ -59,6 +61,7 @@ import FooterComponent from "../../src/vue-components/Footer.vue";
 import ImageComponent from "../../src/vue-components/Image.vue";
 import InfoPanelComponent from "../../src/vue-components/InfoPanel.vue";
 import LinkComponent from "../../src/vue-components/Link.vue";
+import RedirectComponent from "../../src/vue-components/Redirect.vue";
 import StackComponent from "../../src/vue-components/Stack.vue";
 import TipComponent from "../../src/vue-components/Tip.vue";
 
@@ -78,6 +81,7 @@ export default {
         app.component("ImageComponent", ImageComponent);
         app.component("InfoPanelComponent", InfoPanelComponent);
         app.component("LinkComponent", LinkComponent);
+        app.component("RedirectComponent", RedirectComponent);
         app.component("StackComponent", StackComponent);
         app.component("TipComponent", TipComponent);
         app.component("FontAwesomeIcon", FontAwesomeIcon);

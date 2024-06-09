@@ -7,8 +7,7 @@ aside: false
 
 [[toc]]
 
-Describo can be downloaded from GitHub:
-[https://github.com/describo/desktop-releases/releases/latest](https://github.com/describo/desktop-releases/releases/latest)
+Describo can be downloaded from <LinkComponent link="/desktop" target="_blank">here.</LinkComponent>
 
 ## MacOS
 
