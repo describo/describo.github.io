@@ -175,7 +175,7 @@ layout: home
     </template>
     <template #content>
       <video controls >
-        <source src="/images/tutorial-discover/ro-crate-paper.mp4" type="video/mp4" />
+        <source src="/images/guide-discover/ro-crate-paper.mp4" type="video/mp4" />
       </video>
     </template>
   </InfoPanelComponent>
@@ -187,7 +187,7 @@ layout: home
     <template #content>
        <iframe
           class="border border-solid border-gray-400 p-2"
-          src="/images/tutorial-discover/budget-papers-conversation.pdf"
+          src="/images/guide-discover/budget-papers-conversation.pdf"
           width="100%" height="500">
         </iframe>
     </template>
