@@ -25,7 +25,7 @@ export const sidebar = [
             },
             {
                 text: "Register with describo.cloud",
-                link: "/docs/guide/subscribe",
+                link: "/docs/guide/register",
             },
             {
                 text: "Purchase Credits",
