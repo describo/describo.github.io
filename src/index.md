@@ -124,7 +124,7 @@ layout: home
         and mark / unmark them as required. Describo produces a HTML file with the marked up content
         and the entities are written into the metadata.
       </p>
-      <FeatureComponent link="/docs/guide/tutorials/transcribing-content.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
@@ -146,19 +146,19 @@ layout: home
         interrogate your data using natural language. It's your very own research
         assistant.
       </p>
-      <FeatureComponent link="/docs/guide/tutorials/transcribing-content-assistant.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/transcribing-content-assistant.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
       </FeatureComponent>
     </template>
     <template #content>
-           <ImageComponent src="/images/tutorial-transcribing-content-assistant/assistant1.webp" />
+        <ImageComponent src="/images/guide-transcribing-content-assistant/assistant1.webp" />
     </template>
   </InfoPanelComponent>
 
   <InfoPanelComponent>
-    <template #title>Assistant enabled e-Discovery.</template>
+    <template #title>AI Assistant supported e-Discovery.</template>
     <template #text>
       <p>
         Interrogate sets of files / folders to extract the themes and narratives that you
@@ -167,16 +167,17 @@ layout: home
         you find in order to test hypotheses and ideas.
       </p>
       <p>Watch the video to see the assistant interrogate the RO-Crate paper!</p>
-      <FeatureComponent link="/docs/guide/tutorials/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
       </FeatureComponent>
     </template>
     <template #content>
-      <video controls >
+      <!-- <video controls >
         <source src="/images/guide-discover/ro-crate-paper.mp4" type="video/mp4" />
-      </video>
+      </video> -->
+        <ImageComponent src="/images/guide-discover/discover5.webp" />
     </template>
   </InfoPanelComponent>
 
@@ -187,7 +188,7 @@ layout: home
     <template #content>
        <iframe
           class="border border-solid border-gray-400 p-2"
-          src="/images/guide-discover/budget-papers-conversation.pdf"
+          src="/images/guide-discover/conversation.pdf"
           width="100%" height="500">
         </iframe>
     </template>
@@ -197,9 +198,9 @@ layout: home
     <template #title>Works with your data; is totally configurable.</template>
     <template #text>
       <p>
-        Describo knows how to handle different file types and it automatically calculates
-        file metadata for you. It can show you previews of your data files and the metadata
-        adapts based on what you are describing.
+        Describo knows how to handle different file types and adapt the interface to suit.
+        When describing files it automatically calculates file metadata for you. It
+        can show you previews of your data files and the metadata adapts based on what you are describing.
       </p>
       <p>
           <LinkComponent link="/docs/profiles/introduction" target="">Describo is totally configurable via profiles.</LinkComponent>
@@ -208,8 +209,7 @@ layout: home
           to your needs.
         </p>
         <p>
-          In this image, a cultural collection profile is loaded which defines specific properties
-          for files and a tabbed layout.
+          In this image, the RO Crate profile for data description is loaded.
         </p>
     </template>
     <template #content>
