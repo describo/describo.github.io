@@ -63,7 +63,7 @@ const cards = [
         text: `<p>If you register with describo.cloud and purchase credits, Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. Even without the cloud service, you can mark
         up entities and create rich datasets of entities mentioned in your data.</p>
         <p>
-        <a href="/docs/guide/tutorials/transcribing-content.html" target="_blank">See the tutorial for more information.</a>
+        <a href="/docs/guide/transcribing-content.html" target="_blank">See the documentation for more information.</a>
         </p>`,
         image:  "/images/tour/desktop8.webp",
     },
@@ -82,7 +82,7 @@ const cards = [
         <p>In addition, we can directly update the metadata for the file with the information we uncover by
         working with the assistant. </p>
         <p>
-            <a href="/docs/guide/tutorials/transcribing-content-assistant.html" target="_blank">See the tutorial for more information.</a>
+            <a href="/docs/guide/transcribing-content-assistant.html" target="_blank">See the documentation for more information.</a>
         </p>
         `,
         image:   "/images/tour/desktop10.webp"
@@ -97,11 +97,15 @@ const cards = [
     },
     {
         text: `<p>The conversational AI assistant can be used for e-Discovery. Navigate to the discover tab, select the
-        files you wish to interrogate (supports: Microsoft Word and Powerpoint, PDF, txt and html), start the assistant and go.`,
+        files you wish to interrogate (supports: Microsoft Word and Powerpoint, PDF, txt and html), start the assistant and go.
+        `,
         image: "/images/tour/desktop13.webp",
     },
     {
-        text: `<p>In this image we see the conversation on the right and direct updating of the metadata on the left.</p>`,
+        text: `<p>In this image we see the conversation on the right and direct updating of the metadata on the left.</p>
+        <p>
+        <a href="/docs/guide/assistant-supported-discovery.html" target="_blank">See the documentation for more information.</a>
+        </p>`,
         image: "/images/tour/desktop14.webp",
     },
     {
