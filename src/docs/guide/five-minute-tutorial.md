@@ -40,8 +40,8 @@ with the content.
 
 :::
 
-In this 5 minute tutorial, you will get started describing your data as RO-Crates (which is
-applicable whether you are using it as a researcher or not!).
+In this 5 minute tutorial, you will start describing your data as RO-Crates (which is applicable
+whether you are using it as a researcher or not!).
 
 ## Audience: about you
 
@@ -84,11 +84,19 @@ bar.
 Start by selecting a mode (go with `Data Description` for now) and a folder of content to work with.
 When you select the folder, you will be taken to the workspace. The `Describe` tab will be loaded.
 
+On the left you will see a file browser showing the content of your folder. In the middle will be
+the metadata editor. And on the right will be a file preview section.
+
+Notice those properties in red? License, author, description etc? That's to show you what the mode
+thinks you should be describing. Leaving those blank doesn't stop anything working but if you have
+that information, then it's good if you provide it. Indeed, the power of Describo lies in it's
+ability to guide you in creating an index to your data. Both by telling you what information to
+provide and what type of data is expected at any point.
+
 <ImageComponent src="/images/five-minute-tutorial/desktop3.webp" />
 
-On the left you will have a file browser showing you the content of your folder. In the middle will
-be the metadata editor. And on the right will be a file preview section. If you select a file in the
-file browser, it will be added to the index and a preview will be displayed.
+If you select a file in the file browser, it will be added to the index and a preview will be
+displayed.
 
 <ImageComponent src="/images/five-minute-tutorial/desktop4.webp" />
 
@@ -106,7 +114,7 @@ You can now start editing the metadata (creating the index to your content).
     keyword.
 
 The buttons tell you what type of data is expected. If you add something and change your mind, you
-can delete / unlink it and do it again. Be sure to check out what youc an describe in the individual
+can delete / unlink it and do it again. Be sure to check out what you can describe in the individual
 sections (tabs) as well.
 
 ## Useful information
@@ -131,3 +139,7 @@ Well done, you created an RO-Crate by describing your data in a standard, spec c
 -   [RO-Crate specification](https://www.researchobject.org/ro-crate/specification.html)
 -   [JSON-LD](https://json-ld.org/)
 -   [schema.org](https://schema.org/)
+
+<script setup>
+   import { faCheck } from "@fortawesome/free-solid-svg-icons";
+</script>
