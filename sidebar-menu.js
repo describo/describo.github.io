@@ -19,7 +19,7 @@ export const sidebar = [
                 link: "/docs/articles/articles-index",
             },
             {
-                text: "e-discovery: TayTay Sings the Budget Blues",
+                text: "TayTay Sings the Budget Blues",
                 link: "/docs/articles/taytay-sings-the-budget-blues",
             },
         ],
@@ -51,7 +51,7 @@ export const sidebar = [
             },
 
             {
-                text: "Working with an RO-Crate",
+                text: "Working with your data",
                 link: "/docs/guide/working-with-a-crate",
             },
             {
