@@ -130,7 +130,7 @@ itself in order to get a better understanding of what Describo is helping you do
 
 Well done, you created an RO-Crate by describing your data in a standard, spec compliant way!
 
-<font-awesome-icon :icon="['fas', 'champagne-glasses']" class="text-6xl text-yellow-500"/>
+<font-awesome-icon :icon="faChampagneGlasses" class="text-6xl text-yellow-500"/>
 
 ### Useful links where you can learn more
 
@@ -141,5 +141,5 @@ Well done, you created an RO-Crate by describing your data in a standard, spec c
 -   [schema.org](https://schema.org/)
 
 <script setup>
-   import { faCheck } from "@fortawesome/free-solid-svg-icons";
+   import { faCheck, faChampagneGlasses } from "@fortawesome/free-solid-svg-icons";
 </script>

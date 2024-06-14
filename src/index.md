@@ -27,12 +27,12 @@ layout: home
   <div class="w-full md:w-1/2 flex flex-row items-center">
     <div class="md:flex-grow"></div>
     <div class="flex flex-col grow">
-        <FeatureComponent link="/tour" :icon="['fas', 'route']" class="m-1 grow lg:grow-0 bg-blue-200">
-            <template #title>
-                  Take the product tour
-            </template>
+        <FeatureComponent link="/tour" :icon="faRoute" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Take the product tour
+          </template>
         </FeatureComponent>
-        <FeatureComponent link="/desktop" :icon="['fas', 'download']" class="m-1 grow lg:grow-0 bg-blue-200">
+        <FeatureComponent link="/desktop" :icon="faDownload" class="m-1 grow lg:grow-0 bg-blue-200">
           <template #title>
             Get Describo - free download
           </template>
@@ -43,7 +43,17 @@ layout: home
 
 <div class="flex flex-col space-x-4">
   <div class="flex flex-row flex-wrap place-content-center">
-        <FeatureComponent link="/docs/component/introduction" :icon="['fas', 'code']" class="m-1  grow md:grow-0 bg-slate-200">
+        <FeatureComponent link="/docs/articles/articles-index" :icon="faFileLines" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Feature Articles
+          </template>
+          <template #content>
+                <div class="text-xs no-underline">
+                  Articles showcasing a particular capability.
+                </div>
+            </template>
+        </FeatureComponent>
+        <FeatureComponent link="/docs/component/introduction" :icon="faCode" class="m-1  grow md:grow-0 bg-slate-200">
             <template #title>
                   Developers
             </template>
@@ -53,7 +63,7 @@ layout: home
                 </div>
             </template>
         </FeatureComponent>
-      <FeatureComponent link="/docs/guide/five-minute-tutorial" :icon="['fas', 'person-chalkboard']" class="m-1 grow md:grow-0 bg-slate-200">
+      <FeatureComponent link="/docs/guide/five-minute-tutorial" :icon="faPersonChalkboard" class="m-1 grow md:grow-0 bg-slate-200">
           <template #title>
                 5 minute beginner tutorial
           </template>
@@ -63,17 +73,17 @@ layout: home
               </div>
           </template>
       </FeatureComponent>
-      <FeatureComponent link="/describo-users" :icon="['fas', 'users']" class="m-1 grow md:grow-0 bg-slate-200">
+      <FeatureComponent link="/describo-users" :icon="faUsers" class="m-1 grow md:grow-0 bg-slate-200">
           <template #title>
               See who's using Describo
           </template>
       </FeatureComponent>
-      <FeatureComponent link="https://github.com/describo/describo.github.io" target="_blank" :icon="['fas', 'star']" class="m-1 grow md:grow-0 bg-slate-200">
+      <FeatureComponent link="https://github.com/describo/describo.github.io" target="_blank" :icon="faStar" class="m-1 grow md:grow-0 bg-slate-200">
           <template #title>
                 Like it? Star us on Github.
           </template>
       </FeatureComponent>
-      <FeatureComponent :icon="['fas', 'book-open-reader']" class="m-1 grow md:grow-0 bg-slate-200">
+      <FeatureComponent :icon="faBookOpenReader" class="m-1 grow md:grow-0 bg-slate-200">
           <template #title>
                 Cite Describo
           </template>
@@ -124,7 +134,7 @@ layout: home
         and mark / unmark them as required. Describo produces a HTML file with the marked up content
         and the entities are written into the metadata.
       </p>
-      <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
@@ -146,7 +156,7 @@ layout: home
         interrogate your data using natural language. It's your very own research
         assistant.
       </p>
-      <FeatureComponent link="/docs/guide/transcribing-content-assistant.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/transcribing-content-assistant.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
@@ -167,7 +177,7 @@ layout: home
         you find in order to test hypotheses and ideas.
       </p>
       <p>Watch the video to see the assistant interrogate the RO-Crate paper!</p>
-      <FeatureComponent link="/docs/guide/assistant-supported-discovery.html" :icon="['fas', 'book']" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/assistant-supported-discovery.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
@@ -221,5 +231,16 @@ layout: home
 <FooterComponent class="mt-6"/>
 
 <script setup>
-    import TagLine from "./vue-components/TagLine.vue";
+  import {
+    faRoute,
+    faDownload,
+    faCode,
+    faPersonChalkboard,
+    faUsers,
+    faStar,
+    faBookOpenReader,
+    faBook,
+    faFileLines
+  }  from "@fortawesome/free-solid-svg-icons";
+  import TagLine from "./vue-components/TagLine.vue";
 </script>
