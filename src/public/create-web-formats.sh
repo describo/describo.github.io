@@ -16,5 +16,3 @@ export -f createWebPImages
 find $FOLDER -type f -name *.png -exec bash -c 'createWebPImages "$0" .png' {} \;
 find $FOLDER -type f -name *.jpeg -exec bash -c 'createWebPImages "$0" .jpeg' {} \;
 find $FOLDER -type f -name *.jpg -exec bash -c 'createWebPImages "$0" .jpg' {} \;
-
-# create mp4 and webm videos
