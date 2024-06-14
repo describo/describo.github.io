@@ -14,5 +14,11 @@
 const props = defineProps({
     src: { type: String, required: true },
 });
-const enableZoom = window.innerWidth > "900" ? true : false;
+let enableZoom = true;
+
+// if we're on a touch device and window small - disable zoom
+//   this way we can pinch to zoom
+if ("ontouchstart" in window && window.innerWidth <= 1200) {
+    enableZoom = false;
+}
 </script>
