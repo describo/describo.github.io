@@ -11,8 +11,6 @@ aside: false
     https://github.com/describo/desktop-releases/releases/latest </LinkComponent>
 </div>
 
-<Disqus />
-
 <FooterComponent class="mt-6"/>
 
 <script setup>

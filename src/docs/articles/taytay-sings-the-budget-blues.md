@@ -140,7 +140,7 @@ Following is a fun, albeit frivolous, example that demonstrates what you can do.
 ## Get started!
 
 If you want to try this with your own data, it's easy and you can be up and running in about 5
-minutes for 5 dollar bucks!
+minutes!
 
 -   [Download the application - FREE](/desktop)
 -   [Register - FREE](/docs/guide/register)
