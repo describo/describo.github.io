@@ -1,6 +1,8 @@
 import { defineConfig } from "vitepress";
 import { sidebar } from "../sidebar-menu.js";
 
+const GTAG = process.env.NODE_ENV !== "development" ? "G-GC2FXLTHYR" : undefined;
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "Describo",
@@ -36,11 +38,11 @@ export default defineConfig({
                 content: "Dr Marco La Rosa (https://marcolarosa.github.io/)",
             },
         ],
-        ["script", { async: "", src: "https://www.googletagmanager.com/gtag/js?id=G-GC2FXLTHYR" }],
+        ["script", { async: "", src: `https://www.googletagmanager.com/gtag/js?id=${GTAG}` }],
         [
             "script",
             {},
-            "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-GC2FXLTHYR');",
+            `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', '${GTAG}');`,
         ],
         [
             "script",
