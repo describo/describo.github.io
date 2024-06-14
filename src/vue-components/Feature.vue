@@ -21,7 +21,7 @@
 const props = defineProps({
     link: { type: String },
     target: { type: String, default: "" },
-    icon: { type: Array },
+    icon: { type: Object },
     size: { type: String, default: "2x" },
 });
 </script>
