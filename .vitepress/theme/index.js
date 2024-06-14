@@ -56,6 +56,7 @@ import MyLayout from "./MyLayout.vue";
 // register components globally
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import CardComponent from "../../src/vue-components/Card.vue";
+import Disqus from "../../src/vue-components/Disqus.vue";
 import FeatureComponent from "../../src/vue-components/Feature.vue";
 import FooterComponent from "../../src/vue-components/Footer.vue";
 import ImageComponent from "../../src/vue-components/Image.vue";
@@ -76,6 +77,7 @@ export default {
     Layout: MyLayout,
     enhanceApp({ app }) {
         app.component("CardComponent", CardComponent);
+        app.component("Disqus", Disqus);
         app.component("FeatureComponent", FeatureComponent);
         app.component("FooterComponent", FooterComponent);
         app.component("ImageComponent", ImageComponent);

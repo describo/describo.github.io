@@ -151,6 +151,8 @@ And if you have questions about how your data is used and where it's processed:
 -   [Terms and conditions](/terms-and-conditions#describo-cloud)
 -   [Where your data is processed](/docs/guide/data-processing)
 
+<Disqus />
+
 <script setup>
     import { faSearch} from "@fortawesome/free-solid-svg-icons";
 </script>
