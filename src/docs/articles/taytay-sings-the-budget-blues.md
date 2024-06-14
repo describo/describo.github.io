@@ -103,9 +103,9 @@ we look at the evolution of her style over time and ask the Assistant what else 
 the data.
 
 As you read through the text, take note of the times where the Assistant is drawing on its knowledge
-which is outside of the data ("the shift towards more melancholic, minor-key melodies"). When you
-are working with up to the times content, the Assistant can augment your conversation with its own
-knowledge.
+outside of the data ("The evolution of her style reflects Taylor's desire to continuously challenge
+herself artistically..."). When you are working with up to the times content, the Assistant can
+augment your conversation with its own knowledge.
 
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image1.webp"></ImageComponent>
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image2.webp"></ImageComponent>
