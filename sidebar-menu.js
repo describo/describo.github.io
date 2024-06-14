@@ -59,15 +59,15 @@ export const sidebar = [
                 link: "/docs/guide/transcribing-content",
             },
             {
-                text: "Using the assistant when transcribing",
+                text: "Using the Assistant when transcribing",
                 link: "/docs/guide/transcribing-content-assistant",
             },
             {
-                text: "Assistant enabled e-Discovery",
+                text: "Assistant enabled e-discovery",
                 link: "/docs/guide/assistant-supported-discovery",
             },
             {
-                text: "Tips for using the assistant",
+                text: "Tips for using the Assistant",
                 link: "/docs/guide/prompt-engineering",
             },
             {

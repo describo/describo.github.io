@@ -51,6 +51,11 @@ dashboard to
 <span class="text-sm bg-blue-500 text-white py-2 px-2 rounded"><FontAwesomeIcon :icon="faSearch" />&nbsp;e-Discovery</span>
 and then load the folder.
 
+Documentation:
+
+-   [Assistant enabled e-discovery](/docs/guide/assistant-supported-discovery.html)
+-   [Tips for using the Assistant](/docs/guide/prompt-engineering.html)
+
 ## 2024 Australian Federal Budget Papers
 
 A topic that affects all of us, the Federal Budget Papers are dense with information covering (in
@@ -105,6 +110,7 @@ knowledge.
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image1.webp"></ImageComponent>
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image2.webp"></ImageComponent>
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image3.webp"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image4.webp"></ImageComponent>
 
 And here's the conversation (note the licensing statement in the header):
 
@@ -122,14 +128,14 @@ not only help you quickly understand large swathes of content but also extract v
 information from it.
 
 Another useful capability is getting the Assistant to work with a dataset via the lense of another.
-This is a fun, albeit frivolous example, but it demonstrates what you can do.
+Following is a fun, albeit frivolous, example that demonstrates what you can do.
 
 <div class="text-xl text-center text-pretty my-10">
      In answer to the question no one asked. Ever.<br/>
      If the budget summary were a Taylor Swift song; how would it go?
 </div>
 
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image4.webp"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image5.webp"></ImageComponent>
 
 ## Get started!
 
@@ -144,29 +150,6 @@ And if you have questions about how your data is used and where it's processed:
 
 -   [Terms and conditions](/terms-and-conditions#describo-cloud)
 -   [Where your data is processed](/docs/guide/data-processing)
-
-::: tip
-
-Ask the right question by providing as much information and detail as you can. The Assistant is
-there to **help you; not replace you**. That means it's your responsbility to check the response,
-and think about, what it is that the Assistant is uncovering!
-
-If you look at the first TayTay image, the question asked was "How many songs and total words are
-there?" to which the Assistant answered 54 songs and 19,981 words. But that doesn't seem correct. 10
-albums x at least 10 songs per album is a lot more than 54. So let's ask the Assistant for a more
-detailed accounting.
-
-Read through this conversation to see how we can refine the answer being provided by conversing with
-the Assistant. Think about this as if you are providing instructions to a colleague. Clear,
-unambiguous instructions are more likely to get the information you want.
-
-<iframe
-  class="border border-solid border-gray-400 p-2"
-  src="/images/articles/taytay-sings-the-budget-blues/taytay-conversation2.pdf"
-  width="100%" height="500">
-</iframe>
-
-:::
 
 <script setup>
     import { faSearch} from "@fortawesome/free-solid-svg-icons";

@@ -1,6 +1,5 @@
 ---
-title: Using the assistant
-aside: false
+title: Assistant enabled e-discovery
 ---
 
 ::: tip Info
@@ -19,9 +18,14 @@ accurate because of their level of detail or specificity. You should not rely on
 independently confirming their accuracy. The Services and any Outputs may not reflect correct,
 current, or complete information.
 
+For more information see:
+
+-   [Assistant enabled e-discovery#interacting-with-the-assistant](/docs/guide/assistant-supported-discovery.html#interacting-with-the-assistant)
+-   [Tips for using the Assistant](/docs/guide/prompt-engineering.html)
+
 :::
 
-# Assistant enabled e-Discovery
+# Assistant enabled e-discovery
 
 Using the describo assistant you can interrogate your content to quickly establish the themes and
 narratives that you might want to describe.
@@ -84,6 +88,30 @@ that session).
   src="/images/guide-discover/conversation.pdf"
   width="100%" height="500">
 </iframe>
+
+## Interacting with the assistant.
+
+::: tip
+
+Ask the right question by providing as much information and detail as you can. The Assistant is
+there to **help you; not replace you**. That means it's your responsbility to check, and think
+about, what it is that the Assistant is reporting!
+
+Using the TayTay dataset and asking the question "How many songs and total words are there?" yielded
+54 songs and 19,981 words. But that doesn't seem correct. 10 albums x at least 10 songs per album is
+a lot more than 54. So let's ask the Assistant for a more detailed accounting.
+
+Read through this conversation to see how we can refine the answer being provided by conversing with
+the Assistant. Think about this as if you are providing instructions to a colleague. Clear,
+unambiguous instructions are more likely to get the information you want.
+
+<iframe
+  class="border border-solid border-gray-400 p-2"
+  src="/images/guide-discover/taytay-conversation2.pdf"
+  width="100%" height="500">
+</iframe>
+
+:::
 
 <InfoPanelComponent>
     <template #title>Interrogating the RO-Crate paper</template>
