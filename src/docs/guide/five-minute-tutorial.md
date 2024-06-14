@@ -140,6 +140,8 @@ Well done, you created an RO-Crate by describing your data in a standard, spec c
 -   [JSON-LD](https://json-ld.org/)
 -   [schema.org](https://schema.org/)
 
+<Disqus />
+
 <script setup>
    import { faCheck, faChampagneGlasses } from "@fortawesome/free-solid-svg-icons";
 </script>

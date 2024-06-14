@@ -43,6 +43,8 @@ Optionally, add a README to your folder - absolutely recommended but not an esse
     </template>
 </InfoPanelComponent>
 
+<Disqus />
+
 <script setup>
 
 const cards = [

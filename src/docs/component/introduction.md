@@ -80,3 +80,5 @@ aside: false
     </InfoPanelComponent>
 
 </div>
+
+<Disqus />

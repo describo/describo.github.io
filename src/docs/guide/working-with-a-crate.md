@@ -63,3 +63,5 @@ Then, when describing content, you will be presented with matching templates. No
 under the section title "Associate an entity from saved templates".
 
 <ImageComponent src="/images/guide-working-with-a-crate/template2.webp" />
+
+<Disqus />

@@ -55,3 +55,5 @@ been defined in the metadata. Notice the dropdown in the image shows the defined
 for the first page?
 
 <ImageComponent src="/images/guide-transcribing-content-assistant/assistant3.webp"></ImageComponent>
+
+<Disqus />

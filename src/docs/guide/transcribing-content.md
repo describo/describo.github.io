@@ -128,3 +128,5 @@ attributes. In the following example, the first entity has the class `unconfirme
 does not meaning that the second has been confirmed.
 
 <ImageComponent src="/images/guide-transcribing-content/transcribe8.webp"></ImageComponent>
+
+<Disqus />

@@ -10,6 +10,9 @@ aside: false
     <LinkComponent link="https://github.com/describo/desktop-releases/releases/latest" class="text-base">
     https://github.com/describo/desktop-releases/releases/latest </LinkComponent>
 </div>
+
+<Disqus />
+
 <FooterComponent class="mt-6"/>
 
 <script setup>

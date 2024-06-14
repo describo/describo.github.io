@@ -79,3 +79,5 @@ here, here's a couple of links to sites that can help you go further.
 
 -   https://docs.anthropic.com/en/docs/prompt-engineering
 -   https://platform.openai.com/docs/guides/prompt-engineering
+
+<Disqus />
