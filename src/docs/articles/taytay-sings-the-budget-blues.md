@@ -1,9 +1,9 @@
 ---
-title: e-discovery TayTay Sings the Budget Blues
+title: TayTay Sings the Budget Blues
 aside: false
 ---
 
-# e-discovery: TayTay Sings the Budget Blues
+# TayTay Sings the Budget Blues
 
 Wikipedia defines e-discovery as:
 
@@ -54,32 +54,29 @@ and then load the folder.
 ## 2024 Australian Federal Budget Papers
 
 A topic that affects all of us, the Federal Budget Papers are dense with information covering (in
-theory) all aspects of the Australian economy. So, in the first instance, let's get an overview of
-what's contained.
+theory) all aspects of the Australian economy. So, let's start with getting an overview of what's
+contained in the documents.
 
 In the following screenshot you'll see that 4 documents have been selected for interrogation. Note
 that the Budget Overview document is a Microsoft Word document and the other 3 are PDF documents.
 Within seconds the assistant has provided a page count (371 pages) and a detailed summary.
 
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/budget-image1.png"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/budget-image1.webp"></ImageComponent>
 
-Let's see what else we can discover.
+What else we can discover? In the following screenshot we have identified the largest contributors
+to revenue and the largest costs whilst also drilling down into the details of the excise
+contribution to total revenue.
 
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/budget-image2.png"></ImageComponent>
-
-Just from this short example we have easily determined what the content is about and pulled specific
-information from it. Specifically, we have identified the largest contributors to revenue and the
-largest costs whilst also drilling down into the details of the excise contribution to total
-revenue.
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/budget-image2.webp"></ImageComponent>
 
 Cost of living has been in the news almost daily since then. Let's see what the budget has to say
 about the measures introduced with respect to minority groups and young adults.
 
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/budget-image3.png"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/budget-image3.webp"></ImageComponent>
 
 Everything you see in the conversation has come from the selected documents. Whilst you can get that
 information yourself, with the help of the Describo Assistant, the cognitive load of this work is
-greatly reduced. Leaving you to focus on the bigger picture.
+greatly reduced. Leaving you to focus on the big picture.
 
 When you're ready, you can download the conversation (note the licensing statement in the header).
 
@@ -100,14 +97,14 @@ influenced by her life experience and evolved over time as a result of her life 
 we look at the evolution of her style over time and ask the Assistant what else we should know from
 the data.
 
-As you read through the text, take note of the times where the assistant is drawing on its knowledge
+As you read through the text, take note of the times where the Assistant is drawing on its knowledge
 which is outside of the data ("the shift towards more melancholic, minor-key melodies"). When you
-are working with up to the times content, the assistant can augment your conversation with its own
+are working with up to the times content, the Assistant can augment your conversation with its own
 knowledge.
 
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image1.png"></ImageComponent>
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image2.png"></ImageComponent>
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image3.png"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image1.webp"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image2.webp"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image3.webp"></ImageComponent>
 
 And here's the conversation (note the licensing statement in the header):
 
@@ -119,12 +116,12 @@ And here's the conversation (note the licensing statement in the header):
 
 ## TayTay Sings the Budget Blues
 
-In this article I've demonstrated how the assistant can be used to pull information from data.
-Whether it's a topic as dry as the federal budget or up to the times song lyrics, the assistant can
+In this article I've demonstrated how the Assistant can be used to pull information from data.
+Whether it's a topic as dry as the federal budget or up to the times song lyrics, the Assistant can
 not only help you quickly understand large swathes of content but also extract very specific bits of
 information from it.
 
-Another useful capability is getting the assistant to work with a dataset via the lense of another.
+Another useful capability is getting the Assistant to work with a dataset via the lense of another.
 This is a fun, albeit frivolous example, but it demonstrates what you can do.
 
 <div class="text-xl text-center text-pretty my-10">
@@ -132,7 +129,7 @@ This is a fun, albeit frivolous example, but it demonstrates what you can do.
      If the budget summary were a Taylor Swift song; how would it go?
 </div>
 
-<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image4.png"></ImageComponent>
+<ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image4.webp"></ImageComponent>
 
 ## Get started!
 
@@ -148,35 +145,28 @@ And if you have questions about how your data is used and where it's processed:
 -   [Terms and conditions](/terms-and-conditions#describo-cloud)
 -   [Where your data is processed](/docs/guide/data-processing)
 
-## !! IMPORTANT !! Ask the right question; and keep asking if you need to.
-
 ::: tip
 
-Ask the right question by providing as much information and detail as you can.
-
-:::
-
-::: tip info
-
-The assistant is there to **help you; not replace you**. You still need to check the response, and
-think about, what it is that you are discovering!
-
-:::
+Ask the right question by providing as much information and detail as you can. The Assistant is
+there to **help you; not replace you**. That means it's your responsbility to check the response,
+and think about, what it is that the Assistant is uncovering!
 
 If you look at the first TayTay image, the question asked was "How many songs and total words are
-there?" To which the assistant answered 54 songs and 19,981 words.
-
-But that doesn't seem correct. 10 albums x at least 10 songs per album is a lot more than 54. So
-let's ask the assistant for a more detailed accounting.
+there?" to which the Assistant answered 54 songs and 19,981 words. But that doesn't seem correct. 10
+albums x at least 10 songs per album is a lot more than 54. So let's ask the Assistant for a more
+detailed accounting.
 
 Read through this conversation to see how we can refine the answer being provided by conversing with
-the assistant.
+the Assistant. Think about this as if you are providing instructions to a colleague. Clear,
+unambiguous instructions are more likely to get the information you want.
 
 <iframe
   class="border border-solid border-gray-400 p-2"
   src="/images/articles/taytay-sings-the-budget-blues/taytay-conversation2.pdf"
   width="100%" height="500">
 </iframe>
+
+:::
 
 <script setup>
     import { faSearch} from "@fortawesome/free-solid-svg-icons";
