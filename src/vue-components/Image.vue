@@ -1,7 +1,12 @@
 <template>
     <div class="flex flex-col">
-        <img :src="src" data-zoomable />
-        <TipComponent>Click the image for a closer look!</TipComponent>
+        <div v-if="enableZoom">
+            <img :src="src" data-zoomable />
+            <TipComponent>Click the image for a closer look!</TipComponent>
+        </div>
+        <div v-else>
+            <img :src="src" />
+        </div>
     </div>
 </template>
 
@@ -9,4 +14,5 @@
 const props = defineProps({
     src: { type: String, required: true },
 });
+const enableZoom = window.innerWidth > "900" ? true : false;
 </script>
