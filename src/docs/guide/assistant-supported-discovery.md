@@ -27,7 +27,7 @@ For more information see:
 
 # Assistant enabled e-discovery
 
-Using the describo assistant you can interrogate your content to quickly establish the themes and
+Using the Describo Assistant you can interrogate your content to quickly establish the themes and
 narratives that you might want to describe.
 
 :::tip info
@@ -45,9 +45,9 @@ Get started by selecting the files and folders containing the content you wish t
 
 <ImageComponent src="/images/guide-discover/discover1.webp"></ImageComponent>
 
-Start the assistant. Notice that the left panel changes to show you the context (the files that will
-be interrogate and any that will be excluded - either an unsupported format or something went wrong
-when extracting the data).
+Start the Assistant. Notice that the left panel changes to show you the context (the files that will
+be interrogated and any that will be excluded - either because it's an unsupported format or
+something went wrong when extracting the data).
 
 Underneath the context are options for where to write the metadata you wish to create. The following
 images show you the options when one file is selected or more than one. In all cases, you can update
@@ -55,7 +55,7 @@ the description of the main index. If one file is selected you can choose to upd
 of that file. If more than one file is selected, you can create a new relationship and edit that
 description; or, use an existing relationship that is associated to the selected files.
 
-In this way, you can interact with the assistant and capture the information as it suits you.
+In this way, you can interact with the Assistant and capture the information as it suits you.
 
 <div class="flex flex-col space-y-1 lg:flex-row lg:space-x-1">
     <ImageComponent src="/images/guide-discover/discover2.webp"></ImageComponent>
@@ -63,25 +63,25 @@ In this way, you can interact with the assistant and capture the information as 
     <ImageComponent src="/images/guide-discover/discover4.webp"></ImageComponent>
 </div>
 
-In the next two images we see a conversation with the assistant and the associated metadata that has
+In the next two images we see a conversation with the Assistant and the associated metadata that has
 been created.
 
 <ImageComponent src="/images/guide-discover/discover5.webp"></ImageComponent>
 <ImageComponent src="/images/guide-discover/discover6.webp"></ImageComponent>
 
-In some instances you might just want to use the assistant to uncover some information and then be
+In some instances you might just want to use the Assistant to uncover some information and then be
 able to take away a PDF of the conversation. This is possible by selecting `Download as PDF`.
 
 <ImageComponent src="/images/guide-discover/discover7.webp"></ImageComponent>
 
 The first thing you will see is a dialog specifying which licence to apply to the PDF document. The
-default selection enables anyone to use the work and / or creat derivatives provided that they
+default selection enables anyone to use the work and / or create derivatives provided that they
 include appropriate attribution. You can control that in the dialog.
 
 <ImageComponent src="/images/guide-discover/discover8.webp"></ImageComponent>
 
-And the document (the final page/s will always be the context so you know what was interrogate in
-that session).
+And following is the document with the licence in the header (the final page/s will always be the
+context so you know what was interrogated in that session).
 
  <iframe
   class="border border-solid border-gray-400 p-2"

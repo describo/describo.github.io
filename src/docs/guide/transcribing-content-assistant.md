@@ -19,37 +19,42 @@ accurate because of their level of detail or specificity. You should not rely on
 independently confirming their accuracy. The Services and any Outputs may not reflect correct,
 current, or complete information.
 
+For more information see:
+
+-   [Assistant enabled e-discovery#interacting-with-the-assistant](/docs/guide/assistant-supported-discovery.html#interacting-with-the-assistant)
+-   [Tips for using the Assistant](/docs/guide/prompt-engineering.html)
+
 :::
 
 # Using the assistant
 
 As you are transcribing your content, you are also marking up entities that are found in that
-content. That markup, as seen in the previous tutorial is stored in the metadata and as data
-attributes in the transcription.
+content. That markup, as seen in the previous page is stored in the metadata and as data attributes
+in the transcription.
 
-The next step is developing and enriching your description of the content by using the assistant to
+The next step is developing and enriching your description of the content by using the Assistant to
 interrogate the text; potentially from differing perspectives.
 
-In the following images, the assistant is first used to summarise the text and describe the main
-topics. Then, acting as an anthropologist (ie prompting it to assume a particular role), the
+In the following images, the Assistant is first used to summarise the text and describe the main
+topics. Then, acting as an Anthropologist (ie prompting it to assume a particular role), the
 assistant is again asked what the main topics are. After that, the assistant is asked to assume the
-role of a social scientist to explain the narrative with respect to any cultural symbolism.
+role of a Social Scientist to explain the narrative with respect to any cultural symbolism.
 
 <ImageComponent src="/images/guide-transcribing-content-assistant/assistant1.webp"></ImageComponent>
 
-In each case, the assistant provides a detailed answer with evidence from the text to support its
+In each case, the Assistant provides a detailed answer with evidence from the text to support its
 commentary.
 
-As the conversation is happening, all or part of it can be transcribed into the description fields
-on the right hand side. In addition, defined terms can be created from this content (or whatever you
-wish to define yourself) and associated to the file.
+As the conversation is happening, all or part of it can be transcribed into the description fields.
+In addition, defined terms can be created from this content (or whatever you wish to define
+yourself) and associated to the file.
 
 When we navigate back to the describe tab we see the descriptions and defined terms that we added
 previously.
 
 <ImageComponent src="/images/guide-transcribing-content-assistant/assistant2.webp"></ImageComponent>
 
-Moving onto another image we can again engage the assistant to describe the text and when we go to
+Moving onto another image we can again engage the Assistant to describe the text and when we go to
 add defined terms, not only can we create new ones but we can also look up existing terms that have
 been defined in the metadata. Notice the dropdown in the image shows the defined terms we created
 for the first page?

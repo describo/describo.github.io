@@ -17,7 +17,7 @@ Information Act requests, where the information sought is in electronic format.
 If we remove the limitation about it applying in legal proceedings then we're left with a definition
 that captures all of us: `discovery [...] where the information sought is in electronic format`.
 
-In this article I'm going to demonstrate how you can use the e-Discovery tools in Describo as part
+In this article I'm going to demonstrate how you can use the e-discovery tools in Describo as part
 of your work. You'll see how to extract information and reason about it. You'll also learn how to
 interpret a dataset through the lens of another. Finally, you'll learn the meaning of the title.
 
@@ -25,12 +25,13 @@ interpret a dataset through the lens of another. Finally, you'll learn the meani
 
 Does this sound familiar?
 
--   You've collected a bunch of primary source materials in electronic form (newspaper articles,
-    manuscript pages etc) and are now embarking on a journey to find out what is contained in them.
+-   You've collected primary source materials in electronic form (newspaper articles, manuscript
+    pages etc) and are now embarking on a journey to find out what is contained in them.
 
--   Maybe you've found yourself looking at that folder of Microsoft Word documents on your company
-    fileshare. The documentation has captured all of the information about a project that the
-    company worked on but with only the filenames to go on, it's more data than it is information.
+-   Or maybe you've found yourself looking at that folder of Microsoft Word documents on your
+    computer or company fileshare. The documentation has captured all of the information about a
+    project that the company worked on but with only the filenames to go on, it's more data than it
+    is information.
 
 -   Or maybe you've just received the fifth revision of that 150 page policy manual for final
     checking and verification. You've already read it closely at least two times (it got harder and
@@ -64,11 +65,11 @@ contained in the documents.
 
 In the following screenshot you'll see that 4 documents have been selected for interrogation. Note
 that the Budget Overview document is a Microsoft Word document and the other 3 are PDF documents.
-Within seconds the assistant has provided a page count (371 pages) and a detailed summary.
+Within seconds the assistant has provided a page count (71 pages) and a detailed summary.
 
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/budget-image1.webp"></ImageComponent>
 
-What else we can discover? In the following screenshot we have identified the largest contributors
+What else can we discover? In the following screenshot we have identified the largest contributors
 to revenue and the largest costs whilst also drilling down into the details of the excise
 contribution to total revenue.
 
@@ -112,7 +113,7 @@ augment your conversation with its own knowledge.
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image3.webp"></ImageComponent>
 <ImageComponent src="/images/articles/taytay-sings-the-budget-blues/taytay-image4.webp"></ImageComponent>
 
-And here's the conversation (note the licensing statement in the header):
+And here's the conversation (again, note the licensing statement in the header):
 
 <iframe
   class="border border-solid border-gray-400 p-2"
