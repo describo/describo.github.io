@@ -30,26 +30,28 @@ import DescriboCrateBuilder from ...
 
 
 const describo = ref()
-
 // console.log(describo.value)
-// {
-//    cm: function(),
-//    refresh: function(),
-//    setCurrentEntity: function({ id }),
-//    setTab: function(tabName)
-// }
 ```
 
 If you connect to the component via a reference, you will get access to an object with the following
 properties:
 
--   cm: the internal CrateManager instance that the component uses to manipulate the data;
--   pm: the internal ProfileManager instance; makes handling profiles/schema.org classes easy;
--   refresh: a method to tell the current entity to refresh its display;
--   setCurrentEntity({ id }): a method to set the enity to display;
--   setTab(tabName): a method to display the selected tab.
+-   `cm`: the internal CrateManager instance that the component uses to manipulate the data;
+-   `pm`: the internal ProfileManager instance; makes handling profiles/schema.org classes easy;
+-   `state`: the internal state manager instance with controls to navigate back and forth and patch
+    the current state;
+-   `refresh`: a method to tell the current entity to refresh its display;
+-   `setCurrentEntity({ id })`: a method to set the enity to display;
+-   `setTab(tabName)`: a method to display the selected tab;
+-   `toggleReverseLinkBrowser`: a method to open / close the reverse link browser.
 
 Following are some examples of how you can use these methods.
+
+## jsdoc docs
+
+You should also consult the documentation for Crate Manager (cm), Profile Manager (pm) and Editor
+State (state) @
+[https://describo.github.io/crate-builder-component/](https://describo.github.io/crate-builder-component/)
 
 ## Add data to the crate; modify the root dataset and refresh the display
 
@@ -79,6 +81,35 @@ cm.linkEntity({
     value: { "@id": e["@id"] },
 });
 refresh();
+```
+
+## Add a fully resolved file or folder path to the crate
+
+As the component is embdeded into another application, it's likely the outer application will want
+to add files and folders to the crate. This can be done easily with cm from your application.
+
+```JS
+cm.addFile('/a/b/c/file.txt')
+```
+
+This will create the full path hierarchy of the file, starting from the root dataset and connected
+via hasPart (as required by the spec) with the folders as type Dataset and finally linking the file.
+
+```JS
+cm.addFolder('/a/b/c')
+```
+
+As described above but with only the folder paths.
+
+## Interact with the internal editor state
+
+The component maintains an internal editor state that has the history of paths taken through the
+crate. You can access that via `state.editorState`, e.g.:
+
+```JS
+// navigate back and forward through the history
+state.editorState.back()
+state.editorState.forward()
 ```
 
 ## Change the tab being displayed

@@ -49,7 +49,6 @@ let crate = mintNewCrate()
     :enable-crate-preview="true"
     :enable-browse-entities="true"
     :enable-template-save="true"
-    :enable-internal-routing="true"
     :enable-reverse-link-browser="true"
     :enable-url-markup="true"
     :enable-entity-timestamps="true"
@@ -57,8 +56,6 @@ let crate = mintNewCrate()
     :readonly="false"
     :web-component="false"
     :tab-location="'left'"
-    :reset-tab-on-entity-change="true"
-    :reset-tab-on-profile-change="true"
     :show-controls="true"
     :language="language"
     @ready="ready"
@@ -138,13 +135,12 @@ for an example. In fact, you probably want to start from there.
     control
 -   `enable-template-save`: true | false: `(default: false)` : enable / disable the entity and crate
     template saving controls
--   `enable-internal-routing`: true | false: `(default: false)`: enable / disable the internal
-    router which updates the location whenever an entity is selected. If no router is found (ie
-    inside a web component or just not used), routing is turned off anyway. Most likely you want to
-    leave the component to deal with this or listen out for the `navigation` event and handle it
-    yourself if the component can't.
 -   `enable-reverse-link-browser`: true : false: `(default: true)`: enable / disable the reverse
-    link browser. If enabled, it can be shown as a right sidebar as required.
+    link browser on the right of the main metadata editor. This is useful if you want to disable the
+    component controls bar but still have access to the reverse link browser. If enabled, it can be
+    shown as a right sidebar as required. If you connect to the component via a ref (see
+    [/docs/component/advanced-usage](/docs/component/advanced-usage)), you can also control the
+    reverse link browser in code.
 -   `enable-url-markup`: true : false: `(default: true)`: When describo detects that a string is a
     URL, it will store an entity of type URL in the crate. If you would rather just have these as
     strings, set this to false (note that the URL primitive still outputs a URL entity)
@@ -159,12 +155,6 @@ for an example. In fact, you probably want to start from there.
     some components when the crate builder is used as a web component.
 -   `tab-location`: left | top | right | bottom: `(default: left)` : Specify where the tabs are
     shown when profiles define grouping.
--   `reset-tab-on-entity-change`: true | false: `(default: true)` : When true, if a layout is
-    applied and the entity changes, the UI will navigate to the about tab. If false, that doesn't
-    happen.
--   `reset-tab-on-profile-change`: true | false: `(default: true)` : When true, if a layout is
-    applied and the profile changes, the UI will navigate to the about tab. If false, that doesn't
-    happen if there is a matching tab. Otherwise it will go back to the about tab.
 -   `show-controls`: true | false: `(default: true)` : Show or hide the controls bar. Useful if you
     want to provision those controls in your own application.
 -   `language`: en | hu `(default: en)` : Sets the component's localization to the given language.
