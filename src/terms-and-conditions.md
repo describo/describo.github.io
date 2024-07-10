@@ -27,7 +27,7 @@ layout: home
 
 ## Describo Cloud
 
-### If you are found to be in breach of any of the following terms and conditions you will lose access to the service, any credits that you have purchased and no refund will be provided. You may also be reported to the relevant authorities in your jurisdiction.
+### If you are found to be in breach of any of the following terms and conditions you will lose access to the service; any credits that you have purchased, and no refund will be provided. You may also be reported to the relevant authorities in your jurisdiction.
 
 1.  All data that you send to the describo cloud and that we then send onto our service providers
     remains your property **unless your data doesn't meet the acceptable use policies of our service

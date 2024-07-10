@@ -5,7 +5,18 @@ title: Cloud Services & Data Processing
 # Cloud Services & Data processing
 
 If you register with describo.cloud, the capabilities you will use are provided using Amazon AWS.
-Specifically, the services used are: AWS Textract, AWS Comprehend and AWS Bedrock.
+Specifically, the services used are: <LinkComponent link="https://aws.amazon.com/textract/">AWS
+Textract</LinkComponent>, <LinkComponent link="https://aws.amazon.com/comprehend/">AWS
+Comprehend</LinkComponent> and <LinkComponent link="https://aws.amazon.com/bedrock/">AWS
+Bedrock</LinkComponent>. See those pages for how data is handled and their terms and conditions of
+use.
+
+::: tip INFO
+
+Ensure you also read the page [Terms and Conditions](/terms-and-conditions#describo-cloud) to find
+out how your data is handled by the Describo Cloud.
+
+:::
 
 In order to support users across the globe, regional services have been provisioned. The AWS region
 you use `depends on the Geo location of your IP address` and it happens automatically when you go to

@@ -10,7 +10,7 @@ the services.
 
 ::: tip Info
 
-Be sure to read the page - [/docs/guide/data-processing](/docs/guide/data-processing) - to learn
+Be sure to read the page - [Register with describo.cloud](/docs/guide/data-processing) - to learn
 about the services used and where your data is processed.
 
 :::

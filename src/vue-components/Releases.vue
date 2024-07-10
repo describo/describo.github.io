@@ -1,7 +1,8 @@
 <template>
     <div class="flex flex-col space-y-10 p-10">
-        <div class="text-center text-2xl border-b py-12">
-            Get Describo for {{ capitalize(data.activeTab) }} - free download.
+        <div class="text-center text-2xl border-b py-12">Get Describo - free download.</div>
+        <div class="text-center">
+            Select your operating system and the version for your specific computer type.
         </div>
 
         <div class="flex flex-row space-x-32 place-content-center">
