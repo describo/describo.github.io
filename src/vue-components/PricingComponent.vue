@@ -6,7 +6,7 @@
         <!--Checkout failed notification  -->
         <div
             class="p-6 flex flex-row space-x-4 place-content-center bg-red-200 rounded-lg text-lg"
-            v-if="checkoutFailed"
+            v-if="!props.displayOnly && checkoutFailed"
         >
             <div class="flex flex-col place-content-center text-red-700 px-6">
                 <FontAwesomeIcon :icon="faCircleXmark" size="3x"></FontAwesomeIcon>
@@ -26,7 +26,7 @@
         <!-- Checkout completed successfully notification  -->
         <div
             class="p-6 flex flex-row space-x-4 place-content-center bg-green-200 rounded-lg text-lg"
-            v-if="checkoutCompleted"
+            v-if="!props.displayOnly && checkoutCompleted"
         >
             <div class="flex flex-col place-content-center text-green-700 px-6">
                 <FontAwesomeIcon :icon="faCircleCheck" size="3x"></FontAwesomeIcon>
@@ -46,9 +46,9 @@
         </div>
 
         <!-- pricing pills and purchase controls -->
-        <div v-if="!checkoutCompleted && !checkoutFailed">
+        <div v-if="!checkoutCompleted && !checkoutFailed" class="flex flex-col space-y-2">
             <div class="flex flex-row space-x-2">
-                <Product>
+                <Product class="w-1/2">
                     <template #title>General Credits</template>
                     <template #price>$5 USD</template>
                     <template #content>
@@ -64,13 +64,13 @@
                             </li>
                         </ul>
                     </template>
-                    <template #controls>
-                        <el-button type="primary" @click="purchaseGeneralCredits">
-                            Purchase General Credits
+                    <template #controls v-if="!props.displayOnly">
+                        <el-button type="primary" @click="purchaseCredits('general')">
+                            Purchase Credits
                         </el-button>
                     </template>
                 </Product>
-                <Product>
+                <Product class="w-1/2">
                     <template #title>Assistant Credits</template>
                     <template #price>$5 USD</template>
                     <template #content>
@@ -84,9 +84,43 @@
                             </li>
                         </ul>
                     </template>
-                    <template #controls>
-                        <el-button type="primary" @click="purchaseAssistantCredits">
-                            Purchase Assistant Credits
+                    <template #controls v-if="!props.displayOnly">
+                        <el-button type="primary" @click="purchaseCredits('assistant')">
+                            Purchase Credits
+                        </el-button>
+                    </template>
+                </Product>
+            </div>
+            <div class="flex flex-row space-x-2">
+                <Product class="w-1/2">
+                    <template #title>Entity Recognition Credits</template>
+                    <template #price>$5 USD</template>
+                    <template #content>
+                        <ul class="pl-4 list-disc">
+                            <li>
+                                Enough credits to process about 200 pages of A4 text using a
+                                standard sized font
+                            </li>
+                        </ul>
+                    </template>
+                    <template #controls v-if="!props.displayOnly">
+                        <el-button type="primary" @click="purchaseCredits('entityRecognition')">
+                            Purchase Credits
+                        </el-button>
+                    </template>
+                </Product>
+
+                <Product class="w-1/2">
+                    <template #title>Text Extraction Credits</template>
+                    <template #price>$5 USD</template>
+                    <template #content>
+                        <ul class="pl-4 list-disc">
+                            <li>Text extraction credits to process 200 images</li>
+                        </ul>
+                    </template>
+                    <template #controls v-if="!props.displayOnly">
+                        <el-button type="primary" @click="purchaseCredits('textExtraction')">
+                            Purchase Credits
                         </el-button>
                     </template>
                 </Product>
@@ -109,6 +143,10 @@ import { onMounted, ref } from "vue";
 import { initializePaddle } from "@paddle/paddle-js";
 import { ElButton } from "element-plus";
 
+const props = defineProps({
+    displayOnly: { type: Boolean, required: true },
+});
+
 const pricing = {
     development: {
         assistant: {
@@ -117,6 +155,14 @@ const pricing = {
         },
         general: {
             priceId: "pri_01htbs2ws69sfb2ffsc6ja1mwc",
+            quantity: 1,
+        },
+        textExtraction: {
+            priceId: "pri_01j2fze6r2ecy86ygfhdfbbnjr",
+            quantity: 1,
+        },
+        entityRecognition: {
+            priceId: "pri_01j2fzfef6s0hqdxc40q4xnn8q",
             quantity: 1,
         },
     },
@@ -129,6 +175,14 @@ const pricing = {
             priceId: "pri_01htc281zscjy7z0zgbcknps6q",
             quantity: 1,
         },
+        textExtraction: {
+            priceId: "pri_01j2fz8vd990v0g44gp90nw7rh",
+            quantity: 1,
+        },
+        entityRecognition: {
+            priceId: "pri_01j2fzc28gk5ry77npqa3b8ea1",
+            quantity: 1,
+        },
     },
 };
 
@@ -139,6 +193,8 @@ let items;
 let paddle;
 
 onMounted(async () => {
+    if (props.displayOnly) return;
+
     const params = new URLSearchParams(window.location.search);
     let environment;
     try {
@@ -192,25 +248,36 @@ onMounted(async () => {
     paddle = await initializePaddle(config);
 });
 
-function purchaseGeneralCredits() {
+function purchaseCredits(type) {
     checkoutCompleted.value = false;
     checkoutFailed.value = false;
     paddle.Checkout.open({
-        items: [items.general],
+        items: [items[type]],
         customer: {
             email,
         },
     });
 }
 
-function purchaseAssistantCredits() {
-    checkoutCompleted.value = false;
-    checkoutFailed.value = false;
-    paddle.Checkout.open({
-        items: [items.assistant],
-        customer: {
-            email,
-        },
-    });
-}
+// function purchaseGeneralCredits() {
+//     checkoutCompleted.value = false;
+//     checkoutFailed.value = false;
+//     paddle.Checkout.open({
+//         items: [items.general],
+//         customer: {
+//             email,
+//         },
+//     });
+// }
+
+// function purchaseAssistantCredits() {
+//     checkoutCompleted.value = false;
+//     checkoutFailed.value = false;
+//     paddle.Checkout.open({
+//         items: [items.assistant],
+//         customer: {
+//             email,
+//         },
+//     });
+// }
 </script>

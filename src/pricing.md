@@ -13,52 +13,11 @@ layout: home
     <div class="text-2xl">
         Describo Cloud
     </div>
-    <Terms/>
-    <div class="flex flex-row space-x-2">
-        <Product class="flex-grow">
-            <template #title>General Credits</template>
-            <template #price>$5 USD</template>
-            <template #content>
-                <ul class="pl-10 list-disc">
-                    <li>Text extraction credits for 50 pages</li>
-                    <li>Enough credits to perform entity recognition on 50 pages</li>
-                    <li>
-                        Credits to use the assistant to interrogate the data<sup>*</sup>
-                        <ul class="pl-4 list-disc">
-                            <li>2,000,000 input tokens</li>
-                            <li>16,000 output tokens</li>
-                        </ul>
-                    </li>
-                </ul>
-            </template>
-        </Product>
-        <Product class="flex-grow">
-            <template #title>Assistant Credits</template>
-            <template #price>$5 USD</template>
-            <template #content>
-                <ul class="pl-10 list-disc">
-                    <li>
-                        Credits to use the assistant to interrogate the data<sup>*</sup>
-                        <ul class="pl-4 list-disc">
-                            <li>4,000,000 input tokens</li>
-                            <li>40,000 output tokens</li>
-                        </ul>
-                    </li>
-                </ul>
-            </template>
-        </Product>
-    </div>
-    <div class="p-2">
-        <sup>*</sup>As a very approximate guide, 1,000,000 input tokens will let you interrogate
-        approximately 750k words. This is only a guide and can vary based on what you choose to
-        do with your data.
-    </div>
-
+    <PricingComponent :display-only="true"/>
 </div>
 
 <FooterComponent class="mt-6"/>
 
 <script setup>
-    import Terms from "./vue-components/Terms.vue";
-    import Product from './vue-components/Product.vue'
+    import PricingComponent from './vue-components/PricingComponent.vue'
 </script>
