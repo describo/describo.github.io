@@ -49,10 +49,13 @@ export const sidebar = [
                 text: "Cloud Services & Data Processing",
                 link: "/docs/guide/data-processing",
             },
-
             {
                 text: "Working with your data",
                 link: "/docs/guide/working-with-a-crate",
+            },
+            {
+                text: "Transforming your content",
+                link: "/docs/guide/transforming-content",
             },
             {
                 text: "Content Transcription and Entity Markup",
@@ -65,6 +68,10 @@ export const sidebar = [
             {
                 text: "Assistant enabled e-discovery",
                 link: "/docs/guide/assistant-supported-discovery",
+            },
+            {
+                text: "Visualisation",
+                link: "/docs/guide/visualising-the-structure",
             },
             {
                 text: "Tips for using the Assistant",
