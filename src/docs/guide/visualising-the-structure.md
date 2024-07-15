@@ -107,6 +107,8 @@ can do. Following is an overview:
 <ImageComponent src="/images/guide-visualise/visualise6.webp"></ImageComponent>
 <ImageComponent src="/images/guide-visualise/visualise7.webp"></ImageComponent>
 
+<Disqus />
+
 <script setup>
    import { faPlay } from "@fortawesome/free-solid-svg-icons";
 </script>
