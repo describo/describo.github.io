@@ -25,7 +25,7 @@ selected and added to the context.
 
 Then, controls will be shown in the right hand panel to process the different file types. In the
 following image we can see the credits available for the assistant, text extraction and entity
-recognition followed by controls to handle processing the different file types discovered.
+recognition functions followed by controls to handle processing the different file types discovered.
 
 <ImageComponent src="/images/guide-transform/transform1.webp"></ImageComponent>
 
@@ -63,7 +63,7 @@ Enabling this will perform text extraction on each image.
 
 #### Perform named entity recognition
 
-If enabled, the extracted text will also be run through the named entity recognition tools. When
+If enabled, the extracted text will also be run through the named entity recognition tool. When
 named entity recognition runs, the HTML transcription file is marked up with data attributes and the
 marked up entities are set as unconfirmed. In the transcribe section there are controls to review
 and markup the discovered entities as confirmed.
@@ -74,27 +74,27 @@ Enabling this will automatically confirm all named entities. In addition to mark
 HTML transcription file, the entities will be written into the metadata file against the original
 source file.
 
-So, for example, if a person named "Jane Doe" is disocvered, an entity of type person will be
+So, for example, if a person named "Jane Doe" is discovered, an entity of type person will be
 automatically created and associated to the source file via the "mentions" property.
 
 #### Perform topic, theme and subject extraction
 
-If enabled, the assistant will extract the top 3 topics, themes and subjects from the extracted text
-and write those into the metadata against that file.
+If enabled, the assistant will analyse the text and output the top 3 topics, themes and subjects;
+writing them into the metadata against that file.
 
 ## Text file processing tasks
 
 ### Perform named entity recognition
 
-If enabled, the text will be run through the named entity recognition tools. In these cases, as
+If enabled, the text will be run through the named entity recognition tool. In these cases, as
 Describo does not alter the original file, the data cannot be marked up there. Furthermore, it
 doesn't make sense to produce a linked HTML version of that content so in these cases the entities
 will be written into the metadata file and linked to the source file.
 
 ### Perform topic, theme and subject extraction
 
-If enabled, the assistant will extract the top 3 topics, themes and subjects from the extracted text
-and write those into the metadata against that file.
+If enabled, the assistant will analyse the text and output the top 3 topics, themes and subjects;
+writing them into the metadata against that file.
 
 ::: info Question
 

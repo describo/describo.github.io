@@ -7,11 +7,11 @@ aside: false
 
 ::: tip Info
 
-Apart from producing nice visualisations, this section of Describo goes hand in hand with the
-[Discover](/docs/guide/assistant-supported-discovery) section in your digital discovery process.
-That is, you can use Discover to deep dive into the data for specific information that you are
-interested in or know exists. Or, you can use these tools to get an overview of what you actually
-have as the first part of the process of understanding your data.
+This section of Describo is not just for producing nice visualisations of the network structure. It
+goes hand in hand with the [Discover](/docs/guide/assistant-supported-discovery) section in your
+digital discovery process. That is, you can use Discover to deep dive into the data for specific
+information that you are interested in and / or know exists. Or, you can use these tools to get an
+overview of what you actually have as the first part of the process of understanding your data.
 
 :::
 
@@ -35,13 +35,11 @@ Linked data is defined in Wikipedia
 
 :::
 
-In the following image, we can see what that means.
-
-Following we see two nodes (circles) that represent two interlinked entities. One is an entity of
-type `CreativeWork named ro-crate-metadata.json`. The other is of type
-`Dataset and named My Research Object Crate`. The two nodes (or entities, used interchangably) are
-linked to each via a property `about`. This example is telling us that
-`the CreativeWork is about the interlinked Dataset`.
+In the following image, we can see what that means.In it we see two nodes (circles) that represent
+two interlinked entities. One is an entity of type `CreativeWork named ro-crate-metadata.json`. The
+other is of type `Dataset and named My Research Object Crate`. The two nodes (or entities, used
+interchangably) are linked to each other via a property `about`. This example is telling us that
+`the CreativeWork is about the (interlinked) Dataset`.
 
 <ImageComponent src="/images/guide-visualise/visualise1.webp"></ImageComponent>
 
@@ -90,12 +88,9 @@ we can see that `Betrayal` is a topic in six songs.
 
 ## Controls
 
-A brief overview of the controls was presented in the previous section but there is more that you
-can do. Following is an overview:
-
 -   The **Settings** section provides toggles to enable / disable various features. In addition, the
-    node and edge text size can be changed. These controls will help you navigating and exploring
-    very large graphs and when taking screenshots of
+    node and edge text size can be changed. These controls will help you when navigating and
+    exploring very large graphs.
 
 -   The **Highlight node** section has a control to see the most highly linked entities in
     descending order. In a discovery process, seeing the most highly linked topics, themes and
