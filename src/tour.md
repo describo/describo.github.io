@@ -60,10 +60,19 @@ const cards = [
         image:  "/images/tour/desktop7.webp",
     },
     {
+        text: `<p>If you register with describo.cloud and purchase credits, Describo can perform bulk transformations on your data. From
+        recognising and marking up named entities to extracting the topics, themes and subjects contained, getting to know your data has
+        never been easier.
+        <p>
+        <a href="/docs/guide/transforming-content" target="_blank">See the documentation for more information.</a>
+        </p>`,
+        image:  "/images/guide-transform/transform1.webp",
+    },
+    {
         text: `<p>If you register with describo.cloud and purchase credits, Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. Even without the cloud service, you can mark
         up entities and create rich datasets of entities mentioned in your data.</p>
         <p>
-        <a href="/docs/guide/transcribing-content.html" target="_blank">See the documentation for more information.</a>
+        <a href="/docs/guide/transcribing-content" target="_blank">See the documentation for more information.</a>
         </p>`,
         image:  "/images/tour/desktop8.webp",
     },
@@ -82,7 +91,7 @@ const cards = [
         <p>In addition, we can directly update the metadata for the file with the information we uncover by
         working with the assistant. </p>
         <p>
-            <a href="/docs/guide/transcribing-content-assistant.html" target="_blank">See the documentation for more information.</a>
+            <a href="/docs/guide/transcribing-content-assistant" target="_blank">See the documentation for more information.</a>
         </p>
         `,
         image:   "/images/tour/desktop10.webp"
@@ -104,13 +113,22 @@ const cards = [
     {
         text: `<p>In this image we see the conversation on the right and direct updating of the metadata on the left.</p>
         <p>
-        <a href="/docs/guide/assistant-supported-discovery.html" target="_blank">See the documentation for more information.</a>
+        <a href="/docs/guide/assistant-supported-discovery" target="_blank">See the documentation for more information.</a>
         </p>`,
         image: "/images/tour/desktop14.webp",
     },
     {
         text: `<p>If we navigate back to the describe tab we see the metadata we created whilst using the assistant.</p>`,
         image: "/images/tour/desktop15.webp",
+    },
+    {
+        text: `<p>Now that you've done all this work to describe the entity relationships contained within your data;
+        it's time to visualise it! On the visualise tab you have tools to deep dive into the data structure you've created
+        in order to see who did what to whom and where they did it!
+        <p>
+        <a href="/docs/guide/visualising-the-structure" target="_blank">See the documentation for more information.</a>
+        </p>`,
+        image:  "/images/guide-visualise/visualise5.webp",
     },
     {
         text: `<p>Whatever your work, licensing and / or classifying it is critically important so Describo provides

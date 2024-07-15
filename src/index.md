@@ -101,8 +101,8 @@ layout: home
     <template #title>An intuitive, intelligent and extensible metadata editor.</template>
     <template #text>
       <p>
-        Describo enables you to describe your data. It creates metadata
-        conforming to the <LinkComponent link="https://www.researchobject.org/ro-crate/specification.html">Research Object Crate (RO-Crate) specification.</LinkComponent>
+        Describo enables you to describe your data. It creates linked data
+        conforming to the <LinkComponent link="https://www.researchobject.org/ro-crate/specification">Research Object Crate (RO-Crate) specification.</LinkComponent>
       </p>
       <p>
         <FeatureComponent link="/tour" :icon="['fas', 'route']" class="m-1 grow lg:grow-0 bg-blue-200">
@@ -134,7 +134,7 @@ layout: home
         and mark / unmark them as required. Describo produces a HTML file with the marked up content
         and the entities are written into the metadata.
       </p>
-      <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/transcribing-content" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
@@ -142,28 +142,6 @@ layout: home
     </template>
     <template #content>
       <ImageComponent src="/images/tour/desktop8.webp" />
-    </template>
-  </InfoPanelComponent>
-
- <InfoPanelComponent>
-    <template #title>AI Assistant to interrogate your data.</template>
-    <template #text>
-      <p>
-        Once you've extracted the content, use the assistant to interrogate it.
-      </p>
-      <p>
-        Purchase credits to describo.cloud and use the conversational AI assistant to
-        interrogate your data using natural language. It's your very own research
-        assistant.
-      </p>
-      <FeatureComponent link="/docs/guide/transcribing-content-assistant.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
-        <template #title>
-          Read the docs
-        </template>
-      </FeatureComponent>
-    </template>
-    <template #content>
-        <ImageComponent src="/images/guide-transcribing-content-assistant/assistant1.webp" />
     </template>
   </InfoPanelComponent>
 
@@ -176,33 +154,66 @@ layout: home
         hiding in the content. Use the assistant to provide different perspectives on what
         you find in order to test hypotheses and ideas.
       </p>
-      <p>Watch the video to see the assistant interrogate the RO-Crate paper!</p>
-      <FeatureComponent link="/docs/guide/assistant-supported-discovery.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/assistant-supported-discovery" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
       </FeatureComponent>
     </template>
     <template #content>
-      <!-- <video controls >
-        <source src="/images/guide-discover/ro-crate-paper.mp4" type="video/mp4" />
-      </video> -->
+      <div class="flex flex-col space-y-1">
         <ImageComponent src="/images/guide-discover/discover5.webp" />
+        <!-- <video controls >
+          <source src="/images/guide-discover/ro-crate-paper.mp4" type="video/mp4" />
+        </video> -->
+        <!-- <iframe
+          class="border border-solid border-gray-400 p-2"
+          src="/images/guide-discover/conversation.pdf"
+          width="100%" height="500">
+        </iframe> -->
+      </div>
     </template>
   </InfoPanelComponent>
 
   <InfoPanelComponent>
-    <template #title>
-        And when you're done, save your conversation for later.
-    </template>
-    <template #content>
-       <iframe
-          class="border border-solid border-gray-400 p-2"
-          src="/images/guide-discover/conversation.pdf"
-          width="100%" height="500">
-        </iframe>
-    </template>
-</InfoPanelComponent>
+      <template #title>Tools to perform bulk data transformation</template>
+      <template #text>
+        <p>
+          <ul>
+            <li>Image manipulation - creation of thumbnails and web formats</li>
+            <li>Entity recognition and markup</li>
+            <li>Theme, topic and subject extraction and markup</li>
+          </ul>
+        </p>
+        <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Read the docs
+          </template>
+        </FeatureComponent>
+      </template>
+      <template #content>
+        <ImageComponent src="/images/guide-transform/transform1.webp" />
+      </template>
+  </InfoPanelComponent>
+
+  <InfoPanelComponent>
+      <template #title>Visualisation Tools</template>
+      <template #text>
+        <p>
+          Describo creates linked data. And with these tools you can deep dive into that structure to understand
+          and mine the information contained within. Combined with the bulk transformation tools, get to know
+          your data in minutes; not days or months.
+        </p>
+        <FeatureComponent link="/docs/guide/visualising-the-structure" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Read the docs
+          </template>
+        </FeatureComponent>
+      </template>
+      <template #content>
+        <ImageComponent src="/images/guide-visualise/visualise5.webp" />
+      </template>
+  </InfoPanelComponent>
 
   <InfoPanelComponent>
     <template #title>Works with your data; is totally configurable.</template>
@@ -213,7 +224,7 @@ layout: home
         can show you previews of your data files and the metadata adapts based on what you are describing.
       </p>
       <p>
-          <LinkComponent link="/docs/profiles/introduction" target="">Describo is totally configurable via profiles.</LinkComponent>
+          Describo is totally configurable via profiles.
           If schema.org doesn't allow you to describe
           what you want, you can create a domain specific profile that adapts the application
           to your needs.
@@ -221,6 +232,11 @@ layout: home
         <p>
           In this image, the RO Crate profile for data description is loaded.
         </p>
+         <FeatureComponent link="/docs/profiles/introduction" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Read the docs
+          </template>
+        </FeatureComponent>
     </template>
     <template #content>
       <ImageComponent src="/images/tour/desktop11.webp" />
