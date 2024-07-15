@@ -1,5 +1,6 @@
 ---
 title: Assistant enabled e-discovery
+aside: false
 ---
 
 ::: tip Info
