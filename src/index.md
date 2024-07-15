@@ -179,7 +179,7 @@ layout: home
       <template #title>Tools to perform bulk data transformation</template>
       <template #text>
         <p>
-          <ul>
+          <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
             <li>Entity recognition and markup</li>
             <li>Theme, topic and subject extraction and markup</li>
