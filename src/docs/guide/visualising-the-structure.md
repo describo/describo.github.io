@@ -15,6 +15,14 @@ have as the first part of the process of understanding your data.
 
 :::
 
+::: tip Info
+
+Try this yourself. Get the
+[Taylor Swift Dataset](https://github.com/describo/dataset-TaylorSwiftData/archive/refs/tags/v1.1.zip);
+unzip it and load it into Describo.
+
+:::
+
 ## Introduction
 
 Describo is built around the creation and management of linked data.
