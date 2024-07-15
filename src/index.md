@@ -178,13 +178,11 @@ layout: home
   <InfoPanelComponent>
       <template #title>Tools to perform bulk data transformation</template>
       <template #text>
-        <p>
           <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
             <li>Entity recognition and markup</li>
             <li>Theme, topic and subject extraction and markup</li>
           </ul>
-        </p>
         <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
           <template #title>
             Read the docs
