@@ -1,18 +1,5 @@
 ---
 layout: home
-# hero:
-#     name: Describo
-#     tagline: Analyse and describe your data
-#     image:
-#         src: ./images/logos/describo-logo.webp
-#         alt: Describo
-#     actions:
-#         - theme: brand
-#           text: Take the product tour
-#           link: /tour
-#         - theme: brand
-#           text: Get Describo Desktop
-#           link: /desktop
 ---
 
 <div class="flex flex-col md:flex-row md:place-content-between my-10">
