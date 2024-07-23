@@ -54,6 +54,10 @@ export const sidebar = [
                 link: "/docs/guide/working-with-a-crate",
             },
             {
+                text: "Browsing your data",
+                link: "/docs/guide/browse",
+            },
+            {
                 text: "Transforming your content",
                 link: "/docs/guide/transforming-content",
             },
