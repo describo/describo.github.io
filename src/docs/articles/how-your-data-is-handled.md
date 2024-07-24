@@ -37,8 +37,8 @@ the data has not left its source location.
 
 As Describo is an application that runs on your computer, any data source that is connected to your
 computer can be interacted with inside Describo. Whether it's a Dropbox folder, Google Drive, a
-Microsoft Onedrive folder or your company fileshare (Z:\\ drive or whatever); it's mounted on your
-computer, Describo can work with it.
+Microsoft Onedrive folder or your company fileshare (Z:\\ drive or whatever); if it's mounted on
+your computer, Describo can work with it.
 
 Any metadata that you create with Describo remains in the source folder inside a file named
 `ro-crate-metadata.json`. Nothing is locked up inside the application.
@@ -69,7 +69,8 @@ that content and more.
     the providers of the Large Language Model underlying the assistant.
 
 -   The Describo Cloud does not store your data beyond what is required to process it and return the
-    response. Backups of your data are not made.
+    response. Backups of your data are not made. No one other than the service administrators can
+    access your data and only when it's actually on the service itself.
 
 -   **Your data will not be used to train any AWS service**.The AWS Organisation that runs the
     services has been configured to explicitly opt out of any training on data uploaded to the
