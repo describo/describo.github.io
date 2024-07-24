@@ -9,6 +9,10 @@ on the Dashboard panel a page will open in your browser where you will see:
 
 <ImageComponent src="/images/configuration/purchase1.webp" />
 
+If you are just getting started and want to try all of the capabilities, purchase **General
+Credits**. As you get to know the services, you can top up the credits for specific components as
+required.
+
 Selecting the credits you wish to purchase will open the payment providers dialog:
 
 <ImageComponent src="/images/configuration/purchase2.webp" />
