@@ -13,9 +13,9 @@
             </el-radio-group>
         </div>
 
-        <div class="flex flex-row flex-wrap space-x-1">
+        <div class="flex flex-row flex-wrap">
             <div v-for="article of displayedArticles">
-                <Feature :link="article.link" class="bg-blue-100">
+                <Feature :link="article.link" class="border border-slate-300 rounded-sm m-1">
                     <template #title>{{ article.title }}</template>
                     <template #content>
                         <div class="flex flex-col">
@@ -37,12 +37,25 @@ import Feature from "./Feature.vue";
 import { computed, ref } from "vue";
 import uniq from "lodash-es/uniq.js";
 import flattenDeep from "lodash-es/flattenDeep.js";
+
 const articles = [
+    // {
+    //     title: "Why Describo? Where does it fit?",
+    //     link: "/docs/articles/why-use-it",
+    //     text: "Start with Why!",
+    //     keywords: ["purpose"],
+    // },
+    {
+        title: "How is data handled inside Describo?",
+        link: "/docs/articles/how-your-data-is-handled",
+        text: "Your data is yours.",
+        keywords: ["data handling", "data privacy & security"],
+    },
     {
         title: "TayTay Sings the Budget Blues",
-        link: "/docs/articles/taytay-sings-the-budget-blues.html",
+        link: "/docs/articles/taytay-sings-the-budget-blues",
         text: "See how the e-discovery tools in Describo can help you.",
-        keywords: ["e-discovery", "Assistant"],
+        keywords: ["e-discovery", "assistant"],
     },
 ];
 

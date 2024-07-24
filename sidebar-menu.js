@@ -11,18 +11,8 @@ export const sidebar = [
     { text: "Beginner Tutorial", link: "/docs/guide/five-minute-tutorial" },
     { text: "Team", link: "/team" },
     {
-        text: "Articles",
-        collapsed: false,
-        items: [
-            {
-                text: "Index",
-                link: "/docs/articles/articles-index",
-            },
-            {
-                text: "TayTay Sings the Budget Blues",
-                link: "/docs/articles/taytay-sings-the-budget-blues",
-            },
-        ],
+        text: "Feature Articles",
+        link: "/docs/articles/articles-index",
     },
     {
         text: "User Guide",
