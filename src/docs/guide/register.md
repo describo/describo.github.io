@@ -10,18 +10,13 @@ the services.
 
 ::: tip Info
 
-Be sure to read the page - [Register with describo.cloud](/docs/guide/data-processing) - to learn
-about the services used and where your data is processed.
-
-:::
-
-::: tip Info
-
 Ensure you have reviewed:
 
--   [Pricing](/pricing.html)
--   [Terms and Conditions of use](/terms-and-conditions.html)
--   [Privacy Policy](/privacy-policy.html)
+-   [Cloud Services and Data Processing](/docs/guide/data-processing) to learn about the services
+    used and where your data is processed;
+-   [Pricing](/pricing.html);
+-   [Terms and Conditions of use](/terms-and-conditions.html);
+-   [Privacy Policy](/privacy-policy.html).
 
 :::
 

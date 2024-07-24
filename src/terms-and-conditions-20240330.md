@@ -4,16 +4,7 @@ layout: home
 
 <div class="mt-10"></div>
 
-# Terms and Conditions: effective from 24/7/2024
-
-Jump directly to the terms and conditions for:
-
--   [Describo](/terms-and-conditions.html#describo)
--   [Describo VueJS and React components](/terms-and-conditions.html#describo-vuejs-and-react-components)
--   [Describo Cloud](/terms-and-conditions.html#describo-cloud)
--   [Previous Versions of these Terms and Conditions](/terms-and-conditions.html#previous-versions-of-this-document)
-
-## Describo
+## Describo Desktop
 
 1. You are free to use Describo Desktop on any platform that it supports. If you uncover any issues
    with the application please create an issue in the
@@ -34,22 +25,15 @@ Jump directly to the terms and conditions for:
 
 ## Describo Cloud
 
-### If you are found to be in breach of the following terms and conditions you will lose access to the service; any credits that you have purchased; and no refund will be provided. You may also be reported to the relevant authorities in your jurisdiction if your usage of the service is found to breach any local laws or regulations.
+### If you are found to be in breach of any of the following terms and conditions you will lose access to the service; any credits that you have purchased, and no refund will be provided. You may also be reported to the relevant authorities in your jurisdiction.
 
-1.  **All data that you send to the describo cloud and that we then send onto our service providers
-    remains your property**. Your data is not stored by Describo Cloud beyond that required to
-    process it and return you a response. Backups of your data are not available via Describo Cloud.
-    To understand how your data is handled by those services see the page
-    [Cloud Services and Data Processing](/docs/guide/data-processing).
+1.  All data that you send to the describo cloud and that we then send onto our service providers
+    remains your property **unless your data doesn't meet the acceptable use policies of our service
+    providers**. If your data are flagged for trust and safety review, our providers may use or
+    analyze that data to improve their ability to detect and enforce Acceptable Use Policy
+    violations, including training models for use by their trust and safety teams.
 
-2.  An [Opt Out policy](/docs/guide/data-processing.html#ai-services-opt-out-policies) has been
-    applied to the AWS Organisation operating the Describo Cloud so that your data is **NOT** used
-    to train AI services.
-
-3.  The Describo Cloud has been architected to support
-    [regional Data Sovereignty](/docs/guide/data-processing.html#data-sovereignty).
-
-4.  To use the describo cloud capabilities (text extraction, named entity recognition and assistant)
+2.  To use the describo cloud capabilities (text extraction, named entity recognition and assistant)
     you:
 
     -   must subscribe to the service with a valid, work or personal email address that must be
@@ -64,7 +48,7 @@ Jump directly to the terms and conditions for:
         service and accept all responsibility for any disciplinary action taken by us or our service
         providers in relation to your use of the services;
 
-5.  You guarantee that you will not use the services to:
+3.  You guarantee that you will not use the services to:
 
     -   engage in any form of illegal activity;
     -   handle any kind of child sexual exploitation or abuse content and acknowledge that we and /
@@ -85,10 +69,10 @@ Jump directly to the terms and conditions for:
         -   automated determination of employment and housing decisions;
         -   any law enforcement application;
 
-6.  **When using the assistant, provided that you meet the requirements of these terms and
-    conditions, the prompts that you provide (ie your queries) and the outputs received remain
-    solely your property. All right, title and interest to the prompts and the outputs is
-    transferred from our service provider directly to you**. Further - you:
+4.  When using the assistant, provided that you meet the requirements of these terms and conditions,
+    the prompts that you provide (ie your queries) and the outputs received remain solely your
+    property. All right, title and interest to the prompts and the outputs is transferred from our
+    service provider directly to you. Further - you:
 
     -   acknowledge that the outputs may not always be accurate even if they appear to be;
     -   acknowledge that it is your responsibility to confirm the accuracy of the outputs from the
@@ -97,14 +81,11 @@ Jump directly to the terms and conditions for:
     -   acknowledge that any outputs do not represent the views of the operators of the describo
         cloud or its service providers.
 
-7.  THE SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+5.  THE SERVICE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
     NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
     NONINFRINGEMENT. IN NO EVENT SHALL THE SERVICE PROVIDERS (DESCRIBO CLOUD OR UPSTREAM SERVICE
     PROVIDERS) OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
     AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SERVICE
     OR THE USE OR OTHER DEALINGS IN THE SERVICE.
 
-## Previous Versions of this document
-
--   [Terms and Conditions: effective from 30/3/2024](/terms-and-conditions-20240330)
-    <FooterComponent class="mt-6"/>
+<FooterComponent class="mt-6"/>

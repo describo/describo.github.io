@@ -1,15 +1,8 @@
 ---
-title: Cloud Services & Data Processing
+title: Cloud Services and Data Processing
 ---
 
-# Cloud Services & Data processing
-
-If you register with describo.cloud, the capabilities you will use are provided using Amazon AWS.
-Specifically, the services used are: <LinkComponent link="https://aws.amazon.com/textract/">AWS
-Textract</LinkComponent>, <LinkComponent link="https://aws.amazon.com/comprehend/">AWS
-Comprehend</LinkComponent> and <LinkComponent link="https://aws.amazon.com/bedrock/">AWS
-Bedrock</LinkComponent>. See those pages for how data is handled and their terms and conditions of
-use.
+# Cloud Services and Data processing
 
 ::: tip INFO
 
@@ -18,9 +11,38 @@ out how your data is handled by the Describo Cloud.
 
 :::
 
-In order to support users across the globe, regional services have been provisioned. The AWS region
-you use `depends on the Geo location of your IP address` and it happens automatically when you go to
-use a given capability.
+If you register with describo.cloud, the capabilities you interact with are provided using Amazon
+AWS. Specifically, the services used are:
+
+-   <LinkComponent link="https://aws.amazon.com/textract/">AWS Textract</LinkComponent>
+    -   The <LinkComponent link="https://aws.amazon.com/textract/faqs/">FAQs</LinkComponent> have a
+        section titled **Data Privacy** that explains how your data is handled by that service.
+-   <LinkComponent link="https://aws.amazon.com/comprehend/">AWS Comprehend</LinkComponent>
+    -   The <LinkComponent link="https://aws.amazon.com/comprehend/faqs/">FAQs</LinkComponent> have
+        a section titled **Data Privacy** that explains how your data is handled by that service.
+-   <LinkComponent link="https://aws.amazon.com/bedrock/">AWS Bedrock</LinkComponent>.
+    -   The <LinkComponent link="https://aws.amazon.com/bedrock/faqs/">FAQs</LinkComponent> have a
+        section titled **Security** that explains how your data is handled by that service.
+
+See those pages for how data is handled and their terms and conditions of use.
+
+## AI services opt-out policies
+
+**In the FAQs for Textract and Comprehend there is a section discussing how to opt out of _"having
+your document and image inputs used to improve or develop the quality of Textract [and Comprehend]
+and other Amazon machine-learning/artificial-intelligence technologies using an AWS Organizations
+opt-out policy."_**
+
+An opt out policy has been created and applied to the AWS Organisation that provides the Describo
+Cloud.
+
+<ImageComponent src="/images/opt-out-ai-policies.webp"></ImageComponent>
+
+# Data Sovereignty
+
+In order to support users across the globe, regional services have been provisioned in the Describo
+Cloud. The AWS region you use `depends on the Geo location of your IP address` and it happens
+automatically when you go to use a given capability.
 
 ## Users in Australia
 
