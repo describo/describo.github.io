@@ -8,17 +8,20 @@
     max-width: 100% !important;
 }
 
+ .VPNavBarSearch {
+     flex-grow: 0 !important
+ }
 /* min-width: 1440px same as original min-width: 960px */
-/* @media (min-width: 1440px) {
-    .VPNavBarSearch {
-        padding-left: 0;
-        flex-grow: 1
-    }
+@media (min-width: 1440px) {
+
     .VPNavBar.has-sidebar .container  {
         background-color: white !important;
     }
     .VPNavBar.has-sidebar .title {
         background-color: var(--vp-sidebar-bg-color) !important;
+    }
+    .VPNavBar.has-sidebar .content {
+        padding-right: 0 !important;
     }
     .VPSidebar {
         z-index: 1000;
@@ -34,7 +37,7 @@
     }
 }
 
-/ Add additional min-width: 1680px /
+/* Add additional min-width: 1680px */
 @media (min-width: 1680px) {
     .VPSidebar {
         padding-left: calc((100% - (var(--vp-layout-max-width) - 64px)) / 2) !important;
@@ -48,7 +51,7 @@
    .container {
        max-width: 1680px !important
    }
-} */
+}
 
 /* Add additional min-width: 1680px */
 /* @media (min-width: 2000px) {
@@ -65,7 +68,8 @@
     .container {
         max-width: 1800px !important
     }
-} */
+}
+*/
 
 .medium-zoom-overlay {
 }
