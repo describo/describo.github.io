@@ -1,6 +1,6 @@
 ---
 title: "General configuration"
-aside: true
+aside: false
 ---
 
 # Configuring Describo

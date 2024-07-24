@@ -1,5 +1,6 @@
 ---
 title: Tips for using the assistant
+aside: false
 ---
 
 # Tips for using the assistant

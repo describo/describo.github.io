@@ -1,5 +1,6 @@
 ---
 title: Register with describo.cloud
+aside: false
 ---
 
 # Register with describo.cloud

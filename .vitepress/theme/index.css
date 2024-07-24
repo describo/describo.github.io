@@ -9,7 +9,11 @@
 }
 
 /* min-width: 1440px same as original min-width: 960px */
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
+    .VPNavBarSearch {
+        padding-left: 0;
+        flex-grow: 1
+    }
     .VPNavBar.has-sidebar .container  {
         background-color: white !important;
     }
@@ -18,7 +22,6 @@
     }
     .VPSidebar {
         z-index: 1000;
-        padding-left: 32px !important;
         width: var(--vp-sidebar-width) !important;
     }
     .VPContent.has-sidebar {
@@ -27,11 +30,11 @@
 
     }
     .container {
-       max-width: 1400px !important
+       max-width: 1440px !important
     }
 }
 
-/* Add additional min-width: 1680px */
+/ Add additional min-width: 1680px /
 @media (min-width: 1680px) {
     .VPSidebar {
         padding-left: calc((100% - (var(--vp-layout-max-width) - 64px)) / 2) !important;
@@ -43,9 +46,9 @@
         padding-right: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
     }
    .container {
-       max-width: 1600px !important
+       max-width: 1680px !important
    }
-}
+} */
 
 /* Add additional min-width: 1680px */
 /* @media (min-width: 2000px) {

@@ -1,5 +1,6 @@
 ---
 title: Purchase Credits
+aside: false
 ---
 
 # Purchase Credits

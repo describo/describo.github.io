@@ -1,5 +1,6 @@
 ---
 title: Cloud Services and Data Processing
+aside: false
 ---
 
 # Cloud Services and Data processing

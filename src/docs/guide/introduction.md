@@ -1,5 +1,6 @@
 ---
 title: Describo Desktop User Guide
+aside: false
 ---
 
 # Describo Desktop User Guide

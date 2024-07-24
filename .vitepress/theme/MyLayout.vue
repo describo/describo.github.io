@@ -6,6 +6,6 @@ const { Layout } = DefaultTheme;
 
 <template>
     <Layout>
-        <template #doc-bottom> <FooterComponent class="mb-10" /></template>
+        <template #doc-after> <FooterComponent class="mt-20 mb-10" /></template>
     </Layout>
 </template>
