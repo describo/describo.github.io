@@ -46,7 +46,7 @@ export const sidebar = [
                 link: "/docs/guide/purchase-credits",
             },
             {
-                text: "Cloud Services & Data Processing",
+                text: "Cloud Services and Data Processing",
                 link: "/docs/guide/data-processing",
             },
             {
