@@ -18,7 +18,7 @@ const cards = [
         image: "/images/tour/desktop1.webp",
     },
     {
-        text: "<p>Wherever you are, pressing the 'Help' button in the navigation bar activates context sensitive help. The documentation link next to it opens context specific documentation in your browser.</p>",
+        text: "<p>Wherever you are, pressing the 'Help' button in the navigation bar activates context sensitive help. The documentation link next to it opens up the user guide for that page in your browser.</p>",
         image: "/images/tour/desktop2.webp",
     },
     {
@@ -59,8 +59,16 @@ const cards = [
         a custom geometry for the Geo property. In this case, we've defined a geographical area of Australia.</p>`,
         image:  "/images/tour/desktop7.webp",
     },
+      {
+        text: `<p>
+            An important part of any description process is quality assurance. For example, do all the person descriptions have given name
+            and family name defined? In this image we can easily review the descriptions for the 3 people described and see that some of them
+            are incomplete.
+        </p>`,
+        image:  "/images/guide-browse/browse3.webp",
+    },
     {
-        text: `<p>If you register with describo.cloud and purchase credits, Describo can perform bulk transformations on your data. From
+        text: `<p>If you register with describo.cloud and purchase credits, Describo can help you perform bulk transformations on your data. From
         recognising and marking up named entities to extracting the topics, themes and subjects contained, getting to know your data has
         never been easier.
         <p>
@@ -69,7 +77,7 @@ const cards = [
         image:  "/images/guide-transform/transform1.webp",
     },
     {
-        text: `<p>If you register with describo.cloud and purchase credits, Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. Even without the cloud service, you can mark
+        text: `<p>Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. Even without the cloud service, you can mark
         up entities and create rich datasets of entities mentioned in your data.</p>
         <p>
         <a href="/docs/guide/transcribing-content" target="_blank">See the documentation for more information.</a>
@@ -138,10 +146,6 @@ const cards = [
     {
         text: `<p>And here we see the licence applied.</p>`,
         image: "/images/tour/desktop17.webp",
-    },
-     {
-        text: `<p>Finally, application settings can be changed as required.</p>`,
-        image: "/images/tour/desktop18.webp",
     },
 
 ];
