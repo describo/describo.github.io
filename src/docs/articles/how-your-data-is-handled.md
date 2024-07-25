@@ -5,6 +5,8 @@ aside: false
 
 # How is data handled inside Describo?
 
+Author: Marco La Rosa, 24/7/2024
+
 ::: tip Summary
 
 Describo handles your data with the utmost respect for privacy and ownership. Describo ensures that
@@ -48,8 +50,8 @@ Any metadata that you create with Describo remains in the source folder inside a
 If you choose to register with the Describo cloud and purchase credits to use the text extraction,
 entity recognition or assistant capabilities, the data that you select for processing will be
 uploaded to the Describo cloud. Detailed information about the Describo Cloud is at
-[Cloud Services and Data Processing](/docs/guide/data-processing) but following is an explanation of
-that content and more.
+[Cloud Services and Data Processing](/docs/guide/data-processing) but following is a plain english
+explanation of that content.
 
 -   Describo does not assert any right or title to any of the outputs of the cloud service. The
     Describo Cloud empowers you to create, while you retain complete ownership of your outputs.
@@ -59,8 +61,8 @@ that content and more.
     [here](https://aws.amazon.com/compliance/data-protection/).
 
 -   The Describo Cloud supports _Data Sovereignty_. It is a common requirement that user data be
-    processed within regions that are consistent with your local legal requirements. To support
-    this, the Describo cloud operates in 3 regions globally and the region you use is determined via
+    processed in regions that are consistent with your local legal requirements. To support this,
+    the Describo cloud operates in 3 regions globally and the region you use is determined via
     geolocation of your IP address; ie the service you use is based on your location.
 
 -   The services that Describo Cloud uses are AWS Textract, Comprehend and Bedrock. Links to those
@@ -70,8 +72,11 @@ that content and more.
 
 -   The Describo Cloud does not store your data beyond what is required to process it and return the
     response. Backups of your data are not made. No one other than the service administrators can
-    access your data and only when it's actually on the service itself.
+    access your data and even then, only when it's actually on the service itself (which is only
+    long enough to process it; typically less than a minute).
 
 -   **Your data will not be used to train any AWS service**.The AWS Organisation that runs the
     services has been configured to explicitly opt out of any training on data uploaded to the
     cloud.
+
+<disqus/>
