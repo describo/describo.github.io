@@ -28,10 +28,10 @@ objects.
     -   [Repositories](#repositories)
         -   [ARDC (largely) lives here](#ardc-largely-lives-here)
     -   [So how does Describo relate to the national initiatives?](#so-how-does-describo-relate-to-the-national-initiatives)
-    -   [Describo Persona's](#describo-personas)
-        -   [What's in the box?](#whats-in-the-box)
-        -   [What's in the book?](#whats-in-the-book)
-        -   [I don't know what I don't know](#i-dont-know-what-i-dont-know)
+    -   [Describo Persona's](#describo-persona-s)
+        -   [What's in the box?](#what-s-in-the-box)
+        -   [What's in the book?](#what-s-in-the-book)
+        -   [I don't know what I don't know](#i-don-t-know-what-i-dont-know)
 
 I was recently asked whether I had reached out to the
 [ARDC HASS and Indigenous Research Data Commons](https://ardc.edu.au/hass-and-indigenous-research-data-commons/)
