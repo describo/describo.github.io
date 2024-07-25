@@ -84,9 +84,10 @@ online workspace. Issues that Describo mitigates.
 ### Describo lives here
 
 Describo is for people working with text based content in various formats. It provides tools for
-them to manipulate their data and transform it; mine it for information using AI tools and cloud
-services; describe what they're finding as linked data entity relationships; and ultimately, publish
-their work.
+them [to manipulate their data and transform it](/docs/guide/transforming-content);
+[mine it for information using AI tools and cloud services](/docs/guide/assistant-supported-discovery);
+[describe what they're finding as linked data entity relationships](/docs/guide/working-with-a-crate);
+and ultimately, publish their work.
 
 Describo produces data objects in a standardised format: the
 [Research Object Crate (RO-Crate)](https://www.researchobject.org/ro-crate/). So, as the work is

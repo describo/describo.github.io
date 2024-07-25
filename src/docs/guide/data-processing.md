@@ -41,6 +41,18 @@ Cloud.
 
 # Data Sovereignty
 
+::: tip INFO
+
+**Data Sovereignty in this context does not relate to the ownership of the data. It is the
+responsibility of the user to ensure that they have permission from the data owner to work with the
+data. This is especially true when it comes to Indigenous data.**
+
+In this context, Data Sovereignty is used to indicate that data processing with Describo Cloud will
+occur in a geographic region as close as possible to the location of the user and hopefully, with
+the same or similar legal contexts.
+
+:::
+
 In order to support users across the globe, regional services have been provisioned in the Describo
 Cloud. The AWS region you use `depends on the Geo location of your IP address` and it happens
 automatically when you go to use a given capability.

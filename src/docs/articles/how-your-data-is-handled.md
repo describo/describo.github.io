@@ -63,7 +63,10 @@ explanation of that content.
 -   The Describo Cloud supports _Data Sovereignty_. It is a common requirement that user data be
     processed in regions that are consistent with your local legal requirements. To support this,
     the Describo cloud operates in 3 regions globally and the region you use is determined via
-    geolocation of your IP address; ie the service you use is based on your location.
+    geolocation of your IP address; ie the service you use is based on your location. **Data
+    Sovereignty in this context does not relate to the ownership of the data. It is the
+    responsibility of the user to ensure that they have permission from the data owner to work with
+    the data. This is especially true when it comes to Indigenous data.**
 
 -   The services that Describo Cloud uses are AWS Textract, Comprehend and Bedrock. Links to those
     services, and their FAQs explaining how data is handled, are on the data processing page. In
