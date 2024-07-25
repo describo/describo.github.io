@@ -23,7 +23,7 @@ objects.
 
 -   [Why Describo? Where does it fit?](#why-describo-where-does-it-fit)
     -   [Workspaces](#workspaces)
-        -   [Online / Shared Workspaces](#online--shared-workspaces)
+        -   [Online / Shared Workspaces](#online-shared-workspaces)
         -   [Describo lives here](#describo-lives-here)
     -   [Repositories](#repositories)
         -   [ARDC (largely) lives here](#ardc-largely-lives-here)
@@ -31,7 +31,7 @@ objects.
     -   [Describo Persona's](#describo-persona-s)
         -   [What's in the box?](#what-s-in-the-box)
         -   [What's in the book?](#what-s-in-the-book)
-        -   [I don't know what I don't know](#i-don-t-know-what-i-dont-know)
+        -   [I don't know what I don't know](#i-don-t-know-what-i-don-t-know)
 
 I was recently asked whether I had reached out to the
 [ARDC HASS and Indigenous Research Data Commons](https://ardc.edu.au/hass-and-indigenous-research-data-commons/)
