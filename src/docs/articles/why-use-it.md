@@ -21,6 +21,18 @@ objects.
 
 :::
 
+-   [Why Describo? Where does it fit?](#why-describo-where-does-it-fit)
+    -   [Workspaces](#workspaces)
+        -   [Online / Shared Workspaces](#online--shared-workspaces)
+        -   [Describo lives here](#describo-lives-here)
+    -   [Repositories](#repositories)
+        -   [ARDC (largely) lives here](#ardc-largely-lives-here)
+    -   [So how does Describo relate to the national initiatives?](#so-how-does-describo-relate-to-the-national-initiatives)
+    -   [Describo Persona's](#describo-personas)
+        -   [What's in the box?](#whats-in-the-box)
+        -   [What's in the book?](#whats-in-the-book)
+        -   [I don't know what I don't know](#i-dont-know-what-i-dont-know)
+
 I was recently asked whether I had reached out to the
 [ARDC HASS and Indigenous Research Data Commons](https://ardc.edu.au/hass-and-indigenous-research-data-commons/)
 to see whether there was potential for Describo to become part of a national data platform. I
@@ -82,7 +94,8 @@ happening, the user can be sure that they will have a sensible data object as an
 required.
 
 But Describo doesn't limit what the user can do. That is up to them and it's designed to be flexible
-enough to adapt to many different use cases as I describe later.
+enough to adapt to many different use cases as I describe later. Describo is there to help you; not
+tell you how to work.
 
 ## Repositories
 
@@ -139,8 +152,8 @@ them. My hope is that in time this will change.
 
 ## Describo Persona's
 
-If the discussion above is correct, we now know where Describo fits into the landscape so let's
-consider why anyone would want to use it.
+We now know where Describo fits into the landscape so let's consider why anyone would want to use
+it.
 
 ### What's in the box?
 
@@ -171,7 +184,8 @@ consider why anyone would want to use it.
     </p>
     <p>
         And of course, maybe you weren't 'gifted' the box of materials. Maybe you just emerged from the archives
-        with 2000 images on your phone and your eyes squinting from exposure to direct sunlight!
+        with 2000 images on your phone and your eyes squinting from exposure to sunlight! Either way,
+        the work ahead of you will largely look the same.
     </p>
     <p><strong>How Describo can help:</strong></p>
     <p>
@@ -200,6 +214,11 @@ consider why anyone would want to use it.
         Indigenous language manuscripts in order to provide access to its communities. Yet some of the
         institutions were concerned with even putting the manuscript into the private workspace where
         their questions could be answered.
+    </p>
+    <p>Read more:
+        <a href="https://publications.archivists.org.au/index.php/asa/article/view/10971" target="_blank">
+            The New Protectionism: Risk Aversion and Access to Indigenous Heritage Records
+        </a>
     </p>
     <p><strong>How Describo can help:</strong></p>
     <p>
@@ -234,7 +253,7 @@ consider why anyone would want to use it.
 </template>
 </SectionComponent>
 
-Hopefully this article has made clear the position that Describo aims to take. If you have any
+Hopefully this article has made clear the space that Describo aims to fill. If you have any
 questions or comments, please start a conversation below!
 
 <disqus/>

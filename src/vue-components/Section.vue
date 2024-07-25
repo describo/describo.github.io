@@ -1,6 +1,15 @@
 <template>
-    <div class="flex flex-row space-x-2">
-        <Thumbnail :src="props.imageSrc" :width="props.imageWidth" class="p-10"></Thumbnail>
+    <div class="flex flex-col lg:flex-row lg:space-x-2">
+        <Thumbnail
+            :src="props.imageSrc"
+            :width="props.imageWidth"
+            class="p-10 hidden xl:block"
+        ></Thumbnail>
+        <Thumbnail
+            :src="props.imageSrc"
+            :width="200"
+            class="px-1 py-6 visible xl:hidden"
+        ></Thumbnail>
         <div>
             <slot name="text"></slot>
         </div>
