@@ -104,8 +104,8 @@ On the right of the image we have the `Repositories`. This is where the outputs 
 process go to live when **it makes sense to do so**. I'm specifically highlighting that last
 statement because it's a key point to understand. The point at which the process in the middle
 (Reusable, Interoperable data objects) is triggered depends on the project and the work being done.
-One size does not fit all. Furthermore, the repositories typically have very detailed requirements
-that must be met for data to be accepted.
+One size does not fit all. Furthermore, repositories typically have very detailed and specific
+requirements that must be met for data to be accepted.
 
 Incomplete is ok on this side but messy is not. My colleague Dr Mike Jones recently wrote an
 excellent article titled
@@ -133,7 +133,7 @@ acceptance with a high barrier of entry regardless.
 
 Let it be known that **I'm not advocating against the work of the ARDC or the funded projects**. The
 work that is being done is _A Good Thing&#8482;_ but that doesn't mean that we shouldn't be aware of
-the compromises required to make that work.
+the compromises required to achieve the goal.
 
 ## So how does Describo relate to the national initiatives?
 
@@ -190,7 +190,7 @@ it.
     </p>
     <p><strong>How Describo can help:</strong></p>
     <p>
-        Describo has been specifically created to help with these processes. There are tools to batch
+        Describo has been specifically crafted to help with these processes. There are tools to batch
         transform digitised content (e.g. produce thumbnails and webformats); services that
         can transcribe and markup the entities described; an assistant to help you quickly understand
         what is contained in batches of content and a visualisation tool to inspect the information
@@ -216,7 +216,7 @@ it.
         institutions were concerned with even putting the manuscript into the private workspace where
         their questions could be answered.
     </p>
-    <p>Read more:
+    <p>Learn more:
         <a href="https://publications.archivists.org.au/index.php/asa/article/view/10971" target="_blank">
             The New Protectionism: Risk Aversion and Access to Indigenous Heritage Records
         </a>
@@ -225,7 +225,7 @@ it.
     <p>
         As a local (desktop) application, institutional staff could use Describo to transcribe, annotate and
         describe a manuscript, page by page, without the content ever leaving their computer. However,
-        subject to appropriate investigations, they could also use the cloud services to accelerate that process
+        subject to appropriate permissions being sought, they could also use the cloud services to accelerate that process
         as they have been specifically designed and architected with data privacy in mind. To read more
         about that see: <a href="/docs/articles/how-your-data-is-handled">How is data handled inside Describo?</a>
     </p>
