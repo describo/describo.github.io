@@ -39,12 +39,12 @@ import uniq from "lodash-es/uniq.js";
 import flattenDeep from "lodash-es/flattenDeep.js";
 
 const articles = [
-    // {
-    //     title: "Why Describo? Where does it fit?",
-    //     link: "/docs/articles/why-use-it",
-    //     text: "Start with Why!",
-    //     keywords: ["purpose"],
-    // },
+    {
+        title: "Why Describo? Where does it fit?",
+        link: "/docs/articles/why-use-it",
+        text: "Start with Why!",
+        keywords: ["purpose"],
+    },
     {
         title: "How is data handled inside Describo?",
         link: "/docs/articles/how-your-data-is-handled",

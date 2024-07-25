@@ -60,11 +60,13 @@ import Disqus from "../../src/vue-components/Disqus.vue";
 import FeatureComponent from "../../src/vue-components/Feature.vue";
 import FooterComponent from "../../src/vue-components/Footer.vue";
 import ImageComponent from "../../src/vue-components/Image.vue";
+import ThumbnailComponent from "../../src/vue-components/Thumbnail.vue";
 import InfoPanelComponent from "../../src/vue-components/InfoPanel.vue";
 import LinkComponent from "../../src/vue-components/Link.vue";
 import RedirectComponent from "../../src/vue-components/Redirect.vue";
 import StackComponent from "../../src/vue-components/Stack.vue";
 import TipComponent from "../../src/vue-components/Tip.vue";
+import SectionComponent from "../../src/vue-components/Section.vue";
 
 import { onMounted, watch, nextTick } from "vue";
 import mediumZoom from "medium-zoom";
@@ -81,12 +83,14 @@ export default {
         app.component("FeatureComponent", FeatureComponent);
         app.component("FooterComponent", FooterComponent);
         app.component("ImageComponent", ImageComponent);
+        app.component("ThumbnailComponent", ThumbnailComponent);
         app.component("InfoPanelComponent", InfoPanelComponent);
         app.component("LinkComponent", LinkComponent);
         app.component("RedirectComponent", RedirectComponent);
         app.component("StackComponent", StackComponent);
         app.component("TipComponent", TipComponent);
         app.component("FontAwesomeIcon", FontAwesomeIcon);
+        app.component("SectionComponent", SectionComponent);
     },
     setup() {
         const route = useRoute();
