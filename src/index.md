@@ -24,6 +24,11 @@ layout: home
             Get Describo - free download
           </template>
         </FeatureComponent>
+        <FeatureComponent link="/docs/articles/why-use-it" :icon="faFileLines" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Why Describo?
+          </template>
+        </FeatureComponent>
     </div>
   </div>
 </div>
