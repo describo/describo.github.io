@@ -7,8 +7,8 @@ aside: false
 
 ::: tip INFO
 
-Ensure you also read the page [Terms and Conditions](/terms-and-conditions#describo-cloud) to find
-out how your data is handled by the Describo Cloud.
+Ensure you also read the page [Terms and Conditions](/terms-and-conditions.html#describo-cloud) to
+find out how your data is handled by the Describo Cloud.
 
 :::
 

@@ -9,7 +9,7 @@ aside: false
 
 ::: tip
 
-Be sure to also read the [next page about Data Validation](./validation).
+Be sure to also read the [next page about Data Validation](./validation.html).
 
 :::
 

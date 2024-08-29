@@ -19,7 +19,7 @@ aside: false
                     back to your app for saving or handling as you wish.
                 </div>
                 <div>
-                    <LinkComponent link="/docs/component/get-started" target="">Read on to get started.</LinkComponent>
+                    <LinkComponent link="/docs/component/get-started.html" target="">Read on to get started.</LinkComponent>
                 </div>
             </div>
         </template>
@@ -60,7 +60,7 @@ aside: false
         <template #title>Themable</template>
         <template #text>
             Control all aspects of the styling of the component to suit your application. See
-            <LinkComponent link="/docs/component/themes" target="">the themes documentation for
+            <LinkComponent link="/docs/component/themes.html" target="">the themes documentation for
             more information.</LinkComponent>
         </template>
         <template #content>
@@ -71,7 +71,7 @@ aside: false
         <template #title>Configurable</template>
         <template #text>
             Control all aspects of the behaviour like rendering crates in read only mode.
-            <LinkComponent link="/docs/component/usage-and-configuration" target="">the configuration documentation for
+            <LinkComponent link="/docs/component/usage-and-configuration.html" target="">the configuration documentation for
             more information.</LinkComponent>
         </template>
         <template #content>

@@ -52,40 +52,40 @@ The context section allows you to provide a context for this profile. Although o
 highly recommended that you provide a context that suits the profile you have created. Describo will
 then disable the context editor and emit crates with this context in it.
 
-See [All about contexts](./contexts.md) for more information.
+See [All about contexts](./contexts.html) for more information.
 
 ## Layouts
 
 This section defines how to group properties and display them in tabs.
 
-See [Layouts for how to define them and why you would want to.](./layouts.md)
+See [Layouts for how to define them and why you would want to.](./layouts.html)
 
 ## Property Associations
 
 This sections defines inverse property relationships so that describo can automatically create them
 on data input.
 
-See [Property Associations for a detailed account of these sections.](./associations.md)
+See [Property Associations for a detailed account of these sections.](./associations.html)
 
 ## Localisation
 
 The localisation sections allows you to translate classes (e.g. Author) and primitives (e.g. Text,
 Date etc) into your own language.
 
-See [All about localisation](./localisation.md) for more information.
+See [All about localisation](./localisation.html) for more information.
 
 ## Resolve
 
 The resolve section allows you to specify that entities linked from linking type entities (e.g.
 Relationships and Actions - Create, Move, Update etc.) are to be displayed as well.
 
-See [All about resolve](./resolve.md) for more information.
+See [All about resolve](./resolve.html) for more information.
 
 ## Classes
 
 This section contains class definitions users can use in their descriptions.
 
-See [Classes and Inputs for a detailed account of this section.](./classes-and-inputs.md)
+See [Classes and Inputs for a detailed account of this section.](./classes-and-inputs.html)
 
 ## Lookup
 
@@ -94,4 +94,4 @@ country definition. Rather than asking a user to create an entity of type Countr
 relevant properties to adequately describe it, you could just provide a lookup to a pre defined
 Country definition that they can inject into the crate.
 
-See [Lookups for a detailed account of this section.](./lookups.md)
+See [Lookups for a detailed account of this section.](./lookups.html)

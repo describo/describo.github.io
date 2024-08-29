@@ -10,7 +10,7 @@ ensure that you data won't be rejected by the component. Or worse, cause unexpec
 
 ## Validate entity @id
 
-This is so important that it has its [own page explaining it](/docs/component/identifiers).
+This is so important that it has its [own page explaining it](/docs/component/identifiers.html).
 
 ```JS
 import { validateId } from "@describo/crate-builder-component/src/crate-builder/CrateManager/validate-identifier.js"

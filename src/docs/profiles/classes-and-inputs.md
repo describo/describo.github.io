@@ -102,7 +102,7 @@ In this example the profile tells the UI that the value of the author property c
 type Person or Organization. The UI will then guide the user in the creation of those entities or
 linking an entity either existing in the crate or looked up from a datasource elsewhere.
 
-Please see the [detailed documentation on types](./types.md)
+Please see the [detailed documentation on types](./types.html)
 
 ### name property
 
@@ -119,14 +119,14 @@ inputs of the relevant type.
 ## ANY Class
 
 When defining what a property can link to, you can select from a given set of types like Text or
-Number (see the [types](/docs/profiles/types) documentation). Anything else will be treated as an
-entity. For example, specifying `type: ['Text', 'Person', 'Organisation']` allows the user to attach
-some textual content or link an entity of type Person or Organisation. However, what if the user
-should be able to attach an entity of any type?
+Number (see the [types](/docs/profiles/types.html) documentation). Anything else will be treated as
+an entity. For example, specifying `type: ['Text', 'Person', 'Organisation']` allows the user to
+attach some textual content or link an entity of type Person or Organisation. However, what if the
+user should be able to attach an entity of any type?
 
 The `ANY` class is a special indicator to Describo to give the user the ability to attach an entity
 of any type at that point. This is required for things like actions and relationships (see
-[the documentation for resolve](./resolve.md)) where you are trying to describe structures between
+[the documentation for resolve](./resolve.html)) where you are trying to describe structures between
 groups of entities.
 
 Example:

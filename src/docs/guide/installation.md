@@ -7,7 +7,10 @@ aside: false
 
 [[toc]]
 
-Describo can be downloaded from <LinkComponent link="/desktop" target="_blank">here.</LinkComponent>
+<div>
+Describo can be downloaded from
+<LinkComponent link="/desktop.html" target="_blank">here.</LinkComponent>
+</div>
 
 ## MacOS
 

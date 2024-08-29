@@ -50,8 +50,8 @@ Any metadata that you create with Describo remains in the source folder inside a
 If you choose to register with the Describo cloud and purchase credits to use the text extraction,
 entity recognition or assistant capabilities, the data that you select for processing will be
 uploaded to the Describo cloud. Detailed information about the Describo Cloud is at
-[Cloud Services and Data Processing](/docs/guide/data-processing) but following is a plain english
-explanation of that content.
+[Cloud Services and Data Processing](/docs/guide/data-processing.html) but following is a plain
+english explanation of that content.
 
 -   Describo does not assert any right or title to any of the outputs of the cloud service. The
     Describo Cloud empowers you to create, while you retain complete ownership of your outputs.

@@ -8,10 +8,11 @@ aside: false
 ::: tip Info
 
 This section of Describo is not just for producing nice visualisations of the network structure. It
-goes hand in hand with the [Discover](/docs/guide/assistant-supported-discovery) section in your
-digital discovery process. That is, you can use Discover to deep dive into the data for specific
-information that you are interested in and / or know exists. Or, you can use these tools to get an
-overview of what you actually have as the first part of the process of understanding your data.
+goes hand in hand with the [Discover](/docs/guide/assistant-supported-discovery.html) section in
+your digital discovery process. That is, you can use Discover to deep dive into the data for
+specific information that you are interested in and / or know exists. Or, you can use these tools to
+get an overview of what you actually have as the first part of the process of understanding your
+data.
 
 :::
 
@@ -62,7 +63,7 @@ button at the top of the controls.
 
 When you do, the network structure in the metadata will be displayed. Following is a visualisation
 of the entities, topics, themes and subjects in the
-[Taylor Swift Song Dataset](/docs/articles/taytay-sings-the-budget-blues).
+[Taylor Swift Song Dataset](/docs/articles/taytay-sings-the-budget-blues.html).
 
 <ImageComponent src="/images/guide-visualise/visualise3.webp"></ImageComponent>
 

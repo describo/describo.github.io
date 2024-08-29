@@ -145,14 +145,14 @@ Following is a fun, albeit frivolous, example that demonstrates what you can do.
 If you want to try this with your own data, it's easy and you can be up and running in about 5
 minutes!
 
--   [Download the application - FREE](/desktop)
--   [Register - FREE](/docs/guide/register)
--   [Purchase Assistant Credits - $5 ](/docs/guide/purchase-credits)
+-   [Download the application - FREE](/desktop.html)
+-   [Register - FREE](/docs/guide/register.html)
+-   [Purchase Assistant Credits - $5 ](/docs/guide/purchase-credits.html)
 
 And if you have questions about how your data is used and where it's processed:
 
--   [Terms and conditions](/terms-and-conditions#describo-cloud)
--   [Where your data is processed](/docs/guide/data-processing)
+-   [Terms and conditions](/terms-and-conditions.html#describo-cloud)
+-   [Where your data is processed](/docs/guide/data-processing.html)
 
 <Disqus />
 

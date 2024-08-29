@@ -84,9 +84,9 @@ online workspace. Issues that Describo mitigates.
 ### Describo lives here
 
 Describo is for people working with text based content in various formats. It provides tools for
-them [to manipulate their data and transform it](/docs/guide/transforming-content);
-[mine it for information using AI tools and cloud services](/docs/guide/assistant-supported-discovery);
-[describe what they're finding as linked data entity relationships](/docs/guide/working-with-a-crate);
+them [to manipulate their data and transform it](/docs/guide/transforming-content.html);
+[mine it for information using AI tools and cloud services](/docs/guide/assistant-supported-discovery.html);
+[describe what they're finding as linked data entity relationships](/docs/guide/working-with-a-crate.html);
 and ultimately, publish their work.
 
 Describo produces data objects in a standardised format: the
@@ -162,31 +162,39 @@ it.
 <template #text>
     <p><strong>The problem statement:</strong></p>
     <p>
-        You could be a librarian, an archivist or a historian. When confronted with a literal
-        box full of files, the next 3 - 6 months of your life will look something like this.
+        You are an archivist or historian. When confronted with a literal
+        box full of files, you might identify with the following:
     </p>
     <p>
-        Let's start by digitising the content. The format is probably going
-        to be TIFF as it's a recognised preservation format. But it's not a great format
-        for dissemination so let's convert the images to web accessible formats in case we
-        end up putting this content online. Step 1 complete - content digitised.
+        As an archivist you will likely digitise each individual file using a compressionless
+        format like TIFF. But, as it's not a great format
+        for dissemination you will then produce web accessible formats as well.
     </p>
     <p>
-        Discovery. Now that we have the content in digitised form, let's find out what
-        it contains. Who does it talk about? What are they discussing? Why are they discussing it?
+        As a historian you will probably sift through the contents looking for information
+        that is useful in your area of research. You may digitise those documents of interest
+        to take away and perform further analysis on.
+    </p>
+    <p>
+        In both cases, the next step involves understanding the content.
+        Who does it talk about? What are they discussing? Why are they discussing it?
         What relationships can we uncover from the documents? You will meticulously read,
         consider and annotate each and every document in the set, carefully creating
         the data structures you need to answer the questions you have.
     </p>
     <p>
-        When you're done, you will likely write some metadata capturing your scholarship and
+        As an archivist you will likely produce a finding aid to support discovery of the
+        content whist as a historian you may use the descriptions you created to link
+        the content into your field of work.
+    </p>
+    <p>
+        When you're done, you may write some metadata capturing your scholarship and
         publish it alongside your work. Then, you'll deposit your research into a repository
         of some kind.
     </p>
     <p>
         And of course, maybe you weren't 'gifted' the box of materials. Maybe you just emerged from the archives
-        with 2000 images on your phone and your eyes squinting from exposure to sunlight! Either way,
-        the work ahead of you will largely look the same.
+        with 2000 images on your phone and your eyes squinting from exposure to sunlight!
     </p>
     <p><strong>How Describo can help:</strong></p>
     <p>
@@ -227,7 +235,7 @@ it.
         describe a manuscript, page by page, without the content ever leaving their computer. However,
         subject to appropriate permissions being sought, they could also use the cloud services to accelerate that process
         as they have been specifically designed and architected with data privacy in mind. To read more
-        about that see: <a href="/docs/articles/how-your-data-is-handled">How is data handled inside Describo?</a>
+        about that see: <a href="/docs/articles/how-your-data-is-handled.html">How is data handled inside Describo?</a>
     </p>
 </template>
 </SectionComponent>

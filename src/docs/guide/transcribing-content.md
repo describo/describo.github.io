@@ -6,7 +6,7 @@ aside: false
 ::: tip Info
 
 To use the text extraction and entity recognition capabilities you need to first
-[register with describo.cloud.](/docs/guide/register)
+[register with describo.cloud.](/docs/guide/register.html)
 
 :::
 

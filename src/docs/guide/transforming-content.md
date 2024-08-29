@@ -5,8 +5,8 @@ aside: false
 
 ::: tip Info
 
-The tools in this section require a [registration with describo.cloud](/docs/guide/register) and
-credits for the assistant, text extraction and named entity recognition capabilities.
+The tools in this section require a [registration with describo.cloud](/docs/guide/register.html)
+and credits for the assistant, text extraction and named entity recognition capabilities.
 
 :::
 

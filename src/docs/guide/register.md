@@ -13,8 +13,8 @@ the services.
 
 Ensure you have reviewed:
 
--   [Cloud Services and Data Processing](/docs/guide/data-processing) to learn about the services
-    used and where your data is processed;
+-   [Cloud Services and Data Processing](/docs/guide/data-processing.html) to learn about the
+    services used and where your data is processed;
 -   [Pricing](/pricing.html);
 -   [Terms and Conditions of use](/terms-and-conditions.html);
 -   [Privacy Policy](/privacy-policy.html).
