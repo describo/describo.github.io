@@ -3,48 +3,6 @@
         <!--legalese stuff  -->
         <Terms />
 
-        <!--Checkout failed notification  -->
-        <div
-            class="p-6 flex flex-row space-x-4 place-content-center bg-red-200 rounded-lg text-lg"
-            v-if="!props.displayOnly && checkoutFailed"
-        >
-            <div class="flex flex-col place-content-center text-red-700 px-6">
-                <FontAwesomeIcon :icon="faCircleXmark" size="3x"></FontAwesomeIcon>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div>
-                    Oh no - that didn't work! Try again in a few minutes and if it keeps happening
-                    please let us know by emailing
-                    <a href="mailto:support@describo.cloud" target="_blank"
-                        >support@describo.cloud</a
-                    >
-                    from the email address that you subscribed with.
-                </div>
-            </div>
-        </div>
-
-        <!-- Checkout completed successfully notification  -->
-        <div
-            class="p-6 flex flex-row space-x-4 place-content-center bg-green-200 rounded-lg text-lg"
-            v-if="!props.displayOnly && checkoutCompleted"
-        >
-            <div class="flex flex-col place-content-center text-green-700 px-6">
-                <FontAwesomeIcon :icon="faCircleCheck" size="3x"></FontAwesomeIcon>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div>
-                    Success! In a few minutes your credits will be added to your account. When you
-                    get the receipt in your email it should be done. Press the refresh button on the
-                    dashboard control to update the app. If you have any issues or concerns, please
-                    email
-                    <a href="mailto:support@describo.cloud" target="_blank"
-                        >support@describo.cloud</a
-                    >
-                    from the email address that you subscribed with.
-                </div>
-            </div>
-        </div>
-
         <!-- pricing pills and purchase controls -->
         <div v-if="!checkoutCompleted && !checkoutFailed" class="flex flex-col space-y-2">
             <div class="flex flex-row space-x-2">
@@ -65,9 +23,11 @@
                         </ul>
                     </template>
                     <template #controls v-if="!props.displayOnly">
-                        <el-button type="primary" @click="purchaseCredits('general')">
-                            Purchase Credits
-                        </el-button>
+                        <stripe-buy-button
+                            :buy-button-id="pricing[environment].general.buttonId"
+                            :publishable-key="token"
+                        >
+                        </stripe-buy-button>
                     </template>
                 </Product>
                 <Product class="w-1/2">
@@ -85,9 +45,11 @@
                         </ul>
                     </template>
                     <template #controls v-if="!props.displayOnly">
-                        <el-button type="primary" @click="purchaseCredits('assistant')">
-                            Purchase Credits
-                        </el-button>
+                        <stripe-buy-button
+                            :buy-button-id="pricing[environment].assistant.buttonId"
+                            :publishable-key="token"
+                        >
+                        </stripe-buy-button>
                     </template>
                 </Product>
             </div>
@@ -104,9 +66,10 @@
                         </ul>
                     </template>
                     <template #controls v-if="!props.displayOnly">
-                        <el-button type="primary" @click="purchaseCredits('entityRecognition')">
-                            Purchase Credits
-                        </el-button>
+                        <stripe-buy-button
+                            :buy-button-id="pricing[environment].entityRecognition.buttonId"
+                            :publishable-key="token"
+                        ></stripe-buy-button>
                     </template>
                 </Product>
 
@@ -119,9 +82,10 @@
                         </ul>
                     </template>
                     <template #controls v-if="!props.displayOnly">
-                        <el-button type="primary" @click="purchaseCredits('textExtraction')">
-                            Purchase Credits
-                        </el-button>
+                        <stripe-buy-button
+                            :buy-button-id="pricing[environment].textExtraction.buttonId"
+                            :publishable-key="token"
+                        ></stripe-buy-button>
                     </template>
                 </Product>
             </div>
@@ -139,48 +103,55 @@ import Terms from "./Terms.vue";
 import Product from "./Product.vue";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { faCircleXmark, faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { onMounted, ref } from "vue";
-import { initializePaddle } from "@paddle/paddle-js";
-import { ElButton } from "element-plus";
+import { onBeforeMount, ref } from "vue";
 
 const props = defineProps({
     displayOnly: { type: Boolean, required: true },
 });
 
+// STRIPE PRICING TABLE
 const pricing = {
     development: {
-        assistant: {
-            priceId: "pri_01htbs3gmgbxkf29ek1v211rjt",
+        general: {
+            priceId: "prod_QrC27o63hz0YtK",
+            buttonId: "buy_btn_1PzUR801z7UukHJYswDajJfq",
             quantity: 1,
         },
-        general: {
-            priceId: "pri_01htbs2ws69sfb2ffsc6ja1mwc",
+        assistant: {
+            priceId: "prod_QrCGizbthK5b2H",
+            buttonId: "buy_btn_1PzUfv01z7UukHJYPQ408eKk",
             quantity: 1,
         },
         textExtraction: {
-            priceId: "pri_01j2fze6r2ecy86ygfhdfbbnjr",
+            priceId: "prod_QrCGsvjnBadaNi",
+            buttonId: "buy_btn_1PzUkY01z7UukHJY3nQ1IdfR",
             quantity: 1,
         },
         entityRecognition: {
-            priceId: "pri_01j2fzfef6s0hqdxc40q4xnn8q",
+            priceId: "prod_QrCGmSeMVg5CtB",
+            buttonId: "buy_btn_1PzUmI01z7UukHJYScCBlX27",
             quantity: 1,
         },
     },
     production: {
-        assistant: {
-            priceId: "pri_01htc26gkqgbsv4kd5v29r7k5c",
+        general: {
+            priceId: "prod_QrFzq76T2mh3PU",
+            buttonId: "buy_btn_1PzXVq01z7UukHJYAX7PePN1",
             quantity: 1,
         },
-        general: {
-            priceId: "pri_01htc281zscjy7z0zgbcknps6q",
+        assistant: {
+            priceId: "prod_QrFzYjEDoBDjvp",
+            buttonId: "buy_btn_1PzXWt01z7UukHJYRCnq3w4V",
             quantity: 1,
         },
         textExtraction: {
-            priceId: "pri_01j2fz8vd990v0g44gp90nw7rh",
+            priceId: "prod_QrFziNiGg58Dmq",
+            buttonId: "buy_btn_1PzXYc01z7UukHJYThctTsHc",
             quantity: 1,
         },
         entityRecognition: {
-            priceId: "pri_01j2fzc28gk5ry77npqa3b8ea1",
+            priceId: "prod_QrFzMYums9kPbu",
+            buttonId: "buy_btn_1PzXXl01z7UukHJYkXjFb525",
             quantity: 1,
         },
     },
@@ -188,15 +159,17 @@ const pricing = {
 
 const checkoutCompleted = ref(false);
 const checkoutFailed = ref(false);
+let token;
 let email;
 let items;
 let paddle;
+let environment;
 
-onMounted(async () => {
+onBeforeMount(async () => {
     if (props.displayOnly) return;
 
     const params = new URLSearchParams(window.location.search);
-    let environment;
+    environment;
     try {
         email = params.get("email");
         environment = params.get("env");
@@ -213,71 +186,9 @@ onMounted(async () => {
 
     items = pricing[environment];
 
-    const config = {
-        token:
-            environment === "development"
-                ? "test_74040fb0d3ce12ca437b2192f97"
-                : "live_8d7de13dba1f34a8ff5f67c7254",
-        environment: environment === "development" ? "sandbox" : "production",
-
-        pwCustomer: {
-            email,
-        },
-        checkout: {
-            settings: {
-                allowLogout: false,
-                displayMode: "overlay",
-                theme: "light",
-                locale: "en",
-            },
-        },
-        eventCallback: function (data) {
-            switch (data.name) {
-                case "checkout.completed":
-                    checkoutCompleted.value = true;
-                    break;
-                case "checkout.error":
-                    checkoutFailed.value = true;
-                    break;
-                case "checkout.payment.failed":
-                    checkoutFailed.value = true;
-                    break;
-            }
-        },
-    };
-    paddle = await initializePaddle(config);
+    token =
+        environment === "development"
+            ? "pk_test_51PzTPi01z7UukHJYJwYnlcCRgvWkgZWcdOOzRhgZEGkvHEc6yiFo5BBbPRnE3Z96J8ar4WTD7T5Zbj3y85T8rblj00v3QVUu7J"
+            : "pk_live_51PzTPi01z7UukHJYtuCC2XEWkx35ahrNu2yPslekCIzWkdLjvBRY4q4sCNebaNU7SIcldL8IWdPkJV4eyQxdzHft00vHSK5KKV";
 });
-
-function purchaseCredits(type) {
-    checkoutCompleted.value = false;
-    checkoutFailed.value = false;
-    paddle.Checkout.open({
-        items: [items[type]],
-        customer: {
-            email,
-        },
-    });
-}
-
-// function purchaseGeneralCredits() {
-//     checkoutCompleted.value = false;
-//     checkoutFailed.value = false;
-//     paddle.Checkout.open({
-//         items: [items.general],
-//         customer: {
-//             email,
-//         },
-//     });
-// }
-
-// function purchaseAssistantCredits() {
-//     checkoutCompleted.value = false;
-//     checkoutFailed.value = false;
-//     paddle.Checkout.open({
-//         items: [items.assistant],
-//         customer: {
-//             email,
-//         },
-//     });
-// }
 </script>

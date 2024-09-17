@@ -8,10 +8,10 @@
                 <li>
                     The operators of Describo Cloud have no access to your payment information.
                     Payments are made via our payment provider
-                    <a href="https://paddle.com/about" target="_blank">Paddle</a>. Visit their
-                    security site for more information:
-                    <a href="https://security.paddle.com" target="_blank"
-                        >https://security.paddle.com
+                    <a href="https://stripe.com" target="_blank">Stripe</a>. Visit their security
+                    site for more information:
+                    <a href="https://docs.stripe.com/security" target="_blank">
+                        https://docs.stripe.com/security
                     </a>
                 </li>
                 <li>

@@ -38,6 +38,7 @@ export default defineConfig({
                 content: "Dr Marco La Rosa (https://marcolarosa.github.io/)",
             },
         ],
+        ["script", { async: "", src: `https://js.stripe.com/v3/buy-button.js` }],
         ["script", { async: "", src: `https://www.googletagmanager.com/gtag/js?id=${GTAG}` }],
         [
             "script",

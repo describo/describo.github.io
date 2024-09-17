@@ -4,7 +4,7 @@ layout: home
 aside: false
 ---
 
-<PricingComponent></PricingComponent>
+<PricingComponent :display-only="false" />
 
 <script setup>
     import PricingComponent from './vue-components/PricingComponent.vue'
