@@ -4,7 +4,7 @@
         <Terms />
 
         <!-- pricing pills and purchase controls -->
-        <div v-if="!checkoutCompleted && !checkoutFailed" class="flex flex-col space-y-2">
+        <div class="flex flex-col space-y-2">
             <div class="flex flex-row space-x-2">
                 <Product class="w-1/2">
                     <template #title>General Credits</template>
@@ -157,8 +157,6 @@ const pricing = {
     },
 };
 
-const checkoutCompleted = ref(false);
-const checkoutFailed = ref(false);
 let token;
 let email;
 let items;
