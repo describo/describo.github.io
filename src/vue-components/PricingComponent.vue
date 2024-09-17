@@ -69,7 +69,8 @@
                         <stripe-buy-button
                             :buy-button-id="pricing[environment].entityRecognition.buttonId"
                             :publishable-key="token"
-                        ></stripe-buy-button>
+                        >
+                        </stripe-buy-button>
                     </template>
                 </Product>
 
@@ -85,7 +86,8 @@
                         <stripe-buy-button
                             :buy-button-id="pricing[environment].textExtraction.buttonId"
                             :publishable-key="token"
-                        ></stripe-buy-button>
+                        >
+                        </stripe-buy-button>
                     </template>
                 </Product>
             </div>
@@ -115,44 +117,36 @@ const pricing = {
         general: {
             priceId: "prod_QrC27o63hz0YtK",
             buttonId: "buy_btn_1PzUR801z7UukHJYswDajJfq",
-            quantity: 1,
         },
         assistant: {
             priceId: "prod_QrCGizbthK5b2H",
             buttonId: "buy_btn_1PzUfv01z7UukHJYPQ408eKk",
-            quantity: 1,
         },
         textExtraction: {
             priceId: "prod_QrCGsvjnBadaNi",
             buttonId: "buy_btn_1PzUkY01z7UukHJY3nQ1IdfR",
-            quantity: 1,
         },
         entityRecognition: {
             priceId: "prod_QrCGmSeMVg5CtB",
             buttonId: "buy_btn_1PzUmI01z7UukHJYScCBlX27",
-            quantity: 1,
         },
     },
     production: {
         general: {
             priceId: "prod_QrFzq76T2mh3PU",
             buttonId: "buy_btn_1PzXVq01z7UukHJYAX7PePN1",
-            quantity: 1,
         },
         assistant: {
             priceId: "prod_QrFzYjEDoBDjvp",
             buttonId: "buy_btn_1PzXWt01z7UukHJYRCnq3w4V",
-            quantity: 1,
         },
         textExtraction: {
             priceId: "prod_QrFziNiGg58Dmq",
             buttonId: "buy_btn_1PzXYc01z7UukHJYThctTsHc",
-            quantity: 1,
         },
         entityRecognition: {
             priceId: "prod_QrFzMYums9kPbu",
             buttonId: "buy_btn_1PzXXl01z7UukHJYkXjFb525",
-            quantity: 1,
         },
     },
 };
@@ -167,7 +161,6 @@ onBeforeMount(async () => {
     if (props.displayOnly) return;
 
     const params = new URLSearchParams(window.location.search);
-    environment;
     try {
         email = params.get("email");
         environment = params.get("env");
