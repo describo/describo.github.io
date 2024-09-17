@@ -115,70 +115,54 @@ const props = defineProps({
 const pricing = {
     development: {
         general: {
-            priceId: "prod_QrC27o63hz0YtK",
             buttonId: "buy_btn_1PzUR801z7UukHJYswDajJfq",
         },
         assistant: {
-            priceId: "prod_QrCGizbthK5b2H",
             buttonId: "buy_btn_1PzUfv01z7UukHJYPQ408eKk",
         },
         textExtraction: {
-            priceId: "prod_QrCGsvjnBadaNi",
             buttonId: "buy_btn_1PzUkY01z7UukHJY3nQ1IdfR",
         },
         entityRecognition: {
-            priceId: "prod_QrCGmSeMVg5CtB",
             buttonId: "buy_btn_1PzUmI01z7UukHJYScCBlX27",
         },
     },
     production: {
         general: {
-            priceId: "prod_QrFzq76T2mh3PU",
             buttonId: "buy_btn_1PzXVq01z7UukHJYAX7PePN1",
         },
         assistant: {
-            priceId: "prod_QrFzYjEDoBDjvp",
             buttonId: "buy_btn_1PzXWt01z7UukHJYRCnq3w4V",
         },
         textExtraction: {
-            priceId: "prod_QrFziNiGg58Dmq",
             buttonId: "buy_btn_1PzXYc01z7UukHJYThctTsHc",
         },
         entityRecognition: {
-            priceId: "prod_QrFzMYums9kPbu",
             buttonId: "buy_btn_1PzXXl01z7UukHJYkXjFb525",
         },
     },
 };
 
-let token;
-let email;
-let items;
-let paddle;
-let environment;
+let token = ref(undefined);
+let environment = ref("development");
 
 onBeforeMount(async () => {
     if (props.displayOnly) return;
 
     const params = new URLSearchParams(window.location.search);
     try {
-        email = params.get("email");
-        environment = params.get("env");
-
-        params.delete("email");
+        environment.value = params.get("env");
         params.delete("env");
 
-        if (!email || !environment) throw new Error();
+        if (!environment.value) throw new Error();
         window.history.pushState({}, document.title, window.location.pathname);
     } catch (error) {
         window.location.href = "/";
         return;
     }
 
-    items = pricing[environment];
-
-    token =
-        environment === "development"
+    token.value =
+        environment.value === "development"
             ? "pk_test_51PzTPi01z7UukHJYJwYnlcCRgvWkgZWcdOOzRhgZEGkvHEc6yiFo5BBbPRnE3Z96J8ar4WTD7T5Zbj3y85T8rblj00v3QVUu7J"
             : "pk_live_51PzTPi01z7UukHJYtuCC2XEWkx35ahrNu2yPslekCIzWkdLjvBRY4q4sCNebaNU7SIcldL8IWdPkJV4eyQxdzHft00vHSK5KKV";
 });
