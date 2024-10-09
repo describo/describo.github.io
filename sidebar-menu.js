@@ -72,6 +72,10 @@ export const sidebar = [
                 link: "/docs/guide/prompt-engineering",
             },
             {
+                text: "Creating a Vocabularu",
+                link: "/docs/guide/vocabulary",
+            },
+            {
                 text: "Glossary",
                 link: "/docs/guide/glossary",
             },
