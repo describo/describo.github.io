@@ -6,8 +6,8 @@ aside: false
 # Register with describo.cloud
 
 In order to use the text extraction, entity recognition and assistant capabilities you must first
-register with describo.cloud. This is an essential requirement as you must purchase credits to use
-the services.
+register with describo.cloud. When you register you will receive 2 months of access to the
+vocabulary creation tool. You will also be able to purchase credits to use the other services.
 
 ::: tip Info
 
@@ -21,8 +21,8 @@ Ensure you have reviewed:
 
 :::
 
-On the dashboard, in the panel titled `Registration / AI Credits`, get started by entering your
-email address:
+On the dashboard, in the panel titled `Registration / Credits`, get started by entering your email
+address:
 
 <ImageComponent src="/images/configuration/subscribe1.webp" />
 
