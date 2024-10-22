@@ -88,7 +88,7 @@
 .medium-zoom-image--opened{
     z-index: 1001;
 
-    --s: 10px;
+    --s: 0px;
     /* control the size */
     padding: var(--s);
     border: calc(2*var(--s)) solid #0000;
