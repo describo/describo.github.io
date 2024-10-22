@@ -176,7 +176,7 @@ layout: home
   </InfoPanelComponent>
 
   <InfoPanelComponent>
-    <template #title>AI Assistant supported e-Discovery.</template>
+    <template #title>Generative AI e-Discovery.</template>
     <template #text>
       <p>
         Interrogate sets of files / folders to extract the themes and narratives that you
