@@ -109,6 +109,44 @@ layout: home
     </template>
   </InfoPanelComponent>
 
+   <InfoPanelComponent>
+    <template #title>Linked data to tables.</template>
+    <template #text>
+      <p>
+        Although Describo traffics in linked data, the Browse mode allows you to work with the
+        data in a more familiar tabular format. With controls to filter the data and show
+        specific properties the Browse tool adapts to your needs.
+      </p>
+      <FeatureComponent link="/docs/guide/browse.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+        <template #title>
+          Read the docs
+        </template>
+      </FeatureComponent>
+    </template>
+    <template #content>
+      <ImageComponent src="/images/tour/desktop8.webp" />
+    </template>
+  </InfoPanelComponent>
+
+  <InfoPanelComponent>
+      <template #title>Tools to perform bulk data transformation</template>
+      <template #text>
+          <ul class="list-disc">
+            <li>Image manipulation - creation of thumbnails and web formats</li>
+            <li>Entity recognition and markup</li>
+            <li>Theme, topic and subject extraction and markup</li>
+          </ul>
+        <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Read the docs
+          </template>
+        </FeatureComponent>
+      </template>
+      <template #content>
+        <ImageComponent src="/images/tour/desktop10.webp" />
+      </template>
+  </InfoPanelComponent>
+
  <InfoPanelComponent>
     <template #title>Text extraction and named entity recognition.</template>
     <template #text>
@@ -126,7 +164,7 @@ layout: home
         and mark / unmark them as required. Describo produces a HTML file with the marked up content
         and the entities are written into the metadata.
       </p>
-      <FeatureComponent link="/docs/guide/transcribing-content" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
         <template #title>
           Read the docs
         </template>
@@ -165,25 +203,6 @@ layout: home
         </iframe> -->
       </div>
     </template>
-  </InfoPanelComponent>
-
-  <InfoPanelComponent>
-      <template #title>Tools to perform bulk data transformation</template>
-      <template #text>
-          <ul class="list-disc">
-            <li>Image manipulation - creation of thumbnails and web formats</li>
-            <li>Entity recognition and markup</li>
-            <li>Theme, topic and subject extraction and markup</li>
-          </ul>
-        <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
-          <template #title>
-            Read the docs
-          </template>
-        </FeatureComponent>
-      </template>
-      <template #content>
-        <ImageComponent src="/images/tour/desktop10.webp" />
-      </template>
   </InfoPanelComponent>
 
   <InfoPanelComponent>

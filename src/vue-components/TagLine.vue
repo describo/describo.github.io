@@ -15,6 +15,7 @@ onMounted(() => {
             "Explore the narratives.",
             "Describe the insights.",
             "Extract the value.",
+            "Describo. Tools for the researcher.",
         ],
         delay: 50,
         deleteSpeed: "natural",
