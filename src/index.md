@@ -133,7 +133,7 @@ layout: home
       </FeatureComponent>
     </template>
     <template #content>
-      <ImageComponent src="/images/tour/desktop8.webp" />
+      <ImageComponent src="/images/tour/desktop11.webp" />
     </template>
   </InfoPanelComponent>
 
@@ -154,7 +154,7 @@ layout: home
     </template>
     <template #content>
       <div class="flex flex-col space-y-1">
-        <ImageComponent src="/images/guide-discover/discover5.webp" />
+        <ImageComponent src="/images/tour/desktop14.webp" />
         <!-- <video controls >
           <source src="/images/guide-discover/ro-crate-paper.mp4" type="video/mp4" />
         </video> -->
@@ -182,7 +182,7 @@ layout: home
         </FeatureComponent>
       </template>
       <template #content>
-        <ImageComponent src="/images/guide-transform/transform1.webp" />
+        <ImageComponent src="/images/tour/desktop10.webp" />
       </template>
   </InfoPanelComponent>
 
@@ -201,35 +201,29 @@ layout: home
         </FeatureComponent>
       </template>
       <template #content>
-        <ImageComponent src="/images/guide-visualise/visualise5.webp" />
+        <ImageComponent src="/images/tour/desktop15.webp" />
       </template>
   </InfoPanelComponent>
 
   <InfoPanelComponent>
-    <template #title>Works with your data; is totally configurable.</template>
+    <template #title>Create your own Vocabulary.</template>
     <template #text>
       <p>
-        Describo knows how to handle different file types and adapt the interface to suit.
-        When describing files it automatically calculates file metadata for you. It
-        can show you previews of your data files and the metadata adapts based on what you are describing.
+        When you need more than just what schema.org offers.
       </p>
       <p>
-          Describo is totally configurable via profiles.
-          If schema.org doesn't allow you to describe
-          what you want, you can create a domain specific profile that adapts the application
-          to your needs.
-        </p>
-        <p>
-          In this image, the RO Crate profile for data description is loaded.
-        </p>
-         <FeatureComponent link="/docs/profiles/introduction" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
-          <template #title>
-            Read the docs
-          </template>
-        </FeatureComponent>
+        Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
+        to defining your own classes and properties. Define the domain you wish to describe and then
+        use Describo to describe it!
+      </p>
+      <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+        <template #title>
+          Read the docs
+        </template>
+      </FeatureComponent>
     </template>
     <template #content>
-      <ImageComponent src="/images/tour/desktop11.webp" />
+      <ImageComponent src="/images/tour/desktop16.webp" />
     </template>
   </InfoPanelComponent>
 </div>
