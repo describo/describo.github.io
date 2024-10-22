@@ -3,7 +3,7 @@ title: Working with an RO-Crate
 aside: false
 ---
 
-# Working with a folder
+# Working with a folder of data
 
 When you select a folder, if there's a file `ro-crate-metadata.json` the content will be loaded into
 the application. If there isn't, a skeleton file will be created and loaded. The main index will

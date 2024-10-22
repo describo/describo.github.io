@@ -12,10 +12,10 @@ To use the text extraction and entity recognition capabilities you need to first
 
 # Content Transcription and Entity Markup
 
-As a **#HASS** researcher you are likely collecting images of manuscripts and periodicals that you
-wish to transcribe in order to find, describe and analyse the narratives in that data. Typically,
-you might start by making notes about the people and organisations (who), events (what), dates
-(when) and places (where) described in the content in order to establish a context for the content.
+As a researcher you are likely collecting images of manuscripts and periodicals that you wish to
+transcribe in order to find, describe and analyse the narratives in that data. Typically, you might
+start by making notes about the people and organisations (who), events (what), dates (when) and
+places (where) described in the content in order to establish a context for the content.
 
 With Describo, this process is simplified significantly with tools to mark up the entities in the
 content in the RO-Crate as entities attached to the specific file.
@@ -37,8 +37,8 @@ you'll find in the content, describing it here will help.
 
 Navigate to the transcription tab and you will see a 3 pane layout. In the first pane is the file
 browser showing only images in your folder. As this section works with image files, only those files
-will be shown in the file browser. Supported file types are files with the extension 'tif', 'tiff',
-'jpg', 'jpeg', 'png'.
+will be shown in the file browser. Supported file types are files with the extension 'jpg', 'jpeg',
+'png'.
 
 <ImageComponent src="/images/guide-transcribing-content/transcribe2.webp"></ImageComponent>
 

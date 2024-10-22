@@ -38,13 +38,13 @@ const cards = [
     {
         text: `<p>Selecting a file in the file browser will add it to the metadata and navigate to it so that you can describe it in
         detail if you want. It also calculates file metadata for you. This is useful so you can check that the file is ok
-        in the future (it hasn't changed in anyway).</p>
-        <p>Notice that if possible, a file preview will be shown in the right hand panel.</p>
+        in the future (it hasn't changed in any way).</p>
+        <p>Where possible, a file preview will be shown in the right hand panel.</p>
         `,
         image: "/images/tour/desktop4.webp",
     },
     {
-        text: `<p>Describo makes all of Schema.org available to you. In the image we can see all of the properties defined by schema.org
+        text: `<p>By default, Describo makes all of Schema.org available to you. In the image we can see all of the properties defined by schema.org
         for an entity of type File; all the way back up the hierarchy to Thing. In addition, we can see what data types each property is expecting.
         The 'about' property expects an entity of type 'ANY' so Describo will let you associate anything you've already
         described.</p>`,
@@ -59,92 +59,74 @@ const cards = [
         a custom geometry for the Geo property. In this case, we've defined a geographical area of Australia.</p>`,
         image:  "/images/tour/desktop7.webp",
     },
-      {
+    {
         text: `<p>
-            An important part of any description process is quality assurance. For example, do all the person descriptions have given name
-            and family name defined? In this image we can easily review the descriptions for the 3 people described and see that some of them
-            are incomplete.
-        </p>`,
-        image:  "/images/guide-browse/browse3.webp",
-    },
-    {
-        text: `<p>If you register with describo.cloud and purchase credits, Describo can help you perform bulk transformations on your data. From
-        recognising and marking up named entities to extracting the topics, themes and subjects contained, getting to know your data has
-        never been easier.
-        <p>
-        <a href="/docs/guide/transforming-content" target="_blank">See the documentation for more information.</a>
-        </p>`,
-        image:  "/images/guide-transform/transform1.webp",
-    },
-    {
-        text: `<p>Describo can perform Optical Character Recoginition (OCR) and entity recognition of your data. Even without the cloud service, you can mark
-        up entities and create rich datasets of entities mentioned in your data.</p>
-        <p>
-        <a href="/docs/guide/transcribing-content" target="_blank">See the documentation for more information.</a>
+            Whilst Describo creates and manages a JSON linked data structure internally, it is often helpful to view a tabular
+            representation of the data. In this image we see all of the entities defined in the metadata as a list.<br/><br/>
+
+            <a href="/docs/guide/browse.html" target="_blank">See the documentation for more information.</a>
         </p>`,
         image:  "/images/tour/desktop8.webp",
     },
     {
-        text: `<p>When using the transcription tools the data is written into the metadata file. In this image we see all of the
-        entities that were marked up in the text associated as 'Mentions' in this file. In addition, Describo created a HTML
-        transcription file with the markup created as data attributes in the HTML.</p>`,
-        image:  "/images/tour/desktop9.webp",
-    },
-    {
-        text: `<p>Describo interfaces with a conversational AI assistant to help you interrogate and understand your
-        content. In this image the assistant has first summarised the text then, acting as an anthropologist,
-        it has described the main topics. Finally, as a social scientist, the assistant explains the narrative
-        with respect to any cultural symbolism. In each response, detailed examples are provided from the text to support
-        the commentary.</p>
-        <p>In addition, we can directly update the metadata for the file with the information we uncover by
-        working with the assistant. </p>
-        <p>
-            <a href="/docs/guide/transcribing-content-assistant" target="_blank">See the documentation for more information.</a>
-        </p>
-        `,
-        image:   "/images/tour/desktop10.webp"
-    },
-    {
-        text: `<p>Here we see the descriptions and defined terms we created whilst working with the assistant.`,
-        image:   "/images/tour/desktop11.webp"
-    },
-    {
-        text: `<p>And defined terms can be looked up and attached to other content that you are working on.</p>`,
-        image:   "/images/tour/desktop12.webp"
-    },
-    {
-        text: `<p>The conversational AI assistant can be used for e-Discovery. Navigate to the discover tab, select the
-        files you wish to interrogate (supports: Microsoft Word and Powerpoint, PDF, txt and html), start the assistant and go.
-        `,
-        image: "/images/tour/desktop13.webp",
-    },
-    {
-        text: `<p>In this image we see the conversation on the right and direct updating of the metadata on the left.</p>
-        <p>
-        <a href="/docs/guide/assistant-supported-discovery" target="_blank">See the documentation for more information.</a>
+        text: `<p>
+            On the Transform tab we have tools available to bulk process our data.<br/><br/>
+
+            If you select a group of images Describo will show controls to produce thumbnails and web formats for those images. In addition,
+            if you know your images contain text you can run them through the text extraction and named entity recognition tools as well
+            as having the assistant extract topics, themes and subjects.<br/><br/>
+
+            Likewise, if you select text files Describo can extract the entities and content descriptors for you.<br/><br/>
+
+            <a href="/docs/guide/transforming-content.html" target="_blank">See the documentation for more information.</a>
+
         </p>`,
+        image:  "/images/tour/desktop10.webp",
+    },
+    {
+        text: `<p>
+        The Transcribe tab provides tools to work with text based images individually. With credits to the cloud service you can use
+        text extraction, named entity recognition and the assistant to help transcribe and markup the page.
+        <p>
+        <p>And even without, you can still manually transcribe and markup content.</p>
+        <a href="/docs/guide/transcribing-content" target="_blank">See the documentation for more information.</a>
+        </p>`,
+        image:  "/images/tour/desktop11.webp",
+    },
+    {
+        text: `
+        <p>
+        On the Discover tab Describo provides tools for e-Discvery. Navigate to the discover tab, select the
+        files you wish to interrogate (supports: Microsoft Word and Powerpoint, PDF, txt and html), start the assistant and go.
+        </p>
+        <a href="/docs/guide/assistant-supported-discovery.html" target="_blank">See the documentation for more information.</a>
+
+        `,
         image: "/images/tour/desktop14.webp",
     },
     {
-        text: `<p>If we navigate back to the describe tab we see the metadata we created whilst using the assistant.</p>`,
-        image: "/images/tour/desktop15.webp",
-    },
-    {
-        text: `<p>Now that you've done all this work to describe the entity relationships contained within your data;
+        text: `<p>
+        Now that you've done all this work to describe the entity relationships contained within your data;
         it's time to visualise it! On the visualise tab you have tools to deep dive into the data structure you've created
         in order to see who did what to whom and where they did it!
         <p>
         <a href="/docs/guide/visualising-the-structure" target="_blank">See the documentation for more information.</a>
         </p>`,
-        image:  "/images/guide-visualise/visualise5.webp",
+        image:  "/images/tour/desktop15.webp",
+    },
+    {
+        text: `<p>
+            Describo is built around RO-Crate and schema.org. However, schema.org likely does not define all of the things
+            that you want to describe. So, Describo enables you to create a custom Vocabulary drawing from schema.org in addition
+            to MODS, Premis-3, Records in Context - Ontology and SKOS.
+        <p>
+        <a href="docs/guide/vocabulary.html" target="_blank">See the documentation for more information.</a>
+        </p>`,
+        image:  "/images/tour/desktop16.webp",
     },
     {
         text: `<p>Whatever your work, licensing and / or classifying it is critically important so Describo provides
         easy to use tools to do this. In this image we see a dialog for applying a licence to your work.</p>`,
-        image: "/images/tour/desktop16.webp",
-    },
-    {
-        text: `<p>And here we see the licence applied.</p>`,
         image: "/images/tour/desktop17.webp",
     },
 

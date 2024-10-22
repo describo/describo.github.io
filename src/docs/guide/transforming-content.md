@@ -14,14 +14,14 @@ and credits for the assistant, text extraction and named entity recognition capa
 
 For projects dealing with digitised content, a common requirement is the ability to perform bulk
 transformations on the raw data. This can include converting images into formats suitable for
-display on the web (e.g. creating thumbnails; converting TIFF images to jpeg or webp) as well as
-performing content extraction (e.g. performing named entity recognition and extracting themes,
-topics and subjects). The Describo Transform section provides tools to enable this work.
+display on the web (e.g. creating thumbnails; JPEG images to webp) as well as performing content
+extraction (e.g. performing named entity recognition and extracting themes, topics and subjects).
+The Describo Transform section provides tools to enable this work.
 
 When you open the transform section, you will see a file browser in the left panel. Select the files
 and folders that you want to process. Describo will traverse the folder structure looking for images
-and text files (specifically, tiff, jpg, png, txt and html files). If any are found they will be
-selected and added to the context.
+and text files (specifically, jpg, png, txt and html files). If any are found they will be selected
+and added to the context.
 
 Then, controls will be shown in the right hand panel to process the different file types. In the
 following image we can see the credits available for the assistant, text extraction and entity
@@ -45,10 +45,20 @@ adjust the size of the thumbnail here with an actual sized preview displayed to 
 
 :::
 
-When a tiff image is encountered, both a jpg and a webp is produced. The jpg is required to send the
-contents for text extraction and the webp format is for display on the web. All other formats
-produce webp only. Webp is supported by all browsers and is their format of choice for web content
-delivery.
+When a jpeg image is encountered, a webp is produced. The jpg is required to send the contents for
+text extraction and the webp format is for display on the web. All other formats produce webp only.
+Webp is supported by all browsers and is their format of choice for web content delivery.
+
+::: warning info
+
+Why can't I select TIFF images as my source for transformations?
+
+Typically, when a manuscript or other content is digitised, the digitisation service will create
+TIFF images as archival quality representations and JPEG as dissemination quality representations.
+Accordingly, implementing the conversion of TIFF to JPEG in Describo was considered a redundant and
+unnecessary capability.
+
+:::
 
 ### Extract Text
 
@@ -100,7 +110,7 @@ writing them into the metadata against that file.
 
 Why are PDF and Microsoft Word documents not available for processing?
 
-Be definition, these formats are multiple pages long so processing them as one large blob of text
+By definition, these formats are multiple pages long so processing them as one large blob of text
 would just result in a metadata entry with potentially thousands of entities linked from it.
 
 In future, it is envisaged that these tools would evolve to treat those files as a set of linked

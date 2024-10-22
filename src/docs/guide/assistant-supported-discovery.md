@@ -58,28 +58,21 @@ description; or, use an existing relationship that is associated to the selected
 
 In this way, you can interact with the Assistant and capture the information as it suits you.
 
-<div class="flex flex-col space-y-1 lg:flex-row lg:space-x-1">
-    <ImageComponent src="/images/guide-discover/discover2.webp"></ImageComponent>
-    <ImageComponent src="/images/guide-discover/discover3.webp"></ImageComponent>
-    <ImageComponent src="/images/guide-discover/discover4.webp"></ImageComponent>
-</div>
+<ImageComponent src="/images/guide-discover/discover2.webp"></ImageComponent>
 
-In the next two images we see a conversation with the Assistant and the associated metadata that has
-been created.
+In the next image we see a conversation with the Assistant and the associated metadata that has been
+created.
 
-<ImageComponent src="/images/guide-discover/discover5.webp"></ImageComponent>
-<ImageComponent src="/images/guide-discover/discover6.webp"></ImageComponent>
+<ImageComponent src="/images/guide-discover/discover3.webp"></ImageComponent>
 
 In some instances you might just want to use the Assistant to uncover some information and then be
 able to take away a PDF of the conversation. This is possible by selecting `Download as PDF`.
-
-<ImageComponent src="/images/guide-discover/discover7.webp"></ImageComponent>
 
 The first thing you will see is a dialog specifying which licence to apply to the PDF document. The
 default selection enables anyone to use the work and / or create derivatives provided that they
 include appropriate attribution. You can control that in the dialog.
 
-<ImageComponent src="/images/guide-discover/discover8.webp"></ImageComponent>
+<ImageComponent src="/images/guide-discover/discover4.webp"></ImageComponent>
 
 And following is the document with the licence in the header (the final page/s will always be the
 context so you know what was interrogated in that session).

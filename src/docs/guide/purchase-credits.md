@@ -20,7 +20,8 @@ Selecting the credits you wish to purchase will open the payment providers dialo
 
 If the payment is successful you will see:
 
-<div class="flex flex-row space-x-2">
-    <ImageComponent src="/images/configuration/purchase3.webp" />
-    <ImageComponent src="/images/configuration/purchase4.webp" />
-</div>
+<ImageComponent src="/images/configuration/purchase3.webp" />
+
+And you will get an email when the credits have been applied to your account:
+
+<ImageComponent src="/images/configuration/purchase4.webp" />

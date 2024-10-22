@@ -37,8 +37,7 @@ interrogate the text; potentially from differing perspectives.
 
 In the following images, the Assistant is first used to summarise the text and describe the main
 topics. Then, acting as an Anthropologist (ie prompting it to assume a particular role), the
-assistant is again asked what the main topics are. After that, the assistant is asked to assume the
-role of a Social Scientist to explain the narrative with respect to any cultural symbolism.
+assistant is again asked what the main topics are.
 
 <ImageComponent src="/images/guide-transcribing-content-assistant/assistant1.webp"></ImageComponent>
 

@@ -49,13 +49,11 @@ them further.
 
 ## The visualise section
 
-In the example above we already saw the visualise section. When you first navigate to it it looks as
-follows.
+In the example above we already saw the visualise section. When you first navigate to it you will
+see the network canvas on the left and controls on the right. Following is the view when pressing
+help in the navigation bar.
 
 <ImageComponent src="/images/guide-visualise/visualise2.webp"></ImageComponent>
-
-The blank area to the left is where the network visualisation will be displayed and the right
-sidebar has controls to interact with the visualisation.
 
 Get started by pressing the
 <span class="text-sm bg-blue-500 text-white py-1 px-2 rounded"><FontAwesomeIcon :icon="faPlay" /></span>

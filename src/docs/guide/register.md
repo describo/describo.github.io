@@ -5,9 +5,9 @@ aside: false
 
 # Register with describo.cloud
 
-In order to use the text extraction, entity recognition and assistant capabilities you must first
-register with describo.cloud. When you register you will receive 2 months of access to the
-vocabulary creation tool. You will also be able to purchase credits to use the other services.
+In order to use the text extraction, entity recognition, assistant and vocabulary capabilities you
+must first register with describo.cloud. When you register you will receive 2 months of access to
+the vocabulary creation tool. You will also be able to purchase credits to use the other services.
 
 ::: tip Info
 
@@ -20,6 +20,11 @@ Ensure you have reviewed:
 -   [Privacy Policy](/privacy-policy.html).
 
 :::
+
+When you load Describo for the first time, you will see a notice asking you to purchase credits to
+one or more of the services to help support development.
+
+<ImageComponent src="/images/configuration/subscribe1a.webp" />
 
 On the dashboard, in the panel titled `Registration / Credits`, get started by entering your email
 address:
@@ -35,6 +40,7 @@ Copy the code from your email into the text box and click 'Verify':
 
 <ImageComponent src="/images/configuration/subscribe3.webp" />
 
-You can purchase credits as soon as you've verified your email address.
+You can purchase credits as soon as you've verified your email address. And if you are out of
+credits, a message will be shown on the Dashboard.
 
 <ImageComponent src="/images/configuration/subscribe4.webp" />
