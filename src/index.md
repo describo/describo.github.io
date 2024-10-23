@@ -88,7 +88,7 @@ layout: home
   </div>
 </div>
 
-<div class="flex flex-col mt-10 space-y-10">
+<div class="flex flex-col mt-10 lg:mt-20 space-y-5 lg:space-y-20">
   <InfoPanelComponent>
     <template #title>An intuitive, intelligent and extensible metadata editor.</template>
     <template #text>
@@ -109,7 +109,29 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-   <InfoPanelComponent layout="rtl">
+<InfoPanelComponent  layout="rtl">
+    <template #title>Create your own Vocabulary.</template>
+    <template #text>
+      <p>
+        When you need more than just what schema.org offers.
+      </p>
+      <p>
+        Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
+        to defining your own classes and properties. Define the domain you wish to describe and then
+        use Describo to describe it!
+      </p>
+      <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="text-sm bg-blue-100">
+        <template #title>
+          Read the docs
+        </template>
+      </FeatureComponent>
+    </template>
+    <template #content>
+      <ImageComponent src="/images/tour/desktop16.webp" />
+    </template>
+  </InfoPanelComponent>
+
+   <InfoPanelComponent>
     <template #title>Linked data to tables.</template>
     <template #text>
       <p>
@@ -128,8 +150,8 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-  <InfoPanelComponent>
-      <template #title>Tools to perform bulk data transformation</template>
+  <InfoPanelComponent  layout="rtl">
+      <template #title>Data transformation.</template>
       <template #text>
           <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
@@ -147,8 +169,8 @@ layout: home
       </template>
   </InfoPanelComponent>
 
- <InfoPanelComponent layout="rtl">
-    <template #title>Text extraction and named entity recognition.</template>
+ <InfoPanelComponent>
+    <template #title>Text extraction and Named Entity Recognition.</template>
     <template #text>
       <p>
         You have digitised images of textual content that you want to transcribe and markup.
@@ -175,7 +197,7 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-  <InfoPanelComponent>
+  <InfoPanelComponent  layout="rtl">
     <template #title>Generative AI e-Discovery.</template>
     <template #text>
       <p>
@@ -205,8 +227,8 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-  <InfoPanelComponent layout="rtl">
-      <template #title>Visualisation Tools</template>
+  <InfoPanelComponent>
+      <template #title>Visualisation.</template>
       <template #text>
         <p>
           Describo creates linked data. And with these tools you can deep dive into that structure to understand
@@ -222,28 +244,6 @@ layout: home
       <template #content>
         <ImageComponent src="/images/tour/desktop15.webp" />
       </template>
-  </InfoPanelComponent>
-
-  <InfoPanelComponent>
-    <template #title>Create your own Vocabulary.</template>
-    <template #text>
-      <p>
-        When you need more than just what schema.org offers.
-      </p>
-      <p>
-        Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
-        to defining your own classes and properties. Define the domain you wish to describe and then
-        use Describo to describe it!
-      </p>
-      <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="text-sm bg-blue-100">
-        <template #title>
-          Read the docs
-        </template>
-      </FeatureComponent>
-    </template>
-    <template #content>
-      <ImageComponent src="/images/tour/desktop16.webp" />
-    </template>
   </InfoPanelComponent>
 </div>
 
