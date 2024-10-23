@@ -118,9 +118,10 @@ layout: home
       </p>
       <p>
         Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
-        to defining your own classes and properties. Define the domain you wish to describe and then
-        use Describo to describe it!
+        to defining your own classes and properties.
       </p>
+      <p>Define the domain you wish to describe and then
+        use Describo to describe it!</p>
       <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
           Read the docs
@@ -150,7 +151,7 @@ layout: home
   </InfoPanelComponent>
 
   <InfoPanelComponent  layout="rtl">
-      <template #title>Data transformation and Information Extraction</template>
+      <template #title>Bulk Data transformation and Information Extraction</template>
       <template #text>
           <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
