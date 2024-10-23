@@ -150,7 +150,7 @@ layout: home
   </InfoPanelComponent>
 
   <InfoPanelComponent  layout="rtl">
-      <template #title>Data transformation</template>
+      <template #title>Data transformation and Information Extraction</template>
       <template #text>
           <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
