@@ -155,7 +155,7 @@ layout: home
           <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
             <li>Entity recognition and markup</li>
-            <li><font-awesome-icon :icon="faWandSparkles" /> Theme, topic and subject extraction and markup powered by the GenAI Assistant</li>
+            <li><font-awesome-icon :icon="faWandSparkles" /> Theme, topic and subject extraction powered by the GenAI Assistant</li>
           </ul>
         <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="text-sm bg-blue-100">
           <template #title>
