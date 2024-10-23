@@ -90,12 +90,13 @@ layout: home
 
 <div class="flex flex-col mt-10 lg:mt-20 space-y-5 lg:space-y-20">
   <InfoPanelComponent>
-    <template #title>An intuitive, intelligent and extensible metadata editor.</template>
+    <template #title>An intuitive, intelligent and extensible metadata editor</template>
     <template #text>
       <p>
         Describo enables you to describe your data. It creates linked data
         conforming to the <LinkComponent link="https://www.researchobject.org/ro-crate/specification">Research Object Crate (RO-Crate) specification.</LinkComponent>
       </p>
+      <p> <font-awesome-icon :icon="faWandSparkles" /> Use the GenAI Assistant to verify your data against the spec.</p>
       <p>
         <FeatureComponent link="/tour" :icon="['fas', 'route']" class="text-sm bg-blue-100">
             <template #title>
@@ -110,10 +111,10 @@ layout: home
   </InfoPanelComponent>
 
 <InfoPanelComponent  layout="rtl">
-    <template #title>Create your own Vocabulary.</template>
+    <template #title>Create your own Vocabulary</template>
     <template #text>
       <p>
-        When you need more than just what schema.org offers.
+        For when you need more than just what schema.org offers.
       </p>
       <p>
         Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
@@ -132,12 +133,10 @@ layout: home
   </InfoPanelComponent>
 
    <InfoPanelComponent>
-    <template #title>Linked data to tables.</template>
+    <template #title>Linked data to tables</template>
     <template #text>
       <p>
-        Although Describo traffics in linked data, the Browse mode allows you to work with the
-        data in a more familiar tabular format. With controls to filter the data and show
-        specific properties the Browse tool adapts to your needs.
+        Describo lets you view your data in a clean, organized table format that's as straightforward as a spreadsheet. You can easily search through your information and choose exactly which details you want to display on screen.
       </p>
       <FeatureComponent link="/docs/guide/browse.html" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
@@ -151,12 +150,12 @@ layout: home
   </InfoPanelComponent>
 
   <InfoPanelComponent  layout="rtl">
-      <template #title>Data transformation.</template>
+      <template #title>Data transformation</template>
       <template #text>
           <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
             <li>Entity recognition and markup</li>
-            <li>Theme, topic and subject extraction and markup</li>
+            <li><font-awesome-icon :icon="faWandSparkles" /> Theme, topic and subject extraction and markup powered by the GenAI Assistant</li>
           </ul>
         <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="text-sm bg-blue-100">
           <template #title>
@@ -170,22 +169,14 @@ layout: home
   </InfoPanelComponent>
 
  <InfoPanelComponent>
-    <template #title>Text extraction and Named Entity Recognition.</template>
+    <template #title>Text extraction and Named Entity Recognition</template>
     <template #text>
-      <p>
-        You have digitised images of textual content that you want to transcribe and markup.
-        Describo shows you the image and provides a text editor for you to transcribe the
-        page content.
-      </p>
-      <p>
-        Purchase credits to describo.cloud and you can run your images through Optical Character
-        Recognition (OCR) and Named Entity Recognition (NER) tools to speed up your work.
-      </p>
-      <p>
-        In the image we can see the entities that have been recognised by the software. Select them
-        and mark / unmark them as required. Describo produces a HTML file with the marked up content
-        and the entities are written into the metadata.
-      </p>
+      <ul class="list-disc">
+        <li>View textual images alongside a powerful, yet easy to use transcription editor</li>
+        <li>Tools to markup entities</li>
+        <li>Text extraction (OCR) and Named Entity Recognition capabilities</li>
+        <li><font-awesome-icon :icon="faWandSparkles" /> Page analysis powered by the GenAI Assistant</li>
+      </ul>
       <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
           Read the docs
@@ -198,7 +189,7 @@ layout: home
   </InfoPanelComponent>
 
   <InfoPanelComponent  layout="rtl">
-    <template #title>Generative AI e-Discovery.</template>
+    <template #title> <font-awesome-icon :icon="faWandSparkles" /> GenAI powered e-Discovery</template>
     <template #text>
       <p>
         Interrogate sets of files / folders to extract the themes and narratives that you
@@ -215,25 +206,15 @@ layout: home
     <template #content>
       <div class="flex flex-col space-y-1">
         <ImageComponent src="/images/tour/desktop14.webp" />
-        <!-- <video controls >
-          <source src="/images/guide-discover/ro-crate-paper.mp4" type="video/mp4" />
-        </video> -->
-        <!-- <iframe
-          class="border border-solid border-gray-400 p-2"
-          src="/images/guide-discover/conversation.pdf"
-          width="100%" height="500">
-        </iframe> -->
       </div>
     </template>
   </InfoPanelComponent>
 
   <InfoPanelComponent>
-      <template #title>Visualisation.</template>
+      <template #title>Visualisation</template>
       <template #text>
         <p>
-          Describo creates linked data. And with these tools you can deep dive into that structure to understand
-          and mine the information contained within. Combined with the bulk transformation tools, get to know
-          your data in minutes; not days or months.
+          Describo connects your information in meaningful ways that help you explore and understand your data thoroughly. Using Describo's tools, you can quickly analyze large amounts of information that would normally take much longer to process.
         </p>
         <FeatureComponent link="/docs/guide/visualising-the-structure" :icon="faBook" class="text-sm bg-blue-100">
           <template #title>
@@ -259,7 +240,8 @@ layout: home
     faStar,
     faBookOpenReader,
     faBook,
-    faFileLines
+    faFileLines,
+    faWandSparkles
   }  from "@fortawesome/free-solid-svg-icons";
   import TagLine from "./vue-components/TagLine.vue";
 </script>

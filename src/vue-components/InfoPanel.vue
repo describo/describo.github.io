@@ -1,6 +1,6 @@
 <template>
     <div
-        class="md:text-xl flex flex-col lg:flex-row lg:space-x-2 justify-around items-center my-10"
+        class="flex flex-col lg:flex-row lg:space-x-2 justify-around items-center my-10"
         :class="{ 'border-t border-slate-400': props.border }"
     >
         <div
@@ -10,11 +10,11 @@
                 'w-full': !slots.content,
             }"
         >
-            <div class="text-slate-800 text-2xl font-bold mb-6 px-4">
+            <div class="text-slate-800 text-lg lg:text-2xl xl:text-4xl font-bold mb-6 lg:px-4">
                 <slot name="title"></slot>
             </div>
 
-            <div class="text-slate-700 text-base flex flex-col space-y-4 px-4">
+            <div class="text-slate-700 text-base flex flex-col space-y-4 lg:px-4 lg:text-lg">
                 <slot name="text"></slot>
             </div>
         </div>
@@ -34,11 +34,11 @@
                 'w-full': !slots.content,
             }"
         >
-            <div class="text-slate-800 text-2xl font-bold mb-6 px-4">
+            <div class="text-slate-800 text-lg lg:text-2xl xl:text-4xl font-bold mb-6 lg:px-4">
                 <slot name="title"></slot>
             </div>
 
-            <div class="text-slate-700 text-base flex flex-col space-y-4 px-4">
+            <div class="text-slate-700 text-base flex flex-col space-y-4 lg:px-4 lg:text-lg">
                 <slot name="text"></slot>
             </div>
         </div>
