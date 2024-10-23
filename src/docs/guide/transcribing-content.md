@@ -3,14 +3,15 @@ title: Content Transcription and Entity Markup
 aside: false
 ---
 
+# Content Transcription and Entity Markup
+
 ::: tip Info
 
-To use the text extraction and entity recognition capabilities you need to first
-[register with describo.cloud.](/docs/guide/register.html)
+To use the text extraction and entity recognition capabilities you need to
+[register with describo.cloud](/docs/guide/register) and
+[purchase credits.](/docs/guide/purchase-credits.html)
 
 :::
-
-# Content Transcription and Entity Markup
 
 As a researcher you are likely collecting images of manuscripts and periodicals that you wish to
 transcribe in order to find, describe and analyse the narratives in that data. Typically, you might

@@ -3,10 +3,12 @@ title: Using the assistant
 aside: false
 ---
 
+# Using the assistant
+
 ::: tip Info
 
-To use the assistant capability you need to first
-[register with describo.cloud.](/docs/guide/register)
+To use the assistant capability you need to [register with describo.cloud](/docs/guide/register) and
+[purchase credits.](/docs/guide/purchase-credits.html)
 
 :::
 
@@ -25,8 +27,6 @@ For more information see:
 -   [Tips for using the Assistant](/docs/guide/prompt-engineering.html)
 
 :::
-
-# Using the assistant
 
 As you are transcribing your content, you are also marking up entities that are found in that
 content. That markup, as seen in the previous page is stored in the metadata and as data attributes

@@ -3,10 +3,12 @@ title: Assistant enabled e-discovery
 aside: false
 ---
 
+# Assistant enabled e-discovery
+
 ::: tip Info
 
-To use the assistant capability you need to first
-[register with describo.cloud.](/docs/guide/register)
+To use the assistant capability you need to [register with describo.cloud](/docs/guide/register) and
+[purchase credits.](/docs/guide/purchase-credits.html)
 
 :::
 
@@ -26,12 +28,10 @@ For more information see:
 
 :::
 
-# Assistant enabled e-discovery
+With the Describo GenerativeAI Assistant you can interrogate your content to quickly establish the
+themes and narratives that you might want to describe.
 
-Using the Describo Assistant you can interrogate your content to quickly establish the themes and
-narratives that you might want to describe.
-
-:::tip info
+::: tip info
 
 You can interrogate:
 

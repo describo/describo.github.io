@@ -1,6 +1,6 @@
 ---
 title: Working with an RO-Crate
-aside: false
+aside: true
 ---
 
 # Working with a folder of data

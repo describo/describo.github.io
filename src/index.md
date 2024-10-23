@@ -97,7 +97,7 @@ layout: home
         conforming to the <LinkComponent link="https://www.researchobject.org/ro-crate/specification">Research Object Crate (RO-Crate) specification.</LinkComponent>
       </p>
       <p>
-        <FeatureComponent link="/tour" :icon="['fas', 'route']" class="m-1 grow lg:grow-0 bg-blue-200">
+        <FeatureComponent link="/tour" :icon="['fas', 'route']" class="text-sm bg-blue-100">
             <template #title>
                   Take the product tour
             </template>
@@ -109,7 +109,7 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-   <InfoPanelComponent>
+   <InfoPanelComponent layout="rtl">
     <template #title>Linked data to tables.</template>
     <template #text>
       <p>
@@ -117,7 +117,7 @@ layout: home
         data in a more familiar tabular format. With controls to filter the data and show
         specific properties the Browse tool adapts to your needs.
       </p>
-      <FeatureComponent link="/docs/guide/browse.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/browse.html" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
           Read the docs
         </template>
@@ -136,7 +136,7 @@ layout: home
             <li>Entity recognition and markup</li>
             <li>Theme, topic and subject extraction and markup</li>
           </ul>
-        <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+        <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="text-sm bg-blue-100">
           <template #title>
             Read the docs
           </template>
@@ -147,7 +147,7 @@ layout: home
       </template>
   </InfoPanelComponent>
 
- <InfoPanelComponent>
+ <InfoPanelComponent layout="rtl">
     <template #title>Text extraction and named entity recognition.</template>
     <template #text>
       <p>
@@ -164,7 +164,7 @@ layout: home
         and mark / unmark them as required. Describo produces a HTML file with the marked up content
         and the entities are written into the metadata.
       </p>
-      <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/transcribing-content.html" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
           Read the docs
         </template>
@@ -184,7 +184,7 @@ layout: home
         hiding in the content. Use the assistant to provide different perspectives on what
         you find in order to test hypotheses and ideas.
       </p>
-      <FeatureComponent link="/docs/guide/assistant-supported-discovery" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/assistant-supported-discovery" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
           Read the docs
         </template>
@@ -205,7 +205,7 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-  <InfoPanelComponent>
+  <InfoPanelComponent layout="rtl">
       <template #title>Visualisation Tools</template>
       <template #text>
         <p>
@@ -213,7 +213,7 @@ layout: home
           and mine the information contained within. Combined with the bulk transformation tools, get to know
           your data in minutes; not days or months.
         </p>
-        <FeatureComponent link="/docs/guide/visualising-the-structure" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+        <FeatureComponent link="/docs/guide/visualising-the-structure" :icon="faBook" class="text-sm bg-blue-100">
           <template #title>
             Read the docs
           </template>
@@ -235,7 +235,7 @@ layout: home
         to defining your own classes and properties. Define the domain you wish to describe and then
         use Describo to describe it!
       </p>
-      <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="m-1 grow lg:grow-0 bg-blue-200">
+      <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
           Read the docs
         </template>
