@@ -3,25 +3,25 @@ layout: home
 ---
 
 <div class="flex flex-col md:flex-row md:place-content-between my-10">
-  <div class="w-full md:w-1/2">
-    <div class="flex flex-col space-y-2">
+  <div class="w-full">
+    <div class="flex flex-col space-y-4 items-center">
         <div>
           <img src="/images/logos/describo-logo.webp" class="h-16 lg:h-32" />
         </div>
-        <div class="text-xl lg:text-3xl text-slate-600"><TagLine class="text-center md:text-left md:pl-14 lg:pl-28" /></div>
+        <div class="text-xl lg:text-3xl text-center text-slate-600">
+        <!-- <TagLine class="text-center md:text-left md:pl-14 lg:pl-28" /> -->
+        An AI-powered metadata editor and research tool that transforms your data into linked, discoverable insights.
+        </div>
     </div>
-  </div>
-  <div class="w-full md:w-1/2 flex flex-row items-center">
-    <div class="md:flex-grow"></div>
-    <div class="flex flex-col grow">
-        <FeatureComponent link="/tour" :icon="faRoute" class="m-1 grow lg:grow-0 bg-blue-200">
-          <template #title>
-            Take the product tour
-          </template>
-        </FeatureComponent>
+    <div class="w-full flex flex-row flex-wrap place-content-center mt-10">
         <FeatureComponent link="/desktop" :icon="faDownload" class="m-1 grow lg:grow-0 bg-blue-200">
           <template #title>
             Get Describo - free download
+          </template>
+        </FeatureComponent>
+        <FeatureComponent link="/tour" :icon="faRoute" class="m-1 grow lg:grow-0 bg-blue-200">
+          <template #title>
+            Take the product tour
           </template>
         </FeatureComponent>
         <FeatureComponent link="/docs/articles/why-use-it" :icon="faFileLines" class="m-1 grow lg:grow-0 bg-blue-200">
@@ -29,23 +29,24 @@ layout: home
             Why Describo?
           </template>
         </FeatureComponent>
-    </div>
-  </div>
-</div>
-
-<div class="flex flex-col space-x-4">
-  <div class="flex flex-row flex-wrap place-content-center">
-        <FeatureComponent link="/docs/articles/articles-index" :icon="faFileLines" class="m-1 grow lg:grow-0 bg-blue-200">
+         <FeatureComponent link="/docs/articles/articles-index" :icon="faFileLines" class="m-1 grow lg:grow-0 bg-blue-200">
           <template #title>
             Feature Articles
           </template>
-          <template #content>
+        </FeatureComponent>
+    </div>
+    <div class="w-full flex flex-row flex-wrap place-content-center">
+        <FeatureComponent link="/docs/guide/five-minute-tutorial" :icon="faPersonChalkboard" class="m-1 grow md:grow-0 bg-slate-200">
+            <template #title>
+                  5 minute beginner tutorial
+            </template>
+            <template #content>
                 <div class="text-xs no-underline">
-                  Articles showcasing a particular capability.
+                    New to RO-Crate and Describo?
                 </div>
             </template>
         </FeatureComponent>
-        <FeatureComponent link="/docs/component/introduction" :icon="faCode" class="m-1  grow md:grow-0 bg-slate-200">
+          <FeatureComponent link="/docs/component/introduction" :icon="faCode" class="m-1  grow md:grow-0 bg-slate-200">
             <template #title>
                   Developers
             </template>
@@ -55,40 +56,34 @@ layout: home
                 </div>
             </template>
         </FeatureComponent>
-      <FeatureComponent link="/docs/guide/five-minute-tutorial" :icon="faPersonChalkboard" class="m-1 grow md:grow-0 bg-slate-200">
-          <template #title>
-                5 minute beginner tutorial
-          </template>
-          <template #content>
-              <div class="text-xs no-underline">
-                  New to RO-Crate and Describo?
-              </div>
-          </template>
-      </FeatureComponent>
-      <FeatureComponent link="/describo-users" :icon="faUsers" class="m-1 grow md:grow-0 bg-slate-200">
-          <template #title>
-              See who's using Describo
-          </template>
-      </FeatureComponent>
-      <FeatureComponent link="https://github.com/describo/describo.github.io" target="_blank" :icon="faStar" class="m-1 grow md:grow-0 bg-slate-200">
-          <template #title>
-                Like it? Star us on Github.
-          </template>
-      </FeatureComponent>
-      <FeatureComponent :icon="faBookOpenReader" class="m-1 grow md:grow-0 bg-slate-200">
-          <template #title>
-                Cite Describo
-          </template>
-          <template #content>
-              <div class="text-xs no-underline">
-                Marco La Rosa and contributors. 2023 - present. Describo. https://describo.github.io
-              </div>
-          </template>
-      </FeatureComponent>
+        <FeatureComponent link="/describo-users" :icon="faUsers" class="m-1 grow md:grow-0 bg-slate-200">
+            <template #title>
+                See who's using Describo
+            </template>
+        </FeatureComponent>
+    </div>
+    <div class="w-full flex flex-row flex-wrap place-content-center">
+        <FeatureComponent link="https://github.com/describo/describo.github.io" target="_blank" :icon="faStar" class="m-1 grow md:grow-0 bg-slate-200">
+            <template #title>
+                  Like it? Star us on Github.
+            </template>
+        </FeatureComponent>
+        <FeatureComponent :icon="faBookOpenReader" class="m-1 grow md:grow-0 bg-slate-200">
+            <template #title>
+                  Cite Describo
+            </template>
+            <template #content>
+                <div class="text-xs no-underline">
+                  Marco La Rosa and contributors. 2023 - present. Describo. https://describo.github.io
+                </div>
+            </template>
+        </FeatureComponent>
+    </div>
   </div>
 </div>
 
 <div class="flex flex-col mt-10 lg:mt-20 space-y-5 lg:space-y-20">
+
   <InfoPanelComponent>
     <template #title>An intuitive, intelligent and extensible metadata editor</template>
     <template #text>
@@ -110,30 +105,30 @@ layout: home
     </template>
   </InfoPanelComponent>
 
-<InfoPanelComponent  layout="rtl">
-    <template #title>Create your own Vocabulary</template>
-    <template #text>
-      <p>
-        For when you need more than just what schema.org offers.
-      </p>
-      <p>
-        Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
-        to defining your own classes and properties.
-      </p>
-      <p>Define the domain you wish to describe and then
-        use Describo to describe it!</p>
-      <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="text-sm bg-blue-100">
-        <template #title>
-          Read the docs
-        </template>
-      </FeatureComponent>
-    </template>
-    <template #content>
-      <ImageComponent src="/images/tour/desktop16.webp" />
-    </template>
-  </InfoPanelComponent>
+  <InfoPanelComponent  layout="rtl">
+      <template #title>Create your own Vocabulary</template>
+      <template #text>
+        <p>
+          For when you need more than just what schema.org offers.
+        </p>
+        <p>
+          Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
+          to defining your own classes and properties.
+        </p>
+        <p>Define the domain you wish to describe and then
+          use Describo to describe it!</p>
+        <FeatureComponent link="/docs/guide/vocabulary.html" :icon="faBook" class="text-sm bg-blue-100">
+          <template #title>
+            Read the docs
+          </template>
+        </FeatureComponent>
+      </template>
+      <template #content>
+        <ImageComponent src="/images/tour/desktop16.webp" />
+      </template>
+    </InfoPanelComponent>
 
-   <InfoPanelComponent>
+  <InfoPanelComponent>
     <template #title>Linked data to tables</template>
     <template #text>
       <p>
@@ -169,7 +164,7 @@ layout: home
       </template>
   </InfoPanelComponent>
 
- <InfoPanelComponent>
+  <InfoPanelComponent>
     <template #title>Text extraction and Named Entity Recognition</template>
     <template #text>
       <ul class="list-disc">
@@ -227,6 +222,7 @@ layout: home
         <ImageComponent src="/images/tour/desktop15.webp" />
       </template>
   </InfoPanelComponent>
+
 </div>
 
 <FooterComponent class="mt-6"/>
