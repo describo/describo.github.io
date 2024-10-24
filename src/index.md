@@ -3,7 +3,6 @@ layout: home
 ---
 
 <div class="flex flex-col md:flex-row md:place-content-between my-10">
-  <div class="w-full">
     <div class="flex flex-col space-y-4 items-center">
         <div>
           <img src="/images/logos/describo-logo.webp" class="h-16 lg:h-32" />
@@ -12,73 +11,7 @@ layout: home
         <!-- <TagLine class="text-center md:text-left md:pl-14 lg:pl-28" /> -->
         An AI-powered metadata editor and research tool that transforms your data into linked, discoverable insights.
         </div>
-    </div>
-    <div class="w-full flex flex-row flex-wrap place-content-center mt-10">
-        <FeatureComponent link="/desktop" :icon="faDownload" class="m-1 grow lg:grow-0 bg-blue-200">
-          <template #title>
-            Get Describo - free download
-          </template>
-        </FeatureComponent>
-        <FeatureComponent link="/tour" :icon="faRoute" class="m-1 grow lg:grow-0 bg-blue-200">
-          <template #title>
-            Take the product tour
-          </template>
-        </FeatureComponent>
-        <FeatureComponent link="/docs/articles/why-use-it" :icon="faFileLines" class="m-1 grow lg:grow-0 bg-blue-200">
-          <template #title>
-            Why Describo?
-          </template>
-        </FeatureComponent>
-         <FeatureComponent link="/docs/articles/articles-index" :icon="faFileLines" class="m-1 grow lg:grow-0 bg-blue-200">
-          <template #title>
-            Feature Articles
-          </template>
-        </FeatureComponent>
-    </div>
-    <div class="w-full flex flex-row flex-wrap place-content-center">
-        <FeatureComponent link="/docs/guide/five-minute-tutorial" :icon="faPersonChalkboard" class="m-1 grow md:grow-0 bg-slate-200">
-            <template #title>
-                  5 minute beginner tutorial
-            </template>
-            <template #content>
-                <div class="text-xs no-underline">
-                    New to RO-Crate and Describo?
-                </div>
-            </template>
-        </FeatureComponent>
-          <FeatureComponent link="/docs/component/introduction" :icon="faCode" class="m-1  grow md:grow-0 bg-slate-200">
-            <template #title>
-                  Developers
-            </template>
-            <template #content>
-                <div class="text-xs no-underline">
-                  Use the Describo RO-Crate engine in your app
-                </div>
-            </template>
-        </FeatureComponent>
-        <FeatureComponent link="/describo-users" :icon="faUsers" class="m-1 grow md:grow-0 bg-slate-200">
-            <template #title>
-                See who's using Describo
-            </template>
-        </FeatureComponent>
-    </div>
-    <div class="w-full flex flex-row flex-wrap place-content-center">
-        <FeatureComponent link="https://github.com/describo/describo.github.io" target="_blank" :icon="faStar" class="m-1 grow md:grow-0 bg-slate-200">
-            <template #title>
-                  Like it? Star us on Github.
-            </template>
-        </FeatureComponent>
-        <FeatureComponent :icon="faBookOpenReader" class="m-1 grow md:grow-0 bg-slate-200">
-            <template #title>
-                  Cite Describo
-            </template>
-            <template #content>
-                <div class="text-xs no-underline">
-                  Marco La Rosa and contributors. 2023 - present. Describo. https://describo.github.io
-                </div>
-            </template>
-        </FeatureComponent>
-    </div>
+        <DescriboFeatures/>
   </div>
 </div>
 
@@ -241,4 +174,5 @@ layout: home
     faWandSparkles
   }  from "@fortawesome/free-solid-svg-icons";
   import TagLine from "./vue-components/TagLine.vue";
+  import DescriboFeatures from './vue-components/DescriboFeatures.vue'
 </script>

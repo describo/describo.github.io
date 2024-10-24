@@ -1,11 +1,11 @@
 <template>
     <div
-        class="flex flex-row space-x-3 md:place-content-center items-center py-2 px-4 lg:p-4 rounded-lg"
+        class="flex flex-row space-x-3 md:place-content-center items-center py-4 px-4 lg:p-4 rounded-lg"
     >
         <div class="text-slate-700" v-if="props.icon">
             <font-awesome-icon :icon="props.icon" :size="props.size" />
         </div>
-        <div class="text-base flex flex-col space-y-2 place-content-center">
+        <div class="text-sm md:text-base flex flex-col space-y-2 place-content-center">
             <LinkComponent :link="props.link" :target="props.target" v-if="props.link">
                 <slot name="title"></slot>
             </LinkComponent>
