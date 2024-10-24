@@ -117,6 +117,16 @@ The buttons tell you what type of data is expected. If you add something and cha
 can delete / unlink it and do it again. Be sure to check out what you can describe in the individual
 sections (tabs) as well.
 
+Notice the button <span class="text-sm bg-blue-500 text-white py-1 px-2 rounded">\* Bulk Add</span>
+next to some of the properties? In cases where you want to describe a number of related entities all
+at once (e.g. multiple authors), you can use the bulk add controls to quickly add sets of entities.
+
+<ImageComponent src="/images/five-minute-tutorial/desktop5.webp" />
+
+When you're finished, you can use the AI Assistant to help you verify the data against the spec.
+
+<ImageComponent src="/images/five-minute-tutorial/desktop6.webp" />
+
 ## Useful information
 
 For those so inclined, you might want to read the following documentation from the specification

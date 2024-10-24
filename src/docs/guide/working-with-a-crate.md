@@ -46,12 +46,20 @@ The main editor window has a controls bar along the top. On it there are:
 
 <ImageComponent src="/images/guide-working-with-a-crate/controls.webp" />
 
+## Verifying the data
+
+A crucial aspect is verifying your work against the RO Crate specification to ensure that it's
+compliant. If you've registered and bought credits to use the assistant, you can use the AI
+Assistant to check your work against the spec.
+
+<ImageComponent src="/images/guide-working-with-a-crate/desktop6.webp" />
+
 ## Saving entities for re-use
 
 Often times, you will carefully craft an entity definition that will be useful elsewhere. An obvious
 example is when you define yourself as an author. In that case, your entity definition will have
 your name and a URL as your unique identifier (e.g. an ORCID) and you can save that definition as a
-template for re-use in other folders that you work on.
+template for re-use in other work.
 
 In the following image we can see what will be saved as a template. By setting depth to 1 linked
 entities will be resolved and included. Note that in both cases (depth 0 or 1) only properties will
