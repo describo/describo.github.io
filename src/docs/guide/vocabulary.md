@@ -136,19 +136,61 @@ TKAttribution.
 
 <ImageComponent src="/images/guide-vocabulary/vocab8.webp"></ImageComponent>
 
+## Property Constraints
+
 Before we move onto Layouts its worth pointing about some other capabilities of properties. We'll
 use the TKLabel class for this example. Let's say we need to add a property called `something`.
 Consider the following image:
 
 <ImageComponent src="/images/guide-vocabulary/vocab9.webp"></ImageComponent>
 
-When we create a new property, the data it can accept is set automatically to Text. When we display
-the property configuration, we can change that to other primitive types. Notice the dropdown saying
-we can add date types like Boolean, Date and TextArea?
+When we create a new property, it is automatically configured to accept Text. When we display the
+property configuration, we can change that to other primitive types or specific entity types.
 
-Underneath the dropdown, there is a blue box containing more configuration options. In the case of a
-Text field we can provide constraints on the type of data that the field will accept. In the case of
-a text field that can include a minimum or maximum length, a regular expression that must be
-satisfied or even some date formats (e.g. YYYY-MM-DD, YYYY-MM)
+If a primitive supports constraints, they will be shown underneath. In the case of a Text field we
+can provide constraints on the type of data that the field will accept. In the case of a text field
+that can include a minimum or maximum length, a regular expression that must be satisfied or even
+some date formats (e.g. YYYY-MM-DD, YYYY-MM)
+
+There are a number of primitive types that support constraints. When they are enabled, the
+constraints section will show the controls for each. In addition, if you have types whose contraints
+overlap (e.g. Select and SelectURL), a message will be shown.
 
 <ImageComponent src="/images/guide-vocabulary/vocab10.webp"></ImageComponent>
+
+## Layouts
+
+Layouts tell Describo how to show the properties. Specifically, layouts allow you to group
+properties together and determine the order (from top to bottom) in which they are shown.
+
+In the following image we see 4 default layouts. The first will apply to any entity that has as it's
+@type either `CreativeWork` or `Dataset`. The @type field can have other types but so long as it has
+either one of these, that layout will be applied.
+
+The order of layouts (from top to bottom) determines which layout is applied. So, if the second
+layout also applied to `Dataset`, it would not be used as the first layout would match first.
+
+<ImageComponent src="/images/guide-vocabulary/vocab11.webp"></ImageComponent>
+
+Expanding a layout allows us to define groups and which properties they contain. In the following
+image we see that the first layout has 5 groups, and each group defines the properties that are
+shown as part of that group.
+
+<ImageComponent src="/images/guide-vocabulary/vocab12.webp"></ImageComponent>
+
+## Resolve
+
+Resolve tells Describo to alter how it renders certain entities. Consider an action. An action can
+relate an object, an agent and possibly a participant. Whilst the action itself can be described,
+it's really about the related entities. So with a resolve property we can direct Describo to show
+those in the view which then allows the user to navigate to either the action or the linked entities
+directly.
+
+The resolve configuration is a lot like layouts. You can define how to resolve different entity
+types and specify which of their properties should be resolved. Consider the image following:
+
+<ImageComponent src="/images/guide-vocabulary/vocab13.webp"></ImageComponent>
+
+With a resolve configuration the display of the entities looks like:
+
+<ImageComponent src="/images/guide-vocabulary/with-resolve-definition.webp"></ImageComponent>

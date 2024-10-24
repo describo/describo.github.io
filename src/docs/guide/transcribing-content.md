@@ -32,7 +32,7 @@ pane. If you navigate to the entities tab you can start by describing the entiti
 of interest when transcribing content. You don't need to do this, but if you have some idea of what
 you'll find in the content, describing it here will help.
 
-<ImageComponent src="/images/guide-transcribing-content/transcribe1.webp"></ImageComponent>
+Then, when you are marking up entities in the text, Describo can offer these entities as lookups.
 
 ## Transcription Tab
 

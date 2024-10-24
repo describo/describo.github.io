@@ -10,7 +10,7 @@ the application. If there isn't, a skeleton file will be created and loaded. The
 then be shown. The view is divided into three sections: left is the file manager; in the middle is
 the metadata editor and on the right is the file preview.
 
-<ImageComponent src="/images/tour/desktop3.webp" />
+<ImageComponent src="/images/guide-working-with-a-crate/desktop1.webp" />
 
 <p>
 <LinkComponent link="/docs/guide/five-minute-tutorial.html">See the five minute tutorial for a quick overview and then come back when you're done.</LinkComponent>
