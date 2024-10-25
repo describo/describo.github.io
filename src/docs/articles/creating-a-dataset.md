@@ -215,8 +215,8 @@ When it's done, those entities will now be loaded into your personal datastore.
 
 ## Next steps
 
-So if you've made it here then you've created your own TKLabels dataset and made it available to
-Describo for future use.
+If you've made it here then you've created your own TKLabels dataset and loaded it into Describo for
+future use.
 
 In your next project, you can create a Vocabulary where you might define a property on File entities
 called `hasTkLabel` and specify that it should have a TKLabel associated. Then, Describo will offer
