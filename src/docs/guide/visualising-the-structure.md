@@ -1,6 +1,6 @@
 ---
 title: Visualising the Linked Data Structure
-aside: false
+outline: [2, 3]
 ---
 
 # Visualising the Linked Data Structure

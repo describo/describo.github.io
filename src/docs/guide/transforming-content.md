@@ -1,6 +1,6 @@
 ---
 title: Transforming Content
-aside: false
+outline: [2, 3]
 ---
 
 ::: tip Info

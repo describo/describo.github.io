@@ -1,5 +1,6 @@
 ---
 title: Creating your own Vocabulary
+outline: [2, 3]
 ---
 
 # Creating your own Vocabulary

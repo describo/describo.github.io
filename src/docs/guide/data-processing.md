@@ -1,6 +1,6 @@
 ---
 title: Cloud Services and Data Processing
-aside: false
+outline: [2, 3]
 ---
 
 # Cloud Services and Data processing
@@ -11,6 +11,8 @@ Ensure you also read the page [Terms and Conditions](/terms-and-conditions.html#
 find out how your data is handled by the Describo Cloud.
 
 :::
+
+## Service provider terms
 
 If you register with describo.cloud, the capabilities you interact with are provided using Amazon
 AWS. Specifically, the services used are:
@@ -39,7 +41,7 @@ Cloud.
 
 <ImageComponent src="/images/opt-out-ai-policies.webp"></ImageComponent>
 
-# Data Sovereignty
+## Data Sovereignty
 
 ::: tip INFO
 
@@ -57,16 +59,16 @@ In order to support users across the globe, regional services have been provisio
 Cloud. The AWS region you use `depends on the Geo location of your IP address` and it happens
 automatically when you go to use a given capability.
 
-## Users in Australia
+### Users in Australia
 
 When using the describo cloud services, your data will be processed in the `AWS Sydney` Region.
 
-## Users in Europe
+### Users in Europe
 
 When using the describo cloud services, your data will be processed in the `AWS Frankfurt and Paris`
 regions.
 
-## Users in the United States and elsewhere
+### Users in the United States and elsewhere
 
 When using the describo cloud services, your data will be processed in the `AWS North Virginia`
 region.

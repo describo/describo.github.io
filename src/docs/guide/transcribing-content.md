@@ -1,6 +1,6 @@
 ---
 title: Content Transcription and Entity Markup
-aside: false
+outline: [2, 3]
 ---
 
 # Content Transcription and Entity Markup
