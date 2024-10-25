@@ -129,7 +129,6 @@
 </template>
 
 <script setup>
-import { capitalize } from "vue";
 import { reactive, onBeforeMount } from "vue";
 const data = reactive({
     release: undefined,
