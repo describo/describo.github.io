@@ -36,6 +36,12 @@ how to that is supposed to be read in conjunction with
 
 :::
 
+## Get this dataset
+
+Although this article steps you through creating this dataset, feel free to download it from
+[https://github.com/describo/dataset-TKLabels/archive/refs/tags/v1.0.zip](https://github.com/describo/dataset-TKLabels/archive/refs/tags/v1.0.zip)
+and get started using it! As the Vocabulary is distributed with the dataset, you'll get that too.
+
 ## Definitions
 
 -   A `class` is a definition for a type of `entity`. For example, defining a class `TKLabel` will
