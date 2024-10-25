@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center drop-shadow-2xl">
         <div v-if="enableZoom">
             <img :src="src" data-zoomable />
             <TipComponent>Click the image for a closer look!</TipComponent>
