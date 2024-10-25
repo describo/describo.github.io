@@ -221,3 +221,5 @@ Describo for future use.
 In your next project, you can create a Vocabulary where you might define a property on File entities
 called `hasTkLabel` and specify that it should have a TKLabel associated. Then, Describo will offer
 these as lookups for you to use when describing your files!
+
+<Disqus />

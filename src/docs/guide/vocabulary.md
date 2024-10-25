@@ -195,3 +195,5 @@ types and specify which of their properties should be resolved. Consider the ima
 With a resolve configuration the display of the entities looks like:
 
 <ImageComponent src="/images/guide-vocabulary/with-resolve-definition.webp"></ImageComponent>
+
+<Disqus />
