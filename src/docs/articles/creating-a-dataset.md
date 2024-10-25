@@ -213,11 +213,11 @@ When it's done, those entities will now be loaded into your personal datastore.
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset20.webp"></ImageComponent>
 
-## Next
+## Next Steps
 
 If you've made it here then you've created your own TKLabels dataset and loaded it into Describo for
-future use.
+future use. In your next project, you can create a Vocabulary where you might define a property on
+File entities called `hasTkLabel` and specify that it should have a TKLabel associated. Then,
+Describo will offer these as lookups for you to use when describing your files!
 
-In your next project, you can create a Vocabulary where you might define a property on File entities
-called `hasTkLabel` and specify that it should have a TKLabel associated. Then, Describo will offer
-these as lookups for you to use when describing your files!
+<Disqus />
