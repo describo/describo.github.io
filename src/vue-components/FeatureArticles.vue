@@ -13,9 +13,9 @@
             </el-radio-group>
         </div>
 
-        <div class="flex flex-row flex-wrap">
+        <div class="grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 gap-1">
             <div v-for="article of displayedArticles">
-                <Feature :link="article.link" class="border border-slate-300 rounded-sm m-1">
+                <Feature :link="article.link" class="bg-blue-100 rounded-sm" :center="false">
                     <template #title>{{ article.title }}</template>
                     <template #content>
                         <div class="flex flex-col">
@@ -56,6 +56,12 @@ const articles = [
         link: "/docs/articles/taytay-sings-the-budget-blues",
         text: "See how the e-discovery tools in Describo can help you.",
         keywords: ["e-discovery", "assistant"],
+    },
+    {
+        title: "Defining a vocabulary and using it to create a dataset",
+        link: "/docs/articles/creating-a-dataset",
+        text: "See how to define a vocabulary and then use it to define a domain",
+        keywords: ["vocabulary", "dataset"],
     },
 ];
 

@@ -1,6 +1,7 @@
 <template>
     <div
-        class="flex flex-row space-x-3 md:place-content-center items-center py-4 px-4 lg:p-4 rounded-lg"
+        class="flex flex-row space-x-3 items-center py-4 px-4 lg:p-4 rounded-lg"
+        :class="{ 'place-content-center': props.center }"
     >
         <div class="text-slate-700" v-if="props.icon">
             <font-awesome-icon :icon="props.icon" :size="props.size" class="text-indigo-600" />
@@ -23,5 +24,6 @@ const props = defineProps({
     target: { type: String, default: "" },
     icon: { type: Object },
     size: { type: String, default: "2x" },
+    center: { type: Boolean, default: true },
 });
 </script>
