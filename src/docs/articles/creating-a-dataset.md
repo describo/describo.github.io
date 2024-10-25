@@ -51,28 +51,33 @@ and get started using it! As the Vocabulary is distributed with the dataset, you
 
 Too often, licensing is an afterthought. With Describo, licensing your data and metadata is trivial.
 
+<div class="my-6">
 Start Describo and select a folder to work in. We'll start by creating the data and metadata
-licenses. Look in the navigation bar for a button named&nbsp;<Button>Set Licence</Button>. The
-following two images show the license creation dialog. In the first we're defining the data license
-(CC-BY-SA 4.0) and in the second, the metadata license (CC0 Public Domain).
+licenses. Look in the navigation bar for a button named
+<Button>Set Licence</Button>. The following two images show the license
+creation dialog. In the first we're defining the data license (CC-BY-SA 4.0) and in the second, the
+metadata license (CC0 Public Domain).
+</div>
 
-<ImageComponent src="/images/articles/creating-a-dataset/dataset1.webp"></ImageComponent>
-<ImageComponent src="/images/articles/creating-a-dataset/dataset3.webp"></ImageComponent>
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0 my-6">
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset1.webp"></ImageComponent>
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset3.webp"></ImageComponent>
+</div>
 
-After we've created the licenses we see that the root dataset has the CC-BY-SA license.
+After we've created the licenses we see that the root dataset has the CC-BY-SA license whilst the
+root descriptor has the CC0 license.
 
-<ImageComponent src="/images/articles/creating-a-dataset/dataset2.webp"></ImageComponent>
-
-Whilst the root descriptor has the CC0 license.
-
-<ImageComponent src="/images/articles/creating-a-dataset/dataset4.webp"></ImageComponent>
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-1 my-6">
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset2.webp"></ImageComponent>
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset4.webp"></ImageComponent>
+</div>
 
 ## Creating the Vocabulary
 
 ### Setup
 
-Load the vocabulary tool. On this page you can define the Vocabulary metadata like name, description
-and version.
+Navigate to the vocabulary tool. On this page you can define the Vocabulary metadata like name,
+description and version.
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset5.webp"></ImageComponent>
 
@@ -91,8 +96,8 @@ definition will define the properties so Describo will not traverse the inherita
 determine which properties to show.
 
 Also note that the class hierarchy can be changed here. By default, any class added (from either an
-Ontology or invented by you) will be subclassed to Thing. You can change that here. In addition,
-your class can have multiple parent classes.
+Ontology or invented by you) will be subclassed to Thing. You can change that here and the class can
+have multiple parent classes.
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset6.webp"></ImageComponent>
 
@@ -104,38 +109,42 @@ Upon selection you will see the properties from the hierarchy (inherited from th
 Thing). This happens when the class definition is first created even though you set the definition
 to override.
 
-<ImageComponent src="/images/articles/creating-a-dataset/dataset7.webp"></ImageComponent>
-
 Go ahead and delete all of those properties. In this example, we just need to define the `@id` and
 `name` properties which Describo always makes available.
 
-<ImageComponent src="/images/articles/creating-a-dataset/dataset8.webp"></ImageComponent>
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0 my-6">
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset7.webp"></ImageComponent>
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset8.webp"></ImageComponent>
+</div>
 
 ### Properties - Dataset
 
-In order to use the TKLabel class, we need to say `where` it can be used. In this case, we'll edit
-the `hasPart` property on Dataset to specify that we can add TKLabel entities at that point. In the
-following image we've loaded the Dataset class on the properties tab and expanded the hasPart
+In order to use the TKLabel class, we need to say `where` it can be used. In this Vocabulary we'll
+edit the `hasPart` property on Dataset to specify that we can add TKLabel entities at that point. In
+the following image we've loaded the Dataset class on the properties tab and expanded the hasPart
 property.
 
 Notice the select where we can see TKLabel as an option? Describo allows you to associate anything
-you've defined at any point in the hierarchy.
+you've defined at any point in the hierarchy. By Selecting TKLabel in the select box we see that the
+hasPart property on Dataset will now allow TKLabel entities to be created and associated.
 
-<ImageComponent src="/images/articles/creating-a-dataset/dataset9.webp"></ImageComponent>
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0 my-6">
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset9.webp"></ImageComponent>
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset10.webp"></ImageComponent>
+</div>
 
-By Selecting TKLabel in the select box we see (in the following image) that the hasPart property on
-Dataset will now allow TKLabel entities to be created and associated.
-
-<ImageComponent src="/images/articles/creating-a-dataset/dataset10.webp"></ImageComponent>
-
+<div class="my-2">
 Before we leave, let's just check the Vocabulary. Press the button labelled <Button>Open the
 Vocabulary definition in your browser</Button>. When you do, a new window will open with the Vocab
 presented as HTML.
+</div>
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset11.webp"></ImageComponent>
 
+<div class="my-6">
 And finally, be sure to press the button named <Button>Save Vocabulary</Button> to not only save it,
 but also load it into Describo for use.
+</div>
 
 ## Using your Vocabulary
 
@@ -155,7 +164,9 @@ of the @id property and the name as the value of the name property.
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset13.webp"></ImageComponent>
 
+<div class="my-6">
 When we <Button>Create these entities</Button> we get:
+</div>
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset14.webp"></ImageComponent>
 
@@ -171,29 +182,33 @@ You will need credits to use the Assistant for this part.
 
 :::
 
+<div class="my-6">
 An important part of any project is verifying your work. On the Describe tab, in the left panel
-where the file browser is, there is another tab `Verify`. Select it and press the button
-&nbsp;<Button>Start the assistant</Button>.
+where the file browser is, there is another tab Verify. Select it and press the button
+<Button>Start the assistant</Button>. When you do, the assistant will read the RO-Crate spec and
+your metadata. When it's ready, you can query your data for correctness against the spec.
+</div>
 
-<ImageComponent src="/images/articles/creating-a-dataset/dataset15.webp"></ImageComponent>
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0 my-6">
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset15.webp"></ImageComponent>
+    <ImageComponent src="/images/articles/creating-a-dataset/dataset16.webp"></ImageComponent>
+</div>
 
-When you do, the assistant will read the RO-Crate spec and your metadata. When it's ready, you can
-query your data for correctness against the spec.
-
-<ImageComponent src="/images/articles/creating-a-dataset/dataset16.webp"></ImageComponent>
-
-In the following image we pressed the button <Button>Check root dataset</Button>. In the message
-view we see the question (in the blue box) and the assistant's response (in green).
+<div class="my-6">
+In the following image we pressed the button <Button>Check root dataset</Button> and then in the
+message view we see the question (in the blue box) and the assistant's response (in green). In this
+way, you can direct the assistant to check your work.
+</div>
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset17.webp"></ImageComponent>
 
-In this way, you can direct the assistant to check your work.
-
 ## Using your dataset
 
-So you've now created a dataset that you can use in other work. The question is how do we make it
+<div class="my-6">
+You've now created a dataset that you can use in other work. The question is how do we make it
 available for lookups in other projects? Firstly, save your work by pressing <Button>Save
 Metadata</Button> and then go back to the dashboard.
+</div>
 
 Notice the highlighted section in the following screenshot. That's where we manage our saved
 templates (which are like our very own personal knowledge base). In the screenshot you can see that
@@ -201,11 +216,13 @@ there are two templates: one describing the Describo organisation and one descri
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset18.webp"></ImageComponent>
 
+<div class="my-6">
 Press the button <Button>Load templates from another dataset</Button>. A sidebar will open where you
 can select a folder containing an RO-Crate. Select the folder where you just created the TKLabels
 dataset. Describo will load the RO-Crate metadata and show you the entity types it contains. In this
-case we want to ingest all of the TKLabel entities (20 of them) so select that and
-press&nbsp;<Button>Load</Button>.
+case we want to ingest all of the TKLabel entities (20 of them) so select that and press
+<Button>Load</Button>.
+</div>
 
 <ImageComponent src="/images/articles/creating-a-dataset/dataset19.webp"></ImageComponent>
 

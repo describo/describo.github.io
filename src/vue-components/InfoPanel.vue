@@ -46,7 +46,7 @@
 </template>
 
 <script setup>
-import { computed, useSlots } from "vue";
+import { computed, useSlots, ref, onMounted } from "vue";
 
 const slots = useSlots();
 const props = defineProps({
@@ -60,6 +60,9 @@ const props = defineProps({
         validator: (v) => ["ltr", "rtl"].includes(v),
     },
 });
+const smallDevice = ref(true);
 
-const smallDevice = window.innerWidth < 900;
+onMounted(() => {
+    smallDevice.value = window.innerWidth < 900;
+});
 </script>

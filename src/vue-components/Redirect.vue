@@ -5,9 +5,12 @@
     </p> -->
 </template>
 <script setup>
+import { onMounted } from "vue";
 const props = defineProps({
     to: { type: String, required: true },
 });
 
-window.location.replace(props.to);
+onMounted(() => {
+    window.location.replace(props.to);
+});
 </script>

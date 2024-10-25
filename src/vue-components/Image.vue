@@ -11,14 +11,17 @@
 </template>
 
 <script setup>
+import { onMounted, ref } from "vue";
 const props = defineProps({
     src: { type: String, required: true },
 });
-let enableZoom = true;
+const enableZoom = ref(true);
 
 // if we're on a touch device and window small - disable zoom
 //   this way we can pinch to zoom
-if ("ontouchstart" in window && window.innerWidth <= 1200) {
-    enableZoom = false;
-}
+onMounted(() => {
+    if ("ontouchstart" in window && window.innerWidth <= 1200) {
+        enableZoom.value = false;
+    }
+});
 </script>

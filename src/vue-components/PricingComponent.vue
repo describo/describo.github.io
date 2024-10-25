@@ -138,7 +138,7 @@
 <script setup>
 import Terms from "./Terms.vue";
 import Product from "./Product.vue";
-import { onBeforeMount, ref } from "vue";
+import { onBeforeMount, onMounted, ref } from "vue";
 
 const props = defineProps({
     displayOnly: { type: Boolean, required: true },
@@ -191,7 +191,7 @@ const pricing = {
 let token = ref(undefined);
 let environment = ref("development");
 
-onBeforeMount(async () => {
+onMounted(async () => {
     if (props.displayOnly) return;
 
     const params = new URLSearchParams(window.location.search);
