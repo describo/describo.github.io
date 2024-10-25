@@ -1,8 +1,5 @@
 <template>
     <div class="flex flex-col space-y-2">
-        <!--legalese stuff  -->
-        <Terms />
-
         <!-- pricing pills and purchase controls -->
         <div class="flex flex-col space-y-2">
             <Product class="w-full">
@@ -15,7 +12,7 @@
                     </p>
                     <p>
                         You'll also get $5 in General Credits and 2 months of access to the
-                        Vocabulary creation tool so that you can try all of the capabilities.
+                        Vocabulary creation tool so that you can try out all of the capabilities.
                     </p>
                 </template>
                 <template #controls v-if="!props.displayOnly">
@@ -132,6 +129,9 @@
                 what you choose to do with your data.
             </div>
         </div>
+
+        <!--legalese stuff  -->
+        <Terms />
     </div>
 </template>
 

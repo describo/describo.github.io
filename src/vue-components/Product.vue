@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row space-x-2 p-5 bg-slate-200 rounded flex-grow">
+    <div class="flex flex-row space-x-2 p-5 bg-slate-100 rounded flex-grow">
         <div class="flex flex-col space-y-10 flex-grow place-content-between">
             <div class="flex flex-col space-y-2">
                 <div><slot name="title"></slot></div>
