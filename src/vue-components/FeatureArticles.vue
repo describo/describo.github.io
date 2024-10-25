@@ -15,7 +15,7 @@
 
         <div class="grid grid-flow-row-dense grid-cols-1 md:grid-cols-2 gap-1">
             <div v-for="article of displayedArticles">
-                <Feature :link="article.link" class="bg-blue-100 rounded-sm" :center="false">
+                <LeftAlignedFeature :link="article.link" class="bg-blue-100 rounded-sm">
                     <template #title>{{ article.title }}</template>
                     <template #content>
                         <div class="flex flex-col">
@@ -24,16 +24,16 @@
                             </div>
                         </div>
                     </template>
-                </Feature>
+                </LeftAlignedFeature>
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
+import LeftAlignedFeature from "./LeftAlignedFeature.vue";
 import { faRefresh } from "@fortawesome/free-solid-svg-icons";
 import { ElRadioGroup, ElRadioButton, ElButton } from "element-plus";
-import Feature from "./Feature.vue";
 import { computed, ref } from "vue";
 import uniq from "lodash-es/uniq.js";
 import flattenDeep from "lodash-es/flattenDeep.js";
