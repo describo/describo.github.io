@@ -46,30 +46,33 @@ The main editor window has a controls bar along the top. On it there are:
 
 <ImageComponent src="/images/guide-working-with-a-crate/controls.webp" />
 
-## Verifying the data
+## Verifying your work
 
-A crucial aspect is verifying your work against the RO Crate specification to ensure that it's
-compliant. If you've registered and bought credits to use the assistant, you can use the AI
-Assistant to check your work against the spec.
+::: tip info
 
-<ImageComponent src="/images/guide-working-with-a-crate/desktop6.webp" />
+-   You will need to [register](/docs/guide/register.html) and
+    [purchase credits to use the Assistant.](/docs/guide/purchase-credits.html)
 
-## Saving entities for re-use
+:::
 
-Often times, you will carefully craft an entity definition that will be useful elsewhere. An obvious
-example is when you define yourself as an author. In that case, your entity definition will have
-your name and a URL as your unique identifier (e.g. an ORCID) and you can save that definition as a
-template for re-use in other work.
+<div class="my-6">
+An important part of any project is verifying your work. On the Describe tab, in the left panel
+where the file browser is, there is another tab Verify. Select it and press the button
+<Button>Start the assistant</Button>. When you do, the assistant will read the RO-Crate spec and
+your metadata. When it's ready, you can query your data for correctness against the spec.
+</div>
 
-In the following image we can see what will be saved as a template. By setting depth to 1 linked
-entities will be resolved and included. Note that in both cases (depth 0 or 1) only properties will
-be included. Dangling references to other entities in this metadata will not be included.
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0 my-6">
+    <ImageComponent src="/images/guide-working-with-a-crate/dataset15.webp"></ImageComponent>
+    <ImageComponent src="/images/guide-working-with-a-crate/dataset16.webp"></ImageComponent>
+</div>
 
-<ImageComponent src="/images/guide-working-with-a-crate/template1.webp" />
+<div class="my-6">
+In the following image we pressed the button <Button>Check root dataset</Button> and then in the
+message view we see the question (in the blue box) and the assistant's response (in green). In this
+way, you can direct the assistant to check your work.
+</div>
 
-Then, when describing content, you will be presented with matching templates. Note the middle entry
-under the section title "Associate an entity from saved templates".
-
-<ImageComponent src="/images/guide-working-with-a-crate/template2.webp" />
+<ImageComponent src="/images/guide-working-with-a-crate/dataset17.webp"></ImageComponent>
 
 <Disqus />

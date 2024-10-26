@@ -62,7 +62,7 @@ layout: home
     </InfoPanelComponent>
 
   <InfoPanelComponent>
-    <template #title>Linked data to tables</template>
+    <template #title>Linked data - as a table</template>
     <template #text>
       <p>
         Describo lets you view your data in a clean, organized table format that's as straightforward as a spreadsheet. You can easily search through your information and choose exactly which details you want to display on screen.
