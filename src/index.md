@@ -17,7 +17,7 @@ layout: home
 
 <div class="flex flex-col mt-10 lg:mt-20 space-y-5 lg:space-y-20">
 
-  <InfoPanelComponent>
+  <!-- <InfoPanelComponent>
     <template #title>An intuitive, intelligent and extensible metadata editor</template>
     <template #text>
       <p>
@@ -36,9 +36,46 @@ layout: home
     <template #content>
       <ImageComponent src="/images/tour/desktop4.webp" />
     </template>
-  </InfoPanelComponent>
+  </InfoPanelComponent> -->
 
-  <InfoPanelComponent  layout="rtl">
+<InfoPanelCarouselComponent
+      :panels="[
+          {
+              title: 'An intuitive, intelligent and extensible metadata editor',
+              text: `
+                  <p>Describo enables you to describe your data. It creates linked data
+                  conforming to the Research Object Crate (RO-Crate) specification.</p>
+              `,
+              content: '/images/tour/desktop4.webp'
+          },
+          {
+              title: 'An intuitive, intelligent and extensible metadata editor',
+              text: 'All of schema.org at your disposal.',
+              content: '/images/tour/desktop5.webp'
+          },
+          {
+              title: 'An intuitive, intelligent and extensible metadata editor',
+              text: 'Controls to create all types of data. From linked entities to Geographies.',
+              content: '/images/tour/desktop7.webp'
+          },
+           {
+              title: 'An intuitive, intelligent and extensible metadata editor',
+              text: `Tools to license your data.`,
+              content: '/images/articles/creating-a-dataset/dataset1.webp'
+          },
+          {
+              title: 'An intuitive, intelligent and extensible metadata editor',
+              text: `
+                  <p>Use the GenerativeAI Assistant to verify your data against the spec.</p>
+              `,
+              content: '/images/guide-working-with-a-crate/dataset17.webp'
+          },
+      ]"
+      :auto-play="true"
+      :interval="6000"
+  />
+
+  <!-- <InfoPanelComponent  layout="rtl">
       <template #title>Create your own Vocabulary</template>
       <template #text>
         <p>
@@ -59,7 +96,44 @@ layout: home
       <template #content>
         <ImageComponent src="/images/tour/desktop16.webp" />
       </template>
-    </InfoPanelComponent>
+  </InfoPanelComponent> -->
+
+<InfoPanelCarouselComponent
+      layout="rtl"
+      :panels="[
+          {
+              title: 'Create your own Vocabulary',
+              text: `
+                  <p>Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
+          to defining your own classes and properties.</p>
+              `,
+              content: '/images/guide-vocabulary/vocab1.webp'
+          },
+          {
+              title: 'Create your own Vocabulary',
+              text: 'Define the classes you need to describe your domain.',
+              content: '/images/guide-vocabulary/vocab3.webp'
+          },
+          {
+              title: 'Create your own Vocabulary',
+              text: 'Specify their properties.',
+              content: '/images/guide-vocabulary/vocab7.webp'
+          },
+          {
+              title: 'Create your own Vocabulary',
+              text: 'Configure how they should be displayed by Describo.',
+              content: '/images/guide-vocabulary/vocab12.webp'
+          },
+          {
+              title: 'Create your own Vocabulary',
+              text: 'And publish your Vocabulary online.',
+              content: '/images/articles/creating-a-dataset/dataset11.webp'
+          },
+      ]"
+      documentation="/docs/guide/vocabulary.html"
+      :auto-play="true"
+      :interval="6000"
+  />
 
   <InfoPanelComponent>
     <template #title>Linked data - as a table</template>
@@ -97,7 +171,7 @@ layout: home
       </template>
   </InfoPanelComponent>
 
-  <InfoPanelComponent>
+  <!-- <InfoPanelComponent>
     <template #title>Text extraction and Named Entity Recognition</template>
     <template #text>
       <ul class="list-disc">
@@ -115,9 +189,39 @@ layout: home
     <template #content>
       <ImageComponent src="/images/tour/desktop11.webp" />
     </template>
-  </InfoPanelComponent>
+  </InfoPanelComponent> -->
 
-  <InfoPanelComponent  layout="rtl">
+<InfoPanelCarouselComponent
+      :panels="[
+          {
+              title: 'Text extraction and Named Entity Recognition',
+              text: `
+                View your images alongside a powerful, yet easy to use transcription editor.
+              `,
+              content: '/images/guide-transcribing-content/transcribe6.webp'
+          },
+          {
+              title: 'Text extraction and Named Entity Recognition',
+              text: `
+                Everything you mark up in the text will also be written into the RO-Crate.
+              `,
+              content: '/images/guide-transcribing-content/transcribe7.webp'
+          },
+          {
+              title: 'Text extraction and Named Entity Recognition',
+              text: `
+                Engage the GenerativeAI Assistant to further analyse the text. Edit the metadata
+                for the file directly.
+              `,
+              content: '/images/guide-transcribing-content-assistant/assistant1.webp'
+          },
+      ]"
+      documentation="/docs/guide/transcribing-content.html"
+      :auto-play="true"
+      :interval="6000"
+  />
+
+  <!-- <InfoPanelComponent  layout="rtl">
     <template #title> <font-awesome-icon :icon="faWandSparkles" /> GenAI powered e-Discovery</template>
     <template #text>
       <p>
@@ -137,9 +241,35 @@ layout: home
         <ImageComponent src="/images/tour/desktop14.webp" />
       </div>
     </template>
-  </InfoPanelComponent>
+  </InfoPanelComponent> -->
 
-  <InfoPanelComponent>
+<InfoPanelCarouselComponent
+      layout="rtl"
+      :panels="[
+          {
+              title: 'GenerativeAI e-Discovery',
+              text: `
+               Interrogate sets of files / folders to extract the themes and narratives that you
+              might want to describe. Easily comprehend large swathes of data to find the insights
+              hiding in the content. Use the assistant to provide different perspectives on what
+              you find in order to test hypotheses and ideas.
+              `,
+              content: '/images/guide-discover/discover3.webp'
+        },
+           {
+              title: 'GenerativeAI e-Discovery',
+              text: `
+                Download your conversation as a PDF.
+              `,
+              content: '/images/articles/taytay-sings-the-budget-blues/budget-conversation.pdf'
+          },
+      ]"
+      documentation="/docs/guide/assistant-supported-discovery.html"
+      :auto-play="true"
+      :interval="6000"
+  />
+
+  <!-- <InfoPanelComponent>
       <template #title>Visualisation</template>
       <template #text>
         <p>
@@ -154,7 +284,36 @@ layout: home
       <template #content>
         <ImageComponent src="/images/tour/desktop15.webp" />
       </template>
-  </InfoPanelComponent>
+  </InfoPanelComponent> -->
+
+<InfoPanelCarouselComponent
+      :panels="[
+          {
+              title: 'Visualisation',
+              text: `
+              Describo connects your information in meaningful ways that help you explore and understand your data thoroughly. Using Describo's tools, you can quickly analyze large amounts of information that would normally take much longer to process.
+              `,
+              content: '/images/tour/desktop15.webp'
+          },
+          {
+              title: 'Visualisation',
+              text: `
+                Manipulate size and colour of nodes of interest to reveal the features.
+              `,
+              content: '/images/guide-visualise/visualise4.webp'
+          },
+          {
+              title: 'Visualisation',
+              text: `
+                Select a node and visualise the connections. Connected files can be viewed directly.
+              `,
+              content: '/images/guide-visualise/visualise8.webp'
+          },
+      ]"
+      documentation="/docs/guide/visualising-the-structure.html"
+      :auto-play="true"
+      :interval="6000"
+  />
 
 </div>
 
@@ -175,4 +334,5 @@ layout: home
   }  from "@fortawesome/free-solid-svg-icons";
   import TagLine from "./vue-components/TagLine.vue";
   import DescriboFeatures from './vue-components/DescriboFeatures.vue'
+  import InfoPanelCarouselComponent from './vue-components/InfoPanelCarousel.vue'
 </script>

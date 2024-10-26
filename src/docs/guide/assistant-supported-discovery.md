@@ -77,7 +77,7 @@ include appropriate attribution. You can control that in the dialog.
 And following is the document with the licence in the header (the final page/s will always be the
 context so you know what was interrogated in that session).
 
- <iframe
+<iframe
   class="border border-solid border-gray-400 p-2"
   src="/images/guide-discover/conversation.pdf"
   width="100%" height="500">
