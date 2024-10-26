@@ -71,9 +71,6 @@ layout: home
               content: '/images/guide-working-with-a-crate/dataset17.webp'
           },
       ]"
-      :auto-play="true"
-      :interval="8000"
-      :initial-delay=0
   />
 
   <!-- <InfoPanelComponent  layout="rtl">
@@ -132,9 +129,6 @@ layout: home
           },
       ]"
       documentation="/docs/guide/vocabulary.html"
-      :auto-play="true"
-      :interval="8000"
-      :initial-delay=1600
   />
 
   <InfoPanelComponent>
@@ -219,9 +213,6 @@ layout: home
           },
       ]"
       documentation="/docs/guide/transcribing-content.html"
-      :auto-play="true"
-      :interval="8000"
-      :initial-delay=3200
   />
 
   <!-- <InfoPanelComponent  layout="rtl">
@@ -268,9 +259,6 @@ layout: home
           },
       ]"
       documentation="/docs/guide/assistant-supported-discovery.html"
-      :auto-play="true"
-      :interval="8000"
-      :initial-delay=4800
   />
 
   <!-- <InfoPanelComponent>
@@ -302,7 +290,7 @@ layout: home
           {
               title: 'Visualisation',
               text: `
-                Manipulate size and colour of nodes of interest to reveal the features.
+                Manipulate the size and colour of nodes of interest to reveal the features.
               `,
               content: '/images/guide-visualise/visualise4.webp'
           },
@@ -315,9 +303,6 @@ layout: home
           },
       ]"
       documentation="/docs/guide/visualising-the-structure.html"
-      :auto-play="true"
-      :interval="8000"
-      :initial-delay=6400
   />
 
 </div>

@@ -8,6 +8,7 @@
             <img :src="src" />
         </div> -->
         <ImageZoom :src="props.src" alt="Zoom 1" />
+        <TipComponent>Click the image for a closer look!</TipComponent>
     </div>
 </template>
 

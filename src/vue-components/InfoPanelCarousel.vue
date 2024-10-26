@@ -4,14 +4,6 @@
             class="flex flex-col lg:flex-row lg:space-x-2 justify-around items-center"
             :class="{ 'border-t border-slate-400': props.border }"
         >
-            <!-- Navigation Arrows -->
-            <!-- <button
-                @click="previousSlide"
-                class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 p-2 hover:bg-gray-100 rounded-full"
-            >
-                <font-awesome-icon icon="chevron-left" />
-            </button> -->
-
             <!-- Content -->
             <transition name="fade" mode="out-in">
                 <div
@@ -43,7 +35,7 @@
                         <template #title> Read the docs </template>
                     </FeatureComponent>
 
-                    <!-- Navigation Dots and Timer -->
+                    <!-- Navigation Dots -->
                     <div class="flex justify-center items-center space-x-4 mt-4">
                         <div class="flex space-x-2">
                             <button
@@ -51,47 +43,10 @@
                                 :key="index"
                                 @click="goToSlide(index)"
                                 :class="[
-                                    'h-2 w-2 rounded-full transition-all duration-300',
+                                    'h-8 w-8 rounded-full transition-all duration-300',
                                     currentIndex === index ? 'bg-blue-500 w-4' : 'bg-gray-300',
                                 ]"
                             ></button>
-                        </div>
-
-                        <!-- Circular Timer -->
-                        <div
-                            class="relative w-6 h-6"
-                            @mouseenter="pauseTimer"
-                            @mouseleave="resumeTimer"
-                        >
-                            <svg class="transform -rotate-90 w-6 h-6">
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    fill="transparent"
-                                    class="text-gray-200"
-                                />
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    fill="transparent"
-                                    :stroke-dasharray="circumference"
-                                    :stroke-dashoffset="dashOffset"
-                                    class="text-blue-500 transition-all duration-200"
-                                />
-                            </svg>
-                            <!-- Play/Pause Button -->
-                            <button
-                                @click="toggleAutoPlay"
-                                class="absolute inset-0 flex items-center justify-center text-xs text-blue-500"
-                            >
-                                <font-awesome-icon :icon="isPlaying ? 'pause' : 'play'" />
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -153,7 +108,7 @@
                         <template #title> Read the docs </template>
                     </FeatureComponent>
 
-                    <!-- Navigation Dots and Timer -->
+                    <!-- Navigation Dots -->
                     <div class="flex justify-center items-center space-x-4 mt-4">
                         <div class="flex space-x-2">
                             <button
@@ -161,66 +116,21 @@
                                 :key="index"
                                 @click="goToSlide(index)"
                                 :class="[
-                                    'h-2 w-2 rounded-full transition-all duration-300',
+                                    'h-8 w-8 rounded-full transition-all duration-300',
                                     currentIndex === index ? 'bg-blue-500 w-4' : 'bg-gray-300',
                                 ]"
                             ></button>
                         </div>
-
-                        <!-- Circular Timer -->
-                        <div
-                            class="relative w-6 h-6"
-                            @mouseenter="pauseTimer"
-                            @mouseleave="resumeTimer"
-                        >
-                            <svg class="transform -rotate-90 w-6 h-6">
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    fill="transparent"
-                                    class="text-gray-200"
-                                />
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="10"
-                                    stroke="currentColor"
-                                    stroke-width="2"
-                                    fill="transparent"
-                                    :stroke-dasharray="circumference"
-                                    :stroke-dashoffset="dashOffset"
-                                    class="text-blue-500 transition-all duration-200"
-                                />
-                            </svg>
-                            <!-- Play/Pause Button -->
-                            <button
-                                @click="toggleAutoPlay"
-                                class="absolute inset-0 flex items-center justify-center text-xs text-blue-500"
-                            >
-                                <font-awesome-icon :icon="isPlaying ? 'pause' : 'play'" />
-                            </button>
-                        </div>
                     </div>
                 </div>
             </transition>
-
-            <!-- Navigation Arrows -->
-            <!-- <button
-                @click="nextSlide"
-                class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 p-2 hover:bg-gray-100 rounded-full"
-            >
-                <font-awesome-icon icon="chevron-right" />
-            </button> -->
         </div>
     </div>
 </template>
 
 <script setup>
 import { faBook } from "@fortawesome/free-solid-svg-icons";
-import { ref, computed, onMounted, onBeforeUnmount, onBeforeMount } from "vue";
+import { ref, computed, onBeforeMount } from "vue";
 
 const props = defineProps({
     panels: {
@@ -237,18 +147,6 @@ const props = defineProps({
         default: "ltr",
         validator: (v) => ["ltr", "rtl"].includes(v),
     },
-    autoPlay: {
-        type: Boolean,
-        default: false,
-    },
-    interval: {
-        type: Number,
-        default: 10000,
-    },
-    initialDelay: {
-        type: Number,
-        default: 0, // Default initial delay in milliseconds
-    },
     documentation: {
         type: String,
     },
@@ -256,70 +154,9 @@ const props = defineProps({
 
 const currentIndex = ref(0);
 const smallDevice = ref(true);
-const timeLeft = ref(props.interval);
-const isPlaying = ref(props.autoPlay);
-let autoPlayInterval;
-let countdownInterval;
-
-const circumference = 2 * Math.PI * 10; // 2πr where r=10
-
-const dashOffset = computed(() => {
-    return circumference * (1 - timeLeft.value / props.interval);
-});
-
 const currentPanel = computed(() => props.panels[currentIndex.value]);
-
-const nextSlide = () => {
-    currentIndex.value = (currentIndex.value + 1) % props.panels.length;
-    resetTimer();
-};
-
-const previousSlide = () => {
-    currentIndex.value =
-        currentIndex.value === 0 ? props.panels.length - 1 : currentIndex.value - 1;
-    resetTimer();
-};
-
 const goToSlide = (index) => {
     currentIndex.value = index;
-    resetTimer();
-};
-
-const startTimer = () => {
-    if (autoPlayInterval) clearInterval(autoPlayInterval);
-    if (countdownInterval) clearInterval(countdownInterval);
-
-    if (isPlaying.value) {
-        autoPlayInterval = setInterval(nextSlide, props.interval);
-        countdownInterval = setInterval(() => {
-            timeLeft.value = Math.max(0, timeLeft.value - 100);
-        }, 100);
-    }
-};
-
-const resetTimer = () => {
-    timeLeft.value = props.interval;
-    startTimer();
-};
-
-const pauseTimer = () => {
-    clearInterval(autoPlayInterval);
-    clearInterval(countdownInterval);
-};
-
-const resumeTimer = () => {
-    if (isPlaying.value) {
-        startTimer();
-    }
-};
-
-const toggleAutoPlay = () => {
-    isPlaying.value = !isPlaying.value;
-    if (isPlaying.value) {
-        startTimer();
-    } else {
-        pauseTimer();
-    }
 };
 
 const preloadImages = () => {
@@ -334,20 +171,6 @@ const preloadImages = () => {
 onBeforeMount(() => {
     preloadImages();
     smallDevice.value = window.innerWidth < 900;
-});
-
-onMounted(() => {
-    preloadImages();
-    if (props.autoPlay) {
-        // Set initial timeout before starting the regular interval
-        setTimeout(() => {
-            startTimer();
-        }, props.initialDelay);
-    }
-});
-
-onBeforeUnmount(() => {
-    pauseTimer();
 });
 </script>
 
