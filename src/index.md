@@ -241,7 +241,7 @@ layout: home
       layout="rtl"
       :panels="[
           {
-              title: 'GenerativeAI e-Discovery',
+              title: 'GenerativeAI powered e-Discovery',
               text: `
                Interrogate sets of files / folders to extract the themes and narratives that you
               might want to describe. Easily comprehend large swathes of data to find the insights
