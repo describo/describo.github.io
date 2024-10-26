@@ -104,6 +104,10 @@ layout: home
               text: `
                   <p>Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
           to defining your own classes and properties.</p>
+              <p>The Vocabulary is part of the RO-Crate so if you share the crate with others,
+              they can continue from where you left off.</p>
+              <p> And, you can also can just create an RO-crate with a Vocabulary for others
+              to use in their projects.</p>
               `,
               content: '/images/guide-vocabulary/vocab1.webp'
           },
@@ -124,7 +128,7 @@ layout: home
           },
           {
               title: 'Create your own Vocabulary',
-              text: 'And publish your Vocabulary online.',
+              text: `And publish your Vocabulary online for others when you're done..`,
               content: '/images/articles/creating-a-dataset/dataset11.webp'
           },
       ]"
