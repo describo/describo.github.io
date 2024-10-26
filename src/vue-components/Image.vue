@@ -1,16 +1,18 @@
 <template>
     <div class="flex flex-col items-center drop-shadow-2xl">
-        <div v-if="enableZoom">
+        <!-- <div v-if="enableZoom">
             <img :src="src" data-zoomable />
             <TipComponent>Click the image for a closer look!</TipComponent>
         </div>
         <div v-else>
             <img :src="src" />
-        </div>
+        </div> -->
+        <ImageZoom :src="props.src" alt="Zoom 1" />
     </div>
 </template>
 
 <script setup>
+import ImageZoom from "./ImageZoom.vue";
 import { onMounted, ref } from "vue";
 const props = defineProps({
     src: { type: String, required: true },

@@ -99,16 +99,16 @@ export default {
         app.component("SectionComponent", SectionComponent);
     },
     setup() {
-        const route = useRoute();
-        const initZoom = () => {
-            mediumZoom("[data-zoomable]", { margin: 20, background: "#fff" });
-        };
-        onMounted(() => {
-            initZoom();
-        });
-        watch(
-            () => route.path,
-            () => nextTick(() => initZoom())
-        );
+        // const route = useRoute();
+        // const initZoom = () => {
+        //     mediumZoom("[data-zoomable]", { margin: 20, background: "#fff" });
+        // };
+        // onMounted(() => {
+        //     initZoom();
+        // });
+        // watch(
+        //     () => route.path,
+        //     () => nextTick(() => initZoom())
+        // );
     },
 };

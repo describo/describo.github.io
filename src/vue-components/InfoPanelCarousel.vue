@@ -13,181 +13,199 @@
             </button> -->
 
             <!-- Content -->
-            <div
-                v-if="layout === 'ltr' || smallDevice"
-                :class="{
-                    'w-full lg:w-2/5': currentPanel.content,
-                    'w-full': !currentPanel.content,
-                }"
-            >
-                <div class="text-slate-800 text-lg lg:text-2xl xl:text-4xl font-bold mb-6 lg:px-4">
-                    {{ currentPanel.title }}
-                </div>
-
-                <div class="text-slate-700 text-base flex flex-col space-y-4 lg:px-4 lg:text-lg">
-                    <div v-html="currentPanel.text"></div>
-                </div>
-
-                <FeatureComponent
-                    class="text-sm bg-blue-100 mt-10"
-                    v-if="props.documentation"
-                    :link="props.documentation"
-                    :icon="faBook"
+            <transition name="fade" mode="out-in">
+                <div
+                    v-if="layout === 'ltr' || smallDevice"
+                    :key="currentIndex"
+                    :class="{
+                        'w-full lg:w-2/5': currentPanel.content,
+                        'w-full': !currentPanel.content,
+                    }"
                 >
-                    <template #title> Read the docs </template>
-                </FeatureComponent>
-
-                <!-- Navigation Dots and Timer -->
-                <div class="flex justify-center items-center space-x-4 mt-4">
-                    <div class="flex space-x-2">
-                        <button
-                            v-for="(_, index) in panels"
-                            :key="index"
-                            @click="goToSlide(index)"
-                            :class="[
-                                'h-2 w-2 rounded-full transition-all duration-300',
-                                currentIndex === index ? 'bg-blue-500 w-4' : 'bg-gray-300',
-                            ]"
-                        ></button>
-                    </div>
-
-                    <!-- Circular Timer -->
                     <div
-                        class="relative w-6 h-6"
-                        @mouseenter="pauseTimer"
-                        @mouseleave="resumeTimer"
+                        class="text-slate-800 text-lg lg:text-2xl xl:text-4xl font-bold mb-6 lg:px-4"
                     >
-                        <svg class="transform -rotate-90 w-6 h-6">
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="10"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                fill="transparent"
-                                class="text-gray-200"
-                            />
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="10"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                fill="transparent"
-                                :stroke-dasharray="circumference"
-                                :stroke-dashoffset="dashOffset"
-                                class="text-blue-500 transition-all duration-200"
-                            />
-                        </svg>
-                        <!-- Play/Pause Button -->
-                        <button
-                            @click="toggleAutoPlay"
-                            class="absolute inset-0 flex items-center justify-center text-xs text-blue-500"
+                        {{ currentPanel.title }}
+                    </div>
+
+                    <div
+                        class="text-slate-700 text-base flex flex-col space-y-4 lg:px-4 lg:text-lg"
+                    >
+                        <div v-html="currentPanel.text"></div>
+                    </div>
+
+                    <FeatureComponent
+                        class="text-sm bg-blue-100 mt-10"
+                        v-if="props.documentation"
+                        :link="props.documentation"
+                        :icon="faBook"
+                    >
+                        <template #title> Read the docs </template>
+                    </FeatureComponent>
+
+                    <!-- Navigation Dots and Timer -->
+                    <div class="flex justify-center items-center space-x-4 mt-4">
+                        <div class="flex space-x-2">
+                            <button
+                                v-for="(_, index) in panels"
+                                :key="index"
+                                @click="goToSlide(index)"
+                                :class="[
+                                    'h-2 w-2 rounded-full transition-all duration-300',
+                                    currentIndex === index ? 'bg-blue-500 w-4' : 'bg-gray-300',
+                                ]"
+                            ></button>
+                        </div>
+
+                        <!-- Circular Timer -->
+                        <div
+                            class="relative w-6 h-6"
+                            @mouseenter="pauseTimer"
+                            @mouseleave="resumeTimer"
                         >
-                            <font-awesome-icon :icon="isPlaying ? 'pause' : 'play'" />
-                        </button>
+                            <svg class="transform -rotate-90 w-6 h-6">
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="transparent"
+                                    class="text-gray-200"
+                                />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="transparent"
+                                    :stroke-dasharray="circumference"
+                                    :stroke-dashoffset="dashOffset"
+                                    class="text-blue-500 transition-all duration-200"
+                                />
+                            </svg>
+                            <!-- Play/Pause Button -->
+                            <button
+                                @click="toggleAutoPlay"
+                                class="absolute inset-0 flex items-center justify-center text-xs text-blue-500"
+                            >
+                                <font-awesome-icon :icon="isPlaying ? 'pause' : 'play'" />
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </transition>
 
-            <div
-                class="text-base flex flex-row justify-around my-2 p-4"
-                :class="{
-                    'w-full lg:w-3/5': currentPanel.content,
-                }"
-            >
-                <!-- <img :src="currentPanel.content" v-if="currentPanel.content" /> -->
-                <ImageComponent
-                    v-if="currentPanel.content.match(/webp/)"
-                    :src="currentPanel.content"
-                />
-                <iframe
-                    v-if="currentPanel.content.match(/pdf/)"
-                    class="border border-solid border-gray-400 p-2"
-                    :src="currentPanel.content"
-                    width="100%"
-                    height="500"
+            <transition name="fade" mode="out-in">
+                <div
+                    class="text-base flex flex-row justify-around my-2 p-4"
+                    :class="{
+                        'w-full lg:w-3/5': currentPanel.content,
+                    }"
+                    :key="currentIndex"
                 >
-                </iframe>
-            </div>
+                    <!-- <img :src="currentPanel.content" v-if="currentPanel.content" /> -->
+                    <ImageComponent
+                        class="transition ease-in-out delay-150"
+                        v-if="currentPanel.content.match(/webp/)"
+                        :src="currentPanel.content"
+                    />
+                    <iframe
+                        v-if="currentPanel.content.match(/pdf/)"
+                        class="border border-solid border-gray-400 p-2"
+                        :src="currentPanel.content"
+                        width="100%"
+                        height="500"
+                    >
+                    </iframe>
+                </div>
+            </transition>
 
             <!-- RTL Layout -->
-            <div
-                v-if="layout === 'rtl' && !smallDevice"
-                :class="{
-                    'w-full lg:w-2/5': currentPanel.content,
-                    'w-full': !currentPanel.content,
-                }"
-            >
-                <div class="text-slate-800 text-lg lg:text-2xl xl:text-4xl font-bold mb-6 lg:px-4">
-                    {{ currentPanel.title }}
-                </div>
-
-                <div class="text-slate-700 text-base flex flex-col space-y-4 lg:px-4 lg:text-lg">
-                    <div v-html="currentPanel.text"></div>
-                </div>
-
-                <FeatureComponent
-                    class="text-sm bg-blue-100 mt-10"
-                    v-if="props.documentation"
-                    :link="props.documentation"
-                    :icon="faBook"
+            <transition name="fade" mode="out-in">
+                <div
+                    v-if="layout === 'rtl' && !smallDevice"
+                    :key="currentIndex"
+                    :class="{
+                        'w-full lg:w-2/5': currentPanel.content,
+                        'w-full': !currentPanel.content,
+                    }"
                 >
-                    <template #title> Read the docs </template>
-                </FeatureComponent>
-
-                <!-- Navigation Dots and Timer -->
-                <div class="flex justify-center items-center space-x-4 mt-4">
-                    <div class="flex space-x-2">
-                        <button
-                            v-for="(_, index) in panels"
-                            :key="index"
-                            @click="goToSlide(index)"
-                            :class="[
-                                'h-2 w-2 rounded-full transition-all duration-300',
-                                currentIndex === index ? 'bg-blue-500 w-4' : 'bg-gray-300',
-                            ]"
-                        ></button>
+                    <div
+                        class="text-slate-800 text-lg lg:text-2xl xl:text-4xl font-bold mb-6 lg:px-4"
+                    >
+                        {{ currentPanel.title }}
                     </div>
 
-                    <!-- Circular Timer -->
                     <div
-                        class="relative w-6 h-6"
-                        @mouseenter="pauseTimer"
-                        @mouseleave="resumeTimer"
+                        class="text-slate-700 text-base flex flex-col space-y-4 lg:px-4 lg:text-lg"
                     >
-                        <svg class="transform -rotate-90 w-6 h-6">
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="10"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                fill="transparent"
-                                class="text-gray-200"
-                            />
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="10"
-                                stroke="currentColor"
-                                stroke-width="2"
-                                fill="transparent"
-                                :stroke-dasharray="circumference"
-                                :stroke-dashoffset="dashOffset"
-                                class="text-blue-500 transition-all duration-200"
-                            />
-                        </svg>
-                        <!-- Play/Pause Button -->
-                        <button
-                            @click="toggleAutoPlay"
-                            class="absolute inset-0 flex items-center justify-center text-xs text-blue-500"
+                        <div v-html="currentPanel.text"></div>
+                    </div>
+
+                    <FeatureComponent
+                        class="text-sm bg-blue-100 mt-10"
+                        v-if="props.documentation"
+                        :link="props.documentation"
+                        :icon="faBook"
+                    >
+                        <template #title> Read the docs </template>
+                    </FeatureComponent>
+
+                    <!-- Navigation Dots and Timer -->
+                    <div class="flex justify-center items-center space-x-4 mt-4">
+                        <div class="flex space-x-2">
+                            <button
+                                v-for="(_, index) in panels"
+                                :key="index"
+                                @click="goToSlide(index)"
+                                :class="[
+                                    'h-2 w-2 rounded-full transition-all duration-300',
+                                    currentIndex === index ? 'bg-blue-500 w-4' : 'bg-gray-300',
+                                ]"
+                            ></button>
+                        </div>
+
+                        <!-- Circular Timer -->
+                        <div
+                            class="relative w-6 h-6"
+                            @mouseenter="pauseTimer"
+                            @mouseleave="resumeTimer"
                         >
-                            <font-awesome-icon :icon="isPlaying ? 'pause' : 'play'" />
-                        </button>
+                            <svg class="transform -rotate-90 w-6 h-6">
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="transparent"
+                                    class="text-gray-200"
+                                />
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    fill="transparent"
+                                    :stroke-dasharray="circumference"
+                                    :stroke-dashoffset="dashOffset"
+                                    class="text-blue-500 transition-all duration-200"
+                                />
+                            </svg>
+                            <!-- Play/Pause Button -->
+                            <button
+                                @click="toggleAutoPlay"
+                                class="absolute inset-0 flex items-center justify-center text-xs text-blue-500"
+                            >
+                                <font-awesome-icon :icon="isPlaying ? 'pause' : 'play'" />
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </transition>
 
             <!-- Navigation Arrows -->
             <!-- <button
@@ -226,6 +244,10 @@ const props = defineProps({
     interval: {
         type: Number,
         default: 10000,
+    },
+    initialDelay: {
+        type: Number,
+        default: 0, // Default initial delay in milliseconds
     },
     documentation: {
         type: String,
@@ -300,10 +322,23 @@ const toggleAutoPlay = () => {
     }
 };
 
+const preloadImages = () => {
+    props.panels.forEach((panel) => {
+        if (panel.content && panel.content.match(/webp/)) {
+            const img = new Image();
+            img.src = panel.content;
+        }
+    });
+};
+
 onMounted(() => {
+    preloadImages();
     smallDevice.value = window.innerWidth < 900;
     if (props.autoPlay) {
-        startTimer();
+        // Set initial timeout before starting the regular interval
+        setTimeout(() => {
+            startTimer();
+        }, props.initialDelay);
     }
 });
 
@@ -315,5 +350,20 @@ onBeforeUnmount(() => {
 <style scoped>
 circle {
     transition: stroke-dashoffset 0.1s linear;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+    opacity: 1;
 }
 </style>
