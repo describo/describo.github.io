@@ -220,7 +220,7 @@
 
 <script setup>
 import { faBook } from "@fortawesome/free-solid-svg-icons";
-import { ref, computed, onMounted, onBeforeUnmount } from "vue";
+import { ref, computed, onMounted, onBeforeUnmount, onBeforeMount } from "vue";
 
 const props = defineProps({
     panels: {
@@ -331,9 +331,13 @@ const preloadImages = () => {
     });
 };
 
-onMounted(() => {
+onBeforeMount(() => {
     preloadImages();
     smallDevice.value = window.innerWidth < 900;
+});
+
+onMounted(() => {
+    preloadImages();
     if (props.autoPlay) {
         // Set initial timeout before starting the regular interval
         setTimeout(() => {
@@ -354,7 +358,7 @@ circle {
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity 1s ease;
+    transition: opacity 0.7s ease;
 }
 
 .fade-enter-from,

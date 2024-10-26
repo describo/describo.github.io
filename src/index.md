@@ -72,7 +72,7 @@ layout: home
           },
       ]"
       :auto-play="true"
-      :interval="6000"
+      :interval="8000"
       :initial-delay=0
   />
 
@@ -133,8 +133,8 @@ layout: home
       ]"
       documentation="/docs/guide/vocabulary.html"
       :auto-play="true"
-      :interval="6000"
-      :initial-delay=3000
+      :interval="8000"
+      :initial-delay=1600
   />
 
   <InfoPanelComponent>
@@ -220,8 +220,8 @@ layout: home
       ]"
       documentation="/docs/guide/transcribing-content.html"
       :auto-play="true"
-      :interval="6000"
-      :initial-delay=6000
+      :interval="8000"
+      :initial-delay=3200
   />
 
   <!-- <InfoPanelComponent  layout="rtl">
@@ -269,8 +269,8 @@ layout: home
       ]"
       documentation="/docs/guide/assistant-supported-discovery.html"
       :auto-play="true"
-      :interval="6000"
-      :initial-delay=1500
+      :interval="8000"
+      :initial-delay=4800
   />
 
   <!-- <InfoPanelComponent>
@@ -316,8 +316,8 @@ layout: home
       ]"
       documentation="/docs/guide/visualising-the-structure.html"
       :auto-play="true"
-      :interval="6000"
-      :initial-delay=4500
+      :interval="8000"
+      :initial-delay=6400
   />
 
 </div>
