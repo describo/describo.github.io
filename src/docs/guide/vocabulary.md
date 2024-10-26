@@ -24,14 +24,31 @@ The Vocabulary tool in Describo helps you do this and this documentation will sh
 
 <ImageComponent src="/images/guide-vocabulary/vocab1.webp"></ImageComponent>
 
+## Definitions
+
+-   A `class` defines a type of `entity`. For example, defining a class `TKLabel` will enable you to
+    create entities whose type is `TKLabel`.
+
 ## Vocabulary Controls
 
+<div class="my-6">
 The first thing you'll notice is that there is a set of controls along the very top to:
 
--   Open the Vocabulary definition in your browser: view the HTML rendering of the Vocabulary.
--   Load the Vocabulary into Describo: load the generated profile into Describo.
--   Save Vocabular.
--   Trash Icon: this deletes the Vocabulary.
+<ul class="list-disc">
+    <li>
+        <Button>Open the Vocabulary definition in your browser</Button> to view the HTML rendering of the Vocabulary;
+    </li>
+    <li>
+        <Button>Load the Vocabulary into Describo</Button> which loads the generated profile into Describo;
+    </li>
+    <li>
+        <Button>Save Vocabulary</Button> to save your work and generate markdown and html renderings of the Vocab;
+    </li>
+    <li>
+        Trash button to delete the Vocabulary.
+    </li>
+</ul>
+</div>
 
 ## Define your Vocabulary
 
@@ -52,7 +69,8 @@ On the `Initialise` tab we can define the Vocab metadata including:
 ## Known Ontologies
 
 To ease the process of creating a new Vocabulary, and to benefit from the work of previous efforts,
-Describo offers lookups into classes and properties defined in MODS, PREMIS-3, RiC-O, and SKOS.
+Describo offers lookups into classes and properties defined in schema.org as well as MODS, PREMIS-3,
+RiC-O, and SKOS.
 
 ## Class Definitions
 
@@ -72,10 +90,12 @@ the definition of the class is internal to the Vocabulary. Further, we can (and 
 description so others know what this class stands for.
 
 The definition can be `override` or `inherit`. If you wish to have a tightly controlled set of
-properties for a given class, then set this to `inherit` and the define the exact properties you
-wish on the Properties tab.
+properties for a given class, then set this to `override` and then define the exact properties you
+wish on the Properties tab. If you leave it at `inherit`, Describo will load all of the properties
+up the class hierarchy back to Thing.
 
-Finally, you can specify the parent class hierarchy.
+Finally, you can specify the parent class hierarchy, and specifically, you can specify multiple
+parent classes.
 
 <ImageComponent src="/images/guide-vocabulary/vocab3.webp"></ImageComponent>
 
@@ -115,6 +135,8 @@ of type `TKLabel` to that property.
 
 <ImageComponent src="/images/guide-vocabulary/vocab7.webp"></ImageComponent>
 
+### Metadata and Controls
+
 Expanding the property definition shows us what we can do and there's a lot going on so let's go
 through this step by step.
 
@@ -123,7 +145,7 @@ through this step by step.
 -   A property can be `required`.
 -   A property can have `multiple` values.
 -   A property can be shown by Describo as `readonly`.
--   A property can be `hidden` from biew by Describo.
+-   A property can be `hidden` from view by Describo.
 -   A property can have specific data attached to it.
 -   In this image we see that hasPart allows entities of @type `CreativeWork`, `URL`, `File` and
     `Dataset`. Let's say we can also add entities of @type `TKLabel`.
@@ -137,11 +159,11 @@ TKAttribution.
 
 <ImageComponent src="/images/guide-vocabulary/vocab8.webp"></ImageComponent>
 
-## Property Constraints
+### Constraints
 
-Before we move onto Layouts its worth pointing about some other capabilities of properties. We'll
-use the TKLabel class for this example. Let's say we need to add a property called `something`.
-Consider the following image:
+Before we move onto Layouts we need to cover some other property configurations. We'll use the
+TKLabel class for this example. Let's say we need to add a property called `something`. Consider the
+following image:
 
 <ImageComponent src="/images/guide-vocabulary/vocab9.webp"></ImageComponent>
 

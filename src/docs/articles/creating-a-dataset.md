@@ -44,8 +44,8 @@ and get started using it! As the Vocabulary is distributed with the dataset, you
 
 ## Definitions
 
--   A `class` is a definition for a type of `entity`. For example, defining a class `TKLabel` will
-    enable you to create entities whose type is `TKLabel`.
+-   A `class` defines a type of `entity`. For example, defining a class `TKLabel` will enable you to
+    create entities whose type is `TKLabel`.
 
 ## Licensing your work
 
