@@ -251,7 +251,7 @@ layout: home
               content: '/images/guide-discover/discover3.webp'
         },
            {
-              title: 'GenerativeAI e-Discovery',
+              title: 'GenerativeAI powered e-Discovery',
               text: `
                 Download your conversation as a PDF.
               `,
