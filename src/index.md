@@ -44,29 +44,32 @@ layout: home
               title: 'An intuitive, intelligent and extensible metadata editor',
               text: `
                   <p>Describo enables you to describe your data. It creates linked data
-                  conforming to the Research Object Crate (RO-Crate) specification.</p>
+                  conforming to the <a href='https://www.researchobject.org/ro-crate/' target='_blank'>Research
+                  Object Crate (RO-Crate) specification.</a></p>
               `,
               content: '/images/tour/desktop4.webp'
           },
           {
               title: 'An intuitive, intelligent and extensible metadata editor',
-              text: 'All of schema.org at your disposal.',
+              text: 'Describo puts all of schema.org at your disposal.',
               content: '/images/tour/desktop5.webp'
           },
           {
               title: 'An intuitive, intelligent and extensible metadata editor',
-              text: 'Controls to create all types of data. From linked entities to Geographies.',
+              text: `And it provides controls to create all types of data. From linked entities
+              to Geographies; textual inputs to selection from controlled vocabularies and more.`,
               content: '/images/tour/desktop7.webp'
           },
            {
               title: 'An intuitive, intelligent and extensible metadata editor',
-              text: `Tools to license your data.`,
+              text: `Licensing is a first class action in Describo with easy to use tools to apply
+              licenses to your data and metadata.`,
               content: '/images/articles/creating-a-dataset/dataset1.webp'
           },
           {
               title: 'An intuitive, intelligent and extensible metadata editor',
               text: `
-                  <p>Use the GenerativeAI Assistant to verify your data against the spec.</p>
+                  Describo provides a GenerativeAI Assistant to help you verify your work against the spec.
               `,
               content: '/images/guide-working-with-a-crate/dataset17.webp'
           },
@@ -105,8 +108,8 @@ layout: home
                   <p>Choose from schema.org, MODS, Premis-3, Records in Context - Ontology and SKOS in addition
           to defining your own classes and properties.</p>
               <p>The Vocabulary is part of the RO-Crate so if you share the crate with others,
-              they can continue from where you left off.</p>
-              <p> And, you can also can just create an RO-crate with a Vocabulary for others
+              they can continue from where you left off.
+              Or, you can just create an RO-crate with a Vocabulary for others
               to use in their projects.</p>
               `,
               content: '/images/guide-vocabulary/vocab1.webp'
@@ -118,17 +121,18 @@ layout: home
           },
           {
               title: 'Create your own Vocabulary',
-              text: 'Specify their properties.',
+              text: `For each class define the properties and their expected data inputs.`,
               content: '/images/guide-vocabulary/vocab7.webp'
           },
           {
               title: 'Create your own Vocabulary',
-              text: 'Configure how they should be displayed by Describo.',
+              text: `Configure how your classes should be displayed by Describo by grouping
+              logical inputs together in the way that makes sense for your work.`,
               content: '/images/guide-vocabulary/vocab12.webp'
           },
           {
               title: 'Create your own Vocabulary',
-              text: `And publish your Vocabulary online for others when you're done..`,
+              text: `And finally, publish your Vocabulary online for others when you're done.`,
               content: '/images/articles/creating-a-dataset/dataset11.webp'
           },
       ]"
@@ -139,7 +143,10 @@ layout: home
     <template #title>Linked data - as a table</template>
     <template #text>
       <p>
-        Describo lets you view your data in a clean, organized table format that's as straightforward as a spreadsheet. You can easily search through your information and choose exactly which details you want to display on screen.
+        Describo lets you view your data in a clean, organized table format that's as straightforward as a spreadsheet. You can easily search through your information and choose exactly which details you want to display.
+      </p>
+      <p>
+        Quality assurance has never been easier.
       </p>
       <FeatureComponent link="/docs/guide/browse.html" :icon="faBook" class="text-sm bg-blue-100">
         <template #title>
@@ -158,7 +165,7 @@ layout: home
           <ul class="list-disc">
             <li>Image manipulation - creation of thumbnails and web formats</li>
             <li>Entity recognition and markup</li>
-            <li><font-awesome-icon :icon="faWandSparkles" /> Theme, topic and subject extraction powered by the GenAI Assistant</li>
+            <li><font-awesome-icon :icon="faWandSparkles" /> Theme, topic and subject extraction powered by the GenerativeAI Assistant</li>
           </ul>
         <FeatureComponent link="/docs/guide/transforming-content" :icon="faBook" class="text-sm bg-blue-100">
           <template #title>
@@ -204,6 +211,7 @@ layout: home
               title: 'Text extraction and Named Entity Recognition',
               text: `
                 Everything you mark up in the text will also be written into the RO-Crate.
+                Creating a knowledge graph is trivial.
               `,
               content: '/images/guide-transcribing-content/transcribe7.webp'
           },
@@ -257,7 +265,7 @@ layout: home
            {
               title: 'GenerativeAI powered e-Discovery',
               text: `
-                Download your conversation as a PDF.
+                Download your conversation as a PDF to save for later or share with others.
               `,
               content: '/images/articles/taytay-sings-the-budget-blues/budget-conversation.pdf'
           },
@@ -294,14 +302,15 @@ layout: home
           {
               title: 'Visualisation',
               text: `
-                Manipulate the size and colour of nodes of interest to reveal the features.
+                Manipulate the visual display of the nodes of interest in order to reveal the features.
               `,
               content: '/images/guide-visualise/visualise4.webp'
           },
           {
               title: 'Visualisation',
               text: `
-                Select a node and visualise the connections. Connected files can be viewed directly.
+                Deep dive into connected entities. Select a node and visualise the connections; if there are connected files,
+                they can be viewed directly so you don't lose your flow.
               `,
               content: '/images/guide-visualise/visualise8.webp'
           },
