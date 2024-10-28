@@ -32,7 +32,10 @@ in your other projects.
 
 ::: warning info
 
-Tradtional Knowledge Labels should only be applied by Indigenous knowledge holders.
+Tradtional Knowledge Labels should only be applied by Indigenous knowledge holders. This article and
+dataset is to show how one can use Describo to do their work. It is the responsibility of the user
+to ensure that they have the appropriate permissions to use the dataset, and any data that they
+describe with it.
 
 :::
 
