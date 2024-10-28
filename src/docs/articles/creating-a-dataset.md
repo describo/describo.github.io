@@ -32,6 +32,12 @@ in your other projects.
 
 ::: warning info
 
+Tradtional Knowledge Labels should only be applied by Indigenous knowledge holders.
+
+:::
+
+::: warning info
+
 This article does not go into detail about every little feature. It is designed as a step by step
 how to that is supposed to be read in conjunction with
 [the detailed documentation for the Vocabulary tool.](/docs/guide/vocabulary.html)
