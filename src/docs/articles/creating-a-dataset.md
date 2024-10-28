@@ -11,10 +11,12 @@ many Ontologies that came before?
 
 This article will show you, step by step, how to:
 
--   create a Vocabulary for describing TKLabels;
--   use the Vocabulary to create the dataset of TKLabel definitions;
--   use the AI Assistant to verify the data you created against the RO-Crate spec;
--   and finally, load it into your personal datastore in Describo for use in other projects.
+-   create a Vocabulary for describing Traditional Knowledge Labels;
+-   use the Vocabulary to create the dataset of `TKLabel` entity definitions;
+-   use the Generative AI Assistant to verify the data you created against the RO-Crate spec;
+
+And when you’re done, you can load the dataset into your personal knowledgebase in Describo for use
+in your other projects.
 
 ::: tip info
 
@@ -49,7 +51,8 @@ and get started using it! As the Vocabulary is distributed with the dataset, you
 
 ## Licensing your work
 
-Too often, licensing is an afterthought. With Describo, licensing your data and metadata is trivial.
+Too often, licensing your work is an afterthought. With Describo, licensing your data and metadata
+is a first class action with an easy to use interface.
 
 <div class="my-6">
 Start Describo and select a folder to work in. We'll start by creating the data and metadata
