@@ -46,6 +46,20 @@ The main editor window has a controls bar along the top. On it there are:
 
 <ImageComponent src="/images/guide-working-with-a-crate/controls.webp" />
 
+## Licensing your work
+
+With any creative work it's important to apply a licence for both the data and the metadata. This
+way, users of your work can unambiguously know their rights and responsibilities when working with
+your data.
+
+In Describo, licensing is a first class action with a simple to use dialog that allows choosing from
+CC licenses or marking your work as "CONFIDENTIAL" and / or "RESTRICTED" and / or "SENSITIVE".
+
+<div class="flex flex-col space-y-1 md:flex-row md:space-x-1 md:space-y-0 my-6">
+    <ImageComponent src="/images/guide-working-with-a-crate/dataset1.webp"></ImageComponent>
+    <ImageComponent src="/images/guide-working-with-a-crate/dataset3.webp"></ImageComponent>
+</div>
+
 ## Verifying your work
 
 ::: tip info
