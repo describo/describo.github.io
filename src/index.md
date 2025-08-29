@@ -322,7 +322,43 @@ layout: home
 
 <FooterComponent class="mt-6"/>
 
+<el-dialog v-model="dialogVisible" title="" width="80%">
+  <div class="text-xl text-center flex flex-col space-y-10 p-20">
+    <div class="text-3xl font-bold">The Describo products are no longer being developed or maintained.</div>
+    <div>
+      It's an unfortunate reality that the environment for academic research software is difficult, and often times, even hostile.
+    </div>
+    <div>
+      Describo Started life as a product to enable users to create RO-Crate metadata for their research data. It went
+      through a number of iterations and achieved a small degree of success across the research sector. But
+      the funding to create the product was limited and available only in spurts.
+    </div>
+    <div>
+      In 2024, in an effort to develop a recurring funding stream to support the open source RO Crate editor component,
+      I invested a significant amount of personal effort to develop Describo into a product for HASS researchers to use
+      to work with data as well as describe it. After a decade supporting archivists, historians and linguists I felt
+      there was an opportunity to help the 95% who to this day are still being told to find their own support people
+      and to run their own server applications. If you've worked in this space you know that this is neither feasible nor realistic for most people and projects.
+    </div>
+    <div>
+      Describo was meant to help with that problem. As
+      a personal application it aimed to reduce the friction associated with extracting textual content from images, marking
+      up entities and relationships, analysing the network of connections and ultimately producing a well described
+      data object.
+    </div>
+    <div>
+      Sadly though, I wasn't able to develop an ongoing funding stream to support this effort so the time has come
+      to shut the project down and move on.
+    </div>
+    <div>
+    Marco; Describo Product Lead.
+    </div>
+  </div>
+</el-dialog>
+
 <script setup>
+  import { ref, } from 'vue'
+
   import {
     faRoute,
     faDownload,
@@ -335,7 +371,10 @@ layout: home
     faFileLines,
     faWandSparkles
   }  from "@fortawesome/free-solid-svg-icons";
+  import { ElDialog } from 'element-plus'
   import TagLine from "./vue-components/TagLine.vue";
   import DescriboFeatures from './vue-components/DescriboFeatures.vue'
   import InfoPanelCarouselComponent from './vue-components/InfoPanelCarousel.vue'
+
+  const dialogVisible = ref(true)
 </script>
