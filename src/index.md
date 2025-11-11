@@ -323,10 +323,10 @@ layout: home
 <FooterComponent class="mt-6"/>
 
 <el-dialog v-model="dialogVisible" title="" width="80%">
-  <div class="text-xl text-center flex flex-col space-y-10 p-20">
-    <div class="text-3xl font-bold">The Describo products are no longer being developed or maintained.</div>
+  <div class="xl:text-xl text-center flex flex-col space-y-4 xl:space-y-10 xl:p-20">
+    <div class="text-xl xl:text-3xl font-bold">The Describo products are no longer being developed or maintained.</div>
     <div>
-      It's an unfortunate reality that the environment for academic research software is difficult, and often times, even hostile.
+      It's an unfortunate reality that the environment for academic research software is difficult.
     </div>
     <div>
       Describo Started life as a product to enable users to create RO-Crate metadata for their research data. It went
